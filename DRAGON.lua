@@ -6721,6 +6721,23 @@ t = " ❤ لا يوجد منشئين"
 end
 send(msg.chat_id_, msg.id_, t)
 end
+
+if text == ("تاك للمنشئين") or text == ("صيح المنشئين") then
+local list = database:smembers(bot_id..'Constructor'..msg.chat_id_)
+t = "\n ❤ وينكم تعالو يريدوكم بالجروب \n●○━━━━єℓмℓσк━━━━○● \n"
+for k,v in pairs(list) do
+local username = database:get(bot_id.."user:Name" .. v)
+if username then
+t = t..""..k.."- {[@"..username.."]}\n"
+else
+t = t..""..k.."- ↝ '..v..' ↜\n"
+end
+end
+if #list == 0 then
+t = " ❤ لا يوجد منشئين"
+end
+send(msg.chat_id_, msg.id_, t)
+end
 if text ==("المنشئ") then
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,data) 
 local admins = data.members_
@@ -6776,23 +6793,6 @@ end
 end
 end,nil)
 end
-if text == ("تاك للمنشئين") or text == ("صيح المنشئين") then
-local list = database:smembers(bot_id..'Constructor'..msg.chat_id_)
-t = "\n ❤ وينكم تعالو يريدوكم بالجروب \n●○━━━━єℓмℓσк━━━━○● \n"
-for k,v in pairs(list) do
-local username = database:get(bot_id.."user:Name" .. v)
-if username then
-t = t..""..k.."- {[@"..username.."]}\n"
-else
-t = t..""..k.."- ↝ '..v..' ↜\n"
-end
-end
-if #list == 0 then
-t = " ❤ لا يوجد منشئين"
-end
-send(msg.chat_id_, msg.id_, t)
-end
-
 if text == "رفع منشئ" and msg.reply_to_message_id_ and BasicConstructor(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
