@@ -2984,9 +2984,9 @@ end
 
 if text == 'تحديث السورس' and DevSoFi(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
-local e_l_m_o_l_k/10 = database:get(bot_id..'text:ch:user')
-if e_l_m_o_l_k/10 then
-send(msg.chat_id_, msg.id_,'['..e_l_m_o_l_k/10..']')
+local e_l_m_o_l_k = database:get(bot_id..'text:ch:user')
+if e_l_m_o_l_k then
+send(msg.chat_id_, msg.id_,'['..e_l_m_o_l_k..']')
 else
 send(msg.chat_id_, msg.id_,' ☆  لا تستطيع استخدام البوت \n  ☆  يرجى الاشتراك بالقناه اولا \n  ☆  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
