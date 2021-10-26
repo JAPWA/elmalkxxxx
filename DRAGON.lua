@@ -13381,7 +13381,7 @@ end
 return false
 end
 if text == "حاجتي" then
-local my_ph = bot_data:get(ban_id.."my_photo:status"..msg.chat_id_)
+local my_ph = database:get(bot_id.."my_photo:status"..msg.chat_id_)
 if not my_ph 
 return false  
 end
