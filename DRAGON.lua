@@ -13583,8 +13583,8 @@ end,nil)
 end
 
 if text == 'تفعيل رتبتي' and Manager(msg) then   
-if bot_data:get(ban_id..'ghiktr'..msg.chat_id_)  then
-bot_data:del(ban_id..'ghiktr'..msg.chat_id_) 
+if database:get(ban_id..'ghiktr'..msg.chat_id_)  then
+database:del(bot_id..'ghiktr'..msg.chat_id_) 
 Text = '\n ● تم تفعيل رتبتي' 
 else
 Text = '\n ●  بالتاكيد تم تفعيل رتبتي'
@@ -13592,8 +13592,8 @@ end
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == 'تعطيل رتبتي' and Manager(msg) then  
-if not bot_data:get(ban_id..'ghiktr'..msg.chat_id_)  then
-bot_data:set(ban_id..'ghiktr'..msg.chat_id_,true) 
+if not database:get(ban_id..'ghiktr'..msg.chat_id_)  then
+database:set(bot_id..'ghiktr'..msg.chat_id_,true) 
 Text = '\n ● تم تعطيل رتبتي' 
 else
 Text = '\n ● بالتاكيد تم تعطيل رتبتي'
@@ -13636,13 +13636,13 @@ end,nil)
 end
 if text == "تعطيل انا مين"  and Manager(msg) then   
 if Constructor(msg) then  
-bot_data:del(ban_id.."my_anamen:status"..msg.chat_id_) 
+database:del(bot_id.."my_anamen:status"..msg.chat_id_) 
 send(msg.chat_id_, msg.id_," ● تـم تـعـطـيل انا مين") 
 return false end
 end
 if text == "تفعيل انا مين"  and Manager(msg) then   
 if Constructor(msg) then  
-bot_data:set(ban_id.."my_anamen:status"..msg.chat_id_,true) 
+database:set(bot_id.."my_anamen:status"..msg.chat_id_,true) 
 send(msg.chat_id_, msg.id_," ● تـم تـفعـيل انا مين") 
 return false  
 end
