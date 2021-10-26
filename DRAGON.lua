@@ -13672,9 +13672,6 @@ end
 send(msg.chat_id_, msg.id_,first_name..'\n'..last_name) 
 end,nil)
 end 
-if text == 'بايو' then   
-send(msg.chat_id_, msg.id_,getbio(msg.sender_user_id_)) 
-end 
 if text == 'ايديي' then
 send(msg.chat_id_, msg.id_,' ❤ ايديك  ⇦↯'..msg.sender_user_id_)
 end
