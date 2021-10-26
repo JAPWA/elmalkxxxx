@@ -13650,7 +13650,7 @@ end
 send(msg.chat_id_, msg.id_,first_name..'\n'..last_name) 
 end,nil)
 end 
-if text == "بايو" and not database:get(rob_id..'ghiktr8'..msg.chat_id_) then     
+if text == "بايو" and not database:get(bot_id..'ghiktr8'..msg.chat_id_) then     
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 if result.username_ then
 username = result.username_ 
