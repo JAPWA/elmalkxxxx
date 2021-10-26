@@ -13383,7 +13383,6 @@ end
 if text == "حاجتي" then
 local my_ph = database:get(bot_id.."my_photo:status"..msg.chat_id_)
 if not my_ph 
-return false  
 end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 if result.username_ then
@@ -13392,15 +13391,11 @@ else
 username = 'sasa_boody'
 end
 local msg_id = msg.id_/2097152/0.5  
-local texzxtt = ' اخر صوره لديك'
 local Boody = 'https://t.me/xxxcccvvbbnn/903'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = texzxtt, url="http://t.me/"..username},
-},
-{
-{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
+{text = 'اخر صوره لديك', url="http://t.me/"..username},
 },
 }
 local function getpro(extra, result, success) 
