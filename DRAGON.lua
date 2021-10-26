@@ -1647,28 +1647,30 @@ Text = ' ❤ الاحصائيات  \n'..' ❤ عدد الجروبات  ⇦↯{'.
 send(msg.chat_id_, msg.id_,Text) 
 return false
 end
-if text == 'نبذه' and msa3d(msg) then  
-local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'كلير') 
-local getbioY = getbio(msg.sender_user_id_)
-local msg_id = msg.id_/2097152/0.5  
-local tessttmos = 'اسم بوت ⇐ '..Namebot..''
-local tessttm = 'البايو ⇐ '..getbioY..''
+if text == "بايو" and not bot_data:get(ban_id..'Bot:Id'..msg.chat_id_) then
+tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)
+local Msguser = tonumber(bot_data:get(ban_id..'Msg_User'..msg.chat_id_..':'..msg.sender_user_id_) or 1)
+local msg_id = msg.id_/2097152/0.5
+local Text = "البايو"
 keyboard = {} 
 keyboard.inline_keyboard = {
-{
-{text = 'البايو ⇐', url = "send(msg.chat_id_, msg.id_,getbio(msg.sender_user_id_))"},
-},
-{
-{text = tessttm, url = "https://t.me/e_l_m_o_l_k"},
-},
+
+{{text = 'البايو '..getbio(msg.sender_user_id_), url="t.me/ahmedyad200"}}, 
 }
-local function getpro(extra, result, success) 
-if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(Namebot).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end 
-end 
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = ban_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
+local function getpro(extra, result, success)
+if result.photos_[0] then
+https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end end
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil)
+end,nil)
 end
+
+الكود للمعدلين علي سورس فينوم 🥰
+اضغط للنسخ
+تنقل ازكر المصدر @SOURCEVENOM1
+تم تجربة الكود بوسطة @J_A_B_W_A ✅
 if text == 'المشتركين' and SudoBot(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
@@ -13671,9 +13673,6 @@ last_name = ''
 end      
 send(msg.chat_id_, msg.id_,first_name..'\n'..last_name) 
 end,nil)
-end 
-if text == 'بايو' then   
-send(msg.chat_id_, msg.id_,getbio(msg.sender_user_id_)) 
 end 
 if text == 'ايديي' then
 send(msg.chat_id_, msg.id_,' ❤ ايديك  ⇦↯'..msg.sender_user_id_)
