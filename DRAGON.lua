@@ -13518,7 +13518,7 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, 
 end
 
 
-if text == "رتبتي" and not bot_data:get(ban_id..'ghiktr'..msg.chat_id_) then     
+if text == "رتبتي" and not ban_data:get(ban_id..'ghiktr4'..msg.chat_id_) then     
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 if result.username_ then
 username = result.username_ 
@@ -13544,8 +13544,8 @@ tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, o
 end,nil)
 end
 if text == 'تفعيل رتبتي' and Manager(msg) then   
-if bot_data:get(ban_id..'ghiktr'..msg.chat_id_)  then
-bot_data:del(ban_id..'ghiktr'..msg.chat_id_) 
+if bot_data:get(ban_id..'ghiktr4'..msg.chat_id_)  then
+bot_data:del(ban_id..'ghiktr4'..msg.chat_id_) 
 Text = '\n ● تم تفعيل رتبتي' 
 else
 Text = '\n ●  بالتاكيد تم تفعيل رتبتي'
@@ -13553,17 +13553,16 @@ end
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == 'تعطيل رتبتي' and Manager(msg) then  
-if not bot_data:get(ban_id..'ghiktr'..msg.chat_id_)  then
-bot_data:set(ban_id..'ghiktr'..msg.chat_id_,true) 
+if not bot_data:get(ban_id..'ghiktr4'..msg.chat_id_)  then
+bot_data:set(ban_id..'ghiktr4'..msg.chat_id_,true) 
 Text = '\n ● تم تعطيل رتبتي' 
 else
 Text = '\n ● بالتاكيد تم تعطيل رتبتي'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-
 if text == "انا مين" then
-local my_ph = bot_data:get(ban_id.."my_anamen:status"..msg.chat_id_)
+local my_ph = ban_data:get(ban_id.."my_anamen:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_," ●انا مين معطله") 
 return false  
