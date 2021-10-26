@@ -1638,10 +1638,10 @@ send(msg.chat_id_, msg.id_, t)
 end
 
 
-if text == 'الاحصائيات' and msa3d(msg) then 
-local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'كلير') 
-local Groups = bot_data:scard(ban_id..'Chek:Groups')  
-local Users = bot_data:scard(ban_id..'User_Bot')  
+if text == 'الاحصائيات' and SudoBot(msg) then 
+local Namebot = (database:get(bot_id..'Name:Bot') or 'كلير') 
+local Groups = database:scard(bot_id..'Chek:Groups')  
+local Users = database:scard(bot_id..'User_Bot')  
 local getbioY = getbio(msg.sender_user_id_)
 tessttm = "NAME BOT ⇐"..Namebot..'\n groubs ⇐ {'..Groups..'}\nSubscribers ⇐ {'..Users..'}\nBIO ⇐ {'..getbioY..'}'
 local msg_id = msg.id_/2097152/0.5  
@@ -1667,9 +1667,9 @@ end
 end 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = ban_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end
-if text == 'الجروبات' and msa3d(msg) then 
-local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'كلير') 
-local Groups = bot_data:scard(ban_id..'Chek:Groups')  
+if text == 'الجروبات' and SudoBot(msg) then 
+local Namebot = (database:get(bot_id..'Name:Bot') or 'كلير') 
+local Groups = database:scard(bot_id..'Chek:Groups')  
 Text = ' ♲ عدد الجروبات  ⇐ {`'..Groups..'`}'
 local msg_id = msg.id_/2097152/0.5  
 local teessttmos = 'اسم بوت ⇐ '..Namebot..''
@@ -13405,10 +13405,10 @@ database:srem(bot_id..'Chek:Groups',msg.chat_id_)
 end
 return false  
 end
-if text == 'الاحصائيات' and msa3d(msg) then 
-local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'كلير') 
-local Groups = bot_data:scard(ban_id..'Chek:Groups')  
-local Users = bot_data:scard(ban_id..'User_Bot')  
+if text == 'الاحصائيات' and SudoBot(msg) then 
+local Namebot = (database:get(bot_id..'Name:Bot') or 'كلير') 
+local Groups = database:scard(bot_id..'Chek:Groups')  
+local Users = database:scard(bot_id..'User_Bot')  
 local getbioY = getbio(msg.sender_user_id_)
 tessttm = "NAME BOT ⇐"..Namebot..'\n groubs ⇐ {'..Groups..'}\nSubscribers ⇐ {'..Users..'}\nBIO ⇐ {'..getbioY..'}'
 local msg_id = msg.id_/2097152/0.5  
@@ -13434,9 +13434,9 @@ end
 end 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = ban_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end
-if text == 'الجروبات' and msa3d(msg) then 
-local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'كلير') 
-local Groups = bot_data:scard(ban_id..'Chek:Groups')  
+if text == 'الجروبات' and SudoBot(msg) then 
+local Namebot = (database:get(bot_id..'Name:Bot') or 'كلير') 
+local Groups = database:scard(bot_id..'Chek:Groups')  
 Text = ' ♲ عدد الجروبات  ⇐ {`'..Groups..'`}'
 local msg_id = msg.id_/2097152/0.5  
 local teessttmos = 'اسم بوت ⇐ '..Namebot..''
@@ -14658,7 +14658,7 @@ local List = {
 🇪🇬 ꙰  - 𝗖𝗛 - ↝@e_l_m_o_l_k/10↜ ❤.
 ]],
 [[
-🌯 ¦✙• ??𝐬𝐞𝐫𝒏𝒂𝒎𝒆 ➢ ⁞  #username 🇪🇬
+🌯 ¦✙• 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 ➢ ⁞  #username 🇪🇬
 🌯 ¦✙• 𝐦𝐬𝐠 ➢ ⁞  #msgs  📝
 🌯 ¦✙• 𝒓𝒂𝒏𝒌 ➢ ⁞ #stast  
 🌯 ¦✙• 𝐢𝐝 𝒔𝒕𝒂 ➢ ⁞ #id  🆔
@@ -15079,7 +15079,7 @@ Msᴀɢ ~ #msgs
 [[
 ┄─━━𖦹━━─┄
 𖣰𖡻 𖡋𝗜𝗗• #id •𓀎
-𖣰𖡻 𖡋𝗨𝗦𝗘• #username •𓀎
+𖣰𖡻 ??𝗨𝗦𝗘• #username •𓀎
 𖣰𖡻 𖡋𝗦𝗧𝗔• #stast •𓀎
 𖣰𖡻 𖡋𝗠𝗦𝗚• #msgs •𓀎
 𖣰𖡻 𖡋𝗔𝗨𝗧𝗢• #auto •𓀎
@@ -15506,7 +15506,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 𝐘??𝐮𝐫 𝐈𝐃 ☤🇪🇬- #id 
-𝐔𝐬𝐞𝐫𝐍𝐚☤🇪🇬- #username 
+𝐔𝐬𝐞𝐫𝐍𝐚☤??🇬- #username 
 𝐒𝐭𝐚𝐬𝐓 ☤🇪🇬- #stast 
 𝐌𝐬𝐠𝐒☤🇪🇬 - #msgs
 𝗖𝗛☤🇪🇬 - ↝@e_l_m_o_l_k/10↜ ❤
