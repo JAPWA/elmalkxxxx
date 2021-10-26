@@ -972,7 +972,7 @@ local keyboard = {
 {'━┅┅┄⟞⟦ مطورين السورس ⟧⟝┄┉┉━'},
 {'مبرمج تيمو','مبرمج جابوا'},
 {'●○━━━━єℓмℓσк━━━━○● '},
-{'مبرمج ابو المجد','مالك عمرو'},
+{'مبرمج ابو المجد','مالك عمر'},
 {'●○━━━━єℓмℓσк━━━━○● '},
 {'ثيم','بايو','ايدي'},
 {'●○━━━━єℓмℓσк━━━━○● '},
@@ -1073,7 +1073,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = 'المبرمج تيمو💖 ',url="t.me/ttimo_2lby"}}, 
 {{text = 'المبرمج ابو المجد💖  ', url="t.me/ABO_ELMAGD2"}},
-{{text = 'المبرمج عمرو 💖   ', url="t.me/teemElmelok"}},
+{{text = 'المبرمج عمر 💖   ', url="t.me/teemElmelok"}},
 {{text = 'المبرمج جابوا💖   ', url="t.me/J_A_B_W_A"}},
 }
 local msg_id = msg.id_/2097152/0.5
@@ -1121,7 +1121,7 @@ local Key = {
 {'━┅┅┄⟞⟦ مطورين السورس ⟧⟝┄┉┉━'},
 {'التواصل','عايز بوت','يا سورس'},
 {'مبرمج تيمو','مبرمج ابو المجد'},
-{'مبرمج عمرو','مبرمج جابوا'},
+{'مبرمج عمر','مبرمج جابوا'},
 {'𝙱𝙰𝙲𝙺'},
 }
 send_inline_key(msg.chat_id_,Text,Key)
@@ -1378,7 +1378,7 @@ local Key = {
 {'━┅┅┄⟞⟦ مطورين السورس ⟧⟝┄┉┉━'},
 {'التواصل','عايز بوت','يا سورس'},
 {'مبرمج تيمو','مبرمج ابو المجد'},
-{'مبرمج عمرو','مبرمج جابوا'},
+{'مبرمج عمر','مبرمج جابوا'},
 {'العوده☆'},
 }
 send_inline_key(msg.chat_id_,Text,Key)
@@ -3393,7 +3393,7 @@ keyboard.inline_keyboard = {
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ABO_ELMAGD2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'عمرو' or text == 'مالك عمرو' or text == 'الملك عمرو' or text == 'OMAR' then 
+if text == 'عمر' or text == 'مالك عمر' or text == 'الملك عمر' or text == 'OMAR' then 
 local msg_id = msg.id_/2097152/0.5  
 local Text = [[ 
 omar
@@ -3452,7 +3452,7 @@ keyboard = {} keyboard.inline_keyboard = {
 {{text = '🎯رواية"الإنسان الأخير""', url="https://t.me/UU_NOVEL/24"}},
 {{text = '🎯رواية" مقبرة الحيوانات""', url="https://t.me/UU_NOVEL/8"}},
 {{text = 'مبرمج تيمو',url="t.me/ttimo_2lby"},{text = 'مبرمج جابوا',url="t.me/J_A_B_W_A"}},
-{{text = 'مبرمج عمرو',url="t.me/teemElmelok"},{text = 'مبرمج ابو المجد',url="t.me/ABO_ELMAGD2"}},
+{{text = 'مبرمج عمر',url="t.me/teemElmelok"},{text = 'مبرمج ابو المجد',url="t.me/ABO_ELMAGD2"}},
 {{text = '《𝚂𝙾𝚄𝚁𝙲𝙴 𝐸𝐿𝑀𝐿𝑂𝐾》 ', url="t.me/e_l_m_o_l_k/10"}},
 }
 local msg_id = msg.id_/2097152/0.5  
@@ -3466,7 +3466,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = 'مبرمج تيمو',url="t.me/ttimo_2lby"}},
 {{text = 'مبرمج ابو المجد',url="t.me/ABO_ELMAGD2"}},
-{{text = 'مبرمج عمرو',url="t.me/teemElmelok"}},
+{{text = 'مبرمج عمر',url="t.me/teemElmelok"}},
 {{text = 'مبرمج جابوا',url="t.me/J_A_B_W_A"}},
 }
 local msg_id = msg.id_/2097152/0.5
@@ -3513,7 +3513,7 @@ local Text ='تم اختيار الاستوري هذه لك'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'ثيم اخر', callback_data="/added"}},
-{{text = 'مبرمج عمرو',url="t.me/teemElmelok"}},
+{{text = 'مبرمج عمر',url="t.me/teemElmelok"}},
 {{text = 'مبرمج جابوا',url="t.me/J_A_B_W_A"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -12186,7 +12186,7 @@ keyboard.inline_keyboard = {
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(Namebot).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 else 
 send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
 end 
@@ -12210,10 +12210,11 @@ local DRAGON_Msg = {
 } 
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
+local texxtt = ''..Namebot..''
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName},
+{text = texxtt, url="http://t.me/"..sudos.UserName},
 },
 {
 {text = 'اضف البوت الي مجموعتك ↯' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
@@ -12221,7 +12222,7 @@ keyboard.inline_keyboard = {
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(Namebot).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 else 
 send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
 end 
