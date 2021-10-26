@@ -13621,9 +13621,6 @@ keyboard.inline_keyboard = {
 {
 {text = textt, url="http://t.me/"..username},
 },
-{
-{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
-},
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
