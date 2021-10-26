@@ -13583,7 +13583,7 @@ end,nil)
 end
 
 if text == 'تفعيل رتبتي' and Manager(msg) then   
-if database:get(ban_id..'ghiktr'..msg.chat_id_)  then
+if database:get(bot_id..'ghiktr'..msg.chat_id_)  then
 database:del(bot_id..'ghiktr'..msg.chat_id_) 
 Text = '\n ● تم تفعيل رتبتي' 
 else
@@ -13592,7 +13592,7 @@ end
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == 'تعطيل رتبتي' and Manager(msg) then  
-if not database:get(ban_id..'ghiktr'..msg.chat_id_)  then
+if not database:get(bot_id..'ghiktr'..msg.chat_id_)  then
 database:set(bot_id..'ghiktr'..msg.chat_id_,true) 
 Text = '\n ● تم تعطيل رتبتي' 
 else
