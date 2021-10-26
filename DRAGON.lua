@@ -13716,12 +13716,12 @@ else
 username = 'e_l_m_o_l_k'
 end
 local msg_id = msg.id_/2097152/0.5  
-local KLaeR = " ● عدد صورك ⇐ "..result.total_count_.." صوره‌‏"
+local KLaaaeeR = " ● عدد صورك ⇐ "..result.total_count_..""
 local Sasa3 = 'https://t.me/xxxcccvvbbnn/903'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = KLaeR, url = "https://t.me/"..result.username_..""},
+{text = KLaaaeeR, url = "https://t.me/"..result.username_..""},
 },
 }
 local function getpro(extra, result, success) 
