@@ -1647,23 +1647,29 @@ Text = ' ❤ الاحصائيات  \n'..' ❤ عدد الجروبات  ⇦↯{'.
 send(msg.chat_id_, msg.id_,Text) 
 return false
 end
-if text == "بايو" and not bot_data:get(ban_id..'Bot:Id'..msg.chat_id_) then
-tdcli_function({ID = "GetUser",user_id_ = msg.sender_user_id_},function(arg,data)
-local Msguser = tonumber(bot_data:get(ban_id..'Msg_User'..msg.chat_id_..':'..msg.sender_user_id_) or 1)
-local msg_id = msg.id_/2097152/0.5
-local Text = "البايو"
+if text == "بايو" and not bot_data:get(rob_id..'ghiktr'..msg.chat_id_) then     
+tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
+if result.username_ then
+username = result.username_ 
+else
+username = 'errrrrrro'
+end
+local msg_id = msg.id_/2097152/0.5  
+local textt = ' '..getbio(msg.sender_user_id_,msg.chat_id_)
+local Robot = 'https://t.me/Qtdao/71'
 keyboard = {} 
 keyboard.inline_keyboard = {
-
-{{text = 'البايو '..getbio(msg.sender_user_id_), url="t.me/ahmedyad200"}}, 
+{
+{text = textt, url = "https://t.me/"..result.username_..""},
+},
 }
-local function getpro(extra, result, success)
-if result.photos_[0] then
-https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&reply_to_message_id='..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-else
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end end
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil)
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(Robot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end end 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end,nil)
 end
 if text == 'المشتركين' and SudoBot(msg) then 
