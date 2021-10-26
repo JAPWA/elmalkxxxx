@@ -13562,7 +13562,7 @@ end
 send(msg.chat_id_, msg.id_,Text) 
 end
 
-if text == "تعطيل انا مين"  thenif text == "انا مين" then
+if text == "انا مين" then
 local my_ph = bot_data:get(ban_id.."my_anamen:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_," ●انا مين معطله") 
