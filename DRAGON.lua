@@ -13650,16 +13650,15 @@ end
 send(msg.chat_id_, msg.id_,first_name..'\n'..last_name) 
 end,nil)
 end 
-if text == "بايو" and not bot_data:get(rob_id..'ghiktr'..msg.chat_id_) then     
+if text == "بايو" and not database:get(rob_id..'ghiktr8'..msg.chat_id_) then     
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 if result.username_ then
 username = result.username_ 
 else
-username = 'errrrrrro'
+username = 'e_l_m_o_l_k'
 end
 local msg_id = msg.id_/2097152/0.5  
 local textt = ' '..getbio(msg.sender_user_id_,msg.chat_id_)
-local Robot = 'https://t.me/Qtdao/71'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
