@@ -3336,16 +3336,18 @@ end,nil)
 end
 if text == 'الملوك' or text == 'سورس' or text == 'السورس' or text == 'source' or text == 'يا سورس' or text == '𝐸𝐿𝑀𝐿𝑂𝐾' then 
 local Text = [[
- ☆ [𝑾𝑬𝑳𝑪𝑶𝑴𝑬 𝑺𝑶𝑼𝑹𝑪𝑬 𝐸𝐿𝑀𝐿𝑂𝐾](t.me/e_l_m_o_l_k/10)☆ 
- ☆ [𝐸𝐿𝑀𝐿𝑂𝐾 𝙏𝙃𝙀 𝘽𝙀𝙎𝙏 𝙎𝙊𝙐𝙍𝘾𝙀 𝙄𝙉 𝙏𝙀𝙇𝙀](t.me/e_l_m_o_l_k/10)☆ 
- ☆ [𝙊𝙑𝙀𝙍 𝙏𝙃𝙄𝙉𝙆𝙄𝙉𝙂 𝙆𝙄𝙇𝙇𝙎 𝙔𝙊𝙐𝙍 𝙃𝘼𝙋𝙋𝙄𝙉𝙀𝙎𝙎](t.me/e_l_m_o_l_k/10) ☆ 
+╭╾╾╾𓆩[𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺](http://t.me/e_l_m_o_l_k)𓆪╾╾╾╮
+┆
+┆[𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ](http://t.me/e_l_m_o_l_k)
+┆
+╰╾╾╾𓆩[𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺](http://t.me/e_l_m_o_l_k)𓆪╾╾╾╯
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '  ❨  TIMO  ',url="t.me/ttimo_2lby"},{text = '  ABOELMAGD  ❩ ',url="t.me/ABO_ELMAGD2"}},
-{{text = '  ❨  𝚃𝙰𝚆𝙰𝚂𝙾𝙻  ❩ ',url="t.me/TWASL_TIMO_BOT"}}, 
-{{text = '  ❨  OMAR  ',url="t.me/teemElmelok"},{text = '  JABWA  ❩ ',url="t.me/J_A_B_W_A"}},
-{{text = '  ❨  𝚂𝙾𝚄𝚁𝙲𝙴 𝐸𝐿𝑀𝐿𝑂𝐾  ❩ ',url="https://t.me/e_l_m_o_l_k"}}, 
+{{text = '【 𝚃𝙸𝙼𝙾 】',url="t.me/ttimo_2lby"},{text = '【 𝙰𝙱𝙾𝙴𝙻𝙼𝙰𝙶𝙳 】 ',url="t.me/ABO_ELMAGD2"}},
+{{text = '【 𝚃𝙰𝚆𝙰𝚂𝙾𝙻 】',url="t.me/TWASL_TIMO_BOT"}}, 
+{{text = '【 𝙾𝙼𝙰𝚁 】',url="t.me/teemElmelok"},{text = '【 𝙹𝙰𝙱𝚆𝙰 】',url="t.me/J_A_B_W_A"}},
+{{text = '【 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 】',url="https://t.me/e_l_m_o_l_k"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/e_l_m_o_l_k/19&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
