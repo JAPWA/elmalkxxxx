@@ -1647,7 +1647,8 @@ Text = ' ❤ الاحصائيات  \n'..' ❤ عدد الجروبات  ⇦↯{'.
 send(msg.chat_id_, msg.id_,Text) 
 return false
 end
-if text == 'بايو' and msa3d(msg) then  
+if text == 'نبذه' and msa3d(msg) then  
+local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'كلير') 
 local getbioY = getbio(msg.sender_user_id_)
 local msg_id = msg.id_/2097152/0.5  
 local tessttmos = 'اسم بوت ⇐ '..Namebot..''
@@ -1655,7 +1656,7 @@ local tessttm = 'البايو ⇐ '..getbioY..''
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = tessttmos, url = "https://t.me/e_l_m_o_l_k"},
+{text = 'البايو ⇐', url = "send(msg.chat_id_, msg.id_,getbio(msg.sender_user_id_))"},
 },
 {
 {text = tessttm, url = "https://t.me/e_l_m_o_l_k"},
