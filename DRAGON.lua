@@ -1666,11 +1666,6 @@ end end
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil)
 end,nil)
 end
-
-الكود للمعدلين علي سورس فينوم 🥰
-اضغط للنسخ
-تنقل ازكر المصدر @SOURCEVENOM1
-تم تجربة الكود بوسطة @J_A_B_W_A ✅
 if text == 'المشتركين' and SudoBot(msg) then 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
