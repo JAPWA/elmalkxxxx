@@ -1649,7 +1649,6 @@ return false
 end
 if text == 'بايو' and msa3d(msg) then  
 local getbioY = getbio(msg.sender_user_id_)
-tessttm = "NAME BOT ⇐"..Namebot..'\nBIO ⇐ {'..getbioY..'}'
 local msg_id = msg.id_/2097152/0.5  
 local tessttmos = 'اسم بوت ⇐ '..Namebot..''
 local tessttm = 'البايو ⇐ '..getbioY..''
@@ -13671,6 +13670,9 @@ last_name = ''
 end      
 send(msg.chat_id_, msg.id_,first_name..'\n'..last_name) 
 end,nil)
+end 
+if text == 'بايو' then   
+send(msg.chat_id_, msg.id_,getbio(msg.sender_user_id_)) 
 end 
 if text == 'ايديي' then
 send(msg.chat_id_, msg.id_,' ❤ ايديك  ⇦↯'..msg.sender_user_id_)
