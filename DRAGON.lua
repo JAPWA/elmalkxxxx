@@ -13720,7 +13720,7 @@ local Sasa3 = 'https://t.me/xxxcccvvbbnn/903'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'عدد صورك',..result.total_count_..(msg.id_, msg.id_, "md"), url = "https://t.me/"..result.username_..""},
+{text = 'عدد صورك'..result.total_count_(msg.id_, msg.id_, "md"), url = "https://t.me/"..result.username_..""},
 },
 }
 local function getpro(extra, result, success) 
