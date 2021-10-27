@@ -1638,26 +1638,77 @@ send(msg.chat_id_, msg.id_, t)
 end
 
 
-if text == 'الاحصائيات' and SudoBot(msg) then 
+if text == 'الاحصائيات' and Sudo(msg) then
+local Namebot = (database:get(bot_id..'Name:Bot') or 'صعيدي') 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
-Text = ' ☆ الاحصائيات  \n'..' ☆ عدد الجروبات  ⇦♔{'..Groups..'}'..'\n ☆  عدد المشتركين  ⇦♔{'..Users..'}'
-send(msg.chat_id_, msg.id_,Text) 
-return false
+Namebot = "احصائيات بوت "..Namebot..'\n ☽ عدد الجروبات  ⇇{'..Groups..'}\n ☽  عدد المشتركين  ⇇{'..Users..'}'
+local msg_id = msg.id_/2097152/0.5  
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
+},
+{
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
+},
+}
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
+end 
+end 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end
-if text == 'المشتركين' and SudoBot(msg) then 
+if text == 'الجروبات' and Sudo(msg) then
+local Namebot = (database:get(bot_id..'Name:Bot') or 'صعيدي') 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
-Text = '\n ☆ المشتركين ↚{`'..Users..'`}'
-send(msg.chat_id_, msg.id_,Text) 
-return false
+Namebot = "جروبات بوت "..Namebot..'\n ☽ عدد الجروبات  ⇇{`'..Groups..'`}'
+local msg_id = msg.id_/2097152/0.5  
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
+},
+{
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
+},
+}
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
+end 
+end 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end
-if text == 'الجروبات ' and SudoBot(msg) then 
+if text == 'المشتركين' and Sudo(msg) then
+local Namebot = (database:get(bot_id..'Name:Bot') or 'صعيدي') 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
-Text = '\n ☆ الجروبات ↚{`'..Groups..'`}'
-send(msg.chat_id_, msg.id_,Text) 
-return false
+Namebot = "مشتركين بوت "..Namebot..'\n ☽ عدد المشتركين  ⇇{`'..Users..'|}'
+local msg_id = msg.id_/2097152/0.5  
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
+},
+{
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
+},
+}
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
+end 
+end 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end
 if text == ("المطورين") and SudoBot(msg) then
 local list = database:smembers(bot_id..'Sudo:User')
@@ -13373,16 +13424,19 @@ database:srem(bot_id..'Chek:Groups',msg.chat_id_)
 end
 return false  
 end
-if text == 'الاحصائيات' and msa3d(msg) then 
-local Namebot = (bot_data:get(ban_id..'Name:Bot') or 'انوبيس') 
-local Groups = bot_data:scard(ban_id..'Chek:Groups')  
-local Users = bot_data:scard(ban_id..'User_Bot')  
-Namebot = "𝗡𝗔𝗠𝗘𝗕𝗢𝗧 ∭  ↫"..Namebot..'\n↫𝙜𝙧𝙤𝙪𝙥𝙨 🝤  ↫ {'..Groups..'}\n𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗕𝗘𝗥𝗦 ⚚ ↫ {'..Users..'}'
+if text == 'الاحصائيات' and Sudo(msg) then
+local Namebot = (database:get(bot_id..'Name:Bot') or 'صعيدي') 
+local Groups = database:scard(bot_id..'Chek:Groups')  
+local Users = database:scard(bot_id..'User_Bot')  
+Namebot = "احصائيات بوت "..Namebot..'\n ☽ عدد الجروبات  ⇇{'..Groups..'}\n ☽  عدد المشتركين  ⇇{'..Users..'}'
 local msg_id = msg.id_/2097152/0.5  
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𝘀𝗼𝗿𝗰𝗲 𝗮𝗻𝘂𝗯𝗶?? ⁦˖꒰', url = "https://t.me/SOURCEANUBIS"},
+{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
+},
+{
+{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
@@ -13392,7 +13446,7 @@ else
 send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
 end 
 end 
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = ban_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end
 if text == 'الجروبات' and Sudo(msg) then
 local Namebot = (database:get(bot_id..'Name:Bot') or 'صعيدي') 
@@ -13418,11 +13472,11 @@ end
 end 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end
-if text == 'المشتركين' and Sudo(msg) then
+if text == 'الجروبات' and Sudo(msg) then
 local Namebot = (database:get(bot_id..'Name:Bot') or 'صعيدي') 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
-Namebot = "مشتركين بوت "..Namebot..'\n ☽ عدد المشتركين  ⇇{`'..Users..'❍}'
+Namebot = "مشتركين بوت "..Namebot..'\n ☽ عدد المشتركين  ⇇{`'..Users..'|}'
 local msg_id = msg.id_/2097152/0.5  
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -14630,7 +14684,7 @@ local List = {
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🇪🇬 ꙰  - 𝚞 𝚜?? 𝚛 ➟ #username  ❃.
+🇪🇬 ꙰  - 𝚞 𝚜𝚎 𝚛 ➟ #username  ❃.
 🇪🇬 ꙰  - 𝚖 𝚜𝚐 𝚜 ➟ #msgs ❃.
 🇪🇬 ꙰  - 𝚐 𝚖 𝚊𝚜  ➟ #stast ❃.
 🇪🇬 ꙰  - 𝙸𝙳 𝚜𝚝𝚊   ➟ #id ❃.
@@ -14920,7 +14974,7 @@ local List = {
 𓄼🇪🇬 𝑺𝒕𝒂𝒔𝒕 : #stast    ☥
 𓄼🇪🇬 𝐢𝐝 : #id ‌‌‏⚚
 𓄼🇪🇬 𝑮𝒂𝒎𝒆𝑺 : #edit ⚚
-𓄼🇪🇬 𝑴𝒔𝒈𝒔 : #msgs 𓆊
+𓄼🇪🇬 𝑴??𝒈𝒔 : #msgs 𓆊
 𓄼🇪🇬 𝗖𝗛 - ➢@e_l_m_o_l_k/10↜ ☆.
 ]],
 [[
@@ -17461,7 +17515,7 @@ local Teext =[[
  ☆   بتحب دي ♢ بتحب ده
  ☆  بوت الحذف♢رابط الحذف
 ♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 
- ❲[《𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺》 ](t.me/e_l_m_o_l_k/10)❳ 
+ ❲[《𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻??𝙻𝙾𝙺》 ](t.me/e_l_m_o_l_k/10)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
