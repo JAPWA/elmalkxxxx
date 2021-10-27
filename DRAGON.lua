@@ -13435,9 +13435,6 @@ keyboard.inline_keyboard = {
 {
 {text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 },
-{
-{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
-},
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
@@ -13459,9 +13456,6 @@ keyboard.inline_keyboard = {
 {
 {text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 },
-{
-{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
-},
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
@@ -13482,9 +13476,6 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {
 {text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
-},
-{
-{text = 'أضغط لاضافه ألبوت لمجموعتك 𖠪' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
