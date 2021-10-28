@@ -4621,7 +4621,7 @@ else
 tdcli_function ({ID = "GetUser",user_id_ = SUDO,},function(arg,result) 
 local function taha(extra, taha, success)
 if taha.photos_[0] then
-local Name = '[《♔ᎠᎬᏙ ΝᎬᎷᎬ♔》](t.me/e_l_m_o_l_k)\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
+local Name = '[《♔⇓ᎠᎬᏙ ΝᎬᎷᎬ⇓♔》](t.me/e_l_m_o_l_k)\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
