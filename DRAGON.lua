@@ -13425,7 +13425,7 @@ end
 return false  
 end
 if text == 'الاحصائيات' and Sudo(msg) then
-local Namebot = (database:get(bot_id..'Name:Bot') or 'صعيدي') 
+local Namebot = (database:get(bot_id..'Name:Bot') or 'الملوك') 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
 tessttm = "NAME BOT ⇐"..Namebot..'\n groubs ⇐ {'..Groups..'}\nSubscribers ⇐ {'..Users..'}'
@@ -13442,12 +13442,15 @@ keyboard.inline_keyboard = {
 {text = tessttmo, url = "https://t.me/sasa_boody"},
 },
 {
-{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
+{text = tessttm, url = "https://t.me/sasa_boody"},
 },
+{
+{text = '  اضف البوت الي مجموعتك'   ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
+}
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(Namebot).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 else 
 send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
 end 
