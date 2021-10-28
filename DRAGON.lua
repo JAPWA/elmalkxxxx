@@ -13428,7 +13428,7 @@ if text == 'الاحصائيات' and Sudo(msg) then
 local Namebot = (database:get(bot_id..'Name:Bot') or 'صعيدي') 
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local Users = database:scard(bot_id..'User_Bot')  
-Namebot = "احصائيات بوت "..Namebot..'\n ☽ عدد الجروبات  ⇇{'..Groups..'}\n ☽  عدد المشتركين  ⇇{'..Users..'}'
+tessttm = "NAME BOT ⇐"..Namebot..'\n groubs ⇐ {'..Groups..'}\nSubscribers ⇐ {'..Users..'}\nBIO ⇐ {'..getbioY..'}'
 local msg_id = msg.id_/2097152/0.5  
 local tessttmos = 'اسم بوت ⇐ '..Namebot..''
 local tessttmo = 'الجروبات ⇐ '..Groups..''
