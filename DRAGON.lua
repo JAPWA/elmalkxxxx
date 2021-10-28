@@ -5741,19 +5741,19 @@ send(msg.chat_id_, msg.id_, " ♔ لا تسطيع كتم البوت عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1987201540) then  
-send(msg.chat_id_, msg.id_, "بس يعم دا تيمو")
+send(msg.chat_id_, msg.id_, " ♔ بس يعم دا تيمو مبرمج")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1853574370) then  
-send(msg.chat_id_, msg.id_, " ♔  لا تسطيع كتم مبرمج السورس عام")
+send(msg.chat_id_, msg.id_, " ♔  لا تسطيع كتم عمك ابو المجد عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2094348305) then  
-send(msg.chat_id_, msg.id_, " ♔  لا تستطيع كتم مطور السورس عام")
+send(msg.chat_id_, msg.id_, " ♔  لا تستطيع كتم عمك عمر عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1965534755) then  
-send(msg.chat_id_, msg.id_, " ♔  لا تستطيع كتم مطور السورس عام")
+send(msg.chat_id_, msg.id_, " ♔  لا تستطيع كتم عمك مصطفي عام")
 return false 
 end
 database:sadd(bot_id..'Gmute:User', result.sender_user_id_)
@@ -5794,19 +5794,19 @@ send(msg.chat_id_, msg.id_, " ♔ لا يمكنك كتم المطور الاسا
 return false 
 end
 if result.id_ == tonumber(1987201540) then
-send(msg.chat_id_, msg.id_, "بس يعم دا تيمو \n")
+send(msg.chat_id_, msg.id_, " ♔ بس يعم دا تيمو مبرمج \n")
 return false 
 end
 if result.id_ == tonumber(1853574370) then
-send(msg.chat_id_, msg.id_, " ♔  لا تسطيع كتم مبرمج السورس عام \n")
+send(msg.chat_id_, msg.id_, " ♔  لا تسطيع كتم عمك ابو المجد عام \n")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2094348305) then  
-send(msg.chat_id_, msg.id_, " ♔  لا تستطيع كتم مطور السورس عام")
+send(msg.chat_id_, msg.id_, " ♔  لا تستطيع كتم عمك عمر عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1965534755) then  
-send(msg.chat_id_, msg.id_, " ♔  لا تستطيع كتم مطور السورس عام")
+send(msg.chat_id_, msg.id_, " ♔  لا تستطيع كتم عمك مصطفي عام")
 return false 
 end
 usertext = '\n ♔ الـعـضو   ⇦♔['..result.title_..'](t.me/'..(username or 'e_l_m_o_l_k/10')..')'
@@ -5842,19 +5842,19 @@ send(msg.chat_id_, msg.id_, " ♔ لا تسطيع كتم البوت عام")
 return false 
 end
 if tonumber(userid) == tonumber(1987201540) then  
-send(msg.chat_id_, msg.id_, "بس يعم دا تيمو")
+send(msg.chat_id_, msg.id_, " ♔ بس يعم دا تيمو مبرمج")
 return false 
 end
 if tonumber(userid) == tonumber(1853574370) then  
-send(msg.chat_id_, msg.id_, " ♔  لا تسطيع كتم مبرمج السورس عام")
+send(msg.chat_id_, msg.id_, " ♔  لا تسطيع كتم عمك ابو المجد عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2094348305) then  
-send(msg.chat_id_, msg.id_, " ♔  لا تستطيع كتم مطور السورس عام")
+send(msg.chat_id_, msg.id_, " ♔  لا تستطيع كتم عمك عمر عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1965534755) then  
-send(msg.chat_id_, msg.id_, " ♔  لا تستطيع كتم مطور السورس عام")
+send(msg.chat_id_, msg.id_, " ♔  لا تستطيع كتم عمك مصطفي عام")
 return false 
 end
 database:sadd(bot_id..'Gmute:User', userid)
@@ -14968,7 +14968,7 @@ local List = {
 🇪🇬 - 𝄬 𝐔ˢᴱᴿᴺᴬᴹᴱ . #username  𓃠
 🇪🇬 - 𝄬 ˢᵀᴬˢᵀ . #stast  𓃠
 🇪?? - 𝄬 ᴵᴰ . #id 𓃠
-🇪🇬 - 𝄬 ᴳᴹᴬˢ . #gmas 𓃠
+🇪🇬 - ?? ᴳᴹᴬˢ . #gmas 𓃠
 🇪🇬 - 𝄬 ᴹˢᴳˢ . #msgs  𓃠
 🇪🇬 - 𝄬 𝗖𝗛 - »@e_l_m_o_l_k/10« ♔.
 ]],
@@ -16808,7 +16808,7 @@ local Teext =[[
  ♔  ❲ + ❳ جميع ماسبق
  ??━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺⟧⟝┄┉━??
  ♔ ❲ المالك❳ ♔
- ♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 
+ ♽^━━━━❆𝗘𝗟𝗠??𝗢𝗞❆━━━━^♽ 
  ♔ اضف صوره ♢ وصف (للجروب)
  ♔ رفع منشئ ♢ تنزيل منشئ
  ♔ تاج للاعضاء ♢ للكل
@@ -17843,7 +17843,7 @@ return false
 end
 end
 if text and text ~="صراحه" and database:get(bot_id..":"..msg.sender_user_id_..":rkko_Bots"..msg.chat_id_) == "sendrkkoe" then
-numj = {"اما قله ادب صحيح كلو كدب فى كدب💔😔"," ده مظبوط??😹"," اقلك الكلام ده كدب واللى قالولك كداب وانت كداب واللى بيتفرج كمان كداب🤝😂"," ده برجوله وموثق كمان♔️😁","فعلا بتتكلم صح🤗","يجدع قول كلام غير دا😹","احس هل شي كذب♔💕","طب عيني ف عينك كدا ??","انت صح",};
+numj = {"اما قله ادب صحيح كلو كدب فى كدب💔😔"," ده مظبوط🙂😹"," اقلك الكلام ده كدب واللى قالولك كداب وانت كداب واللى بيتفرج كمان كداب🤝😂"," ده برجوله وموثق كمان♔️😁","فعلا بتتكلم صح🤗","يجدع قول كلام غير دا😹","احس هل شي كذب♔💕","طب عيني ف عينك كدا ??","انت صح",};
 sendnuj = numj[math.random(#numj)]
 xl = ' ⟨  '..text..'  ⟩ \n '..sendnuj..'.'
 send(msg.chat_id_, msg.id_,xl) 
