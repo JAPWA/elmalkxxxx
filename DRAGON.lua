@@ -318,7 +318,7 @@ function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1987201540) then  
 var = 'مبرمج تيمو'
 elseif tonumber(user_id) == tonumber(1853574370) then
-var = 'مبرمج المجد'
+var = 'مبرمج ابو المجد'
 elseif tonumber(user_id) == tonumber(2094348305) then
 var = 'مالك السورس عمر'
 elseif tonumber(user_id) == tonumber(1965534755) then
@@ -4621,7 +4621,7 @@ else
 tdcli_function ({ID = "GetUser",user_id_ = SUDO,},function(arg,result) 
 local function taha(extra, taha, success)
 if taha.photos_[0] then
-local Name = '[《⇊ اتبع الازرار للتواصل مع》](t.me/e_l_m_o_l_k)\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
+local Name = '[《♔ᎠᎬᏙ ΝᎬᎷᎬ♔》](t.me/e_l_m_o_l_k)\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -17173,7 +17173,7 @@ local Teext =[[
  ♔رفع  ← علي زبي
  ♔تنزيل ←من زبي 
  ♔تاك للمتناكين
-♽^━━━━❆??𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 
+♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 
 ❲[《𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺》 ](t.me/e_l_m_o_l_k)❳ 
 ]]
 keyboard = {} 
