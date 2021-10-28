@@ -12280,16 +12280,16 @@ end
 if text == "بوت" then
 local Namebot = (database:get(bot_id..'Name:Bot') or 'الملوك') 
 local DRAGON_Msg = { 
-'اسمي  '..Namebot..' يا قلبي 🤤💚',
-'اسمي '..Namebot..' يا روحي🙈♥',
-'اسمي  '..Namebot..' يعمري♥️',
-'اسمي  '..Namebot..' يا قمر 🐭🤍',
-'اسمي  '..Namebot..' يامزه 🥺♥',
-'اسمي  '..Namebot..' يعم 😒',
-'مقولت اسمي '..Namebot..' في اي 🙄',
-'اسمي الكيوت '..Namebot..' 🌝💘',
-'اسمي  '..Namebot..' ياحياتي🧸♥️',
-'اسمي  '..Namebot..' يوتكه🙈🍑',
+'♔اسمي  '..Namebot..' يا قلبي 💚🕊',
+'♔اسمي '..Namebot..' يا روحي♥🕊',
+'♔اسمي  '..Namebot..' يعمري🤍🕊',
+'♔اسمي  '..Namebot..' يا قمر 🐭🤍',
+'♔اسمي  '..Namebot..' يامزه 🥺♥',
+'♔اسمي  '..Namebot..' يعم 😒🕊',
+'♔مقولت اسمي '..Namebot..' في اي 🙄🕊',
+'♔اسمي الكيوت '..Namebot..' 🌝🕊',
+'♔اسمي  '..Namebot..' ياحياتي🧸♥️',
+'♔اسمي  '..Namebot..' يوتكه🙈🕊',
 } 
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
@@ -14297,7 +14297,7 @@ get_id_text = get_id_text:gsub('#game',NUMPGAME)
 get_id_text = get_id_text:gsub('#photos',photps) 
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_,'[\n✵♔ 𝚄𝚂??𝚁 ↬  »'..username..'\n✵♔ 𝙼𝚂𝙶𝚂↬ »'..Msguser..'\n✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵♔ 𝙸𝙳↬  »'..msg.sender_user_id_..'\n✵♔ 𝙲𝙷↬ »@e_l_m_o_l_k/10\n')
+send(msg.chat_id_, msg.id_,'[\n✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..username..'\n✵♔ 𝙼𝚂𝙶𝚂↬ »'..Msguser..'\n✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵♔ 𝙸𝙳↬  »'..msg.sender_user_id_..'\n✵♔ 𝙲𝙷↬ »@e_l_m_o_l_k/10\n')
 end
 end
 
