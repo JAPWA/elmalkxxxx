@@ -13713,7 +13713,7 @@ else
 username = 'sasa_boody'
 end
 local msg_id = msg.id_/2097152/0.5  
-local textt = ' ♔️ انت يا قلبي '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local textt = ' ❤️🕊 انت يا قلبي '..Rutba(msg.sender_user_id_,msg.chat_id_)
 local Boody = 'https://t.me/xxxcccvvbbnn/903'
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -14297,7 +14297,7 @@ get_id_text = get_id_text:gsub('#game',NUMPGAME)
 get_id_text = get_id_text:gsub('#photos',photps) 
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_,'[\n✵♔ 𝚄𝚂𝙴?? ↬  »'..username..'\n✵♔ 𝙼𝚂𝙶𝚂↬ »'..Msguser..'\n✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵♔ 𝙸𝙳↬  »'..msg.sender_user_id_..'\n✵♔ 𝙲𝙷↬ »@e_l_m_o_l_k/10\n')
+send(msg.chat_id_, msg.id_,'[\n✵♔ 𝚄𝚂??𝚁 ↬  »'..username..'\n✵♔ 𝙼𝚂𝙶𝚂↬ »'..Msguser..'\n✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵♔ 𝙸𝙳↬  »'..msg.sender_user_id_..'\n✵♔ 𝙲𝙷↬ »@e_l_m_o_l_k/10\n')
 end
 end
 
