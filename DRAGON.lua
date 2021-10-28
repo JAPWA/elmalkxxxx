@@ -12247,13 +12247,12 @@ end
 if text == ""..(database:get(bot_id..'Name:Bot') or 'الملوك').."" then  
 Namebot = (database:get(bot_id..'Name:Bot') or 'الملوك')
 local DRAGON_Msg = {
-'نعم يروحي♥️🙈',
+'نعم يروحي♥️🕊',
 'نعم يا قلب  '..Namebot..'',
 'عاوز اي من '..Namebot..'',
 'دوختو  '..Namebot..'',
-'انت تعرف انو بوت  '..Namebot..'  متنصب علي سورس الملوك🙈⚡️',
 'بتشقط وجي ويت 🤪',
-'ايوا جاي 🙈',
+'ايوا جاي 🕊',
 'يعم هتسحر واجي 😾',
 'طب متصلي على النبي كدا 🙂💜',
 'تع اشرب شاي 🥺💙',
@@ -12284,7 +12283,7 @@ if text == "بوت" then
 local Namebot = (database:get(bot_id..'Name:Bot') or 'الملوك') 
 local DRAGON_Msg = { 
 'اسمي  '..Namebot..' يا قلبي 🤤💚',
-'امي '..Namebot..' يا روحي🙈♥',
+'اسمي '..Namebot..' يا روحي🕊♥',
 'اسمي  '..Namebot..' يعمري♥️',
 'اسمي  '..Namebot..' يا قمر 🐭🤍',
 'اسمي  '..Namebot..' يامزه 🥺♥',
@@ -12292,8 +12291,7 @@ local DRAGON_Msg = {
 'مقولت اسمي '..Namebot..' في اي 🙄',
 'اسمي الكيوت '..Namebot..' 🌝💘',
 'اسمي  '..Namebot..' ياحياتي🧸♥️',
-'اسمي  '..Namebot..' يوتكه🙈🍑',
-'انت تعرف انو بوت  '..Namebot..'  متنصب علي سورس الملوك🙈⚡️',
+'اسمي  '..Namebot..' يوتكه🕊🍑',
 } 
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
@@ -14239,7 +14237,7 @@ local sofia = {
 
 "هوا الي مجننا هوا هوا القمر هوا....😂",
 
-"صورتك دي ولا صورت القمر.....🙈⚡️",
+"صورتك دي ولا صورت القمر.....🕊❤️",
 
 }
 local rdphoto = sofia[math.random(#sofia)]
@@ -14357,7 +14355,7 @@ local sofia = {
 
 "هوا الي مجننا هوا هوا القمر هوا....😂",
 
-"صورتك دي ولا صورت القمر.....🙈⚡️",
+"صورتك دي ولا صورت القمر.....🕊❤️",
 
 }
 local rdphoto = sofia[math.random(#sofia)]
@@ -14591,12 +14589,12 @@ local List = {
 𖡋 𝗖𝗛 - »@e_l_m_o_l_k/10« ☆.
 ]],
 [[
-𖤂 ~ 𝑢𝑠𝑒 #username  𖤐
-𖤂 ~ 𝑚??𝑔 #msgs 𖤐
-𖤂 ~ 𝑠𝑡𝑎 #stast  
-𖤂 ~ 𝑖𝑑 #id 𖤐
-𖤂 ~ 𝑒𝑑𝑖𝑡 #edit 𖤐
-𖤂 ~ 𝗖𝗛 - »@e_l_m_o_l_k/10« ☆.
+♔ ~ 𝑢𝑠𝑒 #username  𖤐
+♔ ~ 𝑚??𝑔 #msgs 𖤐
+♔ ~ 𝑠𝑡𝑎 #stast  
+♔ ~ 𝑖𝑑 #id 𖤐
+♔ ~ 𝑒𝑑𝑖𝑡 #edit 𖤐
+♔ ~ 𝗖𝗛 - »@e_l_m_o_l_k/10« ☆.
 ]],
 [[
 ••• ••• ••• ••• ••• ••• ••• 
@@ -15190,12 +15188,12 @@ Msᴀɢ ~ #msgs
 𖡋 𝗖𝗛 - »@e_l_m_o_l_k/10« ☆
 ]],
 [[
-𖤂 ~ 𝑢𝑠𝑒 #username  𖤐
-𖤂 ~ 𝑚𝑠𝑔 #msgs 𖤐
-𖤂 ~ 𝑠𝑡𝑎 #stast  
-𖤂 ~ 𝑖𝑑 #id 𖤐
-𖤂 ~ 𝑒𝑑𝑖𝑡 #edit 𖤐
-𖤂 ~ 𝗖𝗛 - »@e_l_m_o_l_k/10« ☆
+♔ ~ 𝑢𝑠𝑒 #username  𖤐
+♔ ~ 𝑚𝑠𝑔 #msgs 𖤐
+♔ ~ 𝑠𝑡𝑎 #stast  
+♔ ~ 𝑖𝑑 #id 𖤐
+♔ ~ 𝑒𝑑𝑖𝑡 #edit 𖤐
+♔ ~ 𝗖𝗛 - »@e_l_m_o_l_k/10« ☆
 ]],
 [[
 -♔   𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 . #username 🇪🇬 ꙰ 
@@ -17864,7 +17862,7 @@ if text == "كشف الكذب" or text == "كشف الكدب" and msg.reply_to_m
 if not database:get(bot_id..'Cick:rkko'..msg.chat_id_) then
 database:set(bot_id..":"..msg.sender_user_id_..":rkko_Bots"..msg.chat_id_,"sendrkkoe")
 local LEADER_Msg = {
-"ارسل لى الجمله لتعرف صدق ام كذب🙈"
+"ارسل لى الجمله لتعرف صدق ام كذب🕊"
 }
 send(msg.chat_id_, msg.id_,'['..LEADER_Msg[math.random(#LEADER_Msg)]..']') 
 return false
