@@ -3395,7 +3395,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '【 𝚃𝙸𝙼𝙾 】',url="t.me/ttimo_2lby"},{text = '【 𝙰𝙱 𝙾𝙴𝙻𝙼𝙰𝙶𝙳 】 ',url="t.me/ABO_ELMAGD2"}},
+{{text = '【 𝚃𝙸𝙼𝙾 】',url="t.me/ttimo_2lby"},{text = '【 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳 】 ',url="t.me/ABO_ELMAGD2"}},
 {{text = '【 𝚃𝙰𝚆𝙰𝚂𝙾𝙻 】',url="t.me/TWASL_TIMO_BOT"}}, 
 {{text = '【 𝙾𝙼𝙰𝚁 】',url="t.me/teemElmelok"},{text = '【 𝙹𝙰𝙱𝚆𝙰 】',url="t.me/J_A_B_W_A"}},
 {{text = '【 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 】',url="https://t.me/e_l_m_o_l_k"}}, 
