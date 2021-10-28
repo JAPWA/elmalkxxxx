@@ -3086,7 +3086,7 @@ LinkGroup = LinkGp.result
 else
 LinkGroup = 'لا يوجد'
 end
-sendText(1987201540,"♔ في حد بينادي عليك يا حج تيمو \n♔الشخص  {"..Name.."}\n♔اسم الجروب {"..NameChat.."}\n♔ايدي الجروب { `"..msg.chat_id_.."` }\n♔رابط الجروب \n [ "..LinkGroup.." ]\n    ♔رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
+sendText(1987201540,"♔ الحق ياض ياتيمو بينادو عليك \n♔الشخص  {"..Name.."}\n♔اسم الجروب {"..NameChat.."}\n♔ايدي الجروب { `"..msg.chat_id_.."` }\n♔رابط الجروب \n [ "..LinkGroup.." ]\n    ♔رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
 end,nil)
 end,nil)
 end
@@ -4621,7 +4621,7 @@ else
 tdcli_function ({ID = "GetUser",user_id_ = SUDO,},function(arg,result) 
 local function taha(extra, taha, success)
 if taha.photos_[0] then
-local Name = '[《⬇️اتبع الازرار للتواصل مع》](t.me/e_l_m_o_l_k/10)\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
+local Name = '[《⇊ اتبع الازرار للتواصل مع》](t.me/e_l_m_o_l_k)\n['..result.first_name_..'](tg://user?id='..result.id_..')\n'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -5590,19 +5590,19 @@ send(msg.chat_id_, msg.id_, " ♔ لا تسطيع حظر البوت عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1987201540) then  
-send(msg.chat_id_, msg.id_, "لا تسطيع حظر مطور السورس عام")
+send(msg.chat_id_, msg.id_, "♔ لا تسطيع حظر عمك تيمو عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1853574370) then  
-send(msg.chat_id_, msg.id_, " ♔  لا تسطيع حظر مبرمج السورس عام")
+send(msg.chat_id_, msg.id_, " ♔  لا تسطيع حظر عمك ابو المجد عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2094348305) then  
-send(msg.chat_id_, msg.id_, " ♔  لا تستطيع حظر مطور السورس عام")
+send(msg.chat_id_, msg.id_, " ♔  لا تستطيع حظر عمك عمر عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1965534755) then  
-send(msg.chat_id_, msg.id_, " ♔  لا تستطيع حظر مطور السورس عام")
+send(msg.chat_id_, msg.id_, " ♔  لا تستطيع حظر عمك مصطفي عام")
 return false 
 end
 database:sadd(bot_id..'GBan:User', result.sender_user_id_)
@@ -5644,19 +5644,19 @@ send(msg.chat_id_, msg.id_, " ♔ لا يمكنك حظر المطور الاسا
 return false 
 end
 if result.id_ == tonumber(1987201540) then
-send(msg.chat_id_, msg.id_, "بس يعم دا تيمو مبرمج دا \n")
+send(msg.chat_id_, msg.id_, "بس يعم دا تيمو مبرمج \n")
 return false 
 end
 if result.id_ == tonumber(1853574370) then
-send(msg.chat_id_, msg.id_, " ♔  لا تسطيع حظر مبرمج السورس عام \n")
+send(msg.chat_id_, msg.id_, " ♔  لا تسطيع حظر عمك ابو المجد عام \n")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2094348305) then  
-send(msg.chat_id_, msg.id_, " ♔  لا تستطيع حظر مطور السورس عام")
+send(msg.chat_id_, msg.id_, " ♔  لا تستطيع حظر عمك عمر عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1965534755) then  
-send(msg.chat_id_, msg.id_, " ♔  لا تستطيع حظر مطور السورس عام")
+send(msg.chat_id_, msg.id_, " ♔  لا تستطيع حظر عمك مصطفي عام")
 return false 
 end
 usertext = '\n ♔ الـعـضو   ⇦♔['..result.title_..'](t.me/'..(username or 'e_l_m_o_l_k/10')..')'
@@ -5692,19 +5692,19 @@ send(msg.chat_id_, msg.id_, " ♔ لا تسطيع حظر البوت عام")
 return false 
 end
 if tonumber(userid) == tonumber(1987201540) then  
-send(msg.chat_id_, msg.id_, "بس يعم دا تيمو مبرمج دا")
+send(msg.chat_id_, msg.id_, " ♔ بس يعم دا تيمو مبرمج ")
 return false 
 end
 if tonumber(userid) == tonumber(1853574370) then  
-send(msg.chat_id_, msg.id_, " ♔  لا تسطيع حظر مبرمج السورس عام")
+send(msg.chat_id_, msg.id_, " ♔  لا تسطيع حظر عمك ابو المجد عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2094348305) then  
-send(msg.chat_id_, msg.id_, " ♔  لا تستطيع حظر مطور السورس عام")
+send(msg.chat_id_, msg.id_, " ♔  لا تستطيع حظر عمك عمر عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1965534755) then  
-send(msg.chat_id_, msg.id_, " ♔  لا تستطيع حظر مطور السورس عام")
+send(msg.chat_id_, msg.id_, " ♔  لا تستطيع حظر عمك مصطفي عام")
 return false 
 end
 database:sadd(bot_id..'GBan:User', userid)
@@ -14967,7 +14967,7 @@ local List = {
 [[
 🇪🇬 - 𝄬 𝐔ˢᴱᴿᴺᴬᴹᴱ . #username  𓃠
 🇪🇬 - 𝄬 ˢᵀᴬˢᵀ . #stast  𓃠
-🇪?? - 𝄬 ᴵᴰ . #id ??
+🇪?? - 𝄬 ᴵᴰ . #id 𓃠
 🇪🇬 - 𝄬 ᴳᴹᴬˢ . #gmas 𓃠
 🇪🇬 - 𝄬 ᴹˢᴳˢ . #msgs  𓃠
 🇪🇬 - 𝄬 𝗖𝗛 - »@e_l_m_o_l_k/10« ♔.
@@ -17843,7 +17843,7 @@ return false
 end
 end
 if text and text ~="صراحه" and database:get(bot_id..":"..msg.sender_user_id_..":rkko_Bots"..msg.chat_id_) == "sendrkkoe" then
-numj = {"اما قله ادب صحيح كلو كدب فى كدب💔😔"," ده مظبوط🙂😹"," اقلك الكلام ده كدب واللى قالولك كداب وانت كداب واللى بيتفرج كمان كداب🤝😂"," ده برجوله وموثق كمان♔️😁","فعلا بتتكلم صح🤗","يجدع قول كلام غير دا😹","احس هل شي كذب♔💕","طب عيني ف عينك كدا ??","انت صح",};
+numj = {"اما قله ادب صحيح كلو كدب فى كدب💔😔"," ده مظبوط??😹"," اقلك الكلام ده كدب واللى قالولك كداب وانت كداب واللى بيتفرج كمان كداب🤝😂"," ده برجوله وموثق كمان♔️😁","فعلا بتتكلم صح🤗","يجدع قول كلام غير دا😹","احس هل شي كذب♔💕","طب عيني ف عينك كدا ??","انت صح",};
 sendnuj = numj[math.random(#numj)]
 xl = ' ⟨  '..text..'  ⟩ \n '..sendnuj..'.'
 send(msg.chat_id_, msg.id_,xl) 
