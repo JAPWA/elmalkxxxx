@@ -13430,8 +13430,17 @@ local Groups = database:scard(bot_id..'Chek:Groups')
 local Users = database:scard(bot_id..'User_Bot')  
 Namebot = "احصائيات بوت "..Namebot..'\n ☽ عدد الجروبات  ⇇{'..Groups..'}\n ☽  عدد المشتركين  ⇇{'..Users..'}'
 local msg_id = msg.id_/2097152/0.5  
+local tessttmos = 'اسم بوت ⇐ '..Namebot..''
+local tessttmo = 'الجروبات ⇐ '..Groups..''
+local tessttm = 'المشتركين ⇐ '..Users..''
 keyboard = {} 
 keyboard.inline_keyboard = {
+{
+{text = tessttmos, url = "https://t.me/sasa_boody"},
+},
+{
+{text = tessttmo, url = "https://t.me/sasa_boody"},
+},
 {
 {text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
 },
