@@ -13436,13 +13436,13 @@ local tessttm = 'المشتركين ⇐ '..Users..''
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = tessttmos, url = "https://t.me/sasa_boody"},
+{text = tessttmos, url = "https://t.me/e_l_m_o_l_k"},
 },
 {
-{text = tessttmo, url = "https://t.me/sasa_boody"},
+{text = tessttmo, url = "https://t.me/e_l_m_o_l_k"},
 },
 {
-{text = tessttm, url = "https://t.me/sasa_boody"},
+{text = tessttm, url = "https://t.me/e_l_m_o_l_k"},
 },
 {
 {text = '  اضف البوت الي مجموعتك'   ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
@@ -13463,11 +13463,15 @@ local Groups = database:scard(bot_id..'Chek:Groups')
 local Users = database:scard(bot_id..'User_Bot')  
 Namebot = "جروبات بوت "..Namebot..'\n ☽ عدد الجروبات  ⇇{`'..Groups..'`}'
 local msg_id = msg.id_/2097152/0.5  
+local tessttmo = 'الجروبات ⇐ '..Groups..''
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'مـطـور الـبـوت', url="http://t.me/"..sudos.UserName},
+{text = tessttmo, url = "https://t.me/e_l_m_o_l_k"},
 },
+{
+{text = '  اضف البوت الي مجموعتك'   ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
+}
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
@@ -14973,7 +14977,7 @@ local List = {
 🇪🇬 - 𝄬 𝗖𝗛 - »@e_l_m_o_l_k/10« ☆.
 ]],
 [[
-𓄼🇪🇬 𝑼𝒔𝒆𝒓𝑵𝒂𝒎𝒆 : #username ♕
+𓄼🇪🇬 𝑼??𝒆𝒓𝑵𝒂𝒎𝒆 : #username ♕
 𓄼🇪🇬 𝑺𝒕𝒂𝒔𝒕 : #stast    ☥
 𓄼🇪🇬 𝐢𝐝 : #id ‌‌‏⚚
 𓄼🇪🇬 𝑮𝒂𝒎𝒆𝑺 : #edit ⚚
