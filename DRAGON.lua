@@ -17646,7 +17646,7 @@ return false
 end
 if Text == '/HHH' then
 local Teext =[[
-𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 ELMLOK
+𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -17658,7 +17658,7 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption
 end
 if Text == '/theytry' then
 local Teext =[[
-𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 ELMLOK
+𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -17669,12 +17669,12 @@ return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption
 end
 if Text == '/units' then
 local Teext =[[
-𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 ELMLOK
+𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'مبرمج تيمو',url="t.me/ttimo_2lby"},{text = 'مبرمج جابوا',url="t.me/J_A_B_W_A"}},
-{{text = 'مبرمج عمر',url="t.me/teemElmelok"},{text = 'مبرمج ابو المجد',url="t.me/ABO_ELMAGD2"}},
+{{text = '𝚃𝙸𝙼𝙾',url="t.me/ttimo_2lby"},{text = '𝙹𝙰𝙱𝚆𝙰',url="t.me/J_A_B_W_A"}},
+{{text = '𝙾𝙼𝙰𝚁',url="t.me/teemElmelok"},{text = '𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/ABO_ELMAGD2"}},
 {{text = '𝙱𝙰𝙲𝙺', callback_data="/HHH"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
