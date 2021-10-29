@@ -6811,7 +6811,7 @@ UserName = 'sasa_boody'
 end
 local Text = "♔ منشئ الجروب  ⇐ ["..b.first_name_.."](tg://user?id="..b.id_..")\n"..getbio(b.id_):gsub('لايوجد','')
 local msg_id = msg.id_/2097152/0.5
-local stay = ' • 🖤 | 𝙱𝙸𝙾 : '..getbio(msg.sender_user_id_)
+local stay = ' • ♔ | 𝙱𝙸𝙾 : '..getbio(msg.sender_user_id_)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '• '..b.first_name_..' •', url="t.me/"..UserName}},   
@@ -16830,7 +16830,7 @@ local Teext =[[
  ♔ المنشئين ♢  مسح المنشئين
  ♔  ❲ + ❳ جميع ماسبق
  ♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 
-❲[《𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺》 ](t.me/e_l_m_o_l_k)❳ 
+❲[《𝚂𝙾??𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺》 ](t.me/e_l_m_o_l_k)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
