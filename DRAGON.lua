@@ -12274,7 +12274,7 @@ keyboard.inline_keyboard = {
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&caption=' .. URL.escape(Namebot).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(Namebot).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 else 
 send(msg.chat_id_, msg.id_,Namebot, 1, 'md') 
 end 
@@ -14554,7 +14554,7 @@ local List = {
 🇪🇬𝗖𝗛 - »@e_l_m_o_l_k« ♔.
 ]],
 [[
- 𝚄𝚂𝙴𝚁 𓄹𓄼 #username
+ ??𝚂𝙴𝚁 𓄹𓄼 #username
  𝙸𝙳  ??𓄼 #id 
  𝚂??𝙰 𓄹𓄼 #stast 
  𝙼𝚂𝙶𝚂𓄹?? #msgs
