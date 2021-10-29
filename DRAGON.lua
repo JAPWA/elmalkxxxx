@@ -3421,27 +3421,25 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/e_l_m_o_l_k/21&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'تيمو' or text == 'مبرمج تيمو' or text == 'مبرمج السورس' or text == 'TIMO' then 
+if text == 'تيمو' or text == 'مبرمج تيمو' or text == 'تيمو الملوك' or text == 'TIMO' then 
 local msg_id = msg.id_/2097152/0.5  
 local Text = [[ 
-المبرمج تيمو للتواصل معاه اتبع الزر ال في الاسفل ⇓⇓
+المبرمج تيمو للتواصل معاه اتبع الزر ال في الاسفل⇊
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = ' 𝚃𝙸𝙼𝙾 ♔',url="t.me/ttimo_2lby"}},
-{{text =  اضف البوت الي مجموعتك ♔  ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}},  
+{{text = ' 𝚃𝙸𝙼𝙾 ♔',url="t.me/ttimo_2lby"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_2lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == 'ابو المجد' or text == 'مبرمج ابو المجد' or text == 'الملك ابو المجد' or text == 'ABOELMAGD' then 
 local msg_id = msg.id_/2097152/0.5  
 local Text = [[ 
-المبرمج ابو المجد للتوصل معاه اتبع الزر ال في الاسفل ⇓⇓
+المبرمج ابو المجد للتوصل معاه اتبع الزر ال في الاسفل⇊
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = ' 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳 ♔',url="t.me/ABO_ELMAGD2"}}, 
-{{text = 'اضف البوت الي مجموعتك ♔' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ABO_ELMAGD2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -3449,12 +3447,11 @@ end
 if text == 'عمر' or text == 'مالك عمر' or text == 'الملك عمر' or text == 'OMAR' then 
 local msg_id = msg.id_/2097152/0.5  
 local Text = [[ 
-مالك السورس عمر للتواصل معاه اتبع الزر ال في الاسفل ⇓⇓
+مالك السورس عمر للتواصل معاه اتبع الزر ال في الاسفل⇊
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = ' 𝙾𝙼𝙰𝚁 ♔',url="t.me/teemElmelok"}}, 
-{{text = 'اضف البوت الي مجموعتك ♔' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/teemElmelok&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -3462,12 +3459,11 @@ end
 if text == 'جابوا' or text == 'مبرمج جابوا' or text == 'الملك جابوا' or text == 'JABWA' then 
 local msg_id = msg.id_/2097152/0.5  
 local Text = [[ 
-المبرمج جابوا للتوصل معاه اتبع الزر ال في الاسفل ⇓⇓
+المبرمج جابوا للتوصل معاه اتبع الزر ال في الاسفل⇊
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = ' 𝙹𝙰𝙱𝚆𝙰 ♔',url="t.me/J_A_B_W_A"}}, 
-{{text = 'اضف البوت الي مجموعتك ♔' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/J_A_B_W_A&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
