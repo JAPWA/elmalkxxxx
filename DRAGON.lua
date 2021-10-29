@@ -12266,7 +12266,7 @@ local texxtt = ''..Namebot..''
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = texxtt, url="http://t.me/"..username},
+{text = texxtt, url="http://t.me/"..sudos.UserName},
 },
 {
 {text = 'اضف البوت الي مجموعتك ♔' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
