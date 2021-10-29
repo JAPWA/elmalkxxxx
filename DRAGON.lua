@@ -3397,7 +3397,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = ' ♔ 𝙼𝚈 𝙳𝙴𝚅 ', callback_data="/units"},{text = ' ♔ 𝙼𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ', callback_data="/theytry"}},  
 {{text = ' ♔ 𝚃𝙰𝚆𝙰𝚂𝙾𝙻 ',url="t.me/TWASL_TIMO_BOT"}}, 
-{{text = ' ♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺♔ ',url="https://t.me/e_l_m_o_l_k"}}, 
+{{text = ' ♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔ ',url="https://t.me/e_l_m_o_l_k"}}, 
 {{text = 'اضف البوت الي مجموعتك ♔' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
@@ -12262,8 +12262,12 @@ local DRAGON_Msg = {
 } 
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
+local texxtt = ''..Namebot..''
 keyboard = {} 
 keyboard.inline_keyboard = {
+{
+{text = texxtt, url="http://t.me/"..username},
+},
 {
 {text = 'اضف البوت الي مجموعتك ♔' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
 },
@@ -14553,7 +14557,7 @@ local List = {
  𝚄𝚂𝙴𝚁 𓄹𓄼 #username
  𝙸𝙳  ??𓄼 #id 
  𝚂??𝙰 𓄹𓄼 #stast 
- 𝙼𝚂𝙶𝚂𓄹𓄼 #msgs
+ 𝙼𝚂𝙶𝚂𓄹?? #msgs
  𝗖𝗛 - »@e_l_m_o_l_k« ??.
 ]],
 [[
@@ -15409,7 +15413,7 @@ Msᴀɢ ~ #msgs
 
 • 🖤 ♔ 𝑰𝑫 :  #id
 
-• 🖤 ♔ 𝑴𝑺𝑮 : #msgs
+• 🖤 ♔ 𝑴??𝑮 : #msgs
 
 • 🖤 ♔ 𝗖𝗛 - »@e_l_m_o_l_k« ♔
 ]],
