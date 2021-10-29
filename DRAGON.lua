@@ -6811,7 +6811,7 @@ UserName = 'sasa_boody'
 end
 local Text = "♔ منشئ الجروب  ⇐ ["..b.first_name_.."](tg://user?id="..b.id_..")\n"..getbio(b.id_):gsub('لايوجد','')
 local msg_id = msg.id_/2097152/0.5
-local kklaerr = '♔لقبك هو : '..GeId.result.custom_title
+local kklaerr = send(msg.chat_id_, msg.id_,' ♔لقبك هو : '..GeId.result.custom_title) 
 local stay = ' • 🖤 | 𝙱𝙸𝙾 : '..getbio(msg.sender_user_id_)
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -15389,7 +15389,7 @@ Msᴀɢ ~ #msgs
 [[
 - 𝄬 username . #username »🇪🇬
  - 𝄬 stast . #stast »🇪🇬
- - 𝄬 id . #id »🇪🇬
+ - 𝄬 id . #id »🇪??
  - 𝄬 msgs . #msgs »🇪🇬
  - 𝄬 𝗖𝗛 - »@e_l_m_o_l_k« ♔
 ]],
