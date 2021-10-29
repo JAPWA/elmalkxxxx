@@ -6811,7 +6811,7 @@ UserName = 'sasa_boody'
 end
 local Text = "♔ منشئ الجروب  ⇐ ["..b.first_name_.."](tg://user?id="..b.id_..")\n"..getbio(b.id_):gsub('لايوجد','')
 local msg_id = msg.id_/2097152/0.5
-local kklaerr = '♔لقبك هو : '..GeId.result.custom_title(msg.sender_user_id_)
+local kklaerr = '♔لقبك هو : '..GeId.result.custom_title)
 local stay = ' • 🖤 | 𝙱𝙸𝙾 : '..getbio(msg.sender_user_id_)
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -17530,7 +17530,7 @@ local Teext =[[
  ♔   بتحب دي ♢ بتحب ده
  ♔  بوت الحذف♢رابط الحذف
 ♽^━━━━❆𝗘𝗟𝗠𝗟𝗢??❆━━━━^♽ 
- ❲[《𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻??𝙻𝙾𝙺》 ](t.me/e_l_m_o_l_k)❳ 
+ ❲[《𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻??𝙻𝙾??》 ](t.me/e_l_m_o_l_k)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
