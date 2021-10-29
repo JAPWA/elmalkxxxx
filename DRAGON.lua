@@ -6811,13 +6811,11 @@ UserName = 'sasa_boody'
 end
 local Text = "♔ منشئ الجروب  ⇐ ["..b.first_name_.."](tg://user?id="..b.id_..")\n"..getbio(b.id_):gsub('لايوجد','')
 local msg_id = msg.id_/2097152/0.5
-local kklaerr = send(msg.chat_id_, msg.id_,' ♔لقبك هو : '..GeId.result.custom_title) 
-local stay = ' • 🖤 | 𝙱𝙸𝙾 : '..getbio(msg.sender_user_id_)
+local stay = ' • ♔ | 𝙱𝙸𝙾 : '..getbio(msg.sender_user_id_)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '• '..b.first_name_..' •', url="t.me/"..UserName}},   
 {{text = stay, url="http://t.me/"..UserName}},
-{{text = kklaer, url="http://t.me/"..UserName}},
 }
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..UserName..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
@@ -14535,7 +14533,7 @@ local List = {
 .𖣂 𝙨𝙩𝙖𝙨𝙩 , #stast  
 .𖣂 𝙡𝘿 , #id  
 .𖣂 𝙂𝙖𝙢𝙨 , #game 
-.𖣂 𝙢??𝙂𝙨 , #msgs
+.𖣂 𝙢𝙨𝙂𝙨 , #msgs
 ]],
 [[
 𖤍 ♔↶ #id    ꙰🇪🇬.
@@ -15389,7 +15387,7 @@ Msᴀɢ ~ #msgs
 [[
 - 𝄬 username . #username »🇪🇬
  - 𝄬 stast . #stast »🇪🇬
- - 𝄬 id . #id »🇪??
+ - 𝄬 id . #id »🇪🇬
  - 𝄬 msgs . #msgs »🇪🇬
  - 𝄬 𝗖𝗛 - »@e_l_m_o_l_k« ♔
 ]],
@@ -16832,7 +16830,7 @@ local Teext =[[
  ♔ المنشئين ♢  مسح المنشئين
  ♔  ❲ + ❳ جميع ماسبق
  ♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 
-❲[《𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺》 ](t.me/e_l_m_o_l_k)❳ 
+❲[《𝚂𝙾??𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺》 ](t.me/e_l_m_o_l_k)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -17530,7 +17528,7 @@ local Teext =[[
  ♔   بتحب دي ♢ بتحب ده
  ♔  بوت الحذف♢رابط الحذف
 ♽^━━━━❆𝗘𝗟𝗠𝗟𝗢??❆━━━━^♽ 
- ❲[《𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻??𝙻𝙾??》 ](t.me/e_l_m_o_l_k)❳ 
+ ❲[《𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻??𝙻𝙾𝙺》 ](t.me/e_l_m_o_l_k)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
