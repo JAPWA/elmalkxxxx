@@ -3397,7 +3397,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = ' ♔ 𝙼𝚈 𝙳𝙴𝚅 ', callback_data="/units"},{text = ' ♔ 𝙼𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ', callback_data="/theytry"}},  
 {{text = ' ♔ 𝚃𝙰𝚆𝙰𝚂𝙾𝙻 ',url="t.me/TWASL_TIMO_BOT"}}, 
-{{text = ' ♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ',url="https://t.me/e_l_m_o_l_k"}}, 
+{{text = ' ♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔ ',url="https://t.me/e_l_m_o_l_k"}}, 
 {{text = 'اضف البوت الي مجموعتك ♔' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
@@ -3406,11 +3406,8 @@ end
 
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
 local Text = [[
-╭╾╾╾𓆩[𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺](http://t.me/e_l_m_o_l_k)𓆪╾╾╾╮
-┆
-┆[𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ](http://t.me/e_l_m_o_l_k)
-┆
-╰╾╾╾𓆩[𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺](http://t.me/e_l_m_o_l_k)𓆪╾╾╾╯
+ ♔ اهلا بك في سورس الملوك الجمدان ♔
+ ♔ عايز بوت حمايه عظمه كلمنا ♔ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -14980,7 +14977,7 @@ local List = {
 𓄼🇪🇬 𝑺𝒕𝒂𝒔𝒕 : #stast    ☥
 ??🇪🇬 𝐢𝐝 : #id ‌‌‏⚚
 𓄼🇪🇬 ??𝒂𝒎𝒆𝑺 : #edit ⚚
-𓄼🇪?? 𝑴??𝒈𝒔 : #msgs 𓆊
+𓄼🇪🇬 𝑴??𝒈𝒔 : #msgs 𓆊
 𓄼🇪🇬 𝗖𝗛 - »@e_l_m_o_l_k« ♔.
 ]],
 [[
@@ -17678,7 +17675,6 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = '𝚃𝙸𝙼𝙾',url="t.me/ttimo_2lby"},{text = '𝙹𝙰𝙱𝚆𝙰',url="t.me/J_A_B_W_A"}},
 {{text = '𝙾𝙼𝙰𝚁',url="t.me/teemElmelok"},{text = '𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/ABO_ELMAGD2"}},
-{{text =  اضغط لاضافه البوت لمجموعتك  ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"}}, 
 {{text = '𝙱𝙰𝙲𝙺', callback_data="/HHH"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
