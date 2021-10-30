@@ -146,7 +146,15 @@ end
 _redis = load_redis()  
 --------------------------------------------------------------------------------------------------------------
 print([[
-
+  ______ _      __  __ _      ____  _  __
+ |  ____| |    |  \/  | |    / __ \| |/ /
+ | |__  | |    | \  / | |   | |  | | ' / 
+ |  __| | |    | |\/| | |   | |  | |  <  
+ | |____| |____| |  | | |___| |__| | . \ 
+ |______|______|_|  |_|______\____/|_|\_\
+                                         
+                                         
+                                                   
                                     
 > CH ♔ »@e_l_m_o_l_k«
 ~> DEVELOPER ♔ {text = @ttimo_2lby
@@ -13097,7 +13105,7 @@ ght = math.random(3,300);
 local Text =' ' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '《𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺》 ', url="t.me/e_l_m_o_l_k"}}, 
+{{text = '《𝚂??𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺》 ', url="t.me/e_l_m_o_l_k"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&Photo=https://t.me/wffhvv/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -17660,7 +17668,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '♔ 𝙼𝚈 𝙳𝙴𝚅', callback_data="/units"},{text = '♔ 𝙼𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', callback_data="/theytry"}},   
+{{text = '♔ 𝙼𝚈 𝙳𝙴𝚅', callback_data="/units"},{text = '♔ 𝙼𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', ca ♔back_data="/theytry"}},   
 {{text = 'المــــطـــــور ♔', url="http://t.me/"..sudos.UserName}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
