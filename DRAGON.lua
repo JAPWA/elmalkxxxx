@@ -146,17 +146,6 @@ end
 _redis = load_redis()  
 --------------------------------------------------------------------------------------------------------------
 print([[
-      ___           ___       ___           ___       ___           ___     
-     /\  \         /\__\     /\__\         /\__\     /\  \         /\__\    
-    /::\  \       /:/  /    /::|  |       /:/  /    /::\  \       /:/  /    
-   /:/\:\  \     /:/  /    /:|:|  |      /:/  /    /:/\:\  \     /:/__/     
-  /::\~\:\  \   /:/  /    /:/|:|__|__   /:/  /    /:/  \:\  \   /::\__\____ 
- /:/\:\ \:\__\ /:/__/    /:/ |::::\__\ /:/__/    /:/__/ \:\__\ /:/\:::::\__\
- \:\~\:\ \/__/ \:\  \    \/__/~~/:/  / \:\  \    \:\  \ /:/  / \/_|:|~~|~   
-  \:\ \:\__\    \:\  \         /:/  /   \:\  \    \:\  /:/  /     |:|  |    
-   \:\ \/__/     \:\  \       /:/  /     \:\  \    \:\/:/  /      |:|  |    
-    \:\__\        \:\__\     /:/  /       \:\__\    \::/  /       |:|  |    
-     \/__/         \/__/     \/__/         \/__/     \/__/         \|__|    
 
                                     
 > CH ♔ »@e_l_m_o_l_k«
@@ -3438,7 +3427,7 @@ end
 if text == 'تيمو' or text == 'مبرمج تيمو' or text == 'مبرمج السورس' or text == 'TIMO' then 
 local msg_id = msg.id_/2097152/0.5  
 local Text = [[ 
-المبرمج تيمو للتواصل معاه اتبع الزر ال في الاسفل ⇓⇓
+المبرمج تيمو للتواصل معاه اتبع الزر ال في الاسفل⇊
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
@@ -3446,7 +3435,6 @@ keyboard.inline_keyboard = {
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_2lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-
 if text == 'ابو المجد' or text == 'مبرمج ابو المجد' or text == 'الملك ابو المجد' or text == 'ABOELMAGD' then 
 local msg_id = msg.id_/2097152/0.5  
 local Text = [[ 
@@ -6823,7 +6811,7 @@ UserName = 'sasa_boody'
 end
 local Text = "♔ منشئ الجروب  ⇐ ["..b.first_name_.."](tg://user?id="..b.id_..")\n"..getbio(b.id_):gsub('لايوجد','')
 local msg_id = msg.id_/2097152/0.5
-local stay = ' • ♔ | 𝙱𝙸𝙾 : '..getbio(msg.sender_user_id_)
+local stay = ' • 🖤 | 𝙱𝙸𝙾 : '..getbio(msg.sender_user_id_)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '• '..b.first_name_..' •', url="t.me/"..UserName}},   
@@ -14509,7 +14497,7 @@ local List = {
 金 - 𝓶𝓼𝓰𝓼 . #msgs ⸙
 ]],
 [[
-??🇵 - 𝄬 username . #username  𓃠
+🇯🇵 - 𝄬 username . #username  𓃠
 🇯🇵 - 𝄬 stast . #stast  𓃠
 🇯🇵 - 𝄬 id . #id 𓃠
 🇯🇵 - 𝄬 gmas . #gmas 𓃠
@@ -16842,7 +16830,7 @@ local Teext =[[
  ♔ المنشئين ♢  مسح المنشئين
  ♔  ❲ + ❳ جميع ماسبق
  ♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 
-❲[《𝚂𝙾??𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺》 ](t.me/e_l_m_o_l_k)❳ 
+❲[《𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺》 ](t.me/e_l_m_o_l_k)❳ 
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -17672,8 +17660,9 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '♔ 𝙼𝚈 𝙳𝙴𝚅', callback_data="/units"},{text = '♔ 𝙼𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', callback_data="/theytry"}},   
-{{text = 'الــمـــطــور ♔', url="http://t.me/"..sudos.UserName}},
+{{text = 'Developers', callback_data="/units"},{text = 'ᴍʏ ᴄʜᴀɴɴᴇʟ', callback_data="/theytry"}},   
+{{text = 'مــطــور الــبــوت', url="http://t.me/"..sudos.UserName}},
+{{text = 'اضغط لاضافه البوت لمجموعتك' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"}}, 
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
@@ -17683,8 +17672,8 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ', url="t.me/e_l_m_o_l_k"}},
-{{text = '♔ BACK', callback_data="/HHH"}},
+{{text = '《𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺》 ', url="t.me/e_l_m_o_l_k"}},
+{{text = '𝙱𝙰𝙲𝙺', callback_data="/HHH"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
@@ -17694,9 +17683,9 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '♔ 𝚃𝙸𝙼𝙾',url="t.me/ttimo_2lby"},{text = '♔ 𝙹𝙰𝙱𝚆𝙰',url="t.me/J_A_B_W_A"}},
-{{text = '♔ 𝙾𝙼𝙰𝚁',url="t.me/teemElmelok"},{text = '♔ 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/ABO_ELMAGD2"}},
-{{text = '♔ BACK', callback_data="/HHH"}},
+{{text = '𝚃𝙸𝙼𝙾',url="t.me/ttimo_2lby"},{text = '𝙹𝙰𝙱𝚆𝙰',url="t.me/J_A_B_W_A"}},
+{{text = '𝙾𝙼𝙰𝚁',url="t.me/teemElmelok"},{text = '𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/ABO_ELMAGD2"}},
+{{text = '𝙱𝙰𝙲𝙺', callback_data="/HHH"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
