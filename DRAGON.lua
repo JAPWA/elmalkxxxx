@@ -160,7 +160,7 @@ print([[
 
                                     
 > CH ♔ »@e_l_m_o_l_k«
-~> DEVELOPER ♔ {text = @ttimo_2lby
+~> DEVELOPER ♔ {text = @timo_22lby
 ]])
 sudos = dofile("./kkkklInfo.lua") 
 SUDO = tonumber(sudos.SUDO)
@@ -1060,7 +1060,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' TIMO ',url="t.me/ttimo_2lby"}}, 
+{{text = ' TIMO ',url="t.me/timo_22lby"}}, 
 {{text = ' ABOELMAGD  ', url="t.me/ABO_ELMAGD2"}},
 {{text = ' OAMR   ', url="t.me/teemElmelok"}},
 {{text = 'JABWA  ', url="t.me/J_A_B_W_A"}},
@@ -1080,7 +1080,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'المبرمج تيمو💖 ',url="t.me/ttimo_2lby"}}, 
+{{text = 'المبرمج تيمو💖 ',url="t.me/timo_22lby"}}, 
 {{text = 'المبرمج ابو المجد💖  ', url="t.me/ABO_ELMAGD2"}},
 {{text = 'المبرمج عمر 💖   ', url="t.me/teemElmelok"}},
 {{text = 'المبرمج جابوا💖   ', url="t.me/J_A_B_W_A"}},
@@ -3425,7 +3425,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' ♔ 𝚃𝙸𝙼𝙾  ',url="t.me/ttimo_2lby"},{text = ' ♔ 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳  ',url="t.me/ABO_ELMAGD2"}},
+{{text = ' ♔ 𝚃𝙸𝙼𝙾  ',url="t.me/timo_22lby"},{text = ' ♔ 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳  ',url="t.me/ABO_ELMAGD2"}},
 {{text = ' ♔ 𝚃𝙰𝚆𝙰𝚂𝙾𝙻',url="t.me/TWASL_TIMO_BOT"}}, 
 {{text = ' ♔ 𝙾𝙼𝙰𝚁  ',url="t.me/teemElmelok"},{text = ' ♔ 𝙹𝙰𝙱𝚆𝙰  ',url="t.me/J_A_B_W_A"}},
 {{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ', url="t.me/e_l_m_o_l_k"}},
@@ -3442,7 +3442,7 @@ local Text = [[
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = ' 𝚃𝙸𝙼𝙾 ♔',url="t.me/ttimo_2lby"}}, 
+{{text = ' 𝚃𝙸𝙼𝙾 ♔',url="t.me/timo_22lby"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_22lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -3517,7 +3517,7 @@ keyboard = {} keyboard.inline_keyboard = {
 {{text = '🎯لقاء مع كاتب رعب"', url="https://t.me/UU_NOVEL/7"}},
 {{text = '🎯رواية"الإنسان الأخير""', url="https://t.me/UU_NOVEL/24"}},
 {{text = '🎯رواية" مقبرة الحيوانات""', url="https://t.me/UU_NOVEL/8"}},
-{{text = 'مبرمج تيمو',url="t.me/ttimo_2lby"},{text = 'مبرمج جابوا',url="t.me/J_A_B_W_A"}},
+{{text = 'مبرمج تيمو',url="t.me/timo_22lby"},{text = 'مبرمج جابوا',url="t.me/J_A_B_W_A"}},
 {{text = 'مبرمج عمر',url="t.me/teemElmelok"},{text = 'مبرمج ابو المجد',url="t.me/ABO_ELMAGD2"}},
 {{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ', url="t.me/e_l_m_o_l_k"}},
 }
@@ -3530,7 +3530,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'مبرمج تيمو',url="t.me/ttimo_2lby"}},
+{{text = 'مبرمج تيمو',url="t.me/timo_22lby"}},
 {{text = 'مبرمج ابو المجد',url="t.me/ABO_ELMAGD2"}},
 {{text = 'مبرمج عمر',url="t.me/teemElmelok"}},
 {{text = 'مبرمج جابوا',url="t.me/J_A_B_W_A"}},
@@ -3567,7 +3567,7 @@ local Text ='تم اختيار الاستوري هذه لك'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'استوري اخر', callback_data="استوري"}},
-{{text = 'مبرمج تيمو',url="t.me/ttimo_2lby"}},
+{{text = 'مبرمج تيمو',url="t.me/timo_22lby"}},
 {{text = 'مبرمج ابو المجد',url="t.me/ABO_ELMAGD2"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -17694,7 +17694,7 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '♔ 𝚃𝙸𝙼𝙾',url="t.me/ttimo_2lby"},{text = '♔ 𝙹𝙰𝙱𝚆𝙰',url="t.me/J_A_B_W_A"}},
+{{text = '♔ 𝚃𝙸𝙼𝙾',url="t.me/timo_22lby"},{text = '♔ 𝙹𝙰𝙱𝚆𝙰',url="t.me/J_A_B_W_A"}},
 {{text = '♔ 𝙾𝙼𝙰𝚁',url="t.me/teemElmelok"},{text = '♔ 𝙰𝙱𝙾 ??𝙻𝙼𝙰𝙶𝙳',url="t.me/ABO_ELMAGD2"}},
 {{text = '♔ BACK', callback_data="/HHH"}},
 }
