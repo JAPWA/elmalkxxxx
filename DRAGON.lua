@@ -154,7 +154,7 @@ print([[
  |______|______|_|  |_|______\____/|_|\_\
                                          
                                          
-                                                   
+
                                     
 > CH ♔ »@e_l_m_o_l_k«
 ~> DEVELOPER ♔ {text = @ttimo_2lby
@@ -13105,7 +13105,7 @@ ght = math.random(3,300);
 local Text =' ' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '《𝚂??𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺》 ', url="t.me/e_l_m_o_l_k"}}, 
+{{text = '《𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺》 ', url="t.me/e_l_m_o_l_k"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&Photo=https://t.me/wffhvv/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -16824,7 +16824,7 @@ local Teext =[[
  ♔  مسح الكلمات الممنوعه
  ♔ المميزين عام
  ♔  ❲ + ❳ جميع ماسبق
- ??━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺⟧⟝┄┉━??
+ ??━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝙴??𝙼𝙻𝙾𝙺⟧⟝┄┉━??
  ♔ ❲ المالك❳ ♔
  ♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 
  ♔ اضف صوره ♢ وصف (للجروب)
@@ -17668,8 +17668,8 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '♔ 𝙼𝚈 𝙳𝙴𝚅', callback_data="/units"},{text = '♔ 𝙼𝚈 𝙲𝙷𝙰𝙽𝙽𝙴𝙻', ca ♔back_data="/theytry"}},   
-{{text = 'المــــطـــــور ♔', url="http://t.me/"..sudos.UserName}},
+{{text = 'Developers', callback_data="/units"},{text = 'ᴍʏ ᴄʜᴀɴɴᴇʟ', callback_data="/theytry"}},   
+{{text = 'مــطــور الــبــوت', url="http://t.me/"..sudos.UserName}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
@@ -17679,8 +17679,8 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ', url="t.me/e_l_m_o_l_k"}},
-{{text = '♔ BACK', callback_data="/HHH"}},
+{{text = '《𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺》 ', url="t.me/e_l_m_o_l_k"}},
+{{text = 'BACK', callback_data="/HHH"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
@@ -17690,9 +17690,9 @@ local Teext =[[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = ' ♔ 𝚃𝙸𝙼𝙾',url="t.me/ttimo_2lby"},{text = ' ♔ 𝙹𝙰𝙱𝚆𝙰',url="t.me/J_A_B_W_A"}},
-{{text = ' ♔ 𝙾𝙼𝙰𝚁',url="t.me/teemElmelok"},{text = ' ♔ 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/ABO_ELMAGD2"}},
-{{text = ' ♔ BACK', callback_data="/HHH"}},
+{{text = '𝚃𝙸𝙼𝙾',url="t.me/ttimo_2lby"},{text = '𝙹𝙰𝙱𝚆𝙰',url="t.me/J_A_B_W_A"}},
+{{text = '𝙾𝙼𝙰𝚁',url="t.me/teemElmelok"},{text = '𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/ABO_ELMAGD2"}},
+{{text = 'BACK', callback_data="/HHH"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
