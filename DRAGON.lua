@@ -3471,6 +3471,18 @@ keyboard.inline_keyboard = {
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/teemElmelok&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
+if text == 'اشرقت' or text == 'الملكه' or text == 'الماما' or text == 'شوشو' then 
+local msg_id = msg.id_/2097152/0.5  
+local Text = [[ 
+الملكه اشرقت للتواصل معاها اتبع الزر ال في الاسفل ⇓⇓
+   ]] 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = ' اشرقت ♔',url="t.me/ASHR_AKAT"}}, 
+} 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ABO_ELMAGD2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+
 if text == 'جابوا' or text == 'مبرمج جابوا' or text == 'الملك جابوا' or text == 'JABWA' then 
 local msg_id = msg.id_/2097152/0.5  
 local Text = [[ 
@@ -15755,7 +15767,7 @@ Msᴀɢ ~ #msgs
 ✵♔ 𝚄𝚂𝙴𝚁  ⇉⁞ #username »🇵🇷.
 ✵♔ 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs  » 🇵🇷.
 ✵♔ 𝚁𝙰𝙽𝙺  ⇉⁞ #stast  »🇵🇷.
-✵♔ 𝙸𝙳 𝚂𝚃𝙰 ⇉ #id  »🇵🇷.
+✵♔ 𝙸𝙳 ??𝚃𝙰 ⇉ #id  »🇵🇷.
 ✵♔ 𝗶𝗗 - »@e_l_m_o_l_k« ♔
 ]],
 [[
