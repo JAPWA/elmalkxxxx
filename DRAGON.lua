@@ -3489,7 +3489,7 @@ local Text = [[
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = ' اشرقت ♔',url="t.me/@A_S_H_R_A_K_A_T"}}, 
+{{text = ' اشرقت ♔',url="t.me/ASHR_AKAT"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_2lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -13100,7 +13100,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '《𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺》', url="t.me/e_l_m_o_l_k"}},
+{{text = '《𝚂𝙾𝚄??𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺》', url="t.me/e_l_m_o_l_k"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/comxnxp/21&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
