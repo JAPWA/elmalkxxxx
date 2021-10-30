@@ -3458,7 +3458,7 @@ keyboard.inline_keyboard = {
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ABO_ELMAGD2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'عمر' or text == 'مالك عمر' or text == 'الملك عمر' or text == 'مالك السورس' then 
+if text == 'عمر' or text == 'مالك عمر' or text == 'الملك عمر' or text == 'OMAR' then 
 local msg_id = msg.id_/2097152/0.5  
 local Text = [[ 
 مالك السورس عمر للتواصل معاه اتبع الزر ال في الاسفل⇊
@@ -3480,18 +3480,6 @@ keyboard.inline_keyboard = {
 {{text = ' 𝙹𝙰𝙱𝚆𝙰 ♔',url="t.me/J_A_B_W_A"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/J_A_B_W_A&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-
-if text == 'اشرقت' or text == 'الملكه' or text == 'شوشو' or text == 'الماما' then 
-local msg_id = msg.id_/2097152/0.5  
-local Text = [[ 
-الملكه اشرقت للتواصل معاها اتبع الزر ال في الاسفل ⇊
-   ]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = ' اشرقت ♔',url="t.me/ASHR_AKAT"}}, 
-} 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_2lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'يوتيوب' or text == 'بحث' or text == 'اليوتيوب' then
@@ -13100,7 +13088,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '《𝚂𝙾𝚄??𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺》', url="t.me/e_l_m_o_l_k"}},
+{{text = '《𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺》', url="t.me/e_l_m_o_l_k"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/comxnxp/21&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14306,7 +14294,7 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..username..'\n✵♔ 𝙼𝚂𝙶𝚂↬  »'..Msguser..'\n✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵♔ ??𝙳↬   »'..msg.sender_user_id_..'\n✵♔ 𝙱𝙸𝙾 ↬ »'..getbioY..'\n ✵♔ 𝙲𝙷↬  »@e_l_m_o_l_k\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..username..'\n✵♔ 𝙼𝚂𝙶𝚂↬  »'..Msguser..'\n✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵♔ 𝙸𝙳↬   »'..msg.sender_user_id_..'\n✵♔ 𝙱𝙸𝙾 ↬ »'..getbioY..'\n ✵♔ 𝙲𝙷↬  »@e_l_m_o_l_k\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
 send(msg.chat_id_, msg.id_,'[\n ¦✙ بيك عزيزي »'..Name..'« \n✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..Name..'\n✵♔ 𝙼𝚂𝙶𝚂↬ »'..Msguser..'\n ✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵♔ 𝙸𝙳↬  »'..msg.sender_user_id_..'\n✵♔ 𝙲𝙷↬   »@e_l_m_o_l_k« »🇧??\n')
