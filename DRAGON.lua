@@ -3435,7 +3435,7 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/e_l_m_o_l_k/21&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'تيمو' or text == 'مبرمج السورس' or text == 'مبرمج تيمو' or text == 'TIMO' then 
+if text == 'تيمو' or text == 'مبرمج تيمو' or text == 'مبرمج السورس' or text == 'TIMO' then 
 local msg_id = msg.id_/2097152/0.5  
 local Text = [[ 
 المبرمج تيمو للتواصل معاه اتبع الزر ال في الاسفل ⇓⇓
@@ -3444,7 +3444,7 @@ keyboard = {}
 keyboard.inline_keyboard = { 
 {{text = ' 𝚃𝙸𝙼𝙾 ♔',url="t.me/ttimo_2lby"}}, 
 } 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_2lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ABO_ELMAGD2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'ابو المجد' or text == 'مبرمج ابو المجد' or text == 'الملك ابو المجد' or text == 'ABOELMAGD' then 
@@ -14509,7 +14509,7 @@ local List = {
 金 - 𝓶𝓼𝓰𝓼 . #msgs ⸙
 ]],
 [[
-??🇵 - 𝄬 username . #username  𓃠
+🇯🇵 - 𝄬 username . #username  𓃠
 🇯🇵 - 𝄬 stast . #stast  𓃠
 🇯🇵 - 𝄬 id . #id 𓃠
 🇯🇵 - 𝄬 gmas . #gmas 𓃠
