@@ -3444,7 +3444,7 @@ keyboard = {}
 keyboard.inline_keyboard = { 
 {{text = ' 𝚃𝙸𝙼𝙾 ♔',url="t.me/ttimo_2lby"}}, 
 } 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ABO_ELMAGD2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_2lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'ابو المجد' or text == 'مبرمج ابو المجد' or text == 'الملك ابو المجد' or text == 'ABOELMAGD' then 
@@ -13101,7 +13101,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '♔ 𝚂𝙾𝚄𝚁??𝙴 𝙴𝙻𝙼𝙻𝙾𝙺', url="t.me/e_l_m_o_l_k"}},
+{{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺', url="t.me/e_l_m_o_l_k"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/comxnxp/21&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -15767,7 +15767,7 @@ Msᴀɢ ~ #msgs
 ✵♔ 𝚄𝚂𝙴𝚁  ⇉⁞ #username »🇵🇷.
 ✵♔ 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs  » 🇵🇷.
 ✵♔ 𝚁𝙰𝙽𝙺  ⇉⁞ #stast  »🇵🇷.
-✵♔ 𝙸𝙳 𝚂??𝙰 ⇉ #id  »🇵🇷.
+✵♔ 𝙸𝙳 𝚂𝚃𝙰 ⇉ #id  »🇵🇷.
 ✵♔ 𝗶𝗗 - »@e_l_m_o_l_k« ♔
 ]],
 [[
