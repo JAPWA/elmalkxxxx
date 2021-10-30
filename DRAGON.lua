@@ -3482,6 +3482,18 @@ keyboard.inline_keyboard = {
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/J_A_B_W_A&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
+if text == 'اشرقت' or text == 'الملكه' or text == 'شوشو' or text == 'الماما' then 
+local msg_id = msg.id_/2097152/0.5  
+local Text = [[ 
+الملكه اشرقت للتواصل معاها اتبع الزر ال في الاسفل ⇊
+   ]] 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = ' اشرقت ♔',url="t.me/@A_S_H_R_A_K_A_T"}}, 
+} 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_2lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+
 if text == 'يوتيوب' or text == 'بحث' or text == 'اليوتيوب' then
 local Text = [[
 اليك بوتات تحميل ??🇪
