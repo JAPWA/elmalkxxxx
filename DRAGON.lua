@@ -3400,7 +3400,7 @@ if text == 'الملوك' or text == 'سورس' or text == 'السورس' or tex
 local Text = [[
 ╭╾╾╾𓆩[♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔](http://t.me/e_l_m_o_l_k)𓆪╾╾╾╮
 ┆
-┆[♔ ♔ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔ ♔](http://t.me/e_l_m_o_l_k)
+┆[♔ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔](http://t.me/e_l_m_o_l_k)
 ┆
 ╰╾╾╾𓆩[♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔](http://t.me/e_l_m_o_l_k)𓆪╾╾╾╯
 ]]
@@ -3419,7 +3419,7 @@ if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عاي
 local Text = [[
 ╭╾╾╾𓆩[♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔](http://t.me/e_l_m_o_l_k)𓆪╾╾╾╮
 ┆
-┆[♔ ♔ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔ ♔](http://t.me/e_l_m_o_l_k)
+┆[♔ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔](http://t.me/e_l_m_o_l_k)
 ┆
 ╰╾╾╾𓆩[♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔](http://t.me/e_l_m_o_l_k)𓆪╾╾╾╯
 ]]
@@ -14295,7 +14295,7 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..username..'\n✵♔ 𝙼𝚂𝙶𝚂↬  »'..Msguser..'\n✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵♔ 𝙸𝙳↬   »'..msg.sender_user_id_..'\n✵♔ 𝙱𝙸𝙾 ↬ »'..getbioY..'\n ✵♔ 𝙲𝙷↬  »@e_l_m_o_l_k\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..username..'\n✵♔ 𝙼𝚂𝙶𝚂↬  »'..Msguser..'\n✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵♔ ??𝙳↬   »'..msg.sender_user_id_..'\n✵♔ 𝙱𝙸𝙾 ↬ »'..getbioY..'\n ✵♔ 𝙲𝙷↬  »@e_l_m_o_l_k\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
 send(msg.chat_id_, msg.id_,'[\n ¦✙ بيك عزيزي »'..Name..'« \n✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..Name..'\n✵♔ 𝙼𝚂𝙶𝚂↬ »'..Msguser..'\n ✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵♔ 𝙸𝙳↬  »'..msg.sender_user_id_..'\n✵♔ 𝙲𝙷↬   »@e_l_m_o_l_k« »🇧??\n')
@@ -17695,7 +17695,7 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '♔ 𝚃𝙸𝙼𝙾',url="t.me/ttimo_2lby"},{text = '♔ 𝙹𝙰𝙱𝚆𝙰',url="t.me/J_A_B_W_A"}},
-{{text = '♔ 𝙾𝙼𝙰𝚁',url="t.me/teemElmelok"},{text = '♔ 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/ABO_ELMAGD2"}},
+{{text = '♔ 𝙾𝙼𝙰𝚁',url="t.me/teemElmelok"},{text = '♔ 𝙰𝙱?? 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/ABO_ELMAGD2"}},
 {{text = '♔ BACK', callback_data="/HHH"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
