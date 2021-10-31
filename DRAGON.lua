@@ -13030,7 +13030,7 @@ ght = math.random(3,200);
 local Text ='تم اختيار المقطع الصوتي لك ♔ ' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '❨𝚂𝙾𝚄𝚁𝙲𝙴 ❩', url="t.me/e_l_m_o_l_k"}},
+{{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴', url="t.me/e_l_m_o_l_k"}},
  {{text = 'اضف البوت الي مجموعتك ♔' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -13069,7 +13069,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '《𝚂𝙾𝚄𝚁𝙲?? 𝐸𝐿𝑀𝐿𝑂𝐾》', url="t.me/e_l_m_o_l_k"}},
+{{text = '《𝚂𝙾𝚄𝚁𝙲?? 𝙴𝙻𝙼𝙻𝙾𝙺》', url="t.me/e_l_m_o_l_k"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/comxnxp/19&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -15322,7 +15322,7 @@ Msᴀɢ ~ #msgs
 [[
 🌯 ¦✙• 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 » ⁞  #username 🇪🇬
 🌯 ¦✙• 𝐦𝐬𝐠 » ⁞  #msgs  📝
-🌯 ¦✙• 𝒓𝒂𝒏𝒌 » ⁞ #stast  
+🌯 ¦✙• ??𝒂𝒏𝒌 » ⁞ #stast  
 🌯 ¦✙• 𝐢𝐝 𝒔𝒕𝒂 » ⁞ #id  🆔
 🌯 ¦ 𝗖𝗛 - »@e_l_m_o_l_k« ♔
 ]],
