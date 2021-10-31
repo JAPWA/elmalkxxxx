@@ -4407,7 +4407,7 @@ local Text = [[
  ♔من أحسن السورسات على التليجرام سورس الملوك ♔
 حمايه.سرعه.دقه وامان
  قناه السورس ⬇️
-  [W𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺](http://t.me/e_l_m_o_l_k)
+  [𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺](http://t.me/e_l_m_o_l_k)
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
@@ -4543,7 +4543,7 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, FunctionStatus, nil)
 end
 if Chat_Type == 'GroupBot' and ChekAdd(msg.chat_id_) == true then
-if text == 'رفع نسخه الاحتياطيه' and DevSoFi(msg) then   
+if text == 'رفع النسخه' and DevSoFi(msg) then   
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -11380,11 +11380,11 @@ end
 tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
 local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or database:get(bot_id.."Private:Group:Link"..msg.chat_id_) 
 if linkgpp.ok == true then 
-local Teext = '✧'..ta.title_..'\n'..linkgpp.result 
+local Teext = '♔'..ta.title_..'\n'..linkgpp.result 
 local inline = {{{text = ta.title_, url=linkgpp.result}},} 
 send_inline_key(msg.chat_id_,Teext,nil,inline,msg.id_/2097152/0.5) 
 else 
-send(msg.chat_id_, msg.id_,'✧لا يوجد رابط ارسل ضع رابط') 
+send(msg.chat_id_, msg.id_,'♔لا يوجد رابط ارسل ضع رابط') 
 end 
 end,nil) 
 end
@@ -13897,7 +13897,7 @@ local iduser = userid
 send(msg.chat_id_, msg.id_,'*- الـعـضو  ↭ »*'..username..'*«\n- الرتبه ↭ »'..rtp..'«*\n')
 end,nil) 
 else 
-send(msg.chat_id_, msg.id_,' ✧الايدي غير صحيح') 
+send(msg.chat_id_, msg.id_,' ♔الايدي غير صحيح') 
 end 
 end 
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil) 
@@ -13908,7 +13908,7 @@ tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(extr
 local rtp = Rutba(result.sender_user_id_,msg.chat_id_)
 local username = ('[@'..data.username_..']' or 'لا يوجد')
 local iduser = result.sender_user_id_
-send(msg.chat_id_, msg.id_,'✧الايدي ↭ »'..iduser..'«\n✧المعرف ↭ »'..username..'«\n✧الرتبه ↭ »'..rtp..'«\n✧نوع الكشف ↭ بالرد')
+send(msg.chat_id_, msg.id_,'♔الايدي ↭ »'..iduser..'«\n♔المعرف ↭ »'..username..'«\n♔الرتبه ↭ »'..rtp..'«\n♔نوع الكشف ↭ بالرد')
 end,nil)
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
@@ -13922,10 +13922,10 @@ tdcli_function ({ID = "GetUser",user_id_ = result.id_},function(extra,data)
 local rtp = Rutba(result.id_,msg.chat_id_)
 local username = ('[@'..data.username_..']' or 'لا يوجد')
 local iduser = result.id_
-send(msg.chat_id_, msg.id_,'✧الايدي ↭ »'..iduser..'«\n✧المعرف ↭ »'..username..'«\n✧الرتبه ↭ »'..rtp..'«\n✧نوع الكشف ↭ بالمعرف')
+send(msg.chat_id_, msg.id_,'♔الايدي ↭ »'..iduser..'«\n♔المعرف ↭ »'..username..'«\n♔الرتبه ↭ »'..rtp..'«\n♔نوع الكشف ↭ بالمعرف')
 end,nil)
 else
-send(msg.chat_id_, msg.id_,'✧المعرف غير صحيح')
+send(msg.chat_id_, msg.id_,'♔المعرف غير صحيح')
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
@@ -13938,10 +13938,10 @@ tdcli_function ({ID = "GetUser",user_id_ = userid},function(extra,data)
 local rtp = Rutba(userid,msg.chat_id_) 
 local username = ('[@'..data.username_..']' or 'لا يوجد') 
 local iduser = userid 
-send(msg.chat_id_, msg.id_,'✧الايدي ↭ »'..iduser..'«\n✧المعرف ↭ »'..username..'«\n✧الرتبه ↭ »'..rtp..'«\n✧نوع الكشف↭ الايدي')
+send(msg.chat_id_, msg.id_,'♔الايدي ↭ »'..iduser..'«\n♔المعرف ↭ »'..username..'«\n♔الرتبه ↭ »'..rtp..'«\n♔نوع الكشف↭ الايدي')
 end,nil) 
 else 
-send(msg.chat_id_, msg.id_,' ✧الايدي غير صحيح') 
+send(msg.chat_id_, msg.id_,' ♔الايدي غير صحيح') 
 end 
 end 
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil) 
@@ -14459,7 +14459,7 @@ get_id_text = get_id_text:gsub('#game',NUMPGAME)
 get_id_text = get_id_text:gsub('#photos',photps) 
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_,'[\n✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..username..'«   »💘\n✵♔ ??𝚂𝙶𝚂↬ »'..Msguser..'«   »💘\n✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'«   »💘\n✵♔ 𝙸𝙳↬  »'..msg.sender_user_id_..'«   »💘\n✵♔ 𝙲𝙷↬ »@e_l_m_o_l_k«   »💘\n')
+send(msg.chat_id_, msg.id_,'[\n✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..username..'«   »💘\n✵♔ ??𝚂??𝚂↬ »'..Msguser..'«   »💘\n✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'«   »💘\n✵♔ 𝙸𝙳↬  »'..msg.sender_user_id_..'«   »💘\n✵♔ 𝙲𝙷↬ »@e_l_m_o_l_k«   »💘\n')
 end
 end
 
