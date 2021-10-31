@@ -3455,7 +3455,8 @@ local Text = [[
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = ' 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳 ♔',url="t.me/ABO_ELMAGD2"}}, 
+{{text = '♔ 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/ABO_ELMAGD2"}}, 
+{{text = '♔ 𝙱𝙾𝚃 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/@Elmalek1bot"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ABO_ELMAGD2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
