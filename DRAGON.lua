@@ -3573,9 +3573,9 @@ end
  
 end,nil)
 end
-if text == "استوري" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+if text == "استوري ♔" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,62); 
-local Text ='تم اختيار الاستوري هذه لك ' 
+local Text ='♔ تم اختيار الاستوري هذه لك ♔' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'استوري اخر', callback_data="استوري"}},
@@ -3589,7 +3589,7 @@ https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. ms
 end
 if text == "استوري" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,62); 
-local Text ='تم اختيار الاستوري هذه لك' 
+local Text =' ♔تم اختيار الاستوري هذه لك ♔' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'ثيم اخر', callback_data="/added"}},
@@ -15339,7 +15339,7 @@ Msᴀɢ ~ #msgs
 ⌔➺: 𝗖𝗛 - »@e_l_m_o_l_k« ♔
 ]],
 [[
-✵♔ 𝚄𝚂𝙴𝚁  ⇉⁞ #username »🇪🇬.
+✵♔ 𝚄𝚂??𝚁  ⇉⁞ #username »🇪🇬.
 ✵♔ 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs  » 🇪🇬.
 ✵♔ 𝚁𝙰𝙽??  ⇉⁞ #stast  »🇪🇬.
 ✵♔ 𝙸?? 𝚂𝚃𝙰 ⇉ #id  »🇪🇬.
