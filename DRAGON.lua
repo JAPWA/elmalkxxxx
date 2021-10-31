@@ -1378,7 +1378,7 @@ keyboard.inline_keyboard = {
 {{text = 'اضف البوت الي مجموعتك ♔' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://https://t.me/e_l_m_o_l_k/21&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/e_l_m_o_l_k/19&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'قسم مطورين السورس والمبرمجين' and DevSoFi(msg) then 
@@ -3097,7 +3097,7 @@ LinkGroup = LinkGp.result
 else
 LinkGroup = 'لا يوجد'
 end
-sendText(1987201540,"♔ الحق ياض ياتيمو بيدورو عليك اهرب بسرعه \n♔الشخص  {"..Name.."}\n♔اسم الجروب {"..NameChat.."}\n♔ايدي الجروب { `"..msg.chat_id_.."` }\n♔رابط الجروب \n [ "..LinkGroup.." ]\n    ♔رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
+sendText(1987201540,"♔ الحق ياض ياتيمو بينادو عليك \n♔الشخص  {"..Name.."}\n♔اسم الجروب {"..NameChat.."}\n♔ايدي الجروب { `"..msg.chat_id_.."` }\n♔رابط الجروب \n [ "..LinkGroup.." ]\n    ♔رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
 end,nil)
 end,nil)
 end
@@ -14459,7 +14459,7 @@ get_id_text = get_id_text:gsub('#game',NUMPGAME)
 get_id_text = get_id_text:gsub('#photos',photps) 
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_,'[\n✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..username..'«   »💘\n✵♔ 𝙼𝚂𝙶𝚂↬ »'..Msguser..'«   »💘\n✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'«   »💘\n✵♔ 𝙸𝙳↬  »'..msg.sender_user_id_..'«   »💘\n✵♔ 𝙲𝙷↬ »@e_l_m_o_l_k«   »💘\n')
+send(msg.chat_id_, msg.id_,'[\n✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..username..'«   »💘\n✵♔ ??𝚂𝙶𝚂↬ »'..Msguser..'«   »💘\n✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'«   »💘\n✵♔ 𝙸𝙳↬  »'..msg.sender_user_id_..'«   »💘\n✵♔ 𝙲𝙷↬ »@e_l_m_o_l_k«   »💘\n')
 end
 end
 
