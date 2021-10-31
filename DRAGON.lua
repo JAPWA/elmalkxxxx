@@ -3438,7 +3438,7 @@ end
 if text == 'تيمو' or text == 'مبرمج تيمو' or text == 'مبرمج السورس' or text == 'TIMO' then 
 local msg_id = msg.id_/2097152/0.5  
 local Text = [[ 
-المبرمج تيمو للتواصل معاه اتبع الزر ال في الاسفل ⇓⇓
+المبرمج تيمو للتواصل معاه اتبع الزر ال في الاسفل ⇓⇑
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
@@ -3447,10 +3447,10 @@ keyboard.inline_keyboard = {
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_8lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'ابو المجد' or text == 'مبرمج ابو المجد' or text == 'الملك ابو المجد' or text == 'ABOELMAGD' then 
+if text == 'ابو المجد' or text == 'مبرمج ابو المجد' or text == 'المبرمج' or text == 'ABOELMAGD' then 
 local msg_id = msg.id_/2097152/0.5  
 local Text = [[ 
-المبرمج ابو المجد للتوصل معاه اتبع الزر ال في الاسفل⇊
+المبرمج ابو المجد للتوصل معاه اتبع الزر ال في الاسفل ⇓⇑
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
@@ -3459,10 +3459,10 @@ keyboard.inline_keyboard = {
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ABO_ELMAGD2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'عمر' or text == 'مالك عمر' or text == 'الملك عمر' or text == 'OMAR' then 
+if text == 'عمر' or text == 'مالك عمر' or text == 'مالك السورس' or text == 'OMAR' then 
 local msg_id = msg.id_/2097152/0.5  
 local Text = [[ 
-مالك السورس عمر للتواصل معاه اتبع الزر ال في الاسفل⇊
+مالك السورس عمر للتواصل معاه اتبع الزر ال في الاسفل ⇓⇑
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
@@ -3471,10 +3471,10 @@ keyboard.inline_keyboard = {
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/teemElmelok&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'جابوا' or text == 'مبرمج جابوا' or text == 'الملك جابوا' or text == 'JABWA' then 
+if text == 'جابوا' or text == 'مبرمج جابوا' or text == 'الملك جابوا' or text == 'مطور السورس' then 
 local msg_id = msg.id_/2097152/0.5  
 local Text = [[ 
-المبرمج جابوا للتوصل معاه اتبع الزر ال في الاسفل⇊
+المبرمج جابوا للتوصل معاه اتبع الزر ال في الاسفل ⇓⇑
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
@@ -3486,7 +3486,7 @@ end
 if text == 'ايمي' or text == 'الملكه ايمي' or text == 'الماما' or text == 'EMY' then 
 local msg_id = msg.id_/2097152/0.5  
 local Text = [[ 
-الملكه ايمي مرات المبرمج تيمو دكر قربلها ⇓⇓
+الملكه ايمي مرات المبرمج تيمو..لو دكر قربلها ⇓⇑
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
@@ -16673,8 +16673,7 @@ send(msg.chat_id_, msg.id_,Text)
 end
 if text == 'روابط الحذف' or text == 'رابط  حذف' or text == 'رابط الحذف' then
 local Text = [[
-مواقع  مسح حسابات❥🍂
-فكر قبل لا تتسرع وتروح
+روابــط حــذف حــســابــات ♔
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -16688,15 +16687,14 @@ https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. ms
 end
 if text == 'بوت الحذف' or text == 'بوت حذف' or text == 'بوت حذف حسابات' then
 local Text = [[
-بوت  مسح حسابات❥🍂
-فكر قبل لا تتسرع وتروح
+بــــوت حـــذف حــســابــات ♔
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'BOT Telegram', url="t.me/LC6BOT"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/yhu79/7&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/h_az_f/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == "صلاحياته" and tonumber(msg.reply_to_message_id_) > 0 then    
