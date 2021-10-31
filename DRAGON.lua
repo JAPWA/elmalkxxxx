@@ -3456,7 +3456,7 @@ local Text = [[
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '♔ 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/ABO_ELMAGD2"}}, 
-{{text = '♔ 𝙱𝙾𝚃 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/Elmalek1bot"}}, 
+{{text = '♔ 𝙱𝙾𝚃 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/Elmalek1bot"}},
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ABO_ELMAGD2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -3578,35 +3578,18 @@ end
  
 end,nil)
 end
-if text == "استوري" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(1,62); 
-local Text ='تم اختيار الاستوري هذه لك ' 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = 'استوري اخر ♔', callback_data="استوري"}},
-{{text = '♔ 𝚃𝙸𝙼𝙾',url="t.me/ttimo_8lby"}},
-{{text = '♔ 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/ABO_ELMAGD2"}},
-{{text = '♔ 𝙾𝙼𝙰𝚁',url="t.me/teemElmelok"}},
-{{text = '♔ 𝙹𝙰𝙱𝚆𝙰',url="t.me/J_A_B_W_A"}},
-{{text = 'اضف البوت الي مجموعتك ♔' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sijebehdhd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "استوري" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(1,62); 
-local Text ='تم اختيار الاستوري هذه لك' 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = 'ثيم اخر ♔', callback_data="/added"}},
-{{text = '♔ 𝚃𝙸𝙼𝙾',url="t.me/ttimo_8lby"}},
-{{text = '♔ 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/ABO_ELMAGD2"}},
-{{text = '♔ 𝙾𝙼𝙰𝚁',url="t.me/teemElmelok"}},
-{{text = '♔ 𝙹𝙰𝙱𝚆𝙰',url="t.me/J_A_B_W_A"}},
-{{text = 'اضف البوت الي مجموعتك ♔' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/xxvvzm/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+if text == 'استوري' or text == 'نوع استوري' or text == 'اختيارات استوري'  then
+local Text = [[
+♔ اختار نوع استوري الي ترودي ♔
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'استوري ♔', callback_data="/Jabwa"},{text = 'استوري حب ♔', callback_data="/Jabwa2"}},   
+{{text = 'استوري مضحك ♔', callback_data="/Jabwa3"},{text = ' استوري قرآن ♔', callback_data="/Jabwa4"}},   
+{{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺', url="https://t.me/e_l_m_o_l_k"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/41&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 
@@ -14507,7 +14490,7 @@ local List = {
 ]],
 [[
 𓄼🇮🇶 𝑼𝒔𝒆𝒓𝑵𝒂𝒎𝒆 :#username 
-𓄼🇮🇶 𝑺𝒕𝒂𝒔𝒕 :#stast 
+𓄼??🇶 𝑺𝒕𝒂𝒔𝒕 :#stast 
 𓄼🇮🇶 𝒊𝒅 :#id 
 𓄼🇮🇶 ??𝒂𝒎𝒆𝑺 :#game 
 𓄼🇮🇶 𝑴𝒔𝒈𝒔 :#msgs
@@ -14889,7 +14872,7 @@ local List = {
 ]],
 [[
 • 🦄 ♔ ??𝑬𝑺 : #username ‌‌‏⚚
-• 🦄 ♔ ??𝑻𝑨 : #stast ☥
+• 🦄 ♔ 𝑺𝑻𝑨 : #stast ☥
 • 🦄 ♔ 𝑰𝑫 : #id ‌‌‏♕
 • 🦄 ♔ 𝑴𝑺𝑮 : #msgs 𓆊
 • 🦄 ♔ 𝑾??𝒍𝒄𝒐𝒎𝒆 : ⁞
@@ -15317,7 +15300,7 @@ Msᴀɢ ~ #msgs
 - 𝗖𝗛 - »@e_l_m_o_l_k« ♔
 ]],
 [[
-- 𝑢𝑠𝑒𝑟𝑛??𝑚𝑒 ⟿ #username
+- 𝑢𝑠𝑒𝑟𝑛𝑎𝑚𝑒 ⟿ #username
 - 𝑚𝑠𝑔𝑠 ⟿ #msgs
 - 𝑖𝑑 ⟿ #id
 - 𝑒𝑑𝑖𝑡 ⟿ #edit
@@ -15741,8 +15724,8 @@ Msᴀɢ ~ #msgs
 [[
 𝐓𝐓• 𝐘𝐎𝐔𝐑 𝐈𝐃 𖠰 #id .
 𝐓𝐓• 𝐌𝐬𝐠𝐒 𖠰 #msgs .
-𝐓𝐓• 𝐔𝐬𝐞𝐫𝐍𝐚 ?? #username .
-𝐓??• 𝐒𝐓𝐀𝐒𝐓 𖠰 #stast .
+𝐓𝐓• 𝐔𝐬𝐞𝐫𝐍𝐚 𖠰 #username .
+𝐓𝐓• 𝐒𝐓𝐀𝐒𝐓 𖠰 #stast .
 𝐓𝐓• 𝐀𝐔𝐓𝐎 𖠰 #auto .
 𝐓𝐓• 𝗘𝗗𝗜𝗧 𖠰 #edit .
 𝐓𝐓• 𝗖𝗛 - »@e_l_m_o_l_k« ♔
@@ -16752,6 +16735,126 @@ local Chat_id = data.chat_id_
 local Msg_id = data.message_id_
 local msg_idd = Msg_id/2097152/0.5
 local Text = data.payload_.data_
+if Text == "/Jabwa" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+ght = math.random(2,22); 
+local Text ='𓆩 مرحبا اليك استوري  رومنسي 𓆪' 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '`ʙᴀᴄᴋ´', callback_data="/MMM"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك ♔' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"}},  
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/JABWA8/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if Text == '/Jabwa' then
+if not CoSu(data) then
+local notText = '✘ عذرا الاوامر هذه لا تخصك'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
+return false
+end
+tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
+local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or bot_data:get(ban_id.."Private:Group:Link"..msg.chat_id_) 
+if linkgpp.ok == true then 
+local linkgp = '𓆩 مرحبا اليك استوري  رومنسي 𓆪\n ['..ta.title_..']('..linkgpp.result..')\nـــــــــــــــــــــــــ\n  ['..linkgpp.result..']'
+keyboard = {} 
+keyboard.inline_keyboard = {{{text = ta.title_, url=linkgpp.result}},}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/JABWA8/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+send(msg.chat_id_, msg.id_,'𓆩 مرحبا اليك استوري  رومنسي 𓆪') 
+end 
+end,nil) 
+end
+if Text == "/Jabwa2" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+ght = math.random(2,22); 
+local Text ='𓆩 مرحبا اليك استوري 𓆪' 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '`ʙᴀᴄᴋ´', callback_data="/MMM"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك ♔' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"}},  
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qapplu/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if Text == '/Jabwa2' then
+if not CoSu(data) then
+local notText = '✘ عذرا الاوامر هذه لا تخصك'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
+return false
+end
+tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
+local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or bot_data:get(ban_id.."Private:Group:Link"..msg.chat_id_) 
+if linkgpp.ok == true then 
+local linkgp = '𓆩 مرحبا اليك استوري 𓆪\n ['..ta.title_..']('..linkgpp.result..')\nـــــــــــــــــــــــــ\n  ['..linkgpp.result..']'
+keyboard = {} 
+keyboard.inline_keyboard = {{{text = ta.title_, url=linkgpp.result}},}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Qapplu /'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+send(msg.chat_id_, msg.id_,'𓆩 مرحبا اليك استوري 𓆪') 
+end 
+end,nil) 
+end
+if Text == "/Jabwa3" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+ght = math.random(2,22); 
+local Text ='𓆩  مرحبا اليك استوري قرآن 𓆪' 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '`ʙᴀᴄᴋ´', callback_data="/MMM"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك ♔' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"}},  
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/JABWA7/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if Text == '/Jabwa3' then
+if not CoSu(data) then
+local notText = '✘ عذرا الاوامر هذه لا تخصك'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
+return false
+end
+tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
+local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or bot_data:get(ban_id.."Private:Group:Link"..msg.chat_id_) 
+if linkgpp.ok == true then 
+local linkgp = '𓆩  مرحبا اليك استوري قرآن 𓆪\n ['..ta.title_..']('..linkgpp.result..')\nـــــــــــــــــــــــــ\n  ['..linkgpp.result..']'
+keyboard = {} 
+keyboard.inline_keyboard = {{{text = ta.title_, url=linkgpp.result}},}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/JABWA7/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+send(msg.chat_id_, msg.id_,'𓆩  مرحبا اليك استوري قرآن 𓆪') 
+end 
+end,nil) 
+end
+if Text == "/Jabwa4" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+ght = math.random(2,22); 
+local Text ='𓆩  مرحبا اليك استوري مضحك 𓆪' 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '`ʙᴀᴄᴋ´', callback_data="/MMM"}},
+{{text = 'أضغط لاضافه ألبوت لمجموعتك ♔' ,url="t.me/"..dofile("./Info.lua").botUserName.."?startgroup=start"}},  
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/JABWA6/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if Text == '/Jabwa4' then
+if not CoSu(data) then
+local notText = '✘ عذرا الاوامر هذه لا تخصك'
+https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
+return false
+end
+tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,ta) 
+local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token..'/exportChatInviteLink?chat_id='..msg.chat_id_)) or bot_data:get(ban_id.."Private:Group:Link"..msg.chat_id_) 
+if linkgpp.ok == true then 
+local linkgp = '𓆩  مرحبا اليك استوري مضحك 𓆪\n ['..ta.title_..']('..linkgpp.result..')\nـــــــــــــــــــــــــ\n  ['..linkgpp.result..']'
+keyboard = {} 
+keyboard.inline_keyboard = {{{text = ta.title_, url=linkgpp.result}},}
+DeleteMessage(Chat_id,{[0] = Msg_id})  
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/JABWA6/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+send(msg.chat_id_, msg.id_,'𓆩  مرحبا اليك استوري مضحك 𓆪') 
+end 
+end,nil) 
+end
 if Text == '/help1' then
 if not Mod(data) then
 local notText = '✘ عذرا الاوامر هذه لا تخصك'
@@ -16760,7 +16863,7 @@ return false
 end
 local Teext =[[
 اوامر حماية المجموعه ♔
-♽^━━━━❆𝗘𝗟??𝗟𝗢𝗞❆━━━━^♽ 
+♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 
 قفل  ♢  فتح + الامر 
 قفل  ♢  فتح ❲ الكـــل ❳
 ❲ بالتقيد ❥ بالطرد ❥ بالكتم ❳
