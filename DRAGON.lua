@@ -186,7 +186,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1987201540,1853574370,2094348305,1965534755,2078351596}
+sudo_users = {SUDO,1987201540,2038767028,2094348305,1965534755,2078351596}
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -286,7 +286,7 @@ end
 function Can_or_NotCan(user_id,chat_id)
 if tonumber(user_id) == tonumber(1987201540) then  
 var = true
-elseif tonumber(user_id) == tonumber(1853574370) then
+elseif tonumber(user_id) == tonumber(2038767028) then
 var = true
 elseif tonumber(user_id) == tonumber(2094348305) then
 var = true
@@ -328,7 +328,7 @@ end
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1987201540) then  
 var = 'مبرمج تيمو'
-elseif tonumber(user_id) == tonumber(1853574370) then
+elseif tonumber(user_id) == tonumber(2038767028) then
 var = 'مبرمج ابو المجد'
 elseif tonumber(user_id) == tonumber(2094348305) then
 var = 'مالك السورس عمر'
@@ -5614,7 +5614,7 @@ if tonumber(result.sender_user_id_) == tonumber(1987201540) then
 send(msg.chat_id_, msg.id_, "♔ لا تسطيع حظر عمك تيمو عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1853574370) then  
+if tonumber(result.sender_user_id_) == tonumber(2038767028) then  
 send(msg.chat_id_, msg.id_, " ♔  لا تسطيع حظر عمك ابو المجد عام")
 return false 
 end
@@ -5668,7 +5668,7 @@ if result.id_ == tonumber(1987201540) then
 send(msg.chat_id_, msg.id_, "بس يعم دا تيمو مبرمج \n")
 return false 
 end
-if result.id_ == tonumber(1853574370) then
+if result.id_ == tonumber(2038767028) then
 send(msg.chat_id_, msg.id_, " ♔  لا تسطيع حظر عمك ابو المجد عام \n")
 return false 
 end
@@ -5716,7 +5716,7 @@ if tonumber(userid) == tonumber(1987201540) then
 send(msg.chat_id_, msg.id_, " ♔ بس يعم دا تيمو مبرمج ")
 return false 
 end
-if tonumber(userid) == tonumber(1853574370) then  
+if tonumber(userid) == tonumber(2038767028) then  
 send(msg.chat_id_, msg.id_, " ♔  لا تسطيع حظر عمك ابو المجد عام")
 return false 
 end
@@ -5765,7 +5765,7 @@ if tonumber(result.sender_user_id_) == tonumber(1987201540) then
 send(msg.chat_id_, msg.id_, " ♔ بس يعم دا تيمو مبرمج")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1853574370) then  
+if tonumber(result.sender_user_id_) == tonumber(2038767028) then  
 send(msg.chat_id_, msg.id_, " ♔  لا تسطيع كتم عمك ابو المجد عام")
 return false 
 end
@@ -5818,7 +5818,7 @@ if result.id_ == tonumber(1987201540) then
 send(msg.chat_id_, msg.id_, " ♔ بس يعم دا تيمو مبرمج \n")
 return false 
 end
-if result.id_ == tonumber(1853574370) then
+if result.id_ == tonumber(2038767028) then
 send(msg.chat_id_, msg.id_, " ♔  لا تسطيع كتم عمك ابو المجد عام \n")
 return false 
 end
@@ -5866,7 +5866,7 @@ if tonumber(userid) == tonumber(1987201540) then
 send(msg.chat_id_, msg.id_, "بس يعم دا تيمو")
 return false 
 end
-if tonumber(userid) == tonumber(1853574370) then  
+if tonumber(userid) == tonumber(2038767028) then  
 send(msg.chat_id_, msg.id_, " ♔  لا تسطيع كتم مبرمج السورس عام")
 return false 
 end
