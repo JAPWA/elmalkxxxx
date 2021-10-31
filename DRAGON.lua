@@ -3577,35 +3577,18 @@ end
  
 end,nil)
 end
-if text == "استوري" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(1,62); 
-local Text ='تم اختيار الاستوري هذه لك ' 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = 'استوري اخر ♔', callback_data="استوري"}},
-{{text = '♔ 𝚃𝙸𝙼𝙾',url="t.me/ttimo_8lby"}},
-{{text = '♔ 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/ABO_ELMAGD2"}},
-{{text = '♔ 𝙾𝙼𝙰𝚁',url="t.me/teemElmelok"}},
-{{text = '♔ 𝙹𝙰𝙱𝚆𝙰',url="t.me/J_A_B_W_A"}},
-{{text = 'اضف البوت الي مجموعتك ♔' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sijebehdhd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "استوري" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(1,62); 
-local Text ='تم اختيار الاستوري هذه لك' 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = 'ثيم اخر ♔', callback_data="/added"}},
-{{text = '♔ 𝚃𝙸𝙼𝙾',url="t.me/ttimo_8lby"}},
-{{text = '♔ 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/ABO_ELMAGD2"}},
-{{text = '♔ 𝙾𝙼𝙰𝚁',url="t.me/teemElmelok"}},
-{{text = '♔ 𝙹𝙰𝙱𝚆𝙰',url="t.me/J_A_B_W_A"}},
-{{text = 'اضف البوت الي مجموعتك ♔' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/xxvvzm/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+if text == 'استوري' or text == 'نوع استوري' or text == 'اختيارات استوري'  then
+local Text = [[
+𓆩 اختار نوع استوري الي ترودي 𓆪
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '𓆩 استوري 𓆪', callback_data="/Jabwa"},{text = '𓆩 استوري حب 𓆪', callback_data="/Jabwa2"}},   
+{{text = '𓆩 استوري مضحك 𓆪', callback_data="/Jabwa3"},{text = '𓆩 استوري قرآن 𓆪', callback_data="/Jabwa4"}},   
+{{text = '𓆩 𝐂𝐇 𓆪', url="https://t.me/e_l_m_o_l_k"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/41&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 
@@ -15740,7 +15723,7 @@ Msᴀɢ ~ #msgs
 [[
 𝐓𝐓• 𝐘𝐎𝐔𝐑 𝐈𝐃 𖠰 #id .
 𝐓𝐓• 𝐌𝐬𝐠𝐒 𖠰 #msgs .
-𝐓𝐓• 𝐔𝐬𝐞𝐫𝐍𝐚 ?? #username .
+𝐓𝐓• 𝐔𝐬𝐞𝐫𝐍𝐚 𖠰 #username .
 𝐓𝐓• 𝐒𝐓𝐀𝐒𝐓 𖠰 #stast .
 𝐓𝐓• 𝐀𝐔𝐓𝐎 𖠰 #auto .
 𝐓𝐓• 𝗘𝗗𝗜𝗧 𖠰 #edit .
