@@ -1371,7 +1371,7 @@ end
 tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonumber(msg.reply_to_message_id_) }, by_reply, nil) 
 end
 if text == '/start' and DevSoFi(msg) then 
-local Text = '[♔انت الان المطور الاساسي في البوت \n ♔سورس الملوك\n ♔يمكنك تحكم في البوتات من الكيبورد أسفل \nتابع جديدنا](t.me/e_l_m_o_l_k)'
+local Text = '♔انت الان المطور الاساسي في البوت \n ♔سورس الملوك\n ♔يمكنك تحكم في البوتات من الكيبورد أسفل \n[تابع جديدنا](t.me/e_l_m_o_l_k)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'الـمـطـور', url="http://t.me/"..sudos.UserName}}, 
