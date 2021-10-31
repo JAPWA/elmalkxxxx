@@ -4565,7 +4565,7 @@ tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonu
 end
 end
 
-if text == 'جلب نسخه الاحتياطيه' and DevSoFi(msg) then 
+if text == 'جلب النسخه' and DevSoFi(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -14459,7 +14459,7 @@ get_id_text = get_id_text:gsub('#game',NUMPGAME)
 get_id_text = get_id_text:gsub('#photos',photps) 
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_,'[\n✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..username..'«   »💘\n✵♔ ??𝚂??𝚂↬ »'..Msguser..'«   »💘\n✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'«   »💘\n✵♔ 𝙸𝙳↬  »'..msg.sender_user_id_..'«   »💘\n✵♔ 𝙲𝙷↬ »@e_l_m_o_l_k«   »💘\n')
+send(msg.chat_id_, msg.id_,'[\n✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..username..'«   »💘\n✵♔ ??𝚂𝙶𝚂↬ »'..Msguser..'«   »💘\n✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'«   »💘\n✵♔ 𝙸𝙳↬  »'..msg.sender_user_id_..'«   »💘\n✵♔ 𝙲𝙷↬ »@e_l_m_o_l_k«   »💘\n')
 end
 end
 
@@ -14888,7 +14888,7 @@ local List = {
 ]],
 [[
 • 🦄 ♔ ??𝑬𝑺 : #username ‌‌‏⚚
-• 🦄 ♔ 𝑺𝑻𝑨 : #stast ☥
+• 🦄 ♔ ??𝑻𝑨 : #stast ☥
 • 🦄 ♔ 𝑰𝑫 : #id ‌‌‏♕
 • 🦄 ♔ 𝑴𝑺𝑮 : #msgs 𓆊
 • 🦄 ♔ 𝑾??𝒍𝒄𝒐𝒎𝒆 : ⁞
@@ -15316,7 +15316,7 @@ Msᴀɢ ~ #msgs
 - 𝗖𝗛 - »@e_l_m_o_l_k« ♔
 ]],
 [[
-- 𝑢𝑠𝑒𝑟𝑛𝑎𝑚𝑒 ⟿ #username
+- 𝑢𝑠𝑒𝑟𝑛??𝑚𝑒 ⟿ #username
 - 𝑚𝑠𝑔𝑠 ⟿ #msgs
 - 𝑖𝑑 ⟿ #id
 - 𝑒𝑑𝑖𝑡 ⟿ #edit
@@ -15741,7 +15741,7 @@ Msᴀɢ ~ #msgs
 𝐓𝐓• 𝐘𝐎𝐔𝐑 𝐈𝐃 𖠰 #id .
 𝐓𝐓• 𝐌𝐬𝐠𝐒 𖠰 #msgs .
 𝐓𝐓• 𝐔𝐬𝐞𝐫𝐍𝐚 ?? #username .
-𝐓𝐓• 𝐒𝐓𝐀𝐒𝐓 𖠰 #stast .
+𝐓??• 𝐒𝐓𝐀𝐒𝐓 𖠰 #stast .
 𝐓𝐓• 𝐀𝐔𝐓𝐎 𖠰 #auto .
 𝐓𝐓• 𝗘𝗗𝗜𝗧 𖠰 #edit .
 𝐓𝐓• 𝗖𝗛 - »@e_l_m_o_l_k« ♔
