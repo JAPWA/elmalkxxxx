@@ -3575,12 +3575,14 @@ end,nil)
 end
 if text == "استوري" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(1,62); 
-local Text ='تم اختيار الاستوري هذه لك' 
+local Text ='تم اختيار الاستوري هذه لك ' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'استوري اخر', callback_data="استوري"}},
-{{text = 'مبرمج تيمو',url="t.me/ttimo_8lby"}},
-{{text = 'مبرمج ابو المجد',url="t.me/ABO_ELMAGD2"}},
+{{text = '♔ 𝚃𝙸𝙼𝙾',url="t.me/ttimo_8lby"}},
+{{text = '♔ 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/ABO_ELMAGD2"}},
+{{text = '♔ 𝙾𝙼𝙰𝚁',url="t.me/teemElmelok"}},
+{{text = '♔ 𝙹𝙰𝙱𝚆𝙰',url="t.me/J_A_B_W_A"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sijebehdhd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -3591,8 +3593,10 @@ local Text ='تم اختيار الاستوري هذه لك'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'ثيم اخر', callback_data="/added"}},
-{{text = 'مبرمج عمر',url="t.me/teemElmelok"}},
-{{text = 'مبرمج جابوا',url="t.me/J_A_B_W_A"}},
+{{text = '♔ 𝚃𝙸𝙼𝙾',url="t.me/ttimo_8lby"}},
+{{text = '♔ 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/ABO_ELMAGD2"}},
+{{text = '♔ 𝙾𝙼𝙰𝚁',url="t.me/teemElmelok"}},
+{{text = '♔ 𝙹𝙰𝙱𝚆𝙰',url="t.me/J_A_B_W_A"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/xxvvzm/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
