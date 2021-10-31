@@ -3467,7 +3467,8 @@ local Text = [[
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = ' 𝙾𝙼𝙰𝚁 ♔',url="t.me/teemElmelok"}}, 
+{{text = '♔ 𝙾𝙼𝙰𝚁',url="t.me/teemElmelok"}}, 
+{{text = '♔ 𝙱𝙾𝚃 𝙾𝙼𝙰𝚁',url="t.me/omarteembot"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/teemElmelok&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -3479,7 +3480,8 @@ local Text = [[
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = ' 𝙹𝙰𝙱𝚆𝙰 ♔',url="t.me/J_A_B_W_A"}}, 
+{{text = '♔ 𝙹𝙰𝙱𝚆𝙰',url="t.me/J_A_B_W_A"}}, 
+{{text = '♔ 𝙱𝙾𝚃 𝙹𝙰𝙱𝚆𝙰',url="t.me/Bot_JABWA_Bot"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/J_A_B_W_A&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -3491,7 +3493,8 @@ local Text = [[
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = ' 𝙴𝙼𝚈 ♔',url="t.me/ttimo_Hayatey"}}, 
+{{text = '♔ 𝙴𝙼𝚈',url="t.me/ttimo_Hayatey"}}, 
+{{text = '♔ 𝙱𝙾𝚃 𝙴𝙼𝚈',url="t.me/ZQUEnZbot"}}
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_Hayatey&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -14456,7 +14459,7 @@ get_id_text = get_id_text:gsub('#game',NUMPGAME)
 get_id_text = get_id_text:gsub('#photos',photps) 
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_,'[\n✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..username..'«   »💘\n✵♔ 𝙼𝚂𝙶𝚂↬ »'..Msguser..'«   »💘\n✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'«   »💘\n✵♔ 𝙸𝙳↬  »'..msg.sender_user_id_..'«   »💘\n✵♔ 𝙲𝙷↬ »@e_l_m_o_l_k«   »💘\n')
+send(msg.chat_id_, msg.id_,'[\n✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..username..'«   »💘\n✵♔ ??𝚂𝙶𝚂↬ »'..Msguser..'«   »💘\n✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'«   »💘\n✵♔ 𝙸𝙳↬  »'..msg.sender_user_id_..'«   »💘\n✵♔ 𝙲𝙷↬ »@e_l_m_o_l_k«   »💘\n')
 end
 end
 
@@ -15744,7 +15747,7 @@ Msᴀɢ ~ #msgs
 𝐓𝐓• 𝗖𝗛 - »@e_l_m_o_l_k« ♔
 ]],
 [[
-↑♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 𝙐𝙎𝙀??𝙉𝘼𝙈𝙀 ➱ #username ♔  
+↑♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀 ➱ #username ♔  
 ↑♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 𝙄𝘿 ➱ #id
 ↑♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 𝙍𝘼𝙉𝙆 ➱  #stast ♔  
 ↑♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 𝙈𝘼𝙎𝙂 ➱ #msgs ♔  
@@ -17687,7 +17690,7 @@ return false
 end
 if Text == '/HHH' then
 local Teext =[[
-♔ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲?? 𝙴𝙻𝙼𝙻𝙾𝙺 ♔
+♔ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
