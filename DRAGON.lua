@@ -3582,7 +3582,7 @@ ght = math.random(1,62);
 local Text ='تم اختيار الاستوري هذه لك ' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'استوري اخر', callback_data="استوري"}},
+{{text = 'استوري اخر ♔', callback_data="استوري"}},
 {{text = '♔ 𝚃𝙸𝙼𝙾',url="t.me/ttimo_8lby"}},
 {{text = '♔ 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/ABO_ELMAGD2"}},
 {{text = '♔ 𝙾𝙼𝙰𝚁',url="t.me/teemElmelok"}},
@@ -3597,7 +3597,7 @@ ght = math.random(1,62);
 local Text ='تم اختيار الاستوري هذه لك' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'ثيم اخر', callback_data="/added"}},
+{{text = 'ثيم اخر ♔', callback_data="/added"}},
 {{text = '♔ 𝚃𝙸𝙼𝙾',url="t.me/ttimo_8lby"}},
 {{text = '♔ 𝙰𝙱𝙾 𝙴𝙻𝙼𝙰𝙶𝙳',url="t.me/ABO_ELMAGD2"}},
 {{text = '♔ 𝙾𝙼𝙰𝚁',url="t.me/teemElmelok"}},
@@ -15740,7 +15740,7 @@ Msᴀɢ ~ #msgs
 [[
 𝐓𝐓• 𝐘𝐎𝐔𝐑 𝐈𝐃 𖠰 #id .
 𝐓𝐓• 𝐌𝐬𝐠𝐒 𖠰 #msgs .
-𝐓𝐓• 𝐔𝐬𝐞𝐫𝐍𝐚 𖠰 #username .
+𝐓𝐓• 𝐔𝐬𝐞𝐫𝐍𝐚 ?? #username .
 𝐓𝐓• 𝐒𝐓𝐀𝐒𝐓 𖠰 #stast .
 𝐓𝐓• 𝐀𝐔𝐓𝐎 𖠰 #auto .
 𝐓𝐓• 𝗘𝗗𝗜𝗧 𖠰 #edit .
