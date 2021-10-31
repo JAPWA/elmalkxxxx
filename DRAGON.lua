@@ -3589,7 +3589,7 @@ keyboard.inline_keyboard = {
 {{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺', url="https://t.me/e_l_m_o_l_k"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/41&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/timo_2/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 
@@ -15767,7 +15767,7 @@ Msᴀɢ ~ #msgs
 ✵♔ 𝗶𝗗 - »@e_l_m_o_l_k« ♔
 ]],
 [[
-- 🦋 UsErNaMe . #username 𖠲
+- 🦋 UsErNaMe . #username ??
 - 🦋 StAsT . #stast 𖠲
 - 🦋 Id . #id 𖠲
 - 🦋 GaMeS . #game 𖠲
@@ -16737,7 +16737,7 @@ local msg_idd = Msg_id/2097152/0.5
 local Text = data.payload_.data_
 if Text == "/Jabwa" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
 ght = math.random(2,22); 
-local Text ='𓆩 مرحبا اليك استوري  رومنسي 𓆪' 
+local Text ='𓆩مرحبا اليك استوري  رومنسي 𓆪' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '`ʙᴀᴄᴋ´', callback_data="/MMM"}},
