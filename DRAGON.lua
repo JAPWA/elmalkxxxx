@@ -3442,7 +3442,8 @@ local Text = [[
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = ' 𝚃𝙸𝙼𝙾 ♔',url="t.me/ttimo_8lby"}}, 
+{{text = '♔ 𝚃𝙸𝙼𝙾',url="t.me/ttimo_8lby"}}, 
+{{text = '♔ 𝙱𝙾𝚃 𝚃𝙸𝙼𝙾',url="t.me/Timo8Bot"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_8lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
@@ -15322,7 +15323,7 @@ Msᴀɢ ~ #msgs
 [[
 🌯 ¦✙• 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 » ⁞  #username 🇪🇬
 🌯 ¦✙• 𝐦𝐬𝐠 » ⁞  #msgs  📝
-🌯 ¦✙• ??𝒂𝒏𝒌 » ⁞ #stast  
+🌯 ¦✙• 𝒓𝒂𝒏𝒌 » ⁞ #stast  
 🌯 ¦✙• 𝐢𝐝 𝒔𝒕𝒂 » ⁞ #id  🆔
 🌯 ¦ 𝗖𝗛 - »@e_l_m_o_l_k« ♔
 ]],
@@ -15743,7 +15744,7 @@ Msᴀɢ ~ #msgs
 𝐓𝐓• 𝗖𝗛 - »@e_l_m_o_l_k« ♔
 ]],
 [[
-↑♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀 ➱ #username ♔  
+↑♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 𝙐𝙎𝙀??𝙉𝘼𝙈𝙀 ➱ #username ♔  
 ↑♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 𝙄𝘿 ➱ #id
 ↑♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 𝙍𝘼𝙉𝙆 ➱  #stast ♔  
 ↑♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 𝙈𝘼𝙎𝙂 ➱ #msgs ♔  
@@ -17686,7 +17687,7 @@ return false
 end
 if Text == '/HHH' then
 local Teext =[[
-♔ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔
+♔ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲?? 𝙴𝙻𝙼𝙻𝙾𝙺 ♔
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
