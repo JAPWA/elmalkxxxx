@@ -3579,13 +3579,13 @@ end,nil)
 end
 if text == 'استوري' or text == 'نوع استوري' or text == 'اختيارات استوري'  then
 local Text = [[
-𓆩 اختار نوع استوري الي ترودي 𓆪
+♔ اختار نوع استوري الي ترودي ♔
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𓆩 استوري 𓆪', callback_data="/Jabwa"},{text = '𓆩 استوري حب 𓆪', callback_data="/Jabwa2"}},   
-{{text = '𓆩 استوري مضحك 𓆪', callback_data="/Jabwa3"},{text = '𓆩 استوري قرآن 𓆪', callback_data="/Jabwa4"}},   
-{{text = '𓆩 𝐂𝐇 𓆪', url="https://t.me/e_l_m_o_l_k"}},
+{{text = 'استوري ♔', callback_data="/Jabwa"},{text = 'استوري حب ♔', callback_data="/Jabwa2"}},   
+{{text = 'استوري مضحك ♔', callback_data="/Jabwa3"},{text = ' استوري قرآن ♔', callback_data="/Jabwa4"}},   
+{{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺', url="https://t.me/e_l_m_o_l_k"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_JABWA/41&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
