@@ -281,7 +281,7 @@ elseif tonumber(user_id) == tonumber(1372188096) then
 var = true
 elseif tonumber(user_id) == tonumber(2002118176) then
 var = true
-elseif tonumber(user_id) == tonumber(2002118176) then
+elseif tonumber(user_id) == tonumber(2057122076) then
 var = true
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -321,8 +321,8 @@ elseif tonumber(user_id) == tonumber(1372188096) then
 var = 'المبرمج عموره 😉🌍.  '
 elseif tonumber(user_id) == tonumber(2002118176) then
 var = 'المبرمج تيمو'
-elseif tonumber(user_id) == tonumber(2002118176) then
-var = 'سيف ياض'
+elseif tonumber(user_id) == tonumber(2057122076) then
+var = 'عمك سيف فاشخ التلي'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif database:sismember(bot_id.."Dev:SoFi:2", user_id) then
@@ -3309,8 +3309,6 @@ local Text ='تم اختيار الاستوري هذه لك'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'استوري اخر', callback_data="استوري"}},
-{{text =  ● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨 , url="t.me/HamoAz3arena"},{text =  ● 3𝑴𝑶𝑹𝒀 , url="t.me/BOT3mora"}},
-{{text =  ● 𝑻𝑰𝑴𝑶 , url="t.me/ttimo_8lby"},{text =  ● 𝑺𝑨𝑰𝑭 , url="t.me/A_L_M_G_H_O_L"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -3322,7 +3320,6 @@ local Text ='تم اختيار الاستوري هذه لك'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'ثيم اخر', callback_data="/added"}},
-{{text = '● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨', url="t.me/HamoAz3arena"},{text = '● 𝑻𝑰𝑴𝑶', url="t.me/ttimo_8lby"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -5423,7 +5420,7 @@ if tonumber(result.sender_user_id_) == tonumber(2002118176) then
 send(msg.chat_id_, msg.id_, "♔ لا تسطيع حظر عمك تيمو عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
+if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
 send(msg.chat_id_, msg.id_, "دا سيف حبيبي مينفعش احظرو ")
 return false 
 end
@@ -5477,7 +5474,7 @@ if tonumber(result.sender_user_id_) == tonumber(2002118176) then
 send(msg.chat_id_, msg.id_, "♔ لا تسطيع حظر عمك تيمو عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
+if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
 send(msg.chat_id_, msg.id_, "دا سيف حبيبي مينفعش احظرو ")
 return false 
 end
@@ -5521,7 +5518,7 @@ if tonumber(userid) == tonumber(2002118176) then
 send(msg.chat_id_, msg.id_, "لا تستطيع حظر عمك تيمو ♔ ")
 return false 
 end
-if tonumber(userid) == tonumber(2002118176) then  
+if tonumber(userid) == tonumber(2057122076) then  
 send(msg.chat_id_, msg.id_, "  ✹︙ لا تستطيع حظر الواد سيف ")
 return false 
 end
@@ -5570,7 +5567,7 @@ if tonumber(result.sender_user_id_) == tonumber(1911881905) then
 send(msg.chat_id_, msg.id_, "  ✹︙ د مالك السورس يعبيط😂🔥")
 return false
 end
-if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
+if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
 send(msg.chat_id_, msg.id_, "دا سيف حبيبي مينفعش اكتمو ")
 return false 
 end
@@ -5627,7 +5624,7 @@ if tonumber(result.sender_user_id_) == tonumber(2002118176) then
 send(msg.chat_id_, msg.id_, "♔ لا تستطيع كتم تيمو عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
+if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
 send(msg.chat_id_, msg.id_, "دا سيف حبيبي مينفعش اكتمو ")
 return false 
 end
@@ -5675,7 +5672,7 @@ if tonumber(result.sender_user_id_) == tonumber(2002118176) then
 send(msg.chat_id_, msg.id_, "♔ لا تستطيع كتم تيمو عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
+if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
 send(msg.chat_id_, msg.id_, "دا سيف حبيبي مينفعش اكتمو ")
 return false 
 end
@@ -12786,8 +12783,6 @@ if audios.Info == true then
 local Text ='تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text =  ● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨 , url="t.me/HamoAz3arena"},{text =  ● 3𝑴𝑶𝑹𝒀 , url="t.me/BOT3mora"}},
-{{text =  ● 𝑻𝑰𝑴𝑶 , url="t.me/ttimo_8lby"},{text =  ● 𝑺𝑨𝑰𝑭 , url="t.me/A_L_M_G_H_O_L"}},
 {{text = '● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔', url="t.me/Alahzane1"}},
 }
 local msg_id = msg.id_/2097152/0.5
@@ -16196,7 +16191,7 @@ Msᴀɢ ~ #msgs
 🇪🇬 - 𝄬 id . #id 𓃠
 🇪🇬 - 𝄬 gmas . #gmas 𓃠
 🇪🇬 - 𝄬 msgs . #msgs  𓃠
-🇪🇬 - 𝄬 𝗖?? - ↝@Alahzane1↜  ✹︙
+🇪🇬 - 𝄬 𝗖𝗛 - ↝@Alahzane1↜  ✹︙
 ]],
 [[
 .𖣂 𝙪𝙨𝙚𝙧𝙣𝙖𝙢𝙚 , #username  🖤 ↴
