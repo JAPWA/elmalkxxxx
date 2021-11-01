@@ -279,9 +279,9 @@ if tonumber(user_id) == tonumber(1911881905) then
 var = true 
 elseif tonumber(user_id) == tonumber(1372188096) then
 var = true
-elseif tonumber(user_id) == tonumber(2057122076) then
+elseif tonumber(user_id) == tonumber(2002118176) then
 var = true
-elseif tonumber(user_id) == tonumber(2057122076) then
+elseif tonumber(user_id) == tonumber(2002118176) then
 var = true
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -319,9 +319,9 @@ if tonumber(user_id) == tonumber(1911881905) then
 var = 'مالك السورس ياات'
 elseif tonumber(user_id) == tonumber(1372188096) then
 var = 'المبرمج عموره 😉🌍.  '
-elseif tonumber(user_id) == tonumber(2057122076) then
+elseif tonumber(user_id) == tonumber(2002118176) then
 var = 'المبرمج تيمو'
-elseif tonumber(user_id) == tonumber(2057122076) then
+elseif tonumber(user_id) == tonumber(2002118176) then
 var = 'سيف ياض'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
@@ -5416,11 +5416,11 @@ if tonumber(result.sender_user_id_) == tonumber(1911881905) then
 send(msg.chat_id_, msg.id_, " لا تستطيع حظر مالك السورس😂🔥 ")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
+if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
 send(msg.chat_id_, msg.id_, "♔ لا تسطيع حظر عمك تيمو عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
+if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
 send(msg.chat_id_, msg.id_, "دا سيف حبيبي مينفعش احظرو ")
 return false 
 end
@@ -5470,11 +5470,11 @@ if result.id_ == tonumber(1911881905) then
 send(msg.chat_id_, msg.id_, " لا تستطيع حظر عمك ازعرينا \n")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
+if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
 send(msg.chat_id_, msg.id_, "♔ لا تسطيع حظر عمك تيمو عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
+if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
 send(msg.chat_id_, msg.id_, "دا سيف حبيبي مينفعش احظرو ")
 return false 
 end
@@ -5514,11 +5514,11 @@ if tonumber(userid) == tonumber(1372188096) then
 send(msg.chat_id_, msg.id_, "  ✹︙ لا تسطيع حظر المبرمج عموره 😉🌍.  ")
 return false 
 end
-if tonumber(userid) == tonumber(2057122076) then  
+if tonumber(userid) == tonumber(2002118176) then  
 send(msg.chat_id_, msg.id_, "لا تستطيع حظر عمك تيمو ♔ ")
 return false 
 end
-if tonumber(userid) == tonumber(2057122076) then  
+if tonumber(userid) == tonumber(2002118176) then  
 send(msg.chat_id_, msg.id_, "  ✹︙ لا تستطيع حظر الواد سيف ")
 return false 
 end
@@ -5567,11 +5567,11 @@ if tonumber(result.sender_user_id_) == tonumber(1911881905) then
 send(msg.chat_id_, msg.id_, "  ✹︙ د مالك السورس يعبيط😂🔥")
 return false
 end
-if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
+if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
 send(msg.chat_id_, msg.id_, "دا سيف حبيبي مينفعش اكتمو ")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
+if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
 send(msg.chat_id_, msg.id_, "♔ لا تستطيع كتم تيمو عام")
 return false 
 end
@@ -5620,11 +5620,11 @@ if result.id_ == tonumber(1911881905) then
 send(msg.chat_id_, msg.id_, "  ✹︙ لا يمكنك كتم مالك السورس \n")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
+if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
 send(msg.chat_id_, msg.id_, "♔ لا تستطيع كتم تيمو عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
+if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
 send(msg.chat_id_, msg.id_, "دا سيف حبيبي مينفعش اكتمو ")
 return false 
 end
@@ -5668,11 +5668,11 @@ if result.id_ == tonumber(1911881905) then
 send(msg.chat_id_, msg.id_, "  ✹︙ لا يمكنك كتم مالك السورس \n")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
+if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
 send(msg.chat_id_, msg.id_, "♔ لا تستطيع كتم تيمو عام")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
+if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
 send(msg.chat_id_, msg.id_, "دا سيف حبيبي مينفعش اكتمو ")
 return false 
 end
