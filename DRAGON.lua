@@ -12788,6 +12788,9 @@ if audios.Info == true then
 local Text ='تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
+{{text = 'غنيلي اخر ●', callback_data="غنيلي"}},
+{{text = '● 𝑻𝑰𝑴𝑶',url="t.me/ttimo_8lby"}},
+{{text = '● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨',url="t.me/HamoAz3arena "}},
 {{text = '● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔', url="t.me/Alahzane1"}},
 }
 local msg_id = msg.id_/2097152/0.5
@@ -12800,8 +12803,10 @@ if text == "ثيم" then
 ght = math.random(1,33);  
 local Text ='الستخدم ثيم اخر اكتب ثيم'  
 keyboard = {}   
-keyboard.inline_keyboard = {  
- {{text = '● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔', url="t.me/Alahzane1"}},
+keyboard.inline_keyboard = {
+{{text = 'ثيم اخر ●', callback_data="ثيم"}},
+{{text = '● 𝑻𝑰𝑴𝑶',url="t.me/ttimo_8lby"}},
+{{text = '● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔', url="t.me/Alahzane1"}},
 }  
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendDocument?chat_id=' .. msg.chat_id_ .. '&document=https://t.me/ahmedthem1/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -17839,7 +17844,7 @@ keyboard.inline_keyboard = {
 {{text = 'غنيلي', callback_data="/help17"}},
 {{text = 'نسبه جمالي', callback_data="/help18"},{text = 'اليتيوب', callback_data="/help24"}},
 {{text = '◗القائمه الرائسيه◖', callback_data="/help7"}},
-{{text = '● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔', url="t.me/Alahzane1"}},
+{{text = '● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔??𝗠𝗔', url="t.me/Alahzane1"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
