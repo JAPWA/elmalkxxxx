@@ -3309,6 +3309,8 @@ local Text ='تم اختيار الاستوري هذه لك'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'استوري اخر', callback_data="استوري"}},
+{{text =  ● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨 , url="t.me/HamoAz3arena"},{text =  ● 3𝑴𝑶𝑹𝒀 , url="t.me/BOT3mora"}},
+{{text =  ● 𝑻𝑰𝑴𝑶 , url="t.me/ttimo_8lby"},{text =  ● 𝑺𝑨𝑰𝑭 , url="t.me/A_L_M_G_H_O_L"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -3320,6 +3322,7 @@ local Text ='تم اختيار الاستوري هذه لك'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'ثيم اخر', callback_data="/added"}},
+{{text = '● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨', url="t.me/HamoAz3arena"},{text = '● 𝑻𝑰𝑴𝑶', url="t.me/ttimo_8lby"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -12783,6 +12786,8 @@ if audios.Info == true then
 local Text ='تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
+{{text =  ● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨 , url="t.me/HamoAz3arena"},{text =  ● 3𝑴𝑶𝑹𝒀 , url="t.me/BOT3mora"}},
+{{text =  ● 𝑻𝑰𝑴𝑶 , url="t.me/ttimo_8lby"},{text =  ● 𝑺𝑨𝑰𝑭 , url="t.me/A_L_M_G_H_O_L"}},
 {{text = '● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔', url="t.me/Alahzane1"}},
 }
 local msg_id = msg.id_/2097152/0.5
@@ -15786,7 +15791,7 @@ Msᴀɢ ~ #msgs
 🇪🇬 - 𝚄𝚂𝙴𝚁 ⟿ #username 💘.
 🇪🇬 - 𝙼𝚂𝙶𝚂 ⟿  #msgs 💘.
 🇪🇬 - 𝙶𝙼𝙰𝚂 ⟿ #stast 💘.
-🇪?? - 𝙸𝙳 𝚂𝚃𝙰 ⟿ #id 💘.  
+🇪🇬 - 𝙸𝙳 𝚂𝚃𝙰 ⟿ #id 💘.  
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 🇪🇬 - 𝗖𝗛 - ↝@Alahzane1↜  ✹︙
 ]],
@@ -16191,7 +16196,7 @@ Msᴀɢ ~ #msgs
 🇪🇬 - 𝄬 id . #id 𓃠
 🇪🇬 - 𝄬 gmas . #gmas 𓃠
 🇪🇬 - 𝄬 msgs . #msgs  𓃠
-🇪🇬 - 𝄬 𝗖𝗛 - ↝@Alahzane1↜  ✹︙
+🇪🇬 - 𝄬 𝗖?? - ↝@Alahzane1↜  ✹︙
 ]],
 [[
 .𖣂 𝙪𝙨𝙚𝙧𝙣𝙖𝙢𝙚 , #username  🖤 ↴
@@ -16873,7 +16878,7 @@ keyboard.inline_keyboard = {
 {text = 'اوامر الاعضاء', callback_data="/change-names"},
 },
 {
-{text = '˹● 𝗦𝗢𝗨??𝗖𝗘 𝗔𝗭𝗠𝗔˼', url="t.me/Alahzane1"},
+{text = '˹● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔˼', url="t.me/Alahzane1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
