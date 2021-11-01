@@ -3309,7 +3309,6 @@ local Text ='تم اختيار الاستوري هذه لك'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'استوري اخر', callback_data="استوري"}},
-{{text =  𝐀𝐙3𝐀𝐑𝐄𝐍𝐀 ,url="t.me/@HamoAz3arena"}},
 {{text =  ● 𝑻𝑰𝑴𝑶 , url="t.me/ttimo_8lby"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -13684,7 +13683,7 @@ send(msg.chat_id_,msg.id_, '◍ بعشء امك..🥺💘')
 return false
 end
 
-if text == '🙄🙄' or text == '🙄🙄??' then
+if text == '🙄🙄' or text == '🙄🙄🙄' then
 send(msg.chat_id_,msg.id_, '◍ سقف الجروب عاجبك..😂💜') 
 return false
 end
@@ -14954,7 +14953,7 @@ else
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
 send(msg.chat_id_, msg.id_,'[\n ¦• 𝚄𝚂𝙴𝚁 ↬  ↝'..username..'↜    ↝💘\n¦• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜.   ↝💘\n ¦• 𝚁𝙰𝙽𝙺↬ ↝'..Rutba(msg.sender_user_id_,msg.chat_id_)..'↜    ↝💘\n¦• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜    ↝💘\n¦• 𝒄𝒉↬   ↝@Alahzane1↜    ↝💘\n')
 else
-send(msg.chat_id_, msg.id_, '\n  ⌯︙ الصوره ⇜ ليس لديك صور في حسابك'..'[\n¦• 𝚄𝚂𝙴𝚁 ↬ ↝'..username..'↜\n¦• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜\n¦• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜\n¦• 𝒄𝒉↬  ↝@Alahzane1↜\n')
+send(msg.chat_id_, msg.id_, '\n  ⌯︙ الصوره ⇜ ليس لديك صور في حسابك'..'[\n¦• 𝚄??𝙴𝚁 ↬ ↝'..username..'↜\n¦• 𝙼𝚂𝙶𝚂↬ ↝'..Msguser..'↜\n¦• 𝙸𝙳↬  ↝'..msg.sender_user_id_..'↜\n¦• 𝒄𝒉↬  ↝@Alahzane1↜\n')
 end 
 end
 end
@@ -15781,7 +15780,7 @@ Msᴀɢ ~ #msgs
 - StA🇪🇬 ꙰   #msgs
 - MsGs🇪🇬 ꙰ #stast
 - ID🇪🇬 ꙰  #id
-- 𝗖𝗛 🇪🇬 ꙰  ↝@Alahzane1↜  ⌯︙
+- 𝗖𝗛 🇪?? ꙰  ↝@Alahzane1↜  ⌯︙
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
