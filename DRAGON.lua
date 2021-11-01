@@ -278,11 +278,7 @@ function Can_or_NotCan(user_id,chat_id)
 if tonumber(user_id) == tonumber(1911881905) then  
 var = true 
 elseif tonumber(user_id) == tonumber(1372188096) then
-var = true
-elseif tonumber(user_id) == tonumber(1987201540) then
-var = true
-elseif tonumber(user_id) == tonumber(2057122076) then
-var = true
+var = true    
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
 elseif tonumber(user_id) == tonumber(bot_id) then
@@ -319,10 +315,6 @@ if tonumber(user_id) == tonumber(1911881905) then
 var = 'مالك السورس ياات'
 elseif tonumber(user_id) == tonumber(1372188096) then
 var = 'المبرمج عموره 😉🌍.  '
-elseif tonumber(user_id) == tonumber(1987201540) then
-var = 'المبرمج تيمو'
-elseif tonumber(user_id) == tonumber(2057122076) then
-var = 'سيف ياض'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif database:sismember(bot_id.."Dev:SoFi:2", user_id) then
@@ -988,7 +980,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𓆩● ● 3𝑴𝑶𝑹𝒀 ●𓆪',url="t.me/BOT3mora"}},
+{{text = '𓆩● 𓆩● 𝐃𝐄𝐕 3𝐌𝐎𝐑𝐀 ●𓆪 ●𓆪',url="t.me/BOT3mora"}},
 {{text = '𝐀𝐙3𝐀𝐑𝐄𝐍𝐀',url="t.me/HamoAz3arena"}},
 {{text = '𓆩● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ●𓆪',url="t.me/Alahzane1"}},
 }
@@ -1007,7 +999,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '● 3𝑴𝑶𝑹𝒀',url="t.me/BOT3mora"}},
+{{text = '𓆩● 𝐃𝐄𝐕 3𝐌𝐎𝐑𝐀 ●𓆪',url="t.me/BOT3mora"}},
 {{text = '𓆩● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ●𓆪',url="t.me/Alahzane1"}},
 }
 local msg_id = msg.id_/2097152/0.5
@@ -3187,21 +3179,19 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
 local Text = [[
 [𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔](http://t.me/Alahzane1)
-[● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨](http://t.me/HamoAz3arena)
-[● 3𝑴𝑶𝑹𝒀](http://t.me/BOT3mora)
-[● 𝑻𝑰𝑴𝑶](http://t.me/ttimo_8lby)
+[𝐀𝐙3𝐀𝐑𝐄𝐍𝐀](http://t.me/HamoAz3arena)
+[𓆩● 𝐃𝐄𝐕 3𝐌𝐎𝐑𝐀 ●𓆪](http://t.me/BOT3mora)
 
 [𝐂𝐇 𝐒𝐎𝐔𝐑𝐂𝐄](http://t.me/Alahzane1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨', url="t.me/HamoAz3arena"},{text = '● 3𝑴𝑶𝑹𝒀', url="t.me/BOT3mora"}},
-{{text = '● 𝑻𝑰𝑴𝑶', url="t.me/ttimo_8lby"},{text = '● 𝑺𝑨𝑰𝑭', url="t.me/A_L_M_G_H_O_L"}},
+{{text = '𝐀𝐙3𝐀𝐑𝐄𝐍𝐀', url="t.me/HamoAz3arena"},{text = '𓆩● 𝐃𝐄𝐕 3𝐌𝐎𝐑𝐀 ●𓆪', url="t.me/BOT3mora"}},
 {{text = '𓆩● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ●𓆪',url="t.me/Alahzane1"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sourseAzma/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/V_I_K_I_N_G_2/86&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
@@ -3211,62 +3201,38 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝐀𝐙3𝐀𝐑𝐄𝐍𝐀',url="t.me/@HamoAz3arena"},{text = '● 3𝑴𝑶𝑹𝒀', url="t.me/BOT3mora"}},
-{{text = '● 𝑻𝑰𝑴𝑶', url="t.me/ttimo_8lby"},{text = '● 𝑺𝑨𝑰𝑭', url="t.me/A_L_M_G_H_O_L"}},
+{{text = '𝐀𝐙3𝐀𝐑𝐄𝐍𝐀',url="t.me/@HamoAz3arena"},{text = '𓆩● 𝐃𝐄𝐕 3𝐌𝐎𝐑𝐀 ●𓆪', url="t.me/BOT3mora"}},
 {{text = '𓆩● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ●𓆪 ', url="t.me/Alahzane1"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sourseAzma/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/V_I_K_I_N_G_2/86/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
  
-if text == 'عمر' or text == 'عموره' or text == 'مطور السورس'  then
+if text == 'عمر' or text == 'عموره' or text == 'مبرمج السورس'  then
 local Text = [[
-مطور السورس عموري للتواصل معاه اتبع الزر ال في الاسفل ⇊
+عمر مبرمج سورس عظمه للتواصل اتبع الزر ف الاسفل🖤
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '● 3𝑴𝑶𝑹𝒀',url="t.me/BOT3mora"}},
+{{text = '𓆩● 𝐃𝐄𝐕 3𝐌𝐎𝐑𝐀 ●𓆪',url="t.me/BOT3mora"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/BOT3mora/27&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'ازعرينا' or text == 'صاحب السورس' or text == 'مالك السورس'  then
+if text == 'اتش' or text == 'صاحب السورس' or text == 'مالك السورس'  then
 local Text = [[
-مالك السورس ازعرينا للتواصل معاه اتبع الزر ال في الاسفل ⇊
+عزعرينا صاحب السورس للتواصل اتبع الزر ف الاسفل.!
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨',url="t.me/HamoAz3arena"}},
+{{text = 'عزعريناا',url="t.me/HamoAz3arena"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/HamoAz3arena&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'تيمو' or text == 'مبرمج تيمو' or text == 'مبرمج السورس' or text == 'TIMO' then 
-local msg_id = msg.id_/2097152/0.5  
-local Text = [[ 
-المبرمج تيمو للتواصل معاه اتبع الزر ال في الاسفل ⇓⇑
-   ]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '● 𝑻𝑰𝑴𝑶',url="t.me/ttimo_8lby"}}, 
-} 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_8lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-
-if text == 'سيف' or text == 'المطور' or text == 'المجهول' or text == 'SAIF' then 
-local msg_id = msg.id_/2097152/0.5  
-local Text = [[ 
-مطور السورس سيف للتواصل معاه اتبع الزر ال في الاسففل ⇊
-   ]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '● 𝑺𝑨𝑰𝑭',url="t.me/A_L_M_G_H_O_L"}}, 
-} 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/A_L_M_G_H_O_L&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
 
 if text == 'مطورين السورس' then
 local Text = [[ 
@@ -3308,19 +3274,8 @@ ght = math.random(1,62);
 local Text ='تم اختيار الاستوري هذه لك' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'استوري اخر', callback_data="استوري"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sijebehdhd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == "استوري" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
-ght = math.random(1,62); 
-local Text ='تم اختيار الاستوري هذه لك' 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = 'ثيم اخر', callback_data="/added"}},
-{{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = '𓆩● 𝐃𝐄𝐕 3𝐌𝐎𝐑𝐀 ●𓆪', url="t.me/BOT3mora"}},
+{{text = '𓆩● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ●𓆪',url="t.me/Alahzane1"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/xxvvzm/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -4217,7 +4172,7 @@ local Text = [[
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '● 3𝑴𝑶𝑹𝒀', url="t.me/BOT3mora"}},
+{{text = '𓆩● 𝐃𝐄𝐕 3𝐌𝐎𝐑𝐀 ●𓆪', url="t.me/BOT3mora"}},
 {{text = '❨  𖣘• ⁽𝙺𝙸𝙽𝙶₎ •𖣘 ❩', url="t.me/Alahzane1"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -5416,14 +5371,6 @@ if tonumber(result.sender_user_id_) == tonumber(1911881905) then
 send(msg.chat_id_, msg.id_, " لا تستطيع حظر مالك السورس😂🔥 ")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1987201540) then  
-send(msg.chat_id_, msg.id_, "♔ لا تسطيع حظر عمك تيمو عام")
-return false 
-end
-if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
-send(msg.chat_id_, msg.id_, "دا سيف حبيبي مينفعش احظرو ")
-return false 
-end
 database:sadd(bot_id..'GBan:User', result.sender_user_id_)
 chat_kick(result.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},
@@ -5467,15 +5414,7 @@ send(msg.chat_id_, msg.id_, "  ⌯︙ لا يمكنك حظر المبرمج عم
 return false 
 end
 if result.id_ == tonumber(1911881905) then
-send(msg.chat_id_, msg.id_, " لا تستطيع حظر عمك ازعرينا \n")
-return false 
-end
-if tonumber(result.sender_user_id_) == tonumber(1987201540) then  
-send(msg.chat_id_, msg.id_, "♔ لا تسطيع حظر عمك تيمو عام")
-return false 
-end
-if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
-send(msg.chat_id_, msg.id_, "دا سيف حبيبي مينفعش احظرو ")
+send(msg.chat_id_, msg.id_, " لا يمكنك حظر عمك اتش يلاا \n")
 return false 
 end
 usertext = '\n  ⌯︙ الـعـضو   ⇇['..result.title_..'](t.me/'..(username or 'Alahzane1')..')'
@@ -5514,15 +5453,15 @@ if tonumber(userid) == tonumber(1372188096) then
 send(msg.chat_id_, msg.id_, "  ⌯︙ لا تسطيع حظر المبرمج عموره 😉🌍.  ")
 return false 
 end
-if tonumber(userid) == tonumber(1987201540) then  
-send(msg.chat_id_, msg.id_, "لا تستطيع حظر عمك تيمو ♔ ")
-return false 
-end
-if tonumber(userid) == tonumber(2057122076) then  
-send(msg.chat_id_, msg.id_, "  ⌯︙ لا تستطيع حظر الواد سيف ")
-return false 
-end
 if tonumber(userid) == tonumber(1911881905) then  
+send(msg.chat_id_, msg.id_, "لا يمكنك حظر مالك السورس😂♥️ ")
+return false 
+end
+if tonumber(userid) == tonumber(1372188096) then  
+send(msg.chat_id_, msg.id_, "  ⌯︙ لا تسطيع حظر صاحب السورس عام")
+return false 
+end
+if tonumber(userid) == tonumber(1372188096) then  
 send(msg.chat_id_, msg.id_, "  ⌯︙ لا تسطيع حظر مالك السورس عام")
 return false 
 end
@@ -5566,14 +5505,6 @@ end
 if tonumber(result.sender_user_id_) == tonumber(1911881905) then
 send(msg.chat_id_, msg.id_, "  ⌯︙ د مالك السورس يعبيط😂🔥")
 return false
-end
-if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
-send(msg.chat_id_, msg.id_, "دا سيف حبيبي مينفعش اكتمو ")
-return false 
-end
-if tonumber(result.sender_user_id_) == tonumber(1987201540) then  
-send(msg.chat_id_, msg.id_, "♔ لا تستطيع كتم تيمو عام")
-return false 
 end
 database:sadd(bot_id..'Gmute:User', result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},
@@ -5620,14 +5551,6 @@ if result.id_ == tonumber(1911881905) then
 send(msg.chat_id_, msg.id_, "  ⌯︙ لا يمكنك كتم مالك السورس \n")
 return false 
 end
-if tonumber(result.sender_user_id_) == tonumber(1987201540) then  
-send(msg.chat_id_, msg.id_, "♔ لا تستطيع كتم تيمو عام")
-return false 
-end
-if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
-send(msg.chat_id_, msg.id_, "دا سيف حبيبي مينفعش اكتمو ")
-return false 
-end
 usertext = '\n  ⌯︙ الـعـضو   ⇇['..result.title_..'](t.me/'..(username or 'Alahzane1')..')'
 status  = '\n  ⌯︙ تم كتمه عام من الجروبات'
 texts = usertext..status
@@ -5661,19 +5584,11 @@ send(msg.chat_id_, msg.id_, "  ⌯︙ لا تسطيع كتم البوت عام")
 return false 
 end
 if tonumber(userid) == tonumber(1372188096) then  
-send(msg.chat_id_, msg.id_, "  ⌯︙ لا تستطيع كتم عموري 🥺 ")
+send(msg.chat_id_, msg.id_, "  ⌯︙ لا تسطيع كتم صاحب السورس عام")
 return false 
 end
-if result.id_ == tonumber(1911881905) then
-send(msg.chat_id_, msg.id_, "  ⌯︙ لا يمكنك كتم مالك السورس \n")
-return false 
-end
-if tonumber(result.sender_user_id_) == tonumber(1987201540) then  
-send(msg.chat_id_, msg.id_, "♔ لا تستطيع كتم تيمو عام")
-return false 
-end
-if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
-send(msg.chat_id_, msg.id_, "دا سيف حبيبي مينفعش اكتمو ")
+if tonumber(userid) == tonumber(1372188096) then  
+send(msg.chat_id_, msg.id_, "  ⌯︙ لا تسطيع كتم مالك السورس عام")
 return false 
 end
 database:sadd(bot_id..'Gmute:User', userid)
@@ -12922,7 +12837,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '● 𝑻𝑰𝑴𝑶', url="t.me/ttimo_8lby"}},
+{{text = '𓆩● 𝐃𝐄𝐕 3𝐌𝐎𝐑𝐀 ●𓆪', url="t.me/BOT3mora"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendsticker?chat_id=' .. msg.chat_id_ .. '&sticker=https://t.me/V_I_K_I_N_G_2/72/14&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -13682,7 +13597,7 @@ send(msg.chat_id_,msg.id_, '◍ بعشء امك..🥺💘')
 return false
 end
 
-if text == '🙄🙄' or text == '🙄??🙄' then
+if text == '🙄🙄' or text == '🙄🙄🙄' then
 send(msg.chat_id_,msg.id_, '◍ سقف الجروب عاجبك..😂💜') 
 return false
 end
