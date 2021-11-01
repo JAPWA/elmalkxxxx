@@ -3256,7 +3256,7 @@ keyboard.inline_keyboard = {
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_8lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'سيف' or text == 'المطور' or text == 'المجهول' or text == 'SAIF' then 
+if text == 'سيف' or text == 'عمك سيف ' or text == 'المجهول' or text == 'SAIF' then 
 local msg_id = msg.id_/2097152/0.5  
 local Text = [[ 
 مطور السورس سيف للتواصل معاه اتبع الزر ال في الاسففل ⇊
@@ -3309,6 +3309,8 @@ local Text ='تم اختيار الاستوري هذه لك'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'استوري اخر', callback_data="استوري"}},
+{{text = '● 𝑻𝑰𝑴𝑶',url="t.me/ttimo_8lby"}},
+{{text =  ● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨 ,url="t.me/HamoAz3arena"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -3320,6 +3322,7 @@ local Text ='تم اختيار الاستوري هذه لك'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'ثيم اخر', callback_data="/added"}},
+{{text =  ● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨 ,url="t.me/HamoAz3arena"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -16206,7 +16209,7 @@ Msᴀɢ ~ #msgs
 金 - 𝓼𝓽𝓪𝓼𝓽  . #stast ⸙ 
 金 - 𝓲𝓭 . #id ⸙ 
 金 - 𝓰𝓶𝓪𝓼 . #gmas ⸙ 
-金 - 𝓶𝓼𝓰𝓼 . #msgs ⸙
+金 - 𝓶𝓼𝓰?? . #msgs ⸙
 金 - 𝗖𝗛 - ↝@Alahzane1↜  ✹︙
 ]],
 [[
