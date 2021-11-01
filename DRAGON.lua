@@ -3256,7 +3256,7 @@ keyboard.inline_keyboard = {
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_8lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'تيمو' or text == 'مبرمج تيمو' or text == 'مبرمج السورس' or text == 'TIMO' then 
+if text == 'سيف' or text == 'المطور' or text == 'المجهول' or text == 'SAIF' then 
 local msg_id = msg.id_/2097152/0.5  
 local Text = [[ 
 مطور السورس سيف للتواصل معاه اتبع الزر ال في الاسففل ⇊
@@ -3308,8 +3308,21 @@ ght = math.random(1,62);
 local Text ='تم اختيار الاستوري هذه لك' 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '● 3𝑴𝑶𝑹𝒀', url="t.me/BOT3mora"}},
-{{text = '𓆩● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ●𓆪',url="t.me/Alahzane1"}},
+{{text = 'استوري اخر', callback_data="استوري"}},
+{{text =  𝐀𝐙3𝐀𝐑𝐄𝐍𝐀 ,url="t.me/@HamoAz3arena"},{text =  ● 3𝑴𝑶𝑹𝒀 , url="t.me/BOT3mora"}},
+{{text =  ● 𝑻𝑰𝑴𝑶 , url="t.me/ttimo_8lby"},{text =  ● 𝑺𝑨𝑰𝑭 , url="t.me/A_L_M_G_H_O_L"}},
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sijebehdhd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == "استوري" and not  database:get(bot_id.."sing:for:me"..msg.chat_id_) then 
+ght = math.random(1,62); 
+local Text ='تم اختيار الاستوري هذه لك' 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = 'ثيم اخر', callback_data="/added"}},
+{{text =  𝐀𝐙3𝐀𝐑𝐄𝐍𝐀 ,url="t.me/@HamoAz3arena"},{text =  ● 3𝑴𝑶𝑹𝒀 , url="t.me/BOT3mora"}},
+{{text =  ● 𝑻𝑰𝑴𝑶 , url="t.me/ttimo_8lby"},{text =  ● 𝑺𝑨𝑰𝑭 , url="t.me/A_L_M_G_H_O_L"}},,
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/xxvvzm/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -15322,7 +15335,7 @@ local List = {
  - 𝄬 𝗖𝗛 - ↝@Alahzane1↜  ⌯︙.
 ]],
 [[
-◣: 𝒔𝒕𝒂𓂅 #stast 𓍯➥♡.
+◣: 𝒔𝒕??𓂅 #stast 𓍯➥♡.
 ◣: 𝐮𝐬𝐞𝐫𓂅 #username 𓍯➥♡.
 ◣: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➥♡.
 ◣: 𝐢𝐝 𓂅 #id 𓍯➥♡.
