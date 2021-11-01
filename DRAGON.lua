@@ -3310,7 +3310,7 @@ keyboard = {}
 keyboard.inline_keyboard = { 
 {{text = 'استوري اخر', callback_data="استوري"}},
 {{text = '● 𝑻𝑰𝑴𝑶',url="t.me/ttimo_8lby"}},
-{{text =  ● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨 ,url="t.me/HamoAz3arena"}},
+{{text = '● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨',url="t.me/HamoAz3arena "}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -3322,7 +3322,7 @@ local Text ='تم اختيار الاستوري هذه لك'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'ثيم اخر', callback_data="/added"}},
-{{text =  ● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨 ,url="t.me/HamoAz3arena"}},
+{{text = '● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨',url="t.me/HamoAz3arena "}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
@@ -6778,7 +6778,7 @@ send(msg.chat_id_, msg.id_, texts)
 end
 if text == ("المدراء") and Constructor(msg) then
 local list = database:smembers(bot_id..'Manager'..msg.chat_id_)
-t = "\n  ✹︙ قائمة المدراء \n⩹━━━⊶ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ⊷━━━⩺\n"
+t = "\n  ✹︙ قائمة المدراء \n⩹━━━⊶ 𝗦𝗢𝗨𝗥𝗖?? 𝗔𝗭𝗠𝗔 ⊷━━━⩺\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -16209,7 +16209,7 @@ Msᴀɢ ~ #msgs
 金 - 𝓼𝓽𝓪𝓼𝓽  . #stast ⸙ 
 金 - 𝓲𝓭 . #id ⸙ 
 金 - 𝓰𝓶𝓪𝓼 . #gmas ⸙ 
-金 - 𝓶𝓼𝓰?? . #msgs ⸙
+金 - 𝓶𝓼??𝓼 . #msgs ⸙
 金 - 𝗖𝗛 - ↝@Alahzane1↜  ✹︙
 ]],
 [[
