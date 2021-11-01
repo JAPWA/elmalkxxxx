@@ -3186,12 +3186,11 @@ end,nil)
 end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' or text == 'source' then
 local Text = [[
-[𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔](http://t.me/Alahzane1)
-[● 𝑨𝒁3𝑨𝑹𝑰𝑵𝑨](http://t.me/HamoAz3arena)
-[● 3𝑴𝑶𝑹𝒀](http://t.me/BOT3mora)
-[● 𝑻𝑰𝑴𝑶](http://t.me/ttimo_8lby)
-
-[𝐂𝐇 𝐒𝐎𝐔𝐑𝐂𝐄](http://t.me/Alahzane1)
+╭╾╾╾𓆩[𝑺𝑶𝑼𝑹𝑪𝑬 𝑨𝒁𝑴𝑨](https://t.me/Alahzane1)𓆪╾╾╾╮
+┆
+┆[𝑾𝑬𝑳𝑪𝑶𝑴𝑬 𝑻𝑶 𝑪𝑶𝑼𝑹𝑪𝑬 𝑨𝒁𝑴𝑨](https://t.me/Alahzane1)
+┆
+╰╾╾╾𓆩[𝑺𝑶𝑼𝑹𝑪𝑬 𝑨𝒁𝑴𝑨](https://t.me/Alahzane1)𓆪╾╾╾╯
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -15342,7 +15341,7 @@ local List = {
 [[
 ↣• USE ➤ #username  ↝🍬.
 ↣• MSG ➤  #msgs  ↝🍬.
-↣• STA ➤  #stast  ↝🍬.
+↣• STA ➤  #stast  ↝??.
 ↣• iD ➤ #id  ↝🍬.
 ↣• 𝗖𝗛 - ↝@Alahzane1↜  ✹︙.
 ]],
