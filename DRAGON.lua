@@ -1550,7 +1550,7 @@ send(msg.chat_id_, msg.id_, t)
 end
 
 
-if text ==  الاحصائيات  and Sudo(msg) then 
+if text ==  الاحصائيات  and SudoBot(msg) then 
 local Namebot = (bot_data:get(bot_id.. Name:Bot ) or  ملوك ) 
 local Groups = database:get(bot_id.. Chek:Groups )  
 local Users = database:get(bot_id.. User_Bot )  
