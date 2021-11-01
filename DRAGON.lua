@@ -147,6 +147,7 @@ _redis = load_redis()
 --------------------------------------------------------------------------------------------------------------
 print([[
 
+🆂🅾🆄🆁🅲🅴 🅰🆉🅼🅰
 
    تمت البرمجه من خلال مطورين سورس عظمه
                           
@@ -17177,15 +17178,12 @@ send(msg.chat_id_, msg.id_,Text)
 end
 if text == 'روابط الحذف' or text == 'رابط  حذف' or text == 'رابط الحذف' then
 local Text = [[
-مواقع  مسح حسابات،🍂
-فكر قبل لا تتسرع وتروح
+✹ بــوت حــذف حــســابــات ✹
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'Telegram',url="https://my.telegram.org/auth?to=delete"}},
-{{text = 'instagram', url="https://www.instagram.com/accounts/login/?next=/accounts/remove/request/permanent/"}}, 
-{{text = 'Facebook', url="https://www.facebook.com/help/deleteaccount"}}, 
-{{text = 'Snspchat', url="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fdeleteaccount"}}, 
+{{text = '● 𝑩𝑶𝑻', url="t.me/LC6BOT"}}, 
+{{text = 'اضف البوت الي مجموعتك ●' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/yhu79/8&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -17197,6 +17195,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '● 𝑩𝑶𝑻', url="t.me/LC6BOT"}}, 
+{{text = 'اضف البوت الي مجموعتك ●' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/LC6BOT&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
