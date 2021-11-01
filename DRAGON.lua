@@ -3309,8 +3309,8 @@ local Text ='تم اختيار الاستوري هذه لك'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'استوري اخر', callback_data="استوري"}},
-{{text =  𝐀𝐙3𝐀𝐑𝐄𝐍𝐀 ,url="t.me/@HamoAz3arena"},{text =  ● 3𝑴𝑶𝑹𝒀 , url="t.me/BOT3mora"}},
-{{text =  ● 𝑻𝑰𝑴𝑶 , url="t.me/ttimo_8lby"},{text =  ● 𝑺𝑨𝑰𝑭 , url="t.me/A_L_M_G_H_O_L"}},
+{{text =  𝐀𝐙3𝐀𝐑𝐄𝐍𝐀 ,url="t.me/@HamoAz3arena"}},
+{{text =  ● 𝑻𝑰𝑴𝑶 , url="t.me/ttimo_8lby"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sijebehdhd/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -3321,8 +3321,8 @@ local Text ='تم اختيار الاستوري هذه لك'
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = 'ثيم اخر', callback_data="/added"}},
-{{text =  𝐀𝐙3𝐀𝐑𝐄𝐍𝐀 ,url="t.me/@HamoAz3arena"},{text =  ● 3𝑴𝑶𝑹𝒀 , url="t.me/BOT3mora"}},
-{{text =  ● 𝑻𝑰𝑴𝑶 , url="t.me/ttimo_8lby"},{text =  ● 𝑺𝑨𝑰𝑭 , url="t.me/A_L_M_G_H_O_L"}},,
+{{text =  𝐀𝐙3𝐀𝐑𝐄𝐍𝐀 ,url="t.me/@HamoAz3arena"}},
+{{text =  ● 𝑻𝑰𝑴𝑶 , url="t.me/ttimo_8lby"}},
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/xxvvzm/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -13684,7 +13684,7 @@ send(msg.chat_id_,msg.id_, '◍ بعشء امك..🥺💘')
 return false
 end
 
-if text == '🙄🙄' or text == '🙄🙄🙄' then
+if text == '🙄🙄' or text == '🙄🙄??' then
 send(msg.chat_id_,msg.id_, '◍ سقف الجروب عاجبك..😂💜') 
 return false
 end
@@ -15335,7 +15335,7 @@ local List = {
  - 𝄬 𝗖𝗛 - ↝@Alahzane1↜  ⌯︙.
 ]],
 [[
-◣: 𝒔𝒕??𓂅 #stast 𓍯➥♡.
+◣: 𝒔𝒕𝒂𓂅 #stast 𓍯➥♡.
 ◣: 𝐮𝐬𝐞𝐫𓂅 #username 𓍯➥♡.
 ◣: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➥♡.
 ◣: 𝐢𝐝 𓂅 #id 𓍯➥♡.
