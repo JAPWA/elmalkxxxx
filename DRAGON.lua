@@ -911,7 +911,7 @@ if text == '/start' then
 local bl = 'مرحبا بيك عزيزي العضو اليك الاوامر في الاسفل'
 local keyboard = {
 {'━┅┅┄⟞⟦ مطورين السورس ⟧⟝┄┉┉━'},
-{'اتش','عموره'},
+{'ازعرينا','عموره','تيمو'},
 {'♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢'},
 {'ثيم','بايو','ايدي'},
 {'♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢'},
@@ -1447,7 +1447,7 @@ keyboard.inline_keyboard = {
 {{text = 'مطورين السورس☎️', url="https://t.me/Fegoe"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/V_I_K_I_N_G_2/86/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sourseAzma/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == '♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢' and DevSoFi(msg) then
@@ -1470,7 +1470,7 @@ keyboard.inline_keyboard = {
 {{text = '● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔', url="t.me/Alahzane1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/V_I_K_I_N_G_2/86/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/sourseAzma/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == 'معلومات الكيبورد' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
@@ -3279,7 +3279,7 @@ keyboard.inline_keyboard = {
 {{text = 'مطورين السورس', url="https://t.me/Fegoe"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/V_I_K_I_N_G_2/86/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sourseAzma/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text=="اذاعه بالتثبيت" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
@@ -4185,10 +4185,10 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '《𝙻𝚃𝚄𝙰𝚂𝙸𝙻 𝚂𝙾𝚄𝚁𝙲𝙴 》', url="t.me/Fegoe"}}, 
+{{text = '《𝙻𝚃𝚄𝙰𝚂𝙸𝙻 𝚂𝙾𝚄𝚁𝙲𝙴 》', url="t.me/Alahzane1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/V_I_K_I_N_G_2/86/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/Alahzane1&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'مميزات'  or text == 'المميزات' then
@@ -17540,7 +17540,7 @@ local Teext =[[
   ✹︙مرحب بيك في اوامر للمطورين  ✹︙
 اوامر المطورين ⇊
 ❲المطرو❳  ⇊
-♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢
+♢━━━♢ 𝗦𝗢𝗨𝗥𝗖?? 𝗔𝗭𝗠𝗔 ♢━━━♢
   ✹︙تفعيل ← تعطيل 
   ✹︙المجموعات ← المشتركين ← الاحصائيات
   ✹︙رفع ← تنزيل منشئ اساسي
