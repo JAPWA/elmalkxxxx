@@ -1551,33 +1551,33 @@ end
 
 
 if text == 'الاحصائيات' and Sudo(msg) then 
-local Namebot = (bot_data:get(bot_id.. Name:Bot ) or  ملوك ) 
-local Groups = database:get(bot_id.. Chek:Groups )  
-local Users = database:get(bot_id.. User_Bot )  
+local Namebot = (bot_data:get(bot_id..'Name:Bot') or 'ملوك') 
+local Groups = database:get(bot_id..'Chek:Groups')  
+local Users = database:get(bot_id..'User_Bot')  
 local getbioY = getbio(msg.sender_user_id_)
-tessttm = "NAME BOT ⇐"..Namebot.. \n groubs ⇐ { ..Groups.. }\nSubscribers ⇐ { ..Users.. }\nBIO ⇐ { ..getbioY.. } 
+tessttm = "NAME BOT ⇐"..Namebot..'\n groubs ⇐ {'..Groups..'}\nSubscribers ⇐ {'..Users..'}\nBIO ⇐ {'..getbioY..'}'
 local msg_id = msg.id_/2097152/0.5  
-local tessttmos =  اسم بوت ⇐  ..Namebot..  
-local tessttmo =  الجروبات ⇐  ..Groups..  
-local tessttm =  المشتركين ⇐  ..Users..  
+local tessttmos = 'اسم بوت ⇐ '..Namebot..''
+local tessttmo = 'الجروبات ⇐ '..Groups..''
+local tessttm = 'المشتركين ⇐ '..Users..''
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = tessttmos, url = "https://t.me/Alahzane1"},
+{text = tessttmos, url = "https://t.me/e_l_m_o_l_k"},
 },
 {
-{text = tessttmo, url = "https://t.me/Alahzane1"},
+{text = tessttmo, url = "https://t.me/e_l_m_o_l_k"},
 },
 {
-{text = tessttm, url = "https://t.me/Alahzane1"},
+{text = tessttm, url = "https://t.me/e_l_m_o_l_k"},
 },
 {
-{text =  اضف البوت الي مجموعتك ♔    ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
+{text = 'اضف البوت الي مجموعتك ♔'   ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"},
 },
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token.. /sendPhoto?chat_id=  .. msg.chat_id_ ..  &photo= ..result.photos_[0].sizes_[1].photo_.persistent_id_.. &photo=  .. URL.escape(Namebot).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(Namebot).."&photo="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end 
 end 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_ = 0, limit_ = 1 }, getpro, nil) 
@@ -15678,7 +15678,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 .𖣂 𝙪𝙨𝙚𝙧𝙣𝙖𝙢𝙚 , #username  🖤 ↴
-.𖣂 𝙨𝙩𝙖𝙨𝙩 , #stast  🖤 ↴
+.𖣂 𝙨𝙩𝙖𝙨?? , #stast  🖤 ↴
 .𖣂 𝙡𝘿 , #id  🖤 ↴
 .𖣂 𝘼𝙪𝙩𝙤 , #auto  🖤 ↴
 .𖣂 𝙢𝙨𝙂𝙨 , #msgs  🖤 ↴
