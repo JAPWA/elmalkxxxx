@@ -5423,7 +5423,7 @@ send(msg.chat_id_, msg.id_, " لا تستطيع حظر مالك السورس😂
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, "♔ لا تسطيع حظر عمك تيمو عام")
+send(msg.chat_id_, msg.id_, " ✹ لا تسطيع حظر عمك تيمو عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
@@ -5477,7 +5477,7 @@ send(msg.chat_id_, msg.id_, " لا تستطيع حظر عمك ازعرينا \n"
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, "♔ لا تسطيع حظر عمك تيمو عام")
+send(msg.chat_id_, msg.id_, " ✹ لا تسطيع حظر عمك تيمو عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
@@ -5521,7 +5521,7 @@ send(msg.chat_id_, msg.id_, "  ✹︙ لا تسطيع حظر المبرمج عم
 return false 
 end
 if tonumber(userid) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, "لا تستطيع حظر عمك تيمو ♔ ")
+send(msg.chat_id_, msg.id_, "لا تستطيع حظر عمك تيمو  ✹ ")
 return false 
 end
 if tonumber(userid) == tonumber(2057122076) then  
@@ -5578,7 +5578,7 @@ send(msg.chat_id_, msg.id_, "دا سيف حبيبي مينفعش اكتمو ")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, "♔ لا تستطيع كتم تيمو عام")
+send(msg.chat_id_, msg.id_, " ✹ لا تستطيع كتم تيمو عام")
 return false 
 end
 database:sadd(bot_id..'Gmute:User', result.sender_user_id_)
@@ -5627,7 +5627,7 @@ send(msg.chat_id_, msg.id_, "  ✹︙ لا يمكنك كتم مالك السور
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, "♔ لا تستطيع كتم تيمو عام")
+send(msg.chat_id_, msg.id_, " ✹ لا تستطيع كتم تيمو عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
@@ -5675,7 +5675,7 @@ send(msg.chat_id_, msg.id_, "  ✹︙ لا يمكنك كتم مالك السور
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, "♔ لا تستطيع كتم تيمو عام")
+send(msg.chat_id_, msg.id_, " ✹ لا تستطيع كتم تيمو عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
@@ -6620,17 +6620,24 @@ for i=0 , #admins do
 if data.members_[i].status_.ID == "ChatMemberStatusCreator" then
 owner_id = admins[i].user_id_
 tdcli_function ({ID = "GetUser",user_id_ = owner_id},function(arg,b) 
+local getbioY = getbio(msg.sender_user_id_)
 if b.first_name_ == false then
-send(msg.chat_id_, msg.id_,"  ✹︙ حساب المنشئ محذوف")
+send(msg.chat_id_, msg.id_,"  ✹ حساب المنشئ محذوف")
 return false  
 end
-local UserName = (b.username_ or "SRC-DRAGON")
-send(msg.chat_id_, msg.id_,"  ✹︙ منشئ الجروب  ⇇["..b.first_name_.."](T.me/"..UserName..")")  
-end,nil)   
+if b.username_ then
+UserName = b.username_
+else
+UserName = 'timo_timo'
 end
-end
-end,nil)   
-end
+local Text = " ✹ منشئ الجروب  ⇐ ["..b.first_name_.."](tg://user?id="..b.id_..")\n"..getbio(b.id_):gsub('لايوجد','')
+local msg_id = msg.id_/2097152/0.5
+local stay = ' •  ✹ | 𝙱𝙸𝙾 : '..getbio(msg.sender_user_id_)
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '• '..b.first_name_..' •', url="t.me/"..UserName}},   
+{{text = stay, url="http://t.me/"..UserName}},
+}
 
 if text == "رفع منشئ" and msg.reply_to_message_id_ and BasicConstructor(msg) then
 if AddChannel(msg.sender_user_id_) == false then
