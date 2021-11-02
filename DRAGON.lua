@@ -16942,7 +16942,7 @@ return false
 end
 local Text =' ♔ تم تحديث السورس'
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/JABWA/Saidi/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/TIMOXBODY/elmalkxxxx/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,' ♔ تم تحديث السورس')
 dofile('DRAGON.lua')  
 keyboard = {} 
@@ -16961,7 +16961,7 @@ return false
 end
 local Text =' ♔ تم تحديث الملفات'
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/JABWA/Saidi/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/TIMOXBODY/elmalkxxxx/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,' ♔ تم تحديث السورس')
 dofile('DRAGON.lua')  
 keyboard = {} 
@@ -17967,7 +17967,7 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ', url="t.me/e_l_m_o_l_k"}},
-{{text = '♔ 𝙱??𝙲𝙺', callback_data="/HHH"}},
+{{text = '♔ 𝙱𝙰𝙲𝙺', callback_data="/HHH"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
