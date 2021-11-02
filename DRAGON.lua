@@ -1313,20 +1313,19 @@ if text == 'مسح كليشه ستارت' and DevSoFi(msg) then
 database:del(bot_id..'Start:Bot') 
 send(msg.chat_id_, msg.id_,' ♔ تم مسح كليشه ستارت')
 end
-if text == 'معلومات السيرفر' and msa3d(msg) then 
+if text == 'معلومات السيرفر' and DevSoFi(msg) then 
 send(msg.chat_id_, msg.id_, io.popen([[
-linux_version=lsb_release -ds
-memUsedPrc=free -m | awk 'NR==2{printf "%sMB/%sMB {%.2f%}\n", $3,$2,$3*100/$2 }'
-HardDisk=df -lh | awk '{if ($6 == "/") { print $3"/"$2" ~ {"$5"}" }}'
-CPUPer=top -b -n1 | grep "Cpu(s)" | awk '{print $2 + $4}'
-uptime=uptime | awk -F'( |,|:)+' '{if ($7=="min") m=$6; else {if ($7~/^day/) {d=$6;h=$8;m=$9} else {h=$6;m=$7}}} {print d+0,"days,",h+0,"hours,",m+0,"minutes."}'
-echo '📟l •⊱ 『 نظام التشغيل 』 ⊰•\n* '"$linux_version"'*' 
-echo '♔●♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽♔●\n 🖨️l •⊱ 『 الذاكره العشوائيه 』  ⊰•\n『* '"$memUsedPrc"'*』'
-echo '♔●♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽♔●\n 💾l •⊱ 『 وحـده الـتـخـزيـن 』  ⊰•\n『* '"$HardDisk"'*』'
-echo '♔●♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽♔●\n 🖥️l •⊱ 『 موقـع الـسـيـرفـر 』 ⊰•\n『*»» 'curl http://th3boss.com/ip/location'*』'
-echo '♔●♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽♔●\n 🕹️l •⊱ 『 الـمــعــالــج 』  ⊰•\n『* '"grep -c processor /proc/cpuinfo""Core ~ 『$CPUPer%』 "'*』'
-echo '♔●♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽♔●\n 👨🏾‍🔧l •⊱ 『 الــدخــول 』  ⊰•\n『* 'whoami'*』'
-echo '♔●♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽♔●\n 🔌l •⊱ 『 مـده تـشغيـل الـسـيـرفـر 』 ⊰•\n『* '"$uptime"'*』'
+linux_version=`lsb_release -ds`
+memUsedPrc=`free -m ♔ awk 'NR==2{printf "%sMB/%sMB {%.2f%}\n", $3,$2,$3*100/$2 }'`
+HardDisk=`df -lh ♔ awk '{if ($6 == "/") { print $3"/"$2" ~ {"$5"}" }}'`
+CPUPer=`top -b -n1 ♔ grep "Cpu(s)" ♔ awk '{print $2 + $4}'`
+uptime=`uptime ♔ awk -F'( ♔,♔:)+' '{if ($7=="min") m=$6; else {if ($7~/^day/) {d=$6;h=$8;m=$9} else {h=$6;m=$7}}} {print d+0,"days,",h+0,"hours,",m+0,"minutes."}'`
+echo '⇗ نظام التشغيل ⇖•\n* '"$linux_version"'*' 
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» الذاكره العشوائيه «  ↚\n* '"$memUsedPrc"'*'
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» وحـده الـتـخـزيـن «  ↚\n* '"$HardDisk"'*'
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» الـمــعــالــج «  ↚\n* '"`grep -c processor /proc/cpuinfo`""Core ~ {$CPUPer%} "'*'
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» الــدخــول «  ↚\n* '`whoami`'*'
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» مـده تـشغيـل الـسـيـرفـر « ↚\n* '"$uptime"'*'
 ]]):read('*all'))  
 end
 if text == 'ت ث' and DevSoFi(msg) then 
@@ -3520,20 +3519,19 @@ keyboard.inline_keyboard = {
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/J_A_B_W_A&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-if text == 'معلومات السيرفر' and msa3d(msg) then 
+if text == 'معلومات السيرفر' and DevSoFi(msg) then 
 send(msg.chat_id_, msg.id_, io.popen([[
-linux_version=lsb_release -ds
-memUsedPrc=free -m | awk 'NR==2{printf "%sMB/%sMB {%.2f%}\n", $3,$2,$3*100/$2 }'
-HardDisk=df -lh | awk '{if ($6 == "/") { print $3"/"$2" ~ {"$5"}" }}'
-CPUPer=top -b -n1 | grep "Cpu(s)" | awk '{print $2 + $4}'
-uptime=uptime | awk -F'( |,|:)+' '{if ($7=="min") m=$6; else {if ($7~/^day/) {d=$6;h=$8;m=$9} else {h=$6;m=$7}}} {print d+0,"days,",h+0,"hours,",m+0,"minutes."}'
-echo '📟l •⊱ 『 نظام التشغيل 』 ⊰•\n* '"$linux_version"'*' 
-echo '♔●♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽♔●\n 🖨️l •⊱ 『 الذاكره العشوائيه 』  ⊰•\n『* '"$memUsedPrc"'*』'
-echo '♔●♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽♔●\n 💾l •⊱ 『 وحـده الـتـخـزيـن 』  ⊰•\n『* '"$HardDisk"'*』'
-echo '♔●♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽♔●\n 🖥️l •⊱ 『 موقـع الـسـيـرفـر 』 ⊰•\n『*»» 'curl http://th3boss.com/ip/location'*』'
-echo '♔●♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽♔●\n 🕹️l •⊱ 『 الـمــعــالــج 』  ⊰•\n『* '"grep -c processor /proc/cpuinfo""Core ~ 『$CPUPer%』 "'*』'
-echo '♔●♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽♔●\n 👨🏾‍🔧l •⊱ 『 الــدخــول 』  ⊰•\n『* 'whoami'*』'
-echo '♔●♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽♔●\n 🔌l •⊱ 『 مـده تـشغيـل الـسـيـرفـر 』 ⊰•\n『* '"$uptime"'*』'
+linux_version=`lsb_release -ds`
+memUsedPrc=`free -m ♔ awk 'NR==2{printf "%sMB/%sMB {%.2f%}\n", $3,$2,$3*100/$2 }'`
+HardDisk=`df -lh ♔ awk '{if ($6 == "/") { print $3"/"$2" ~ {"$5"}" }}'`
+CPUPer=`top -b -n1 ♔ grep "Cpu(s)" ♔ awk '{print $2 + $4}'`
+uptime=`uptime ♔ awk -F'( ♔,♔:)+' '{if ($7=="min") m=$6; else {if ($7~/^day/) {d=$6;h=$8;m=$9} else {h=$6;m=$7}}} {print d+0,"days,",h+0,"hours,",m+0,"minutes."}'`
+echo '⇗ نظام التشغيل ⇖•\n* '"$linux_version"'*' 
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» الذاكره العشوائيه «  ↚\n* '"$memUsedPrc"'*'
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» وحـده الـتـخـزيـن «  ↚\n* '"$HardDisk"'*'
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» الـمــعــالــج «  ↚\n* '"`grep -c processor /proc/cpuinfo`""Core ~ {$CPUPer%} "'*'
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» الــدخــول «  ↚\n* '`whoami`'*'
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» مـده تـشغيـل الـسـيـرفـر « ↚\n* '"$uptime"'*'
 ]]):read('*all'))  
 end
 
