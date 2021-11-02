@@ -14140,7 +14140,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, ' دا نوري انا 💛😌 ') 
+send(msg.chat_id_,msg.id_, ' ♔ كداب قوي دا نور الفون..😂👻 ') 
 return false
 end
 
@@ -14160,7 +14160,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_," ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[اسمها ماشي شكلك ساقط عربي..🙂😂](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[♔ اسمها ماشي شكلك ساقط عربي..😂👻](t.me/eLmLoK0)')
 return false
 end
 
@@ -14170,7 +14170,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ♔︙معطله") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[خلتك جرت وراي..😺💜](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[♔ خلتك جرت وراي..😺💜](t.me/eLmLoK0)')
 return false
 end
 
@@ -14183,7 +14183,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[خدوني معاكم برايفت والنبي..🥺💜](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[♔ خدوني معاكم برايفت والنبي..🥺💜](t.me/eLmLoK0)')
 return false
 end
 end
@@ -14198,7 +14198,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[عليه الصلاه والسلام..💛🙂](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[♔ عليه الصلاه والسلام..💛🙂](t.me/eLmLoK0)')
 return false
 end
 end
@@ -16177,7 +16177,7 @@ Msᴀɢ ~ #msgs
 [[
 ┄─━━ ♔━━─┄
 𖣤 ᴜѕᴇʀɴᴀᴍᴇ 𓄹?? #id 🇪🇬
-𖦼 ʏᴏᴜʀ ɪᴅ 𓄹𓄼 #username  💛
+?? ʏᴏᴜʀ ɪᴅ 𓄹𓄼 #username  💛
 𖥪 ᴍѕɢѕ 𓄹𓄼 #msgs ✉️
 𖥧 ѕᴛᴀᴛѕ 𓄹𓄼 #stast 👩🏿‍🚒 
 𖥣 ᴇᴅɪᴛ 𓄹𓄼 #game🙇🏿‍♀💕
