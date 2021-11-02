@@ -5423,7 +5423,7 @@ send(msg.chat_id_, msg.id_, " لا تستطيع حظر مالك السورس😂
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, "♔ لا تسطيع حظر عمك تيمو عام")
+send(msg.chat_id_, msg.id_, "✹ لا تسطيع حظر عمك تيمو عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
@@ -5477,7 +5477,7 @@ send(msg.chat_id_, msg.id_, " لا تستطيع حظر عمك ازعرينا \n"
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, "♔ لا تسطيع حظر عمك تيمو عام")
+send(msg.chat_id_, msg.id_, "✹ لا تسطيع حظر عمك تيمو عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
@@ -5521,7 +5521,7 @@ send(msg.chat_id_, msg.id_, "  ✹︙ لا تسطيع حظر المبرمج عم
 return false 
 end
 if tonumber(userid) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, "لا تستطيع حظر عمك تيمو ♔ ")
+send(msg.chat_id_, msg.id_, "لا تستطيع حظر عمك تيمو ✹ ")
 return false 
 end
 if tonumber(userid) == tonumber(2057122076) then  
@@ -5578,7 +5578,7 @@ send(msg.chat_id_, msg.id_, "دا سيف حبيبي مينفعش اكتمو ")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, "♔ لا تستطيع كتم تيمو عام")
+send(msg.chat_id_, msg.id_, "✹ لا تستطيع كتم تيمو عام")
 return false 
 end
 database:sadd(bot_id..'Gmute:User', result.sender_user_id_)
@@ -5627,7 +5627,7 @@ send(msg.chat_id_, msg.id_, "  ✹︙ لا يمكنك كتم مالك السور
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, "♔ لا تستطيع كتم تيمو عام")
+send(msg.chat_id_, msg.id_, "✹ لا تستطيع كتم تيمو عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
@@ -5675,7 +5675,7 @@ send(msg.chat_id_, msg.id_, "  ✹︙ لا يمكنك كتم مالك السور
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, "♔ لا تستطيع كتم تيمو عام")
+send(msg.chat_id_, msg.id_, "✹ لا تستطيع كتم تيمو عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
@@ -11097,14 +11097,14 @@ end
 if text == "تفعيل صورتي" or text == 'تفعيل الصوره' then
 if Constructor(msg) then  
 database:set(bot_id.."my_photo:status"..msg.chat_id_,true) 
-send(msg.chat_id_, msg.id_," ♔ تم تفعيل الصوره") 
+send(msg.chat_id_, msg.id_," ✹ تم تفعيل الصوره") 
 return false  
 end
 end
 if text == "تعطيل الصوره" or text == 'تعطيل صورتي' then
 if Constructor(msg) then  
 database:del(bot_id.."my_photo:status"..msg.chat_id_) 
-send(msg.chat_id_, msg.id_," ♔ تم تعطيل الصوره") 
+send(msg.chat_id_, msg.id_," ✹ تم تعطيل الصوره") 
 return false end
 end
 if text == "تفعيل نسبه جمالي" or text == 'تفعيل جمالي' then
@@ -13551,7 +13551,7 @@ end
 if text == "انا مين" then
 local my_ph = database:get(bot_id.."my_anamen:status"..msg.chat_id_)
 if not my_ph then
-send(msg.chat_id_, msg.id_," ♔انا مين معطله") 
+send(msg.chat_id_, msg.id_," ✹انا مين معطله") 
 return false  
 end
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
@@ -14617,12 +14617,12 @@ end
 if text == "صورتي"  then
 local my_ph = database:get(bot_id.."my_photo:status"..msg.chat_id_)
 if not my_ph then
-send(msg.chat_id_, msg.id_," ♔ الصوره معطله") 
+send(msg.chat_id_, msg.id_," ✹ الصوره معطله") 
 return false  
 end
 local function getpro(extra, result, success)
 if result.photos_[0] then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_," ♔ عدد صورك ⇐ "..result.total_count_.." صوره‌‏", msg.id_, msg.id_, "md")
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_," ✹ عدد صورك ⇐ "..result.total_count_.." صوره‌‏", msg.id_, msg.id_, "md")
 else
 send(msg.chat_id_, msg.id_,'لا تمتلك صوره في حسابك', 1, 'md')
   end end
