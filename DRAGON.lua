@@ -173,7 +173,7 @@ io.popen("mkdir File_Bot")
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
 io.popen("cd File_Bot && rm -rf commands.lua.2") 
 io.popen("cd File_Bot && rm -rf commands.lua.3") 
-io.popen("cd File_Bot && wget https://raw.githubusercontent.com/JABWA/Saidix/main/File_Bot/commands.lua") 
+io.popen("cd File_Bot && wget https://raw.githubusercontent.com/TIMOXBODY/elmalkxxxx/main/File_Bot/commands.lua") 
 t = "\27[35m".."\nAll Files Started : \n____________________\n"..'\27[m'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
@@ -1332,7 +1332,7 @@ echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» م
 end
 if text == 'ت ث' and DevSoFi(msg) then 
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/JABWA/Saidix/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/TIMOXBODY/elmalkxxxx/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,'♔  تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
@@ -6113,7 +6113,7 @@ t = " ♔ الملف  ⇦♔"..file.."\n ♔ تم تعطيل ملف \n"
 else
 t = " ♔ بالتاكيد تم تعطيل ملف → "..file.."\n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/JABWA/Saidix/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/TIMOXBODY/elmalkxxxx/main/File_Bot/"..file)
 if res == 200 then
 os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
@@ -6133,7 +6133,7 @@ t = " ♔ بالتاكيد تم تفعيل ملف → "..file.." \n"
 else
 t = " ♔ الملف  ⇦♔"..file.."\n ♔ تم تفعيل ملف \n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/JABWA/Saidix/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/TIMOXBODY/elmalkxxxx/main/File_Bot/"..file)
 if res == 200 then
 local chek = io.open("File_Bot/"..file,'w+')
 chek:write(json_file)
@@ -16927,7 +16927,7 @@ keyboard.inline_keyboard = {{{text = ta.title_, url=linkgpp.result}},}
 DeleteMessage(Chat_id,{[0] = Msg_id})  
 https.request("https://api.telegram.org/bot"..token..'/sendmessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(linkgp).."&parse_mode=markdown&reply_markup="..JSON.encode(keyboard)) 
 else 
-send(msg.chat_id_, msg.id_,' ☽  لا يوجد رابط ارسل ضع رابط') 
+send(msg.chat_id_, msg.id_,' ♔  لا يوجد رابط ارسل ضع رابط') 
 end 
 end,nil) 
 end
@@ -16945,7 +16945,7 @@ local inline = {{{text = ta.title_, url=linkgpp.result}},}
 DeleteMessage(Chat_id,{[0] = Msg_id})  
 send_inline_key(msg.chat_id_,linkgp,nil,inline,msg.id_/2097152/0.5) 
 else 
-send(msg.chat_id_, msg.id_,' ☽  لا يوجد رابط ارسل ضع رابط') 
+send(msg.chat_id_, msg.id_,' ♔  لا يوجد رابط ارسل ضع رابط') 
 end 
 end,nil) 
 end
@@ -16955,10 +16955,10 @@ local notText = '✘ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-local Text =' ☽ تم تحديث السورس'
+local Text =' ♔ تم تحديث السورس'
 os.execute('rm -rf DRAGON.lua')
 os.execute('wget https://raw.githubusercontent.com/JABWA/Saidi/main/DRAGON.lua')
-send(msg.chat_id_, msg.id_,' ☽ تم تحديث السورس')
+send(msg.chat_id_, msg.id_,' ♔ تم تحديث السورس')
 dofile('DRAGON.lua')  
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -16974,10 +16974,10 @@ local notText = '✘ عذرا الاوامر هذه لا تخصك'
 https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callback_query_id="..data.id_.."&text="..URL.escape(notText).."&show_alert=true")
 return false
 end
-local Text =' ☽ تم تحديث الملفات'
+local Text =' ♔ تم تحديث الملفات'
 os.execute('rm -rf DRAGON.lua')
 os.execute('wget https://raw.githubusercontent.com/JABWA/Saidi/main/DRAGON.lua')
-send(msg.chat_id_, msg.id_,' ☽ تم تحديث السورس')
+send(msg.chat_id_, msg.id_,' ♔ تم تحديث السورس')
 dofile('DRAGON.lua')  
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -16994,28 +16994,28 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔',url='http://t.me/e_l_m_o_l_k'}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("  ☽ ︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("  ♔ ︙ليس لدي صلاحية حظر المستخدمين يرجى تفعيلها !*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if (data and data.code_ and data.code_ == 3) then 
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔',url='http://t.me/e_l_m_o_l_k'}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("  ☽ ︙البوت ليس ادمن يرجى ترقيتي !*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("  ♔ ︙البوت ليس ادمن يرجى ترقيتي !*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if data and data.code_ and data.code_ == 400 and data.message_ == "USER_ADMIN_INVALID" then 
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔',url='http://t.me/e_l_m_o_l_k'}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("  ☽ ︙عذرا لا استطيع طرد ادمنية الكروب*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("  ♔ ︙عذرا لا استطيع طرد ادمنية الكروب*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 if data and data.ID and data.ID == 'Ok' then
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔',url='http://t.me/e_l_m_o_l_k'}},
 }
-return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("  ☽ ︙الحمد لله ارتحنا منو*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
+return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape("  ♔ ︙الحمد لله ارتحنا منو*")..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
 end
 end,nil)   
 end
@@ -17966,7 +17966,7 @@ return false
 end
 if Text == '/HHH' then
 local Teext =[[
-♔ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔
+♔ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲?? 𝙴𝙻𝙼𝙻𝙾𝙺 ♔
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
