@@ -5423,7 +5423,7 @@ send(msg.chat_id_, msg.id_, " لا تستطيع حظر مالك السورس😂
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, " ✹ لا تسطيع حظر عمك تيمو عام")
+send(msg.chat_id_, msg.id_, "♔ لا تسطيع حظر عمك تيمو عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
@@ -5477,7 +5477,7 @@ send(msg.chat_id_, msg.id_, " لا تستطيع حظر عمك ازعرينا \n"
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, " ✹ لا تسطيع حظر عمك تيمو عام")
+send(msg.chat_id_, msg.id_, "♔ لا تسطيع حظر عمك تيمو عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
@@ -5521,7 +5521,7 @@ send(msg.chat_id_, msg.id_, "  ✹︙ لا تسطيع حظر المبرمج عم
 return false 
 end
 if tonumber(userid) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, "لا تستطيع حظر عمك تيمو  ✹ ")
+send(msg.chat_id_, msg.id_, "لا تستطيع حظر عمك تيمو ♔ ")
 return false 
 end
 if tonumber(userid) == tonumber(2057122076) then  
@@ -5578,7 +5578,7 @@ send(msg.chat_id_, msg.id_, "دا سيف حبيبي مينفعش اكتمو ")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, " ✹ لا تستطيع كتم تيمو عام")
+send(msg.chat_id_, msg.id_, "♔ لا تستطيع كتم تيمو عام")
 return false 
 end
 database:sadd(bot_id..'Gmute:User', result.sender_user_id_)
@@ -5627,7 +5627,7 @@ send(msg.chat_id_, msg.id_, "  ✹︙ لا يمكنك كتم مالك السور
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, " ✹ لا تستطيع كتم تيمو عام")
+send(msg.chat_id_, msg.id_, "♔ لا تستطيع كتم تيمو عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
@@ -5675,7 +5675,7 @@ send(msg.chat_id_, msg.id_, "  ✹︙ لا يمكنك كتم مالك السور
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2002118176) then  
-send(msg.chat_id_, msg.id_, " ✹ لا تستطيع كتم تيمو عام")
+send(msg.chat_id_, msg.id_, "♔ لا تستطيع كتم تيمو عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2057122076) then  
@@ -6620,23 +6620,17 @@ for i=0 , #admins do
 if data.members_[i].status_.ID == "ChatMemberStatusCreator" then
 owner_id = admins[i].user_id_
 tdcli_function ({ID = "GetUser",user_id_ = owner_id},function(arg,b) 
-local getbioY = getbio(msg.sender_user_id_)
 if b.first_name_ == false then
-send(msg.chat_id_, msg.id_,"  ✹ حساب المنشئ محذوف")
+send(msg.chat_id_, msg.id_,"  ✹︙ حساب المنشئ محذوف")
 return false  
 end
-if b.username_ then
-UserName = b.username_
-else
-UserName = 'sasa_boody'
+local UserName = (b.username_ or "SRC-DRAGON")
+send(msg.chat_id_, msg.id_,"  ✹︙ منشئ الجروب  ⇇["..b.first_name_.."](T.me/"..UserName..")")  
+end,nil)   
 end
-local Text = " ✹ منشئ الجروب  ⇐ ["..b.first_name_.."](tg://user?id="..b.id_..")\n"..getbio(b.id_):gsub('لايوجد','')
-local msg_id = msg.id_/2097152/0.5
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '• '..b.first_name_..' •', url="t.me/"..UserName}},   
-{{text = stay, url="http://t.me/"..UserName}},
-}
+end
+end,nil)   
+end
 
 if text == "رفع منشئ" and msg.reply_to_message_id_ and BasicConstructor(msg) then
 if AddChannel(msg.sender_user_id_) == false then
@@ -11490,13 +11484,13 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'  ✹ لا تستطيع استخدام البوت \n  ✹  يرجى الاشتراك بالقناه اولا \n  ✹  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'  ✹︙ لا تستطيع استخدام البوت \n  ✹︙  يرجى الاشتراك بالقناه اولا \n ??  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = getChatId(msg.chat_id_).ID,filter_ = {ID = "ChannelMembersBots"},offset_ = 0,limit_ = 100 },function(extra,result,success)
 local admins = result.members_  
-text = "\n  ✹ قائمة البوتات الموجوده \n♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ \n"
+text = "\n  ✹︙ قائمة البوتات الموجوده \n♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢\n"
 local n = 0
 local t = 0
 for i=0 , #admins do 
@@ -11507,16 +11501,16 @@ if result.members_[i].status_.ID == "ChatMemberStatusMember" then
 tr = ''
 elseif result.members_[i].status_.ID == "ChatMemberStatusEditor" then  
 t = t + 1
-tr = ' {★}'
+tr = ' { ✹︙}'
 end
 text = text..">> [@"..ta.username_..']'..tr.."\n"
 if #admins == 0 then
-send(msg.chat_id_, msg.id_, "  ✹ لا توجد بوتات في الجروب")
+send(msg.chat_id_, msg.id_, "  ✹︙ لا توجد بوتات في الجروب")
 return false 
 end
 if #admins == i then 
-local a = '\n♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ \n  ✹ عدد البوتات التي هنا >> {'..n..'} بوت\n'
-local f = '  ✹ عدد البوتات التي هي ادمن >> {'..t..'}\n  ✹ ملاحضه علامة ال (  ✹) تعني ان البوت ادمن \n'
+local a = '\n♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢\n  ✹︙ عدد البوتات التي هنا >> {'..n..'} بوت\n'
+local f = '  ✹︙ عدد البوتات التي هي ادمن >> {'..t..'}\n  ✹︙ ملاحضه علامة ال (  ✹︙) تعني ان البوت ادمن \n'
 send(msg.chat_id_, msg.id_, text..a..f)
 end
 end,nil)
@@ -15693,7 +15687,7 @@ Msᴀɢ ~ #msgs
 𓄼 ѕᴛᴀ : #stast  ☥
 𓄼 ɪᴅ : #id ‌‌‏⚚
 𓄼 ᴍѕɢ : #msgs 𓆊 
-𓐀 𝑾𝒆𝒍??𝒐𝒎𝒆 𓀃.
+𓐀 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𓀃.
 𓄼 𝗖𝗛 - ↝@Alahzane1↜  ✹︙.
 ]],
 [[
