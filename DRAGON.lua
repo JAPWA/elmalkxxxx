@@ -6628,11 +6628,10 @@ end
 if b.username_ then
 UserName = b.username_
 else
-UserName = 'timo_timo'
+UserName = 'sasa_boody'
 end
 local Text = " ✹ منشئ الجروب  ⇐ ["..b.first_name_.."](tg://user?id="..b.id_..")\n"..getbio(b.id_):gsub('لايوجد','')
 local msg_id = msg.id_/2097152/0.5
-local stay = ' •  ✹ | 𝙱𝙸𝙾 : '..getbio(msg.sender_user_id_)
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '• '..b.first_name_..' •', url="t.me/"..UserName}},   
