@@ -14493,7 +14493,7 @@ tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,r
 if result.username_ then
 username = result.username_ 
 else
-username = 'S_a_i_d_i'
+username = 'eLmLoK0'
 end
 local msg_id = msg.id_/2097152/0.5  
 local textt = "• ليس لديك صور "..(database:get(bot_id..'Name:Bot_') or 'اخري •')
@@ -14544,10 +14544,10 @@ tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,r
 if result.username_ then
 username = result.username_ 
 else
-username = 'S_a_i_d_i'
+username = 'eLmLoK0'
 end
 local msg_id = msg.id_/2097152/0.5
-local textt = "• اخر صوره "..(bot_data:get(ban_id..'getChatMember') or 'لديك •')  
+local textt = "• اخر صوره "..(database:get(bot_id..'getChatMember') or 'لديك •')  
 local Jabwa = 'https://t.me/Qtdao/71'
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -14569,10 +14569,10 @@ tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,r
 if result.username_ then
 username = result.username_ 
 else
-username = 'S_a_i_d_i'
+username = 'eLmLoK0'
 end
 local msg_id = msg.id_/2097152/0.5
-local textt = " عدد رسائلك ⇦"..bot_data:get(ban_id..'Msg_User'..msg.chat_id_..':'..msg.sender_user_id_)
+local textt = " عدد رسائلك ⇦"..(database:get(bot_id..'Msg_User'..msg.chat_id_..':'..msg.sender_user_id_)
 local Jabwa = 'https://t.me/Qtdao/71'
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -14849,95 +14849,7 @@ Text = '\n ♔ بالتاكيد تم تعطيل امر اطردني مفيش خ�
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == "صورتي"  then
-local my_ph = database:get(bot_id.."my_photo:status"..msg.chat_id_)
-if not my_ph then
-send(msg.chat_id_, msg.id_," ♔ الصوره معطله") 
-return false  
-end
-local function getpro(extra, result, success)
-if result.photos_[0] then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_," ♔ عدد صورك ⇐ "..result.total_count_.." صوره‌‏", msg.id_, msg.id_, "md")
-else
-send(msg.chat_id_, msg.id_,'لا تمتلك صوره في حسابك', 1, 'md')
-  end end
-tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil)
-end
-if text and text:match("^صورتي (%d+)$") and faeder11(msg) then
-local pronumb = {string.match(text, "^(صورتي) (%d+)$")}
-local function gproen(extra, result, success)
-if not is_momod(msg.sender_user_id_, msg.chat_id_) and faederdx1:get(FAEDER.."lock:get:photo"..msg.chat_id_)  then 
-faederdx(msg.chat_id_, msg.id_, 1, '️❅∫ جلب الصوره الشخصيه معطل ❥', 1, 'md')
-else
-if pronumb[2] == '1' then
-if result.photos_[0] then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_)
-else
-faederdx(msg.chat_id_, msg.id_, 1, "❅∫ لا تمتلك صوره في حسابك  ", 1, 'md')
-end
-elseif pronumb[2] == '2' then
-if result.photos_[1] then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[1].sizes_[1].photo_.persistent_id_)
-else
-faederdx(msg.chat_id_, msg.id_, 1, '️❅∫ انت لا تمتلك الصوره التي طلبت رقمها ❥', 1, 'md')
-end
-elseif pronumb[2] == '3' then
-if result.photos_[2] then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[2].sizes_[1].photo_.persistent_id_)
-else
-faederdx(msg.chat_id_, msg.id_, 1, '️❅∫ انت لا تمتلك الصوره التي طلبت رقمها ❥', 1, 'md')
-end
-elseif pronumb[2] == '4' then
-if result.photos_[3] then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[3].sizes_[1].photo_.persistent_id_)
-else
-faederdx(msg.chat_id_, msg.id_, 1, '️❅∫ انت لا تمتلك الصوره التي طلبت رقمها ❥', 1, 'md')
-end
-elseif pronumb[2] == '5' then
-if result.photos_[4] then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[4].sizes_[1].photo_.persistent_id_)
-else
-faederdx(msg.chat_id_, msg.id_, 1, '️❅∫ انت لا تمتلك الصوره التي طلبت رقمها ❥', 1, 'md')
-end
-elseif pronumb[2] == '6' then
-if result.photos_[5] then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[5].sizes_[1].photo_.persistent_id_)
-else
-faederdx(msg.chat_id_, msg.id_, 1, '️❅∫ انت لا تمتلك الصوره التي طلبت رقمها ❥', 1, 'md')
-end
-elseif pronumb[2] == '7' then
-if result.photos_[6] then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[6].sizes_[1].photo_.persistent_id_)
-else
-faederdx(msg.chat_id_, msg.id_, 1, '️❅∫ انت لا تمتلك الصوره التي طلبت رقمها ❥', 1, 'md')
-end
-elseif pronumb[2] == '8' then
-if result.photos_[7] then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[7].sizes_[1].photo_.persistent_id_)
-else
-faederdx(msg.chat_id_, msg.id_, 1, '️❅∫ انت لا تمتلك الصوره التي طلبت رقمها ❥', 1, 'md')
-end
-elseif pronumb[2] == '9' then
-if result.photos_[8] then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[8].sizes_[1].photo_.persistent_id_)
-else
-faederdx(msg.chat_id_, msg.id_, 1, '️❅∫ انت لا تمتلك الصوره التي طلبت رقمها ❥', 1, 'md')
-end
-elseif pronumb[2] == '10' then
-if result.photos_[9] then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[9].sizes_[1].photo_.persistent_id_)
-else
-faederdx(msg.chat_id_, msg.id_, 1, '️❅∫ انت لا تمتلك الصوره التي طلبت رقمها ❥', 1, 'md')
-end else
-faederdx(msg.chat_id_, msg.id_, 1, "❅∫ لا يمكنني ان ارسل لك اكثر من 10 صور ", 1, 'md')
-end end end
-tdcli_function ({
-ID = "GetUserProfilePhotos",
-user_id_ = msg.sender_user_id_,
-offset_ = 0,
-limit_ = pronumb[2]
-}, gproen, nil) 
-end
+
 if text == "نسبه جمالي" or text == "جمالي"   then
 local my_ph = database:get(bot_id.."pp_photo:status"..msg.chat_id_)
 if not my_ph then
@@ -15341,7 +15253,7 @@ local List = {
 𓁷⁦⁦ - 𝙪𝙚𝙨 †: #username 𓀀 .
 𓁷 - 𝙢𝙨𝙜 † : #msgs 𓀀 .
 𓁷 - 𝙨𝙩𝙖 †: #stast 𓀀  .
-𓁷 - 𝙞?? †: #id 𓀀 .
+𓁷 - ???? †: #id 𓀀 .
 𓁷 - 𝗖𝗛 - »@eLmLoK0« ♔.
 ]],
 [[
