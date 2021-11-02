@@ -13787,12 +13787,12 @@ return false end
 end
 
 if text == 'عامل اي' then 
-send(msg.chat_id_,msg.id_, '◍ عامل جمعيه..🙄💘 ') 
+send(msg.chat_id_,msg.id_, '♔ عامل جمعيه..🙄💘 ') 
 return false
 end
 
 if text == 'باي' or text == 'بيي' then
-send(msg.chat_id_,msg.id_, '◍ باي ياحته مني..🥺💘') 
+send(msg.chat_id_,msg.id_, '♔ باي ياحته مني..🥺💘') 
 return false
 end
 
@@ -13802,87 +13802,87 @@ return false
 end
 
 if text == 'شكرا' or text == 'ميرسي' then
-send(msg.chat_id_,msg.id_, '◍ العفو ياروحي..🌚💘') 
+send(msg.chat_id_,msg.id_, '♔ العفو ياروحي..🌚💘') 
 return false
 end
 
 if text == 'هلو' or text == 'هلا' then
-send(msg.chat_id_,msg.id_, '◍ هلا بيك ياروحي..💛') 
+send(msg.chat_id_,msg.id_, '♔ هلا بيك ياروحي..💛') 
 return false
 end
 
 if text == 'تمم' or text == 'تمام' then
-send(msg.chat_id_,msg.id_, '◍ دايما ياحبيبي..🌚💜') 
+send(msg.chat_id_,msg.id_, '♔ امك اسمها احلام..🌚💜') 
 return false
 end
 
 if text == 'حصل' or text == 'حصل😂' then
-send(msg.chat_id_,msg.id_, '◍ محصلش بطل تطبيل..🙄💘') 
+send(msg.chat_id_,msg.id_, '♔ محصلش بطل تطبيل..🙄💘') 
 return false
 end
 
 if text == 'زخرفه' or text == 'زخرفة' then
-send(msg.chat_id_,msg.id_, 'اكتب زخرفه + الاسم للي هتزخرفه مثال زخرفه عموره ') 
+send(msg.chat_id_,msg.id_, 'اكتب زخرفه + الاسم للي هتزخرفه مثال  زخرفه تيمو ') 
 return false
 end
 
 if text == 'بحبك' or text == 'حبق' then
-send(msg.chat_id_,msg.id_, '◍ بعشء امك..🥺💘') 
+send(msg.chat_id_,msg.id_, '♔ بعشء امك..🥺💘') 
 return false
 end
 
 if text == '🙄🙄' or text == '🙄??🙄' then
-send(msg.chat_id_,msg.id_, '◍ سقف الجروب عاجبك..😂💜') 
+send(msg.chat_id_,msg.id_, '♔ سقف الجروب عاجبك..😂💜') 
 return false
 end
 
 if text == '😒😒' or text == '😒😒😒' then
-send(msg.chat_id_,msg.id_, '◍ افرد وشك المعفن ده..😑💔') 
+send(msg.chat_id_,msg.id_, '♔ افرد وشك المعفن ده..😑💔') 
 return false
 end
 
 if text == 'دي' or text == 'ده' then
-send(msg.chat_id_,msg.id_, '◍ لا مش هي دي..😹🔥') 
+send(msg.chat_id_,msg.id_, '♔ لا مش هي دي..😹🔥') 
 return false
 end
 
 if text == '.' or text == '..' then
-send(msg.chat_id_,msg.id_, '◍ بتنقط لي ياحزين..🙂💔') 
+send(msg.chat_id_,msg.id_, '♔ بتنقط لي ياحزين..🙂💔') 
 return false
 end
 
 if text == 'بكرهك' then
-send(msg.chat_id_,msg.id_, '◍ ونا والله مش طايقك..😒💔')
+send(msg.chat_id_,msg.id_, '♔ ونا والله مش طايقك..😒💔')
 return false
 end
 
 if text == '😂😂😂' or text == '😂😂😂😂' then
-send(msg.chat_id_,msg.id_, '◍ دامت ضحكتك يابيبي..🥺💘') 
+send(msg.chat_id_,msg.id_, '♔ دامت ضحكتك يابيبي..🥺💘') 
 return false
 end
 
 if text == 'اخرصي' or text == 'اخرص' then
-send(msg.chat_id_,msg.id_, '◍ هات لازقه احطها ع بوئي..😹♥️ ') 
+send(msg.chat_id_,msg.id_, '♔ هات لازقه احطها ع بوئي..😹♥️ ') 
 return false
 end
 
 if text == 'فين الادمن' or text == 'الادمن فين' then
-send(msg.chat_id_,msg.id_, '◍ فلخاص بيخصخص..😂💘') 
+send(msg.chat_id_,msg.id_, '♔ فلخاص بيخصخص..😂💘') 
 return false
 end
 
 if text == 'بتحبني' or text == 'حبيبي' then
-send(msg.chat_id_,msg.id_, '◍ بدمنك ياحبيبي..🥺♥️') 
+send(msg.chat_id_,msg.id_, '♔ بدمنك ياحبيبي..🥺♥️') 
 return false
 end
 
 if text == 'شش' or text == 'ششش' then
-send(msg.chat_id_,msg.id_, '◍ بنهش كتاكيت احنا هنا ولا اي..🐣😹') 
+send(msg.chat_id_,msg.id_, '♔ بنهش كتاكيت احنا هنا ولا اي..🐣😹') 
 return false
 end
 
 if text == 'خلاص' or text == 'خلص' then
-send(msg.chat_id_,msg.id_, '◍ خلصت روحك يابعيد..😹💔') 
+send(msg.chat_id_,msg.id_, '♔ خلصت روحك يابعيد..😹💔') 
 return false
 end
 
@@ -13890,7 +13890,7 @@ if text then
 list = {'متيجي'}
 for k,v in pairs(list) do
 if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, '◍ تؤ تعاله انته..🥺💘') 
+send(msg.chat_id_,msg.id_, '♔ تؤ تعاله انته..🥺💘') 
 return false
 end
 end
@@ -13900,7 +13900,7 @@ if text then
 list = {'متيقي'}
 for k,v in pairs(list) do
 if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, '◍ هتخدها فين ياوسخ..🙄💔') 
+send(msg.chat_id_,msg.id_, '♔ هتخدها فين ياوسخ..🙄💔') 
 return false
 end
 end
@@ -13910,7 +13910,7 @@ if text then
 list = {'😳'}
 for k,v in pairs(list) do
 if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, '◍ احيه..😳') 
+send(msg.chat_id_,msg.id_, '♔ احيه..😳') 
 return false
 end
 end
@@ -13928,82 +13928,82 @@ end
 end
 
 if text == 'جيت' or text == 'انا جيت' then
-send(msg.chat_id_,msg.id_, '◍ نورت يارئيس اركان قلبي..🥺💘') 
+send(msg.chat_id_,msg.id_, '♔ نورت يارئيس اركان قلبي..🥺💘') 
 return false
 end
 
 if text == 'نعم' or text == 'يانعم' then
-send(msg.chat_id_,msg.id_, '◍ مين مؤدب ناوو..😹💘') 
+send(msg.chat_id_,msg.id_, '♔ مين مؤدب ناوو..😹💘') 
 return false
 end
 
 if text == '🙂🙂' or text == '🙂💔' then
-send(msg.chat_id_,msg.id_, '◍ نت هتنكد لي طيب..🥺💔') 
+send(msg.chat_id_,msg.id_, '♔ نت هتنكد لي طيب..🥺💔') 
 return false
 end
 
 if text == '😹😹😹' or text == '😹😹😹' then
-send(msg.chat_id_,msg.id_, '◍ بتضحك علي خيبتك..🙄💘') 
+send(msg.chat_id_,msg.id_, '♔ بتضحك علي خيبتك..🙄💘') 
 return false
 end
 
 if text == 'قلبي' or text == 'ياقلبي' then
-send(msg.chat_id_,msg.id_, '◍ تنشك في قلبك بتخوني..🙄💔') 
+send(msg.chat_id_,msg.id_, '♔ تنشك في قلبك بتخوني..🙄💔') 
 return false
 end
 
 if text == 'بتعمل اي' or text == 'بتعملي اي' then
-send(msg.chat_id_,msg.id_, '◍ ونت مالك ياحشري..🙄💘') 
+send(msg.chat_id_,msg.id_, '♔ ونت مالك ياحشري..🙄💘') 
 return false
 end
 
 if text == 'انتا مين' or text == 'مين' then
-send(msg.chat_id_,msg.id_, '◍ انا بوت وبحبك..🥺💘') 
+send(msg.chat_id_,msg.id_, '♔ انا بوت وبحبك..🥺💘') 
 return false
 end
 
 if text == 'البوت واقف' or text == 'البوت وقف' then
-send(msg.chat_id_,msg.id_, '◍ لا انا شغال متحورش..😒💔') 
+send(msg.chat_id_,msg.id_, '♔ لا انا شغال متحورش..😒💔') 
 return false
 end
 
 if text == 'فين' or text == 'انت فين' then
-send(msg.chat_id_,msg.id_, '◍ هنا فقلبي..😹♥️') 
+send(msg.chat_id_,msg.id_, '♔ هنا فقلبي..😹♥️') 
 return false
 end
 
 if text == 'اوف' or text == 'يوه' then
-send(msg.chat_id_,msg.id_, '◍ يتي القمر زعلان من اي..🥺🔥') 
+send(msg.chat_id_,msg.id_, '♔ يتي القمر زعلان من اي..🥺🔥') 
 return false
 end
 
 if text == 'بخ' or text == 'عو' then
-send(msg.chat_id_,msg.id_, '◍ يوه خضتني ياسمك اي..🥺💘') 
+send(msg.chat_id_,msg.id_, '♔ يوه خضتني ياسمك اي..🥺💘') 
 return false
 end
 
 if text == 'احا' or text == 'احااا' then
-send(msg.chat_id_,msg.id_, '◍ بالتكت بتعها..🙄💔') 
+send(msg.chat_id_,msg.id_, '♔ بالتكت بتعها..🙄💔') 
 return false
 end
 
 if text == 'بعشقك' or text == 'بموت فيك' then
-send(msg.chat_id_,msg.id_, '◍ بدمنك ياعيوني..🥺💘') 
+send(msg.chat_id_,msg.id_, '♔ بدمنك ياعيوني..🥺💘') 
 return false
 end
 
 if text == 'عيب' or text == 'لا عيب' then
-send(msg.chat_id_,msg.id_, '◍ سيب الواد يلعب..🙄💛') 
+send(msg.chat_id_,msg.id_, '♔ سيب الواد يلعب..🙄💛') 
 return false
 end
 
 if text == 'هه' or text == 'ههه' then
-send(msg.chat_id_,msg.id_, '◍ ضحكه مش سالكه زيك..😹💘') 
+send(msg.chat_id_,msg.id_, '♔ ضحكه مش سالكه زيك..😹💘') 
 return false
 end
 
 if text == 'تؤ' or text == 'تؤ تؤ' then
-send(msg.chat_id_,msg.id_, '◍ يانوحي يانوحي..🥺💘') 
+send(msg.chat_id_,msg.id_, '♔ يانوحي يانوحي..🥺💘') 
 return false
 end
 
@@ -14021,7 +14021,7 @@ if text then
 list = {'حصلخير'}
 for k,v in pairs(list) do
 if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, '◍ يتي كبرت وبقيت بتشبك الكلام..🥺💘') 
+send(msg.chat_id_,msg.id_, '♔ يتي كبرت وبقيت بتشبك الكلام..🥺💘') 
 return false
 end
 end
@@ -14031,7 +14031,7 @@ if text then
 list = {'انتي مين'}
 for k,v in pairs(list) do
 if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, '◍ انا وحده نسوان ونت مين..😂💘') 
+send(msg.chat_id_,msg.id_, '♔ انا وحده نسوان ونت مين..😂💘') 
 return false
 end
 end
@@ -14041,7 +14041,7 @@ if text then
 list = {'كسم'}
 for k,v in pairs(list) do
 if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, '◍ عيب ياوسخ..🙄💔') 
+send(msg.chat_id_,msg.id_, '♔ عيب ياوسخ..🙄💔') 
 return false
 end
 end
@@ -14051,7 +14051,7 @@ if text then
 list = {'دا بوت'}
 for k,v in pairs(list) do
 if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, '◍ احيه هو كان مفكرني انسان ولا اي..😹💜') 
+send(msg.chat_id_,msg.id_, '♔ احيه هو كان مفكرني انسان ولا اي..😹💜') 
 return false
 end
 end
@@ -14160,10 +14160,10 @@ end
 if text == 'هاي' or text == 'هيي' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
-send(msg.chat_id_, msg.id_,"  ✹︙معطله") 
+send(msg.chat_id_, msg.id_,"  ♔︙معطله") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[باي..😺💜](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[خلتك جرت وراي..😺💜](t.me/eLmLoK0)')
 return false
 end
 
@@ -14221,7 +14221,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[نزل عينك تحت كدا علشان هتخاد علي قفاك.. ✹︙♥️](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[نزل عينك تحت كدا علشان هتخاد علي قفاك.. ♔︙♥️](t.me/eLmLoK0)')
 return false
 end
 end
@@ -14348,7 +14348,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[وعليكم السلام ..🖤 ✹︙](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[وعليكم السلام ..🖤 ♔︙](t.me/eLmLoK0)')
 return false
 end
 end
@@ -14390,7 +14390,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[انا اجمد .. ✹︙💕](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[انا اجمد .. ♔︙💕](t.me/eLmLoK0)')
 return false
 end
 end
@@ -14474,7 +14474,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[القمر مهو بيضكك اهوه .. ✹︙💕](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[القمر مهو بيضكك اهوه .. ♔︙💕](t.me/eLmLoK0)')
 return false
 end
 end
@@ -14488,7 +14488,7 @@ if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[القمر مهو بيضكك اهوه .. ✹︙💕](t.me/eLmLoK0)')
+send(msg.chat_id_,msg.id_, '[القمر مهو بيضكك اهوه .. ♔︙💕](t.me/eLmLoK0)')
 return false
 end
 end
@@ -15667,7 +15667,7 @@ local List = {
 [[
 𝐘𝐨𝐮𝐫 𝐈𝐃 ☤🇪🇬- #id 
 𝐔𝐬𝐞𝐫𝐍𝐚☤🇪🇬- #username 
-𝐒𝐭𝐚𝐬𝐓 ☤🇪🇬- #stast 
+𝐒𝐭𝐚𝐬𝐓 ☤🇪??- #stast 
 ??𝐬𝐠𝐒☤🇪🇬 - #msgs
 𝗖𝗛☤🇪🇬 - »@eLmLoK0« ♔.
 ]],
