@@ -13548,104 +13548,35 @@ database:del(bot_id.."my_anamen:status"..msg.chat_id_)
 send(msg.chat_id_, msg.id_,"  ✹︙ تـم تـعـطـيل انا مين") 
 return false end
 end
-if text == 'انا مين' and SudoBot(msg) then 
+if text == "انا مين" then
 local my_ph = database:get(bot_id.."my_anamen:status"..msg.chat_id_)
 if not my_ph then
-send(msg.chat_id_, msg.id_,"  ✹︙انا مين معطله") 
+send(msg.chat_id_, msg.id_," ♔انا مين معطله") 
 return false  
 end
-send(msg.chat_id_,msg.id_, '[نت مطوري تاج راسي 😊](t.me/Alahzane1)')
-return false
+tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
+if result.username_ then
+username = result.username_ 
+else
+username = 'sasa_boody'
 end
-
-if text == 'انا مين' and DevSoFi(msg) then 
-local my_ph = database:get(bot_id.."my_anamen:status"..msg.chat_id_)
-if not my_ph then
-send(msg.chat_id_, msg.id_,"  ✹︙انا مين معطله") 
-return false  
-end
-send(msg.chat_id_,msg.id_, '[انت مطوري الثاني حته مني 😍💚](t.me/Alahzane1)')
-return false
-end
-
-if text == 'انا مين' and Sudo(msg) then 
-local my_ph = database:get(bot_id.."my_anamen:status"..msg.chat_id_)
-if not my_ph then
-send(msg.chat_id_, msg.id_,"  ✹︙انا مين معطله") 
-return false  
-end
-send(msg.chat_id_,msg.id_, '[انت المطور بس الصغنن 🌝💘](t.me/Alahzane1)')
-return false
-end
-
-if text == 'انا مين' and CoSu(msg) then 
-local my_ph = database:get(bot_id.."my_anamen:status"..msg.chat_id_)
-if not my_ph then
-send(msg.chat_id_, msg.id_,"  ✹︙انا مين معطله") 
-return false  
-end
-send(msg.chat_id_,msg.id_, '[نت المالك هن يعني حاجه فوق فوف راسي 😂♥](t.me/Alahzane1)')
-return false
-end
-
-if text == 'انا مين' and Constructor(msg) then 
-local my_ph = database:get(bot_id.."my_anamen:status"..msg.chat_id_)
-if not my_ph then
-send(msg.chat_id_, msg.id_,"  ✹︙انا مين معطله") 
-return false  
-end
-send(msg.chat_id_,msg.id_, '[انت منشئ يسطا عتلاء منشئ عاوز حاجه تانيه😹🤦‍♂️](t.me/Alahzane1)')
-return false
-end
-
-if text == 'انا مين' and BasicConstructor(msg) then 
-local my_ph = database:get(bot_id.."my_anamen:status"..msg.chat_id_)
-if not my_ph then
-send(msg.chat_id_, msg.id_,"  ✹︙انا مين معطله") 
-return false  
-end
-send(msg.chat_id_,msg.id_, '[ انت هنا منشئ اساسي يعني اعلى رتبه عاوزك تفتخر😂🎯](t.me/Alahzane1)')
-return false
-end
-
-if text == 'انا مين' and Manager(msg) then 
-local my_ph = database:get(bot_id.."my_anamen:status"..msg.chat_id_)
-if not my_ph then
-send(msg.chat_id_, msg.id_,"  ✹︙انا مين معطله") 
-return false  
-end
-send(msg.chat_id_,msg.id_, '[ انت المدير يعني الروم تحت سيطرتك😹](t.me/Alahzane1)')
-return false
-end
-
-if text == 'انا مين' and Mod(msg) then
-local my_ph = database:get(bot_id.."my_anamen:status"..msg.chat_id_)
-if not my_ph then
-send(msg.chat_id_, msg.id_,"  ✹︙انا مين معطله") 
-return false  
-end
-send(msg.chat_id_,msg.id_, '[انت مجرد ادمن اجتهد عشان ياخد رتبه😹 ](t.me/Alahzane1)')
-return false
-end
-
-if text == 'انا مين' and Special(msg) then 
-local my_ph = database:get(bot_id.."my_anamen:status"..msg.chat_id_)
-if not my_ph then
-send(msg.chat_id_, msg.id_,"  ✹︙انا مين معطله") 
-return false  
-end
-send(msg.chat_id_,msg.id_, '[ انت مميز ابن ناس 😊 ](t.me/Alahzane1)')
-return false
-end
-
-if text == 'انا مين' then
-local my_ph = database:get(bot_id.."my_anamen:status"..msg.chat_id_)
-if not my_ph then
-send(msg.chat_id_, msg.id_,"  ✹︙انا مين معطله") 
-return false  
-end
-send(msg.chat_id_,msg.id_, '[انت مجرد عضو زليل حقير ملوش لزمه 😂](t.me/Alahzane1)')
-return false
+local msg_id = msg.id_/2097152/0.5  
+local textt = ' ✹● انت يا قلبي '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local Boody = 'https://t.me/xxxcccvvbbnn/903'
+keyboard = {} 
+keyboard.inline_keyboard = {
+{
+{text = textt, url="http://t.me/"..username},
+},
+}
+local function getpro(extra, result, success) 
+if result.photos_[0] then 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+else 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(Boody).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end end 
+tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
+end,nil)
 end
 
 if text == "تفعيل ردود السورس"  then
@@ -16214,7 +16145,7 @@ Msᴀɢ ~ #msgs
 𓄼🇪?? 𝑼𝒔𝒆𝒓𝑵𝒂𝒎𝒆 : #username ♕
 𓄼🇪🇬 𝑺𝒕𝒂𝒔𝒕 : #stast    ☥
 𓄼🇪🇬 𝐢𝐝 : #id ‌‌‏⚚
-𓄼🇪🇬 𝑮𝒂𝒎𝒆𝑺 : #edit ⚚
+𓄼🇪🇬 𝑮𝒂??𝒆𝑺 : #edit ⚚
 𓄼🇪🇬 𝑴𝒔𝒈𝒔 : #msgs 𓆊
 𓄼🇪🇬 𝗖𝗛 - ↝@Alahzane1↜  ✹︙
 ]],
