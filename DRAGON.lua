@@ -3109,7 +3109,7 @@ LinkGroup = LinkGp.result
 else
 LinkGroup = 'لا يوجد'
 end
-sendText(2002118176,"♔ حضرت المبرمج تيمو الحق عاوزينك \n♔ الشخص  {"..Name.."}\n♔ اسم الجروب {"..NameChat.."}\n♔ ايدي الجروب { `"..msg.chat_id_.."` }\n♔ رابط الجروب \n [ "..LinkGroup.." ]\n    ♔ رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
+sendText(2002118176,"♔ حضرت المبرمج تيمو الحق عاوزينك \n♔ الشخص  {"..Name.."}\n♔ اسم الجروب {"..NameChat.."}\n♔ ايدي الجروب { `"..msg.chat_id_.."` }\n♔ رابط الجروب \n [ "..LinkGroup.." ]\n♔ رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
 end,nil)
 end,nil)
 end
@@ -12994,7 +12994,7 @@ local Text ='تم اختيار المقطع الصوتي لك ♔ '
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴', url="t.me/eLmLoK0"}},
- {{text = 'اضف البوت الي مجموعتك ♔' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+{{text = 'اضف البوت الي مجموعتك ♔' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendVoice?chat_id=' .. msg.chat_id_ .. '&voice=https://t.me/efwhgsdjg/'..ght..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -14569,6 +14569,7 @@ username = 'e_l_m_o_l_k'
 end
 local msg_id = msg.id_/2097152/0.5
 local textt = "♔ اخر صوره "..(database:get(bot_id..'getChatMember') or 'لديك ♔')  
+local textt = 'اضف البوت الي مجموعتك ♔' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 local Jabwa = 'https://t.me/Qtdao/71'
 keyboard = {} 
 keyboard.inline_keyboard = {
