@@ -14134,6 +14134,15 @@ send(msg.chat_id_,msg.id_, ' كفايه شقط يبني سيب حاجه لغير
 return false
 end
 
+if text == 'نورت' or text == 'نورتي then 
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, ' دا نوري انا 💛😌 ') 
+return false
+end
 
 if text == 'سلام' then 
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
@@ -14142,6 +14151,16 @@ send(msg.chat_id_, msg.id_," ")
 return false  
 end
 send(msg.chat_id_,msg.id_, '[مع الف سلامه يقلبي متجيش تاني..😹💔🎶](t.me/eLmLoK0)')
+return false
+end
+
+if text == 'اشي' then 
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_," ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, '[اسمها ماشي شكلك ساقط عربي..🙂😂](t.me/eLmLoK0)')
 return false
 end
 
@@ -14548,7 +14567,7 @@ else
 username = 'e_l_m_o_l_k'
 end
 local msg_id = msg.id_/2097152/0.5
-local textt = "• اخر صوره "..(database:get(bot_id..'getChatMember') or 'لديك •')  
+local textt = "♔ اخر صوره "..(database:get(bot_id..'getChatMember') or 'لديك ♔')  
 local Jabwa = 'https://t.me/Qtdao/71'
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -15300,7 +15319,7 @@ local List = {
 ᯓ 𝟔𝟔𝟔 𖡋 #username •✟
 ᯓ 𝟔𝟔𝟔𖡋 #stast  •✟
 ᯓ 𝟔𝟔𝟔𖡋 #id  • ✟
-ᯓ 𝟔𝟔??𖡋 #msgs  •✟ 
+ᯓ 𝟔𝟔𝟔𖡋 #msgs  •✟ 
 ᯓ 𝟔𝟔𝟔𖡋 #game •✟
 ᯓ 𝟔𝟔𝟔𖡋 𝗖𝗛 - »@eLmLoK0« ♔.
 ]],
@@ -15743,7 +15762,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 𝐓𝐓• 𝐘𝐎𝐔𝐑 𝐈𝐃 𖠰 #id .
-𝐓𝐓• 𝐌𝐬𝐠?? 𖠰 #msgs .
+𝐓𝐓• 𝐌𝐬𝐠𝐒 𖠰 #msgs .
 𝐓𝐓• 𝐔𝐬𝐞??𝐍𝐚 𖠰 #username .
 𝐓𝐓• 𝐒𝐓𝐀𝐒𝐓 𖠰 #stast .
 𝐓𝐓• 𝐀𝐔𝐓𝐎 𖠰 #auto .
@@ -18679,7 +18698,7 @@ local Name_Bot = (database:get(bot_id..'Name:Bot') or 'الملوك')
 if not database:get(bot_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
-local Fun = {'لوكي وزاحف من ساع زحفلي وحضرته 😒','خوش ولد و ورده مال الله 💋🙄','يلعب ع البنات ??', 'ولد زايعته الكاع 😶🙊','صاك يخبل ومعضل ','محلو وشواربه جنها مكناسه 😂🤷🏼‍♀️','اموت عليه 🌝','هوه غير ا��حب مال اني 🤓♔️','مو خوش ولد صراحه ☹️','ادبسز وميحترم البنات  ', 'فد واحد قذر 🙄😒','ماطيقه كل ما اكمشه ريحته جنها بخاخ بف باف مال حشرات 😂🤷‍♀️','مو خوش ولد 🤓' } 
+local Fun = {'لوكي وزاحف من ساع زحفلي وحضرته 😒','خوش ولد و ورده مال الله 💋🙄','يلعب ع البنات ??', 'ولد زايعته الكاع 😶🙊','صاك يخبل ومعضل ','محلو وشواربه جنها مكناسه 😂🤷🏼‍♀️','اموت عليه 🌝','هوه غير ا��حب مال اني ??♔️','مو خوش ولد صراحه ☹️','ادبسز وميحترم البنات  ', 'فد واحد قذر 🙄😒','ماطيقه كل ما اكمشه ريحته جنها بخاخ بف باف مال حشرات 😂🤷‍♀️','مو خوش ولد 🤓' } 
 send(msg.chat_id_, result.id_,''..Fun[math.random(#Fun)]..'')   
 end   
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, FunBot, nil)
