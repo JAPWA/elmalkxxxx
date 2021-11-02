@@ -11097,14 +11097,14 @@ end
 if text == "تفعيل صورتي" or text == 'تفعيل الصوره' then
 if Constructor(msg) then  
 database:set(bot_id.."my_photo:status"..msg.chat_id_,true) 
-send(msg.chat_id_, msg.id_,"  ✹︙ تم تفعيل الصوره") 
+send(msg.chat_id_, msg.id_," ♔ تم تفعيل الصوره") 
 return false  
 end
 end
 if text == "تعطيل الصوره" or text == 'تعطيل صورتي' then
 if Constructor(msg) then  
 database:del(bot_id.."my_photo:status"..msg.chat_id_) 
-send(msg.chat_id_, msg.id_,"  ✹︙ تم تعطيل الصوره") 
+send(msg.chat_id_, msg.id_," ♔ تم تعطيل الصوره") 
 return false end
 end
 if text == "تفعيل نسبه جمالي" or text == 'تفعيل جمالي' then
@@ -13561,7 +13561,7 @@ else
 username = 'sasa_boody'
 end
 local msg_id = msg.id_/2097152/0.5  
-local textt = ' ✹● انت يا قلبي '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local textt = ' ✹● انت➼ '..Rutba(msg.sender_user_id_,msg.chat_id_)
 local Boody = 'https://t.me/xxxcccvvbbnn/903'
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -15283,7 +15283,7 @@ local List = {
 [[
 𝟔𝟔𝟔 𖡋 #username • 𖣰💞
 ??𝟔𝟔 𖡋  #stast •??💞
-𝟔??𝟔 𖡋 #id • 𖣰💞
+𝟔??𝟔 ?? #id • 𖣰💞
 𝟔𝟔𝟔 𖡋 #game • 𖣰💞
 𝟔𝟔𝟔 𖡋 #msgs • 𖣰💞
 𝟔𝟔𝟔 𖡋 𝗖𝗛 - ↝@Alahzane1↜  ✹︙.
@@ -15717,7 +15717,7 @@ Msᴀɢ ~ #msgs
 𖡋 𝐌𝐒𝐆 #msgs 
 𖡋 𝐒𝐓𝐀 #stast 
 𖡋 ??𝐃 #id 
-𖡋 𝐄𝐃𝐈𝐓 #edit
+𖡋 𝐄𝐃??𝐓 #edit
 𖡋 𝗖𝗛 - ↝@Alahzane1↜  ✹︙
 ]],
 [[
@@ -16145,7 +16145,7 @@ Msᴀɢ ~ #msgs
 𓄼🇪?? 𝑼𝒔𝒆𝒓𝑵𝒂𝒎𝒆 : #username ♕
 𓄼🇪🇬 𝑺𝒕𝒂𝒔𝒕 : #stast    ☥
 𓄼🇪🇬 𝐢𝐝 : #id ‌‌‏⚚
-𓄼🇪🇬 𝑮𝒂??𝒆𝑺 : #edit ⚚
+𓄼🇪🇬 𝑮𝒂𝒎𝒆𝑺 : #edit ⚚
 𓄼🇪🇬 𝑴𝒔𝒈𝒔 : #msgs 𓆊
 𓄼🇪🇬 𝗖𝗛 - ↝@Alahzane1↜  ✹︙
 ]],
