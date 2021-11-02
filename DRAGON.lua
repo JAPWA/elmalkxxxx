@@ -12283,16 +12283,16 @@ end
 if text == "بوت" then
 local Namebot = (database:get(bot_id..'Name:Bot') or 'الملوك') 
 local DRAGON_Msg = { 
-'♔اسمي  '..Namebot..' يا قلبي 💚🕊',
-'♔اسمي '..Namebot..' يا روحي♥🕊',
-'♔اسمي  '..Namebot..' يعمري🤍🕊',
-'♔اسمي  '..Namebot..' يا قمر 🐭🤍',
-'♔اسمي  '..Namebot..' يامزه 🥺♥',
-'♔اسمي  '..Namebot..' يعم 😒🕊',
-'♔مقولت اسمي '..Namebot..' في اي 🙄🕊',
-'♔اسمي الكيوت '..Namebot..' 🌝🕊',
-'♔اسمي  '..Namebot..' ياحياتي🧸♥️',
-'♔اسمي  '..Namebot..' يوتكه🙈🕊',
+'اسمي  '..Namebot..' يا قلبي 💚🕊',
+'اسمي '..Namebot..' يا روحي♥🕊',
+'اسمي  '..Namebot..' يعمري🤍🕊',
+'اسمي  '..Namebot..' يا قمر 🐭🤍',
+'اسمي  '..Namebot..' يامزه 🥺♥',
+'اسمي  '..Namebot..' يعم 😒🕊',
+'مقولت اسمي '..Namebot..' في اي 🙄🕊',
+'اسمي الكيوت '..Namebot..' 🌝🕊',
+'اسمي  '..Namebot..' ياحياتي🧸♥️',
+'اسمي  '..Namebot..' يوتكه🙈🕊',
 } 
 Namebot = DRAGON_Msg[math.random(#DRAGON_Msg)] 
 local msg_id = msg.id_/2097152/0.5  
@@ -15288,7 +15288,7 @@ local List = {
 [[
 -♔   𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 . #username 🇪🇬 ꙰ 
 -♔   𝚂𝚃𝙰𝚂𝚃 . #stast 🇪🇬 ꙰
--♔   𝙸𝙳 . #id 🇪🇬 ꙰ 
+-♔   𝙸?? . #id 🇪🇬 ꙰ 
 -♔   𝙶𝙼𝙰𝚂 . #stast 🇪🇬 ꙰ 
 -♔   𝙼𝚂𝙶𝚂 . #msgs 🇪🇬 ꙰
 -♔   ??𝗛 - »@eLmLoK0« 🇪🇬 ꙰.
@@ -18180,7 +18180,7 @@ https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callb
 return false
 end
 local Teext =[[
-🎖┇ 𝙱𝙰??𝙸𝙲 𝙳𝙴𝚅????𝙾𝙿𝙴𝚁 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .
+🎖┇ 𝙱𝙰??𝙸𝙲 𝙳𝙴𝚅????𝙾𝙿𝙴?? 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .
 ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ 
  ♔ اهلا بك عزيزي 🔊
  ♔ اوامر مطور الاساسي 👨🏼‍✈️
