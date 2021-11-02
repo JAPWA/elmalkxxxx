@@ -14589,6 +14589,7 @@ end end
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end,nil)
 end
+
 if text == 'ايديي' then
 send(msg.chat_id_, msg.id_,' ♔ ايديك  ⇦♔'..msg.sender_user_id_)
 end
@@ -15253,7 +15254,7 @@ local List = {
 𓁷⁦⁦ - 𝙪𝙚𝙨 †: #username 𓀀 .
 𓁷 - 𝙢𝙨𝙜 † : #msgs 𓀀 .
 𓁷 - 𝙨𝙩𝙖 †: #stast 𓀀  .
-𓁷 - ???? †: #id 𓀀 .
+𓁷 - 𝙞?? †: #id 𓀀 .
 𓁷 - 𝗖𝗛 - »@eLmLoK0« ♔.
 ]],
 [[
