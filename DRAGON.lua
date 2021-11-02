@@ -3256,7 +3256,7 @@ keyboard.inline_keyboard = {
 {{text = '● 𝑻𝑰𝑴𝑶',url="t.me/ttimo_8lby"}}, 
 {{text = '● 𝑩𝑶𝑻♢𝑻𝑰𝑴𝑶',url="t.me/Timo8Bot"}}, 
 } 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_8lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/timo_019/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'سيف' or text == 'عمك سيف ' or text == 'المجهول' or text == 'SAIF' then 
