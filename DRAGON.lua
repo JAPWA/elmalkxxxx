@@ -334,8 +334,6 @@ elseif tonumber(user_id) == tonumber(2094348305) then
 var = 'مالك السورس عمر'
 elseif tonumber(user_id) == tonumber(1965534755) then
 var = 'مبرمج جابوا'
-elseif tonumber(user_id) == tonumber(2078351596) then
-var = 'حبيب الكل'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif database:sismember(bot_id.."Dev:SoFi:2", user_id) then
@@ -3396,7 +3394,7 @@ if text == 'التحديث ' or text == 'تحديث السورس' or text == 'ت
 tdcli_function ({ID = "GetUser",user_id_ = bot_id, offset_},function(extra,result,success)
 local msg_id = msg.id_/2097152/0.5  
 local textt = "e_l_m_o_l_k"..(database:get(bot_id..'Name:Bot') or 'صعيدي')
-local Jabwa = 'https://t.me/Qtdao/71'
+local DRAGON = 'https://t.me/Qtdao/71'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -3413,7 +3411,7 @@ local function getpro(extra, result, success)
 if result.photos_[0] then 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 else 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(Jabwa).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(DRAGON).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end end 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = bot_id, offset_, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end,nil)
@@ -3508,19 +3506,6 @@ keyboard.inline_keyboard = {
 {{text = '♔ 𝙱𝙾𝚃 𝙹𝙰𝙱𝚆𝙰',url="t.me/Bot_JABWA_Bot"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/J_A_B_W_A&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-
-if text == 'ايمي' or text == 'الملكه ايمي' or text == 'الماما' or text == 'EMY' then 
-local msg_id = msg.id_/2097152/0.5  
-local Text = [[ 
-الملكه ايمي مرات المبرمج تيمو..لو دكر قربلها ⇓⇑
-   ]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '♔ 𝙴𝙼𝚈',url="t.me/ttimo_Hayatey"}}, 
-{{text = '♔ 𝙱𝙾𝚃 𝙴𝙼𝚈',url="t.me/ZQUEnZbot"}}
-} 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_Hayatey&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'يوتيوب' or text == 'بحث' or text == 'اليوتيوب' then
@@ -17966,7 +17951,7 @@ return false
 end
 if Text == '/HHH' then
 local Teext =[[
-♔ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲?? 𝙴𝙻𝙼𝙻𝙾𝙺 ♔
+♔ 𝚆𝙴𝙻𝙲𝙾𝙼𝙴 𝚃𝙾 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ♔
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -17982,7 +17967,7 @@ local Teext =[[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺 ', url="t.me/e_l_m_o_l_k"}},
-{{text = '♔ 𝙱𝙰𝙲𝙺', callback_data="/HHH"}},
+{{text = '♔ 𝙱??𝙲𝙺', callback_data="/HHH"}},
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessagecaption?chat_id='..Chat_id..'&caption='..URL.escape(Teext)..'&message_id='..msg_idd..'&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard))  
 end
