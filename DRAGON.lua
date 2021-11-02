@@ -11490,13 +11490,13 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,'  ✹︙ لا تستطيع استخدام البوت \n  ✹︙  يرجى الاشتراك بالقناه اولا \n ??  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,'  ✹ لا تستطيع استخدام البوت \n  ✹  يرجى الاشتراك بالقناه اولا \n  ✹  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = getChatId(msg.chat_id_).ID,filter_ = {ID = "ChannelMembersBots"},offset_ = 0,limit_ = 100 },function(extra,result,success)
 local admins = result.members_  
-text = "\n  ✹︙ قائمة البوتات الموجوده \n♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢\n"
+text = "\n  ✹ قائمة البوتات الموجوده \n♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ \n"
 local n = 0
 local t = 0
 for i=0 , #admins do 
@@ -11507,16 +11507,16 @@ if result.members_[i].status_.ID == "ChatMemberStatusMember" then
 tr = ''
 elseif result.members_[i].status_.ID == "ChatMemberStatusEditor" then  
 t = t + 1
-tr = ' { ✹︙}'
+tr = ' {★}'
 end
 text = text..">> [@"..ta.username_..']'..tr.."\n"
 if #admins == 0 then
-send(msg.chat_id_, msg.id_, "  ✹︙ لا توجد بوتات في الجروب")
+send(msg.chat_id_, msg.id_, "  ✹ لا توجد بوتات في الجروب")
 return false 
 end
 if #admins == i then 
-local a = '\n♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢\n  ✹︙ عدد البوتات التي هنا >> {'..n..'} بوت\n'
-local f = '  ✹︙ عدد البوتات التي هي ادمن >> {'..t..'}\n  ✹︙ ملاحضه علامة ال (  ✹︙) تعني ان البوت ادمن \n'
+local a = '\n♢━━━♢ 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ♢━━━♢ \n  ✹ عدد البوتات التي هنا >> {'..n..'} بوت\n'
+local f = '  ✹ عدد البوتات التي هي ادمن >> {'..t..'}\n  ✹ ملاحضه علامة ال (  ✹) تعني ان البوت ادمن \n'
 send(msg.chat_id_, msg.id_, text..a..f)
 end
 end,nil)
@@ -15693,7 +15693,7 @@ Msᴀɢ ~ #msgs
 𓄼 ѕᴛᴀ : #stast  ☥
 𓄼 ɪᴅ : #id ‌‌‏⚚
 𓄼 ᴍѕɢ : #msgs 𓆊 
-𓐀 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𓀃.
+𓐀 𝑾𝒆𝒍??𝒐𝒎𝒆 𓀃.
 𓄼 𝗖𝗛 - ↝@Alahzane1↜  ✹︙.
 ]],
 [[
