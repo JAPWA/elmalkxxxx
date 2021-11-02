@@ -14540,16 +14540,16 @@ tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, o
 end,nil)
 end
 
-if text == "رسائلي" and not database:get(bot_id.. GeId.result.custom_title ..msg.chat_id_) then     
+if text == "صورتي" and not database:get(bot_id..'GeId.result.custom_title'..msg.chat_id_) then     
 tdcli_function ({ID = "GetUser",user_id_ = msg.sender_user_id_},function(extra,result,success)
 if result.username_ then
 username = result.username_ 
 else
-username =  eLmLoK0 
+username = 'e_l_m_o_l_k'
 end
 local msg_id = msg.id_/2097152/0.5
-local textt = " عدد رسائلك ⇦"..(database:get(bot_id.. Msg_User ..msg.chat_id_.. : ..msg.sender_user_id_)
-local Jabwa =  https://t.me/Qtdao/71 
+local textt = "• اخر صوره "..(database:get(bot_id..'getChatMember') or 'لديك •')  
+local Jabwa = 'https://t.me/Qtdao/71'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -14558,9 +14558,9 @@ keyboard.inline_keyboard = {
 }
 local function getpro(extra, result, success) 
 if result.photos_[0] then 
-https.request("https://api.telegram.org/bot"..token.. /sendPhoto?chat_id=  .. msg.chat_id_ ..  &photo= ..result.photos_[0].sizes_[1].photo_.persistent_id_.. &photo=  .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo='..result.photos_[0].sizes_[1].photo_.persistent_id_..'&photo=' .. URL.escape(textt).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 else 
-https.request("https://api.telegram.org/bot"..token.. /sendPhoto?chat_id=  .. msg.chat_id_ ..  &photo=  .. URL.escape(Jabwa).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=' .. URL.escape(Jabwa).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end end 
 tdcli_function ({ ID = "GetUserProfilePhotos", user_id_ = msg.sender_user_id_, offset_ = 0, limit_ = 1 }, getpro, nil) 
 end,nil)
@@ -15300,7 +15300,7 @@ local List = {
 ᯓ 𝟔𝟔𝟔 𖡋 #username •✟
 ᯓ 𝟔𝟔𝟔𖡋 #stast  •✟
 ᯓ 𝟔𝟔𝟔𖡋 #id  • ✟
-ᯓ 𝟔𝟔𝟔𖡋 #msgs  •✟ 
+ᯓ 𝟔𝟔??𖡋 #msgs  •✟ 
 ᯓ 𝟔𝟔𝟔𖡋 #game •✟
 ᯓ 𝟔𝟔𝟔𖡋 𝗖𝗛 - »@eLmLoK0« ♔.
 ]],
@@ -15743,7 +15743,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 𝐓𝐓• 𝐘𝐎𝐔𝐑 𝐈𝐃 𖠰 #id .
-𝐓𝐓• 𝐌𝐬𝐠𝐒 𖠰 #msgs .
+𝐓𝐓• 𝐌𝐬𝐠?? 𖠰 #msgs .
 𝐓𝐓• 𝐔𝐬𝐞??𝐍𝐚 𖠰 #username .
 𝐓𝐓• 𝐒𝐓𝐀𝐒𝐓 𖠰 #stast .
 𝐓𝐓• 𝐀𝐔𝐓𝐎 𖠰 #auto .
