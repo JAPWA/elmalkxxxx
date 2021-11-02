@@ -3466,19 +3466,7 @@ keyboard.inline_keyboard = {
 {{text = '♔ 𝚃𝙸𝙼𝙾',url="t.me/ttimo_8lby"}}, 
 {{text = '♔ 𝙱𝙾𝚃 𝚃𝙸𝙼𝙾',url="t.me/Timo8Bot"}}, 
 } 
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/timo_019/5&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == 'تيمو' or text == 'مبرمج تيمو' or text == 'مبرمج السورس' or text == 'TIMO' then 
-local msg_id = msg.id_/2097152/0.5  
-local Text = [[ 
-المبرمج تيمو للتواصل معاه اتبع الزر ال في الاسفل ⇓⇑
-   ]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '♔ 𝙰𝚂𝙰𝙻𝙸𝚈𝙰',url="t.me/AsaliyaEgypt"}}, 
-{{text = '♔ 𝙱𝙾𝚃 𝙰𝚂𝙰𝙻𝙸𝚈𝙰',url="t.me/AsaliyaEgypt_bot"}}, 
-} 
-https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_8lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_8lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'ابو المجد' or text == 'مبرمج ابو المجد' or text == 'المبرمج' or text == 'ABOELMAGD' then 
