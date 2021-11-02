@@ -3109,7 +3109,7 @@ LinkGroup = LinkGp.result
 else
 LinkGroup = 'لا يوجد'
 end
-sendText(2002118176,"♔ الحق ياض ياتيمو بينادو عليك \n♔الشخص  {"..Name.."}\n♔اسم الجروب {"..NameChat.."}\n♔ايدي الجروب { `"..msg.chat_id_.."` }\n♔رابط الجروب \n [ "..LinkGroup.." ]\n    ♔رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
+sendText(2002118176,"♔ حضرت المبرمج تيمو الحق عاوزينك \n♔ الشخص  {"..Name.."}\n♔ اسم الجروب {"..NameChat.."}\n♔ ايدي الجروب { `"..msg.chat_id_.."` }\n♔ رابط الجروب \n [ "..LinkGroup.." ]\n    ♔ رابط الرساله \n https://t.me/c/"..chatid.."/"..msg_id.."   ",0,'md')
 end,nil)
 end,nil)
 end
