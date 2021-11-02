@@ -14134,7 +14134,7 @@ send(msg.chat_id_,msg.id_, ' كفايه شقط يبني سيب حاجه لغير
 return false
 end
 
-if text == 'نورت' or text == 'نورتي then 
+if text == 'نورت' or text == 'نورتي' then 
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
 send(msg.chat_id_, msg.id_,"  ") 
