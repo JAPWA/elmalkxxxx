@@ -3463,7 +3463,8 @@ local Text = [[
    ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '♔ 𝚃𝙸𝙼𝙾',url="t.me/ttimo_8lby"}}, 
+{{text = '♔ 𝚃𝙸𝙼𝙾',url="t.me/ttimo_8lby"}},
+{{text = ' ♔ 𝙶𝚁𝙾𝚄𝙿',url="t.me/e_L_m_L_o_K"},{text = ' ♔ 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 ',url="t.me/eLmLoK0"}},
 {{text = '♔ 𝙱𝙾𝚃 𝚃𝙸𝙼𝙾',url="t.me/Timo8Bot"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/timo_019/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
