@@ -989,12 +989,12 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𓆩● ● 3𝑴𝑶𝑹𝒀 ●𓆪',url="t.me/BOT3mora"}},
-{{text = '𝐀𝐙3𝐀𝐑𝐄𝐍𝐀',url="t.me/HamoAz3arena"}},
+{{text = '● 𝑻𝑰𝑴𝑶',url="t.me/ttimo_8lby"}},
+{{text = '● 𝐀𝐙3𝐀𝐑𝐄𝐍𝐀',url="t.me/HamoAz3arena"}},
 {{text = '● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔',url="t.me/Alahzane1"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/sourseAzma/12&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 end
@@ -16818,7 +16818,7 @@ local Text = [[
 [🕹اضغط علي الأزرار في الأسفل  .↑]
 [🎯ألعاب سورس عظمه الاحسن في التليجرام .↑]
 ╾╾╾╾╾╾╾╾╾╾╾╾╾╾╸
- [● 𝗦𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ](t.me/Alahzane1)
+ [● ??𝗢𝗨𝗥𝗖𝗘 𝗔𝗭𝗠𝗔 ](t.me/Alahzane1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
