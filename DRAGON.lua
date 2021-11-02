@@ -3458,7 +3458,7 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/e_l_m_o_l_k/21&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'تيمو' or text == 'مبرمج السورس' or text == 'الملك تيمو' or text == 'TIMO' then 
+if text == 'تيمو' or text == 'مبرمج تيمو' or text == 'مبرمج السورس' or text == 'TIMO' then 
 local msg_id = msg.id_/2097152/0.5  
 local Text = [[ 
 المبرمج تيمو للتواصل معاه اتبع الزر ال في الاسفل ⇓⇑
@@ -3466,9 +3466,9 @@ local Text = [[
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '♔ 𝚃𝙸𝙼𝙾',url="t.me/ttimo_8lby"}}, 
-{{text = '♔ 𝙱𝙾𝚃 𝚃𝙸𝙼𝙾',url="timo_019/3"}},
+{{text = '♔ 𝙱𝙾𝚃 𝚃𝙸𝙼𝙾',url="t.me/Timo8Bot"}}, 
 } 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ABO_ELMAGD2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_8lby&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'ابو المجد' or text == 'مبرمج ابو المجد' or text == 'المبرمج' or text == 'ABOELMAGD' then 
@@ -3508,6 +3508,19 @@ keyboard.inline_keyboard = {
 {{text = '♔ 𝙱𝙾𝚃 𝙹𝙰𝙱𝚆𝙰',url="t.me/Bot_JABWA_Bot"}}, 
 } 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/J_A_B_W_A&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+
+if text == 'ايمي' or text == 'الملكه ايمي' or text == 'الماما' or text == 'EMY' then 
+local msg_id = msg.id_/2097152/0.5  
+local Text = [[ 
+الملكه ايمي مرات المبرمج تيمو..لو دكر قربلها ⇓⇑
+   ]] 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '♔ 𝙴𝙼𝚈',url="t.me/ttimo_Hayatey"}}, 
+{{text = '♔ 𝙱𝙾𝚃 𝙴𝙼𝚈',url="t.me/ZQUEnZbot"}}
+} 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/ttimo_Hayatey&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'يوتيوب' or text == 'بحث' or text == 'اليوتيوب' then
