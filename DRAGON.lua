@@ -14569,7 +14569,7 @@ username = 'e_l_m_o_l_k'
 end
 local msg_id = msg.id_/2097152/0.5
 local textt = "♔ اخر صوره "..(database:get(bot_id..'getChatMember') or 'لديك ♔')  
-local textt = 'اضف البوت الي مجموعتك ♔' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
+local textt = "♔ غيرها بقا الصوره "..(database:get(bot_id..'getChatMember') or 'عفنت ♔')  
 local Jabwa = 'https://t.me/Qtdao/71'
 keyboard = {} 
 keyboard.inline_keyboard = {
