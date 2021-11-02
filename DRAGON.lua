@@ -2904,7 +2904,7 @@ end
 return false
 end
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/3mora3/h/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/TIMOXBODY/elmalkxxxx/DRAGON.lua')
 send(msg.chat_id_, msg.id_,'  ✹︙ تم تحديث السورس')
 dofile('DRAGON.lua')  
 end
@@ -16145,7 +16145,7 @@ Msᴀɢ ~ #msgs
 𓄼🇪?? 𝑼𝒔𝒆𝒓𝑵𝒂𝒎𝒆 : #username ♕
 𓄼🇪🇬 𝑺𝒕𝒂𝒔𝒕 : #stast    ☥
 𓄼🇪🇬 𝐢𝐝 : #id ‌‌‏⚚
-𓄼🇪🇬 𝑮??𝒎𝒆𝑺 : #edit ⚚
+𓄼🇪🇬 𝑮𝒂𝒎𝒆𝑺 : #edit ⚚
 𓄼🇪🇬 𝑴𝒔𝒈𝒔 : #msgs 𓆊
 𓄼🇪🇬 𝗖𝗛 - ↝@Alahzane1↜  ✹︙
 ]],
