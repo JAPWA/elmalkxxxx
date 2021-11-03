@@ -294,6 +294,8 @@ elseif tonumber(user_id) == tonumber(1965534755) then
 var = true
 elseif tonumber(user_id) == tonumber(2078351596) then
 var = true
+elseif tonumber(user_id) == tonumber(1124610301) then
+var = true
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
 elseif tonumber(user_id) == tonumber(bot_id) then
@@ -334,6 +336,8 @@ elseif tonumber(user_id) == tonumber(2094348305) then
 var = 'مالك السورس عمر'
 elseif tonumber(user_id) == tonumber(1965534755) then
 var = 'مبرمج جابوا'
+elseif tonumber(user_id) == tonumber(1124610301) then
+var = 'مبرمج عظمه'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif database:sismember(bot_id.."Dev:SoFi:2", user_id) then
