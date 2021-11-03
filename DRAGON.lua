@@ -1313,20 +1313,27 @@ if text == 'مسح كليشه ستارت' and DevSoFi(msg) then
 database:del(bot_id..'Start:Bot') 
 send(msg.chat_id_, msg.id_,' ♔ تم مسح كليشه ستارت')
 end
-if text == 'معلومات السيرفر' and DevSoFi(msg) then 
-send(msg.chat_id_, msg.id_, io.popen([[
-linux_version=`lsb_release -ds`
-memUsedPrc=`free -m ♔ awk 'NR==2{printf "%sMB/%sMB {%.2f%}\n", $3,$2,$3*100/$2 }'`
-HardDisk=`df -lh ♔ awk '{if ($6 == "/") { print $3"/"$2" ~ {"$5"}" }}'`
-CPUPer=`top -b -n1 ♔ grep "Cpu(s)" ♔ awk '{print $2 + $4}'`
-uptime=`uptime ♔ awk -F'( ♔,♔:)+' '{if ($7=="min") m=$6; else {if ($7~/^day/) {d=$6;h=$8;m=$9} else {h=$6;m=$7}}} {print d+0,"days,",h+0,"hours,",m+0,"minutes."}'`
-echo '⇗ نظام التشغيل ⇖•\n* '"$linux_version"'*' 
-echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» الذاكره العشوائيه «  ↚\n* '"$memUsedPrc"'*'
-echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» وحـده الـتـخـزيـن «  ↚\n* '"$HardDisk"'*'
-echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» الـمــعــالــج «  ↚\n* '"`grep -c processor /proc/cpuinfo`""Core ~ {$CPUPer%} "'*'
-echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» الــدخــول «  ↚\n* '`whoami`'*'
-echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» مـده تـشغيـل الـسـيـرفـر « ↚\n* '"$uptime"'*'
-]]):read('*all'))  
+if text == 'معلومات السيرفر ♔' or text == 'السيرفر' then
+if not DEV(msg) then
+send(msg.chat_id_, msg.id_,'يجب ان تكون المبرمج لاستخدام هذا الامر')
+return false
+end 
+local inline = {{{text = '𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url="t.me/SOPOWERB0T"}},} 
+local server = io.popen([
+linux_version=lsb_release -ds
+memUsedPrc=free -m | awk 'NR==2{printf "%sMB/%sMB {%.2f%}\n", $3,$2,$3*100/$2 }'
+HardDisk=df -lh | awk '{if ($6 == "/") { print $3"/"$2" ~ {"$5"}" }}'
+CPUPer=top -b -n1 | grep "Cpu(s)" | awk '{print $2 + $4}'
+uptime=uptime | awk -F'( |,|:)+' '{if ($7=="min") m=$6; else {if ($7~/^day/) {d=$6;h=$8;m=$9} else {h=$6;m=$7}}} {print d+0,"days,",h+0,"hours,",m+0,"minutes."}'
+echo '[BY AHMEDYAD\n♔✔{ نظام التشغيل } ⊰•\n'"$linux_version"'' 
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽\n♔✔{ الذاكره العشوائيه } ⊰•\n'"$memUsedPrc"''
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽\n♔✔{ وحـده الـتـخـزيـن } ⊰•\n'"$HardDisk"''
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽\n♔✔{ الـمــعــالــج } ⊰•\n'"grep -c processor /proc/cpuinfo""Core ~ {$CPUPer%} "''
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽\n♔✔{ موقـع الـسـيـرفـر } ⊰•\n'curl https://devdeiveddev.ml/api/info/Location.php''
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽\n♔✔{ الــدخــول } ⊰•\n'whoami''
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽\n♔✔{ مـده تـشغيـل الـسـيـرفـر } ⊰•  \n'"$uptime"''
+]]):read('*all')
+send_inline_key(msg.chat_id_,server,nil,inline,msg.id_/2097152/0.5)
 end
 if text == 'ت ث' and DevSoFi(msg) then 
 os.execute('rm -rf DRAGON.lua')
@@ -14653,10 +14660,10 @@ tdcli_function ({ID = "GetUser",user_id_ = result.id_},function(extra,data)
 local rtp = Rutba(result.id_,msg.chat_id_)
 local username = ('[@'..data.username_..']' or 'لا يوجد')
 local iduser = result.id_
-send(msg.chat_id_, msg.id_,'♔ الايدي ↭ »'..iduser..'«\n♔ المعرف ↭ »'..username..'«\n♔ الرتبه ↭ »'..rtp..'«\n♔ نوع الكشف ↭ بالمعرف')
+send(msg.chat_id_, msg.id_,'♔الايدي ↭ »'..iduser..'«\n♔المعرف ↭ »'..username..'«\n♔الرتبه ↭ »'..rtp..'«\n♔نوع الكشف ↭ بالمعرف')
 end,nil)
 else
-send(msg.chat_id_, msg.id_,'♔ المعرف غير صحيح')
+send(msg.chat_id_, msg.id_,'♔المعرف غير صحيح')
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
@@ -14669,7 +14676,7 @@ tdcli_function ({ID = "GetUser",user_id_ = userid},function(extra,data)
 local rtp = Rutba(userid,msg.chat_id_) 
 local username = ('[@'..data.username_..']' or 'لا يوجد') 
 local iduser = userid 
-send(msg.chat_id_, msg.id_,'♔ الايدي ↭ »'..iduser..'«\n♔ المعرف ↭ »'..username..'«\n♔ الرتبه ↭ »'..rtp..'«\n♔ نوع الكشف↭ الايدي')
+send(msg.chat_id_, msg.id_,'♔الايدي ↭ »'..iduser..'«\n♔المعرف ↭ »'..username..'«\n♔الرتبه ↭ »'..rtp..'«\n♔نوع الكشف↭ الايدي')
 end,nil) 
 else 
 send(msg.chat_id_, msg.id_,' ♔الايدي غير صحيح') 
