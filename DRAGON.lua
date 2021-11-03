@@ -5621,6 +5621,10 @@ if tonumber(result.sender_user_id_) == tonumber(1965534755) then
 send(msg.chat_id_, msg.id_, " ♔  لا تستطيع حظر عمك مصطفي عام")
 return false 
 end
+if tonumber(result.sender_user_id_) == tonumber(1124610301) then  
+send(msg.chat_id_, msg.id_, " ♔  لا تستطيع حظر عمك عسليه عام")
+return false 
+end
 database:sadd(bot_id..'GBan:User', result.sender_user_id_)
 chat_kick(result.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},
@@ -5675,6 +5679,10 @@ if tonumber(result.sender_user_id_) == tonumber(1965534755) then
 send(msg.chat_id_, msg.id_, " ♔  لا تستطيع حظر عمك مصطفي عام")
 return false 
 end
+if tonumber(result.sender_user_id_) == tonumber(1124610301) then  
+send(msg.chat_id_, msg.id_, " ♔  لا تستطيع حظر عمك عسليه عام")
+return false 
+end
 usertext = '\n ♔ الـعـضو   ⇦♔['..result.title_..'](t.me/'..(username or 'eLmLoK0')..')'
 status  = '\n ♔ تم حظرو عام من الجروبات '
 texts = usertext..status
@@ -5721,6 +5729,10 @@ return false
 end
 if tonumber(result.sender_user_id_) == tonumber(1965534755) then  
 send(msg.chat_id_, msg.id_, " ♔  لا تستطيع حظر عمك مصطفي عام")
+return false 
+end
+if tonumber(result.sender_user_id_) == tonumber(1124610301) then  
+send(msg.chat_id_, msg.id_, " ♔  لا تستطيع حظر عمك عسليه عام")
 return false 
 end
 database:sadd(bot_id..'GBan:User', userid)
@@ -5772,6 +5784,10 @@ if tonumber(result.sender_user_id_) == tonumber(1965534755) then
 send(msg.chat_id_, msg.id_, " ♔  لا تستطيع كتم عمك مصطفي عام")
 return false 
 end
+if tonumber(result.sender_user_id_) == tonumber(1124610301) then  
+send(msg.chat_id_, msg.id_, " ♔  لا تستطيع كتم عسليه عام")
+return false 
+end
 database:sadd(bot_id..'Gmute:User', result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},
 function(arg,data) 
@@ -5818,11 +5834,15 @@ send(msg.chat_id_, msg.id_, " ♔  لا تسطيع كتم عمك ابو المج
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2094348305) then  
-send(msg.chat_id_, msg.id_, " ♔  لا تستطيع كتم عمك عا")
+send(msg.chat_id_, msg.id_, " ♔ لا تستطيع كتم عمر عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1965534755) then  
 send(msg.chat_id_, msg.id_, " ♔  لا تستطيع كتم مطور السورس عام")
+return false 
+end
+if tonumber(result.sender_user_id_) == tonumber(1124610301) then  
+send(msg.chat_id_, msg.id_, " ♔  لا تستطيع كتم عسليه عام")
 return false 
 end
 usertext = '\n ♔ الـعـضو   ⇦♔['..result.title_..'](t.me/'..(username or 'eLmLoK0')..')'
@@ -5871,6 +5891,10 @@ return false
 end
 if tonumber(result.sender_user_id_) == tonumber(1965534755) then  
 send(msg.chat_id_, msg.id_, " ♔  لا تستطيع كتم مطور السورس عام")
+return false 
+end
+if tonumber(result.sender_user_id_) == tonumber(1124610301) then  
+send(msg.chat_id_, msg.id_, " ♔  لا ياعم دا عسليه قلبي مينفعش اكتمو")
 return false 
 end
 database:sadd(bot_id..'Gmute:User', userid)
