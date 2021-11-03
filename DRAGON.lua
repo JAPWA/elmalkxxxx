@@ -976,7 +976,7 @@ if not DevSoFi(msg) then
 if text == '/start' then  
 local bl = 'مرحبا بيك عزيزي العضو اليك الاوامر في الاسفل'
 local keyboard = {
-{'♽^━┅┅┄⟞⟦ مطورين السورس ⟧⟝┄┉┉━^♽'},
+{'⩺━┅┅┄⟞⟦ مطورين السورس ⟧⟝┄┉┉━⩹'},
 {'مبرمج تيمو','مبرمج جابوا'},
 {'⩹━━━⊶♢𝗘𝗟𝗠𝗟𝗢𝗞♢⊷━━━⩺ '},
 {'مبرمج ابو المجد','مالك عمر'},
@@ -1125,7 +1125,7 @@ end
 if text == 'قسم مطورين السورس والمبرمجين' then
 local Text = ' قسم مطورين السورس لدخول الي حسابتهم'
 local Key = {
-{'♽^━┅┅┄⟞⟦ مطورين السورس ⟧⟝┄┉┉━^♽'},
+{'⩺━┅┅┄⟞⟦ مطورين السورس ⟧⟝┄┉┉━⩹'},
 {'التواصل','عايز بوت','يا سورس'},
 {'مبرمج تيمو','مبرمج ابو المجد'},
 {'مبرمج عمر','مبرمج جابوا'},
@@ -1382,7 +1382,7 @@ end
 if text == 'قسم مطورين السورس والمبرمجين' and DevSoFi(msg) then 
 local Text = 'قسم مطورين السورس لدخول الي حسابتهم'
 local Key = {
-{'♽^━┅┅┄⟞⟦ مطورين السورس ⟧⟝┄┉┉━^♽'},
+{'⩺━┅┅┄⟞⟦ مطورين السورس ⟧⟝┄┉┉━⩹'},
 {'التواصل','عايز بوت','يا سورس'},
 {'مبرمج تيمو','مبرمج ابو المجد'},
 {'مبرمج عمر','مبرمج جابوا'},
@@ -1535,14 +1535,14 @@ if text == 'الاصدار' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' ♔ اصدار سورس الملوك{ 4x}')
 end
-if text == '♽^━┅┅┄⟞⟦ مطورين السورس ⟧⟝┄┉┉━^♽' then
+if text == '⩹━┅┅┄⟞⟦ مطورين السورس ⟧⟝┄┉┉━⩺' then
 local Text = [[ 
 قناه يوزرات مطورين ومبرمجين السورس 💕♔.
 محتاج تنصب بوت ببلاش تواصل معانا 🥂▽.
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'مطورين السورس🌸', url="https://t.me/eLmLoK0"}}, 
+{{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺', url="https://t.me/eLmLoK0"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/timo_019/5&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -1556,7 +1556,7 @@ keyboard.inline_keyboard = {
 {{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺', url="t.me/eLmLoK0"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/timo_019/5/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/timo_019/5&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == '━┅┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺⟧⟝┄┉┉━' and DevSoFi(msg) then
 local Text = [[ 
@@ -1567,7 +1567,7 @@ keyboard.inline_keyboard = {
 {{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺', url="t.me/eLmLoK0"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/beborty/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/timo_019/5&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == 'معلومات الكيبورد' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
@@ -1594,7 +1594,7 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'قناه السورس', url="t.me/eLmLoK0"}}, 
+{{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺', url="t.me/eLmLoK0"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -1621,7 +1621,7 @@ keyboard.inline_keyboard = {
 {{text = '♔ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙴𝙻𝙼𝙻𝙾𝙺', url="t.me/eLmLoK0"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendphoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/eLmLoK0/19&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/timo_019/5&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == "ضع اسم للبوت" and DevSoFi(msg) then  
