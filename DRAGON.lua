@@ -2884,7 +2884,7 @@ tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,chat)
 if database:sismember(bot_id..'Chek:Groups',msg.chat_id_) then
 send(msg.chat_id_, msg.id_,' ♔ الـجـروب مـفعـل مـن قبـل')
 else
-sendText(msg.chat_id_,'\n ♔ مـن قبـل ↭ ['..string.sub(result.first_name_,0, 70)..'](tg://user?id='..result.id_..')\n ♔تـم تـشغـيل الـبوت فـي الـجـروب  {'..chat.title_..'}\n  وتم تــرقــيه جــمــيع الـادمــنــيه',msg.id_/2097152/0.5,'md')
+sendText(msg.chat_id_,'\n ♔ مـن قبـل ꕤ ['..string.sub(result.first_name_,0, 70)..'](tg://user?id='..result.id_..')\n ♔تـم تـشغـيل الـبوت فـي الـجـروب  {'..chat.title_..'}\n  وتم تــرقــيه جــمــيع الـادمــنــيه',msg.id_/2097152/0.5,'md')
 database:sadd(bot_id..'Chek:Groups',msg.chat_id_)
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
 local NameChat = chat.title_
@@ -2925,7 +2925,7 @@ tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,chat)
 if not database:sismember(bot_id..'Chek:Groups',msg.chat_id_) then
 send(msg.chat_id_, msg.id_,' ♔ الـبوت مـعطـل مـن قبـل')
 else
-sendText(msg.chat_id_,'\n ♔ مـن قبـل ↭ ['..string.sub(result.first_name_,0, 70)..'](tg://user?id='..result.id_..')\n ♔ تـم تـعـطيل الـبوت   {'..chat.title_..'}',msg.id_/2097152/0.5,'md')
+sendText(msg.chat_id_,'\n ♔ مـن قبـل ꕤ ['..string.sub(result.first_name_,0, 70)..'](tg://user?id='..result.id_..')\n ♔ تـم تـعـطيل الـبوت   {'..chat.title_..'}',msg.id_/2097152/0.5,'md')
 database:srem(bot_id..'Chek:Groups',msg.chat_id_)  
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
 local NameChat = chat.title_
@@ -2981,7 +2981,7 @@ end
 if database:sismember(bot_id..'Chek:Groups',msg.chat_id_) then
 send(msg.chat_id_, msg.id_,' ♔تـم تـشغـيل الـبوت فـي الـجـروب ')
 else
-sendText(msg.chat_id_,'\n ♔ مـن قبـل ↭ ['..string.sub(result.first_name_,0, 70)..'](tg://user?id='..result.id_..')\n ♔تـم تـشغـيل الـبوت فـي الـجـروب  {'..chat.title_..'}\n  وتم تــرقــيه جــمــيع الـادمــنــيه',msg.id_/2097152/0.5,'md')
+sendText(msg.chat_id_,'\n ♔ مـن قبـل ꕤ ['..string.sub(result.first_name_,0, 70)..'](tg://user?id='..result.id_..')\n ♔تـم تـشغـيل الـبوت فـي الـجـروب  {'..chat.title_..'}\n  وتم تــرقــيه جــمــيع الـادمــنــيه',msg.id_/2097152/0.5,'md')
 database:sadd(bot_id..'Chek:Groups',msg.chat_id_)  
 database:sadd(bot_id..'CoSu'..msg.chat_id_, msg.sender_user_id_)
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
@@ -14595,7 +14595,7 @@ tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(extr
 local rtp = Rutba(result.sender_user_id_,msg.chat_id_)
 local username = ' ['..data.first_name_..'](t.me/'..(data.username_ or 'textchuser')..')'
 local iduser = result.sender_user_id_
-send(msg.chat_id_, msg.id_,'*- الـعـضو  ↭ »*'..username..'*«\n- الرتبه ↭ »'..rtp..'«*\n')
+send(msg.chat_id_, msg.id_,'*- الـعـضو  ꕤ »*'..username..'*«\n- الرتبه ꕤ »'..rtp..'«*\n')
 end,nil)
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
@@ -14609,7 +14609,7 @@ tdcli_function ({ID = "GetUser",user_id_ = result.id_},function(extra,data)
 local rtp = Rutba(result.id_,msg.chat_id_)
 local username = ('[@'..data.username_..']' or 'لا يوجد')
 local iduser = result.id_
-send(msg.chat_id_, msg.id_,'*- الـعـضو  ↭ »*'..username..'*«\n- الرتبه ↭ »'..rtp..'«*\n')
+send(msg.chat_id_, msg.id_,'*- الـعـضو  ꕤ »*'..username..'*«\n- الرتبه ꕤ »'..rtp..'«*\n')
 end,nil)
 else
 send(msg.chat_id_, msg.id_,'- المعرف غير صحيح ')
@@ -14625,7 +14625,7 @@ tdcli_function ({ID = "GetUser",user_id_ = userid},function(extra,data)
 local rtp = Rutba(userid,msg.chat_id_) 
 local username = ('[@'..data.username_..']' or 'لا يوجد') 
 local iduser = userid 
-send(msg.chat_id_, msg.id_,'*- الـعـضو  ↭ »*'..username..'*«\n- الرتبه ↭ »'..rtp..'«*\n')
+send(msg.chat_id_, msg.id_,'*- الـعـضو  ꕤ »*'..username..'*«\n- الرتبه ꕤ »'..rtp..'«*\n')
 end,nil) 
 else 
 send(msg.chat_id_, msg.id_,' ♔الايدي غير صحيح') 
@@ -14639,7 +14639,7 @@ tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(extr
 local rtp = Rutba(result.sender_user_id_,msg.chat_id_)
 local username = ('[@'..data.username_..']' or 'لا يوجد')
 local iduser = result.sender_user_id_
-send(msg.chat_id_, msg.id_,'♔الايدي ↭ »'..iduser..'«\n♔المعرف ↭ »'..username..'«\n♔الرتبه ↭ »'..rtp..'«\n♔نوع الكشف ↭ بالرد')
+send(msg.chat_id_, msg.id_,'♔الايدي ꕤ ◤'..iduser..'◥\n♔المعرف ꕤ  ◤'..username..'◥\n♔الرتبه ꕤ  ◤'..rtp..'◥\n♔نوع الكشف ꕤ بالرد')
 end,nil)
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
@@ -14653,7 +14653,7 @@ tdcli_function ({ID = "GetUser",user_id_ = result.id_},function(extra,data)
 local rtp = Rutba(result.id_,msg.chat_id_)
 local username = ('[@'..data.username_..']' or 'لا يوجد')
 local iduser = result.id_
-send(msg.chat_id_, msg.id_,'♔الايدي ↭ »'..iduser..'«\n♔المعرف ↭ »'..username..'«\n♔الرتبه ↭ »'..rtp..'«\n♔نوع الكشف ↭ بالمعرف')
+send(msg.chat_id_, msg.id_,'♔الايدي ꕤ »'..iduser..'«\n♔المعرف ꕤ »'..username..'«\n♔الرتبه ꕤ »'..rtp..'«\n♔نوع الكشف ꕤ بالمعرف')
 end,nil)
 else
 send(msg.chat_id_, msg.id_,'♔المعرف غير صحيح')
@@ -14669,7 +14669,7 @@ tdcli_function ({ID = "GetUser",user_id_ = userid},function(extra,data)
 local rtp = Rutba(userid,msg.chat_id_) 
 local username = ('[@'..data.username_..']' or 'لا يوجد') 
 local iduser = userid 
-send(msg.chat_id_, msg.id_,'♔الايدي ↭ »'..iduser..'«\n♔المعرف ↭ »'..username..'«\n♔الرتبه ↭ »'..rtp..'«\n♔نوع الكشف↭ الايدي')
+send(msg.chat_id_, msg.id_,'♔الايدي ꕤ ◤'..iduser..'◥\n♔المعرف ꕤ ◤'..username..'◥\n♔الرتبه ꕤ ◤'..rtp..'◥\n♔نوع الكشفꕤ الايدي')
 end,nil) 
 else 
 send(msg.chat_id_, msg.id_,' ♔الايدي غير صحيح') 
@@ -15288,7 +15288,7 @@ local List = {
 [[
 -♔   𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 . #username 🇪🇬 ꙰ 
 -♔   𝚂𝚃𝙰𝚂𝚃 . #stast 🇪🇬 ꙰
--♔   𝙸?? . #id 🇪🇬 ꙰ 
+-♔   ???? . #id 🇪🇬 ꙰ 
 -♔   𝙶𝙼𝙰𝚂 . #stast 🇪🇬 ꙰ 
 -♔   𝙼𝚂𝙶𝚂 . #msgs 🇪🇬 ꙰
 -♔   ??𝗛 - »@eLmLoK0« 🇪🇬 ꙰.
@@ -18180,7 +18180,7 @@ https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callb
 return false
 end
 local Teext =[[
-🎖┇ 𝙱𝙰??𝙸𝙲 𝙳𝙴𝚅????𝙾𝙿𝙴?? 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .
+🎖┇ 𝙱𝙰??𝙸𝙲 𝙳𝙴𝚅????𝙾𝙿???? 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .
 ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ 
  ♔ اهلا بك عزيزي 🔊
  ♔ اوامر مطور الاساسي 👨🏼‍✈️
