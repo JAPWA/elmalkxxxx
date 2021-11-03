@@ -159,7 +159,7 @@ print([[
      \/__/         \/__/     \/__/         \/__/     \/__/         \|__|    
 
                                     
-> CH ♔ »@eLmLoK0«
+> CH ♔«@eLmLoK0«
 ~> DEVELOPER ♔ {text = @ttimo_8lby
 ]])
 sudos = dofile("./kkkklInfo.lua") 
@@ -1321,11 +1321,11 @@ HardDisk=`df -lh ♔ awk '{if ($6 == "/") { print $3"/"$2" ~ {"$5"}" }}'`
 CPUPer=`top -b -n1 ♔ grep "Cpu(s)" ♔ awk '{print $2 + $4}'`
 uptime=`uptime ♔ awk -F'( ♔,♔:)+' '{if ($7=="min") m=$6; else {if ($7~/^day/) {d=$6;h=$8;m=$9} else {h=$6;m=$7}}} {print d+0,"days,",h+0,"hours,",m+0,"minutes."}'`
 echo '⇗ نظام التشغيل ⇖•\n* '"$linux_version"'*' 
-echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» الذاكره العشوائيه «  ↚\n* '"$memUsedPrc"'*'
-echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» وحـده الـتـخـزيـن «  ↚\n* '"$HardDisk"'*'
-echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» الـمــعــالــج «  ↚\n* '"`grep -c processor /proc/cpuinfo`""Core ~ {$CPUPer%} "'*'
-echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» الــدخــول «  ↚\n* '`whoami`'*'
-echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» مـده تـشغيـل الـسـيـرفـر « ↚\n* '"$uptime"'*'
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» الذاكره العشوائيه»  ↚\n* '"$memUsedPrc"'*'
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» وحـده الـتـخـزيـن»  ↚\n* '"$HardDisk"'*'
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» الـمــعــالــج»  ↚\n* '"`grep -c processor /proc/cpuinfo`""Core ~ {$CPUPer%} "'*'
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» الــدخــول»  ↚\n* '`whoami`'*'
+echo '♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ \n ♔» مـده تـشغيـل الـسـيـرفـر» ↚\n* '"$uptime"'*'
 ]]):read('*all'))  
 end
 if text == 'ت ث' and DevSoFi(msg) then 
@@ -1741,7 +1741,7 @@ local username = database:get(bot_id.."user:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
-t = t..""..k.."- » '..v..' «\n"
+t = t..""..k.."-« '..v..'»\n"
 end
 end
 if #list == 0 then
@@ -1757,7 +1757,7 @@ local username = database:get(bot_id.."user:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
-t = t..""..k.."- » '..v..' «\n"
+t = t..""..k.."-« '..v..'»\n"
 end
 end
 if #list == 0 then
@@ -1774,7 +1774,7 @@ local username = database:get(bot_id.."user:Name" .. v)
 if username then
 t = t..""..k.."- ([@"..username.."])\n"
 else
-t = t..""..k.."- » '..v..' «\n"
+t = t..""..k.."-« '..v..'»\n"
 end
 end
 if #list == 0 then
@@ -1884,14 +1884,14 @@ local sendok = #group - DRAGON
 if q == 0 then
 DRAGON = ''
 else
-DRAGON = '\n ♔ تم ازالة  ⇦♔» '..q..' « جروبات من البوت'
+DRAGON = '\n ♔ تم ازالة  ⇦♔» '..q..'» جروبات من البوت'
 end
 if w == 0 then
 DRAGONk = ''
 else
-DRAGONk = '\n ♔ تم ازالة  ⇦♔» '..w..' « كروب لان البوت عضو'
+DRAGONk = '\n ♔ تم ازالة  ⇦♔» '..w..'» كروب لان البوت عضو'
 end
-send(msg.chat_id_, msg.id_,' ♔  عدد الجروبات الان  ⇦♔» '..#group..' «'..DRAGONk..''..DRAGON..'\n ♔  الان عدد الجروبات الحقيقي  ⇦♔» '..sendok..' « جروبات\n')   
+send(msg.chat_id_, msg.id_,' ♔  عدد الجروبات الان  ⇦♔» '..#group..'»'..DRAGONk..''..DRAGON..'\n ♔  الان عدد الجروبات الحقيقي  ⇦♔» '..sendok..'» جروبات\n')   
 end
 end
 end,nil)
@@ -2884,7 +2884,7 @@ tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,chat)
 if database:sismember(bot_id..'Chek:Groups',msg.chat_id_) then
 send(msg.chat_id_, msg.id_,' ♔ الـجـروب مـفعـل مـن قبـل')
 else
-sendText(msg.chat_id_,'\n ♔ مـن قبـل ꕤ ['..string.sub(result.first_name_,0, 70)..'](tg://user?id='..result.id_..')\n ♔تـم تـشغـيل الـبوت فـي الـجـروب  {'..chat.title_..'}\n  وتم تــرقــيه جــمــيع الـادمــنــيه',msg.id_/2097152/0.5,'md')
+sendText(msg.chat_id_,'\n ♔ مـن قبـل ⌁ ['..string.sub(result.first_name_,0, 70)..'](tg://user?id='..result.id_..')\n ♔تـم تـشغـيل الـبوت فـي الـجـروب  {'..chat.title_..'}\n  وتم تــرقــيه جــمــيع الـادمــنــيه',msg.id_/2097152/0.5,'md')
 database:sadd(bot_id..'Chek:Groups',msg.chat_id_)
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
 local NameChat = chat.title_
@@ -2925,7 +2925,7 @@ tdcli_function({ID ="GetChat",chat_id_=msg.chat_id_},function(arg,chat)
 if not database:sismember(bot_id..'Chek:Groups',msg.chat_id_) then
 send(msg.chat_id_, msg.id_,' ♔ الـبوت مـعطـل مـن قبـل')
 else
-sendText(msg.chat_id_,'\n ♔ مـن قبـل ꕤ ['..string.sub(result.first_name_,0, 70)..'](tg://user?id='..result.id_..')\n ♔ تـم تـعـطيل الـبوت   {'..chat.title_..'}',msg.id_/2097152/0.5,'md')
+sendText(msg.chat_id_,'\n ♔ مـن قبـل ⌁ ['..string.sub(result.first_name_,0, 70)..'](tg://user?id='..result.id_..')\n ♔ تـم تـعـطيل الـبوت   {'..chat.title_..'}',msg.id_/2097152/0.5,'md')
 database:srem(bot_id..'Chek:Groups',msg.chat_id_)  
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
 local NameChat = chat.title_
@@ -2981,7 +2981,7 @@ end
 if database:sismember(bot_id..'Chek:Groups',msg.chat_id_) then
 send(msg.chat_id_, msg.id_,' ♔تـم تـشغـيل الـبوت فـي الـجـروب ')
 else
-sendText(msg.chat_id_,'\n ♔ مـن قبـل ꕤ ['..string.sub(result.first_name_,0, 70)..'](tg://user?id='..result.id_..')\n ♔تـم تـشغـيل الـبوت فـي الـجـروب  {'..chat.title_..'}\n  وتم تــرقــيه جــمــيع الـادمــنــيه',msg.id_/2097152/0.5,'md')
+sendText(msg.chat_id_,'\n ♔ مـن قبـل ⌁ ['..string.sub(result.first_name_,0, 70)..'](tg://user?id='..result.id_..')\n ♔تـم تـشغـيل الـبوت فـي الـجـروب  {'..chat.title_..'}\n  وتم تــرقــيه جــمــيع الـادمــنــيه',msg.id_/2097152/0.5,'md')
 database:sadd(bot_id..'Chek:Groups',msg.chat_id_)  
 database:sadd(bot_id..'CoSu'..msg.chat_id_, msg.sender_user_id_)
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
@@ -4265,7 +4265,7 @@ local TWEET_Msg = {
 "لا تقف قصاد الريح ولا تمشي معها.... 💚 ",
 "‏ ‏أحببتك وأنا منطفئ❥ فما بالك وأنا في كامل توهجي ❥ 🙂 .!",
 "‏من ترك أمرهُ لله❥ أعطاه الله فوق ما يتمنَّاه💙 ",
-"‏ إنعدام الرّغبة أمام الشّيء الّذي أدمنته ❥ انتصار. »💛",
+"‏ إنعدام الرّغبة أمام الشّيء الّذي أدمنته ❥ انتصار.«💛",
 "‏ ‏كل العالم يهون بس الدنيا بينا تصفي 💙 ",
 "‏ إن الأمر ينتهي بِنا إلى أعتياد أي شيء. 😚 ",
 "‏ إنعدام الرّغبة أمام الشّيء الّذي أدمنته ❥ انتصار. 💝",
@@ -4563,9 +4563,9 @@ for k,v in pairs(list) do
 Cmds = database:get(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..':'..v)
 print(Cmds)
 if Cmds then 
-t = t..""..k..">> » '..v..' «  ⇦♔{"..Cmds.."}\n"
+t = t..""..k..">>« '..v..'»  ⇦♔{"..Cmds.."}\n"
 else
-t = t..""..k..">> » '..v..' « \n"
+t = t..""..k..">>« '..v..'» \n"
 end
 end
 if #list == 0 then
@@ -6312,7 +6312,7 @@ local username = database:get(bot_id.."user:Name" .. v)
 if username then
 t = t..""..k.."- {[@"..username.."]}\n"
 else
-t = t..""..k.."- » '..v..' «\n"
+t = t..""..k.."-« '..v..'»\n"
 end
 end
 if #list == 0 then
@@ -6608,7 +6608,7 @@ local username = database:get(bot_id.."user:Name" .. v)
 if username then
 t = t..""..k.."- {[@"..username.."]}\n"
 else
-t = t..""..k.."- » '..v..' «\n"
+t = t..""..k.."-« '..v..'»\n"
 end
 end
 if #list == 0 then
@@ -6793,7 +6793,7 @@ local username = database:get(bot_id.."user:Name" .. v)
 if username then
 t = t..""..k.."- {[@"..username.."]}\n"
 else
-t = t..""..k.."- » '..v..' «\n"
+t = t..""..k.."-« '..v..'»\n"
 end
 end
 if #list == 0 then
@@ -7029,7 +7029,7 @@ local username = database:get(bot_id.."user:Name" .. v)
 if username then
 t = t..""..k.."- {[@"..username.."]}\n"
 else
-t = t..""..k.."- » '..v..' «\n"
+t = t..""..k.."-« '..v..'»\n"
 end
 end
 if #list == 0 then
@@ -7609,7 +7609,7 @@ local username = database:get(bot_id.."user:Name" .. v)
 if username then
 t = t..""..k.."- {[@"..username.."]}\n"
 else
-t = t..""..k.."- » '..v..' «\n"
+t = t..""..k.."-« '..v..'»\n"
 end
 end
 if #list == 0 then
@@ -7801,7 +7801,7 @@ local username = database:get(bot_id.."user:Name" .. v)
 if username then
 t = t..""..k.."- {[@"..username.."]}\n"
 else
-t = t..""..k.."- » '..v..' «\n"
+t = t..""..k.."-« '..v..'»\n"
 end
 end
 if #list == 0 then
@@ -8137,7 +8137,7 @@ local username = database:get(bot_id.."user:Name" .. v)
 if username then
 t = t..""..k.."- {[@"..username.."]}\n"
 else
-t = t..""..k.."- » '..v..' «\n"
+t = t..""..k.."-« '..v..'»\n"
 end
 end
 if #list == 0 then
@@ -12624,7 +12624,7 @@ db = 'ملف'
 elseif database:get(bot_id.."Add:Rd:Sudo:Audio"..v) then
 db = 'اغنيه'
 end
-text = text..""..k.." >> » '..v..' «  ⇦♔» '..db..' «\n"
+text = text..""..k.." >>« '..v..'»  ⇦♔» '..db..'»\n"
 end
 if #list == 0 then
 text = " ♔ لا يوجد ردود للمطور"
@@ -12848,7 +12848,7 @@ db = 'ملف'
 elseif database:get(bot_id.."Add:Rd:Manager:Audio"..v..msg.chat_id_) then
 db = 'اغنيه'
 end
-text = text..""..k..">> » '..v..' «  ⇦♔» '..db..' «\n"
+text = text..""..k..">>« '..v..'»  ⇦♔» '..db..'»\n"
 end
 if #list == 0 then
 text = " ♔ لا يوجد ردود للمدير"
@@ -13287,7 +13287,7 @@ local list = database:smembers(bot_id.."botss:DRAGON:List:Rd:Sudo")
 text = "\nقائمة ردود المتعدده \n♽^━━━━❆𝗘𝗟??𝗟𝗢𝗞❆━━━━^♽ \n"
 for k,v in pairs(list) do
 db = "رساله "
-text = text..""..k.." => » '..v..' « => » '..db..' «\n"
+text = text..""..k.." =>« '..v..'» =>« '..db..'»\n"
 end
 if #list == 0 then
 text = "لا توجد ردود متعدده"
@@ -13635,7 +13635,7 @@ local edit = tonumber(database:get(bot_id..'edits'..msg.chat_id_..result.sender_
 local rtp = Rutba(result.sender_user_id_,msg.chat_id_)
 local username = ('[@'..data.username_..']' or 'لا يوجد')
 local iduser = result.sender_user_id_
-send(msg.chat_id_, msg.id_,' ♔ ايديه ⇦ '..iduser..'\n ♔ معرفه ⇦ »'..username..'«\n ♔ رتبته ⇦ '..rtp..'\n ♔ تعديلاته ⇦ '..edit..'\n ♔ نقاطه ⇦ '..NUMPGAME..'\n ♔ جهاته ⇦ '..Contact..'\n ♔ رسائله ⇦ »'..Msguser..'«')
+send(msg.chat_id_, msg.id_,' ♔ ايديه ⇦ '..iduser..'\n ♔ معرفه ⇦«'..username..'«\n ♔ رتبته ⇦ '..rtp..'\n ♔ تعديلاته ⇦ '..edit..'\n ♔ نقاطه ⇦ '..NUMPGAME..'\n ♔ جهاته ⇦ '..Contact..'\n ♔ رسائله ⇦«'..Msguser..'«')
 end,nil)
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
@@ -13680,7 +13680,7 @@ else
 username = 'sasa_boody'
 end
 local msg_id = msg.id_/2097152/0.5  
-local textt = '❤️🕊 رتبتك في البوت » '..Rutba(msg.sender_user_id_,msg.chat_id_)
+local textt = '❤️🕊 رتبتك في البوت« '..Rutba(msg.sender_user_id_,msg.chat_id_)
 local Sasa = 'https://t.me/xxxcccvvbbnn/903'
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -14595,7 +14595,7 @@ tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(extr
 local rtp = Rutba(result.sender_user_id_,msg.chat_id_)
 local username = ' ['..data.first_name_..'](t.me/'..(data.username_ or 'textchuser')..')'
 local iduser = result.sender_user_id_
-send(msg.chat_id_, msg.id_,'*- الـعـضو  ꕤ »*'..username..'*«\n- الرتبه ꕤ »'..rtp..'«*\n')
+send(msg.chat_id_, msg.id_,'*- الـعـضو  ⌁«*'..username..'*«\n- الرتبه ⌁«'..rtp..'«*\n')
 end,nil)
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
@@ -14609,7 +14609,7 @@ tdcli_function ({ID = "GetUser",user_id_ = result.id_},function(extra,data)
 local rtp = Rutba(result.id_,msg.chat_id_)
 local username = ('[@'..data.username_..']' or 'لا يوجد')
 local iduser = result.id_
-send(msg.chat_id_, msg.id_,'*- الـعـضو  ꕤ »*'..username..'*«\n- الرتبه ꕤ »'..rtp..'«*\n')
+send(msg.chat_id_, msg.id_,'*- الـعـضو  ⌁«*'..username..'*«\n- الرتبه ⌁«'..rtp..'«*\n')
 end,nil)
 else
 send(msg.chat_id_, msg.id_,'- المعرف غير صحيح ')
@@ -14625,7 +14625,7 @@ tdcli_function ({ID = "GetUser",user_id_ = userid},function(extra,data)
 local rtp = Rutba(userid,msg.chat_id_) 
 local username = ('[@'..data.username_..']' or 'لا يوجد') 
 local iduser = userid 
-send(msg.chat_id_, msg.id_,'*- الـعـضو  ꕤ »*'..username..'*«\n- الرتبه ꕤ »'..rtp..'«*\n')
+send(msg.chat_id_, msg.id_,'*- الـعـضو  ⌁«*'..username..'*«\n- الرتبه ⌁«'..rtp..'«*\n')
 end,nil) 
 else 
 send(msg.chat_id_, msg.id_,' ♔الايدي غير صحيح') 
@@ -14639,7 +14639,7 @@ tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(extr
 local rtp = Rutba(result.sender_user_id_,msg.chat_id_)
 local username = ('[@'..data.username_..']' or 'لا يوجد')
 local iduser = result.sender_user_id_
-send(msg.chat_id_, msg.id_,'♔الايدي ꕤ ◤'..iduser..'◥\n♔المعرف ꕤ  ◤'..username..'◥\n♔الرتبه ꕤ  ◤'..rtp..'◥\n♔نوع الكشف ꕤ بالرد')
+send(msg.chat_id_, msg.id_,'♔الايدي ⌁«'..iduser..'«\n♔المعرف ⌁«'..username..'«\n♔الرتبه ⌁«'..rtp..'«\n♔نوع الكشف ⌁ بالرد')
 end,nil)
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
@@ -14653,10 +14653,10 @@ tdcli_function ({ID = "GetUser",user_id_ = result.id_},function(extra,data)
 local rtp = Rutba(result.id_,msg.chat_id_)
 local username = ('[@'..data.username_..']' or 'لا يوجد')
 local iduser = result.id_
-send(msg.chat_id_, msg.id_,'♔الايدي ꕤ »'..iduser..'«\n♔المعرف ꕤ »'..username..'«\n♔الرتبه ꕤ »'..rtp..'«\n♔نوع الكشف ꕤ بالمعرف')
+send(msg.chat_id_, msg.id_,'♔ الايدي ⌁«'..iduser..'«\n♔ المعرف ⌁«'..username..'«\n♔ الرتبه ⌁«'..rtp..'«\n ♔ نوع الكشف ⌁ بالمعرف')
 end,nil)
 else
-send(msg.chat_id_, msg.id_,'♔المعرف غير صحيح')
+send(msg.chat_id_, msg.id_,'♔ المعرف غير صحيح')
 end
 end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
@@ -14669,10 +14669,10 @@ tdcli_function ({ID = "GetUser",user_id_ = userid},function(extra,data)
 local rtp = Rutba(userid,msg.chat_id_) 
 local username = ('[@'..data.username_..']' or 'لا يوجد') 
 local iduser = userid 
-send(msg.chat_id_, msg.id_,'♔الايدي ꕤ ◤'..iduser..'◥\n♔المعرف ꕤ ◤'..username..'◥\n♔الرتبه ꕤ ◤'..rtp..'◥\n♔نوع الكشفꕤ الايدي')
+send(msg.chat_id_, msg.id_,'♔ الايدي ⌁«'..iduser..'«\n♔ المعرف ⌁«'..username..'«\n♔ الرتبه ⌁«'..rtp..'«\n♔ نوع الكشف⌁ الايدي')
 end,nil) 
 else 
-send(msg.chat_id_, msg.id_,' ♔الايدي غير صحيح') 
+send(msg.chat_id_, msg.id_,' ♔ الايدي غير صحيح') 
 end 
 end 
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil) 
@@ -14948,12 +14948,12 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..username..'\n✵♔ 𝙼𝚂𝙶𝚂↬  »'..Msguser..'\n✵♔ 𝚁𝙰??𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵♔ 𝙸𝙳↬   »'..msg.sender_user_id_..'\n✵♔ 𝙱𝙸𝙾 ↬ »'..getbioY..'\n ✵♔ 𝙲𝙷↬  »@eLmLoK0\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n✵♔ 𝚄𝚂𝙴𝚁 ↬»'..username..'\n✵♔ 𝙼𝚂𝙶𝚂↬»'..Msguser..'\n✵♔ 𝚁𝙰??𝙺↬«'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵♔ 𝙸𝙳↬ »'..msg.sender_user_id_..'\n✵♔ 𝙱𝙸𝙾 ↬«'..getbioY..'\n ✵♔ 𝙲𝙷↬»@eLmLoK0\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_,'[\n ¦✙ بيك عزيزي »'..Name..'« \n✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..Name..'\n✵♔ 𝙼𝚂𝙶𝚂↬ »'..Msguser..'\n ✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵♔ 𝙸𝙳↬  »'..msg.sender_user_id_..'\n✵♔ 𝙲𝙷↬   »@eLmLoK0« »🇧??\n')
+send(msg.chat_id_, msg.id_,'[\n ¦✙ بيك عزيزي«'..Name..'« \n✵♔ 𝚄𝚂𝙴𝚁 ↬»'..Name..'\n✵♔ 𝙼𝚂𝙶𝚂↬«'..Msguser..'\n ✵♔ 𝚁𝙰𝙽𝙺↬«'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵♔ 𝙸𝙳↬»'..msg.sender_user_id_..'\n✵♔ 𝙲𝙷↬ »@eLmLoK0««🇧??\n')
 else
-send(msg.chat_id_, msg.id_, '\n ♔ الصوره ⇦ ليس لديك صور في حسابك'..'[\n✵♔ 𝚄𝚂𝙴𝚁 ↬ »'..username..'«\n✵♔ 𝙼𝚂𝙶𝚂↬ »'..Msguser..'«\n✵♔ 𝙸𝙳↬  »'..msg.sender_user_id_..'«\n✵♔ 𝙲𝙷↬  »@eLmLoK0«\n')
+send(msg.chat_id_, msg.id_, '\n ♔ الصوره ⇦ ليس لديك صور في حسابك'..'[\n✵♔ 𝚄𝚂𝙴𝚁 ↬«'..username..'«\n✵♔ 𝙼𝚂𝙶𝚂↬«'..Msguser..'«\n✵♔ 𝙸𝙳↬»'..msg.sender_user_id_..'«\n✵♔ 𝙲𝙷↬»@eLmLoK0«\n')
 end 
 end
 end
@@ -14972,7 +14972,7 @@ get_id_text = get_id_text:gsub('#game',NUMPGAME)
 get_id_text = get_id_text:gsub('#photos',photps) 
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_,'[\n✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..username..'\n✵♔ 𝙼𝚂𝙶𝚂↬ »'..Msguser..'\n✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵♔ 𝙸𝙳↬  »'..msg.sender_user_id_..'\n✵♔ 𝙲𝙷↬ »@eLmLoK0\n')
+send(msg.chat_id_, msg.id_,'[\n✵♔ 𝚄𝚂𝙴𝚁 ↬»'..username..'\n✵♔ 𝙼𝚂𝙶𝚂↬«'..Msguser..'\n✵♔ 𝚁𝙰𝙽𝙺↬«'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵♔ 𝙸𝙳↬»'..msg.sender_user_id_..'\n✵♔ 𝙲𝙷↬«@eLmLoK0\n')
 end
 end
 
@@ -15065,12 +15065,12 @@ else
 username = 'لا يوجد '
 end
 if result.status_.ID == "UserStatusRecently" and result.profile_photo_ ~= false then
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..username..'\n✵♔ 𝙼𝚂𝙶𝚂↬  »'..Msguser..'\n✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵♔ 𝙸𝙳↬   »'..msg.sender_user_id_..'\n✵♔ 𝙲𝙷↬  »@eLmLoK0\n')
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, sofi.photos_[0].sizes_[1].photo_.persistent_id_,''..rdphoto..'\n✵♔ 𝚄𝚂𝙴𝚁 ↬»'..username..'\n✵♔ 𝙼𝚂𝙶𝚂↬»'..Msguser..'\n✵♔ 𝚁𝙰𝙽𝙺↬«'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵♔ 𝙸𝙳↬ »'..msg.sender_user_id_..'\n✵♔ 𝙲𝙷↬»@eLmLoK0\n')
 else 
 if result.status_.ID == "UserStatusEmpty" and result.profile_photo_ == false then
-send(msg.chat_id_, msg.id_,'[\n ✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..username..'\n✵♔ 𝙼𝚂𝙶𝚂↬ »'..Msguser..'\n ✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵♔ 𝙸𝙳↬  »'..msg.sender_user_id_..'\n✵♔ 𝙲𝙷↬   »@eLmLoK0\n')
+send(msg.chat_id_, msg.id_,'[\n ✵♔ 𝚄𝚂𝙴𝚁 ↬»'..username..'\n✵♔ 𝙼𝚂𝙶𝚂↬«'..Msguser..'\n ✵♔ 𝚁𝙰𝙽𝙺↬«'..Rutba(msg.sender_user_id_,msg.chat_id_)..'\n✵♔ 𝙸𝙳↬»'..msg.sender_user_id_..'\n✵♔ 𝙲𝙷↬ »@eLmLoK0\n')
 else
-send(msg.chat_id_, msg.id_, '\n ♔ الصوره ⇦ ليس لديك صور في حسابك'..'[\n✵♔ 𝚄𝚂𝙴𝚁 ↬ »'..username..'«\n✵♔ 𝙼𝚂𝙶𝚂↬ »'..Msguser..'«\n✵♔ 𝙸𝙳↬  »'..msg.sender_user_id_..'«\n✵♔ 𝙲𝙷↬  »@eLmLoK0«\n')
+send(msg.chat_id_, msg.id_, '\n ♔ الصوره ⇦ ليس لديك صور في حسابك'..'[\n✵♔ 𝚄𝚂𝙴𝚁 ↬«'..username..'«\n✵♔ 𝙼𝚂𝙶𝚂↬«'..Msguser..'«\n✵♔ 𝙸𝙳↬»'..msg.sender_user_id_..'«\n✵♔ 𝙲𝙷↬»@eLmLoK0«\n')
 end 
 end
 end
@@ -15088,7 +15088,7 @@ get_id_text = get_id_text:gsub('#game',NUMPGAME)
 get_id_text = get_id_text:gsub('#photos',photps) 
 send(msg.chat_id_, msg.id_,'['..get_id_text..']')   
 else
-send(msg.chat_id_, msg.id_,'[\n✵♔ 𝚄𝚂𝙴𝚁 ↬  »'..username..'«   »💘\n✵♔ ??𝚂𝙶𝚂↬ »'..Msguser..'«   »💘\n✵♔ 𝚁𝙰𝙽𝙺↬ »'..Rutba(msg.sender_user_id_,msg.chat_id_)..'«   »💘\n✵♔ 𝙸𝙳↬  »'..msg.sender_user_id_..'«   »💘\n✵♔ 𝙲𝙷↬ »@eLmLoK0«   »💘\n')
+send(msg.chat_id_, msg.id_,'[\n✵♔ 𝚄𝚂𝙴𝚁 ↬»'..username..'« »💘\n✵♔ ??𝚂𝙶𝚂↬«'..Msguser..'« »💘\n✵♔ 𝚁𝙰𝙽𝙺↬«'..Rutba(msg.sender_user_id_,msg.chat_id_)..'« »💘\n✵♔ 𝙸𝙳↬»'..msg.sender_user_id_..'« »💘\n✵♔ 𝙲𝙷↬«@eLmLoK0« »💘\n')
 end
 end
 
@@ -15205,16 +15205,16 @@ local List = {
 𖤍 ♔↶ #username    ꙰🇪🇬.
 𖤍 ♔↶ #msgs    ꙰🇪🇬.
 𖤍 ♔↶ #stast    ꙰🇪🇬.
-𖤍 ♔↶ 𝗖𝗛 - »@eLmLoK0« ♔.
+𖤍 ♔↶ 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
- 𝗨𝗦𝗘𝗥 ⟿ #username  « 
- 𝗠𝗦𝗚𝗦 ⟿  #msgs  « 
- 𝗦𝗧𝗔 ⟿ #stast  « 
- 𝗜𝗗  ⟿ #id  « 
+ 𝗨𝗦𝗘𝗥 ⟿ #username » 
+ 𝗠𝗦𝗚𝗦 ⟿  #msgs » 
+ 𝗦𝗧𝗔 ⟿ #stast » 
+ 𝗜𝗗  ⟿ #id » 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-𝗖𝗛 - »@eLmLoK0« ♔.
+𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 🇪🇬≪💎≫ #username • メ
@@ -15222,21 +15222,21 @@ local List = {
 🇪🇬≪💎≫ #id  • メ
 🇪🇬≪💎≫ #msgs  •メ
 🇪🇬≪💎≫ #game •メ
-🇪🇬𝗖𝗛 - »@eLmLoK0« ♔.
+🇪🇬𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
  ??𝚂𝙴𝚁 𓄹𓄼 #username
  𝙸𝙳  ??𓄼 #id 
  𝚂??𝙰 𓄹𓄼 #stast 
  𝙼𝚂𝙶𝚂𓄹?? #msgs
- 𝗖𝗛 - »@eLmLoK0« ??.
+ 𝗖𝗛 -«@eLmLoK0« ??.
 ]],
 [[
 𓅓»:ᗰᔕᘜᔕ : #msgs - ❦ .
 ??» : Iᗪ : #id - ❦ . 
 𓅓» : ᔕTᗩᔕT : #stast - ❦ . 
 𓅓» : ᑌᔕᖇᗴᑎᗩᗰᗴ : #username _ ❦ .
-𓅓» : 𝗖𝗛 - »@eLmLoK0« ♔.
+𓅓» : 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 - ايديڪ  ⁞ #id 💘 ٬
@@ -15244,14 +15244,14 @@ local List = {
 - رسائلڪ  الطيفهہَ ⁞ #msgs 💘 ٬
 - رتبتڪ الحلوه ⁞ #stast  💘٬
 - سحڪاتڪ الفول ⁞ #edit 💘 ٬
-- 𝗖𝗛 - »@eLmLoK0« ♔.
+- 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 𓁷⁦⁦ - 𝙪𝙚𝙨 †: #username 𓀀 .
 𓁷 - 𝙢𝙨𝙜 † : #msgs 𓀀 .
 𓁷 - 𝙨𝙩𝙖 †: #stast 𓀀  .
 𓁷 - 𝙞?? †: #id 𓀀 .
-𓁷 - 𝗖𝗛 - »@eLmLoK0« ♔.
+𓁷 - 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 𖡋 𝐔𝐒𝐄 #username 
@@ -15259,7 +15259,7 @@ local List = {
 𖡋 𝐒𝐓𝐀 #stast 
 𖡋 𝐈𝐃 #id 
 𖡋 𝐄𝐃𝐈𝐓 #edit
-𖡋 𝗖𝗛 - »@eLmLoK0« ♔.
+𖡋 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 𖤂 ~ 𝑢𝑠𝑒 #username  𖤐
@@ -15267,7 +15267,7 @@ local List = {
 𖤂 ~ 𝑠𝑡𝑎 #stast  
 𖤂 ~ 𝑖𝑑 #id 𖤐
 𖤂 ~ 𝑒𝑑𝑖𝑡 #edit 𖤐
-𖤂 ~ 𝗖𝗛 - »@eLmLoK0« ♔.
+𖤂 ~ 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ••• ••• ••• ••• ••• ••• ••• 
@@ -15276,29 +15276,29 @@ local List = {
  ࿕ ✵♔ 𝙂𝙈𝘼𝙎  ⟿ #stast ༆
  ࿕ ✵♔ 𝙏𝘿 𝙎𝙏𝘼  ⟿ #id ༆
 ••• ••• ••• ••• ••• ••• •••
- ࿕ ✵♔ 𝗖𝗛 - »@eLmLoK0« ♔.
+ ࿕ ✵♔ 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ► 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 #username 𓃚  ꙰
 ► 𝗜𝗗 #id 𓃚 ꙰
 ► 𝗦𝗧𝗔𝗦 #stast 𓃚 ꙰
 ► 𝗠𝗦𝗔?? #msgs 𓃚 ꙰
-► 𝗖𝗛 - »@eLmLoK0« ♔.
+► 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 -♔   𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 . #username 🇪🇬 ꙰ 
 -♔   𝚂𝚃𝙰𝚂𝚃 . #stast 🇪🇬 ꙰
--♔   ???? . #id 🇪🇬 ꙰ 
+-♔   𝙸?? . #id 🇪🇬 ꙰ 
 -♔   𝙶𝙼𝙰𝚂 . #stast 🇪🇬 ꙰ 
 -♔   𝙼𝚂𝙶𝚂 . #msgs 🇪🇬 ꙰
--♔   ??𝗛 - »@eLmLoK0« 🇪🇬 ꙰.
+-♔   ??𝗛 -«@eLmLoK0« 🇪🇬 ꙰.
 ]],
 [[
 - UsEr🇪🇬 ꙰ #username
 - StA🇪🇬 ꙰   #msgs
 - MsGs🇪🇬 ꙰ #stast
 - ID🇪🇬 ꙰  #id
-- 𝗖𝗛 🇪🇬 ꙰  »@eLmLoK0« ♔.
+- 𝗖𝗛 🇪🇬 ꙰»@eLmLoK0« ♔.
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -15307,14 +15307,14 @@ local List = {
 🇪🇬 - 𝙶𝙼𝙰𝚂 ⟿ #stast 💘.
 🇪🇬 - 𝙸𝙳 𝚂𝚃𝙰 ⟿ #id 💘.  
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🇪🇬 - 𝗖?? - »@eLmLoK0« ♔.
+🇪🇬 - 𝗖?? -«@eLmLoK0« ♔.
 ]],
 [[
 - 𓏬 𝐔𝐬𝐄𝐫 : #username 𓂅 .
 - 𓏬 𝐌𝐬𝐆  : #msgs 𓂅 .
 - 𓏬 𝐒𝐭𝐀 : #stast 𓂅 .
 - 𓏬 𝐈𝐃 : #id 𓂅 .
-- 𓏬 𝗖𝗛 - »@eLmLoK0« ♔.
+- 𓏬 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ᯓ 𝟔𝟔𝟔 𖡋 #username •✟
@@ -15322,28 +15322,28 @@ local List = {
 ᯓ 𝟔𝟔𝟔𖡋 #id  • ✟
 ᯓ 𝟔𝟔𝟔𖡋 #msgs  •✟ 
 ᯓ 𝟔𝟔𝟔𖡋 #game •✟
-ᯓ 𝟔𝟔𝟔𖡋 𝗖𝗛 - »@eLmLoK0« ♔.
+ᯓ 𝟔𝟔𝟔𖡋 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
  ♔•𝐮𝐬𝐞𝐫 : #username 𖣬  
  ♔•𝐦𝐬𝐠  : #msgs 𖣬 
  ♔•𝐬𝐭𝐚 : #stast 𖣬 
  ♔•𝐢𝐝  : #id 𖣬
- ♔•𝗖𝗛 - »@eLmLoK0« ♔.
+ ♔•𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 - ᴜѕᴇʀɴᴀᴍᴇ ➣ #username .
 - ᴍѕɢѕ ➣ #msgs .
 - ѕᴛᴀᴛѕ ➣ #stast .
 - ʏᴏᴜʀ ɪᴅ ➣ #id  .
-- 𝗖𝗛 - »@eLmLoK0« ♔.
+- 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 - ᴜѕʀ: #username ঌ.
 - ᴍѕɢ: #msgs  ঌ.
 - ѕᴛᴀ: #stast  ঌ.
 - ɪᴅ: #id ঌ.
-- 𝗖𝗛 - »@eLmLoK0« ♔.
+- 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 - 𝑢𝑠𝑒𝑟𝑛𝑎𝑚𝑒 ⟿ #username
@@ -15351,14 +15351,14 @@ local List = {
 - 𝑖𝑑 ⟿ #id
 - 𝑒𝑑𝑖𝑡 ⟿ #edit
 - 𝑔𝑎𝑚𝑒 ⟿ #game
-- 𝗖𝗛 - »@eLmLoK0« ♔.
+- 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ⌔➺: Msgs : #msgs - 🔹.
 ⌔➺: ID : #id - 🔹.
 ⌔➺: Stast : #stast -🔹.
 ⌔➺: UserName : #username -🔹.
-⌔➺: 𝗖𝗛 - »@eLmLoK0« ♔.
+⌔➺: 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -15367,28 +15367,28 @@ local List = {
 🇪🇬 ꙰  - 𝚐 𝚖 𝚊𝚜  ➟ #stast ❃.
 🇪🇬 ꙰  - 𝙸𝙳 𝚜𝚝𝚊   ➟ #id ❃.
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🇪🇬 ꙰  - 𝗖𝗛 - »@eLmLoK0« ♔.
+🇪🇬 ꙰  - 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
-🌯 ¦✙• 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 » ⁞  #username 🇪🇬
-🌯 ¦✙• 𝐦𝐬𝐠 » ⁞  #msgs  📝
-🌯 ¦✙• 𝒓𝒂𝒏𝒌 » ⁞ #stast  
-🌯 ¦✙• 𝐢𝐝 𝒔𝒕𝒂 » ⁞ #id  🆔
-🌯 ¦ 𝗖𝗛 - »@eLmLoK0« ♔.
+🌯 ¦✙• 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆« ⁞  #username 🇪🇬
+🌯 ¦✙• 𝐦𝐬𝐠« ⁞  #msgs  📝
+🌯 ¦✙• 𝒓𝒂𝒏𝒌« ⁞ #stast  
+🌯 ¦✙• 𝐢𝐝 𝒔𝒕𝒂« ⁞ #id  🆔
+🌯 ¦ 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
-✵♔ 𝚄𝚂𝙴??  ⇉⁞ #username »🇪??.
-✵♔ 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs  » 🇪🇬.
-✵♔ 𝚁𝙰𝙽𝙺  ⇉⁞ #stast  »🇪🇬.
-✵♔ 𝙸𝙳 𝚂𝚃𝙰 ⇉ #id  »🇪🇬.
-✵♔ 𝗖𝗛 - »@eLmLoK0« ♔.
+✵♔ 𝚄𝚂𝙴??  ⇉⁞ #username«🇪??.
+✵♔ 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs» 🇪🇬.
+✵♔ 𝚁𝙰𝙽𝙺  ⇉⁞ #stast»🇪🇬.
+✵♔ 𝙸𝙳 𝚂𝚃𝙰 ⇉ #id»🇪🇬.
+✵♔ 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ➞: 𝒔𝒕𝒂𓂅 #stast 𓍯➸♔.
 ➞: 𝒖??𝒆𝒓𓂅 #username 𓍯➸♔.
 ➞: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➸♔.
 ➞: 𝐢𝐝 𓂅 #id 𓍯➸♔.
-➞: 𝗖𝗛 - »@eLmLoK0« ♔.
+➞: 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ➼ : 𝐼𝐷 𖠀 #id . ♡
@@ -15396,14 +15396,14 @@ local List = {
 ➼ : 𝑀𝑆𝐺𝑆 𖠀 #msgs .♡
 ➼ : 𝑆𝑇𝐴S𝑇 𖠀 #stast .♡ 
 ➼ : 𝐸𝐷𝐼𝑇  𖠀 #edit .♡
-➼ : 𝗖𝗛 - »@eLmLoK0« ♔.
+➼ : 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ▽ ¦❀• USER ➭ ⁞ #username .
 ▽ ¦❀• 𝙼𝚂𝙶𝚂 ➬ ⁞  #msgs  .
 ▽ ¦❀• STAT ➬ ⁞ #stast  .
 ▽ ¦❀• 𝙸𝙳  ➬ ⁞ #id  .
-▽ ¦❀• 𝗖𝗛 - »@eLmLoK0« ♔.
+▽ ¦❀• 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 • ❉ 𝑼𝑬𝑺 : #username ‌‌‏.
@@ -15411,14 +15411,14 @@ local List = {
 • ❉ 𝑰𝑫 : #id  ‌‌‏.
 • ❉  𝑴𝑺𝑮 : #msgs 𓆊.
 • ❉ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆  ⁞ .
-• ❉ 𝗖𝗛 - »@eLmLoK0« ♔.
+• ❉ 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ♔USERNAME #username 𓃚
 ♔ YOUR -ID - #id 𓃚
 ♔ STAS-#stast 𓃚
  ♔ MSAG - #msgs 𓃚
- ♔ 𝗖𝗛 - »@eLmLoK0« ♔.
+ ♔ 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 𝟔𝟔𝟔 𖡋 #username • 𖣰♔
@@ -15426,57 +15426,57 @@ local List = {
 𝟔𝟔𝟔 𖡋 #id • 𖣰♔
 𝟔𝟔𝟔 𖡋 #game • 𖣰♔
 𝟔𝟔𝟔 𖡋 #msgs • 𖣰♔
-𝟔𝟔𝟔 𖡋 𝗖𝗛 - »@eLmLoK0« ♔.
+𝟔𝟔𝟔 𖡋 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ⌔➺: Msgs : #msgs - 🔹.
 ⌔➺: ID : #id - 🔹.
 ⌔➺: Stast : #stast -🔹.
 ⌔➺: UserName : #username -🔹.
-⌔➺: 𝗖𝗛 - »@eLmLoK0« ♔.
+⌔➺: 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
- ♔ - 𝓾𝓼𝓮𝓻 » #username ♔.
- ♔ - ??𝓽𝓪𝓼𝓽  » #stast ♔.
- ♔ - 𝓲𝓭 » #id ⸙ ♔.
- ♔ - 𝓰𝓶𝓪𝓼 » #gmas ⸙ ♔.
- ♔ - 𝓶𝓼𝓰𝓼 » #msgs ♔.
- ♔ - 𝗖𝗛 - »@eLmLoK0« ♔.
+ ♔ - 𝓾𝓼𝓮𝓻« #username ♔.
+ ♔ - ??𝓽𝓪𝓼𝓽» #stast ♔.
+ ♔ - 𝓲𝓭« #id ⸙ ♔.
+ ♔ - 𝓰𝓶𝓪𝓼« #gmas ⸙ ♔.
+ ♔ - 𝓶𝓼𝓰𝓼« #msgs ♔.
+ ♔ - 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
-- 𝄬 username . #username »🇪🇬
- - 𝄬 stast . #stast »🇪🇬
- - 𝄬 id . #id »🇪🇬
- - 𝄬 msgs . #msgs »🇪🇬
- - 𝄬 𝗖𝗛 - »@eLmLoK0« ♔.
+- 𝄬 username . #username«🇪🇬
+ - 𝄬 stast . #stast«🇪🇬
+ - 𝄬 id . #id«🇪🇬
+ - 𝄬 msgs . #msgs«🇪🇬
+ - 𝄬 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ◣: 𝒔𝒕𝒂𓂅 #stast 𓍯➥♡.
 ◣: 𝐮𝐬𝐞𝐫𓂅 #username 𓍯➥♡.
 ◣: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➥♡.
 ◣: 𝐢𝐝 𓂅 #id 𓍯➥♡.
-◣: 𝗖𝗛 - »@eLmLoK0« ♔.
+◣: 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
-↣• USE ➤ #username  »🍬.
-↣• MSG ➤  #msgs  »🍬.
-↣• STA ➤  #stast  »🍬.
-↣• iD ➤ #id  »🍬.
-↣• 𝗖𝗛 - »@eLmLoK0« ♔.
+↣• USE ➤ #username»🍬.
+↣• MSG ➤  #msgs»🍬.
+↣• STA ➤  #stast»🍬.
+↣• iD ➤ #id»🍬.
+↣• 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ➫✿: S #stast 𓍯➟♡.
 ➫✿: U𓂅 #username 𓍯➟♡.
 ➫✿: M𓂅 #msgs 𓍯➟♡.
 ➫✿:  I  #id ➟♡.
-➫✿: 𝗖𝗛 - »@eLmLoK0« ♔.
+➫✿: 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ✶- 𝒔𝒕𝒂𓂅 #stast 𓍯»❃ .
 ✶- 𝐮𝐬𝐞𝐫𓂅 #username 𓍯»❃.
 ✶- 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯»❃.
 ✶- 𝐢𝐝 𓂅 #id 𓍯»❃.
-✶- 𝗖𝗛 - »@eLmLoK0« ♔.
+✶- 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 • 🖤 ♔ 𝑼𝑬𝑺 :  #username
@@ -15487,14 +15487,14 @@ local List = {
 
 • 🖤 ♔ 𝑴𝑺𝑮 : #msgs
 
-• 🖤 ♔ 𝗖𝗛 - »@eLmLoK0« ♔.
+• 🖤 ♔ 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 • USE 𖦹 #username 
 • MSG 𖥳 #msgs  
 • STA 𖦹 #stast 
 • iD 𖥳 #id
-• 𝗖𝗛 - »@eLmLoK0« ♔.
+• 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 - ᴜѕᴇʀɴᴀᴍᴇ ➣ #username .
@@ -15504,7 +15504,7 @@ local List = {
 - ᴇᴅɪᴛ ᴍsɢ ➣ #edit .
 - ᴅᴇᴛᴀɪʟs ➣ #auto . 
 -  ɢᴀᴍᴇ ➣ #game .
-- 𝗖𝗛 - »@eLmLoK0« ♔.
+- 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ⚕𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀 : #username
@@ -15513,7 +15513,7 @@ local List = {
 ⚕𝙄𝘿 : #id
 ⚕𝙅𝙀𝙒𝙀𝙇𝙎 : #game
 ⚕𝘿𝙀𝙑 : #ridha
-⚕𝗖𝗛 - »@eLmLoK0« ♔.
+⚕𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 • 🦄 ♔ ??𝑬𝑺 : #username ‌‌‏⚚
@@ -15521,7 +15521,7 @@ local List = {
 • 🦄 ♔ 𝑰𝑫 : #id ‌‌‏♕
 • 🦄 ♔ 𝑴𝑺𝑮 : #msgs 𓆊
 • 🦄 ♔ 𝑾??𝒍𝒄𝒐𝒎𝒆 : ⁞
-• 🦄 ♔ 𝗖𝗛 - »@eLmLoK0« ♔.
+• 🦄 ♔ 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 • △ ♔ 𝑼𝑬𝑺 : #username ‌‌‏⚚
@@ -15529,7 +15529,7 @@ local List = {
 • ⊠ ♔ 𝑰𝑫 : #id ‌‌‏♕
 • ❏ ♔ 𝑴𝑺𝑮 : #msgs 𓆊
 • ❏ ♔ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 :
-• ❏ ♔ 𝗖𝗛 - »@eLmLoK0« ♔.
+• ❏ ♔ 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ┇iD ➺ #id 💘
@@ -15537,7 +15537,7 @@ local List = {
 ┇MsG ➺ #msgs 🧸 
 ┇StAtE ➺ #stast 🎀
 ┇EdIT ➺ #edit  💒
-┇𝗖𝗛 - »@eLmLoK0« ♔.
+┇𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ⚕ 𓆰 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 ★
@@ -15545,7 +15545,7 @@ local List = {
 • 🖤 ♔ 𝑺𝑻𝑨 : #stast 🧙🏻‍♂ ☥
 • 🖤 ♔ 𝑰𝑫 : #id ‌‌‏♕
 • 🖤 ♔ 𝑴𝑺𝑮 : #msgs 𓆊
-• 🖤 ♔ 𝗖𝗛 - »@eLmLoK0« ♔.
+• 🖤 ♔ 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ┄─━━ ♔━━─┄
@@ -15556,14 +15556,14 @@ local List = {
 𖥣 ᴇᴅɪᴛ 𓄹𓄼 #game🙇🏿‍♀💕
 ✰ ᴄʜ ᴇʟɪɴ ➣ #edit
 ┄─━━ ♔━━─┄
-✰ 𝗖𝗛 - »@eLmLoK0« ♔.
+✰ 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 𓄼 ᴜѕᴇ : #username ♕
 𓄼 ѕᴛᴀ : #stast ☥
 𓄼 ɪᴅ : #id ‌‌‏⚚
 𓄼 ᴍѕɢ : #msgs 𓆊
-?? 𝗖𝗛 - »@eLmLoK0« ♔.
+?? 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 • ﮼ايديك  #id 🌻 ٬
@@ -15571,7 +15571,7 @@ local List = {
 • ﮼مسجاتك ➺ #msgs 🌻 ٬
 •  ﮼رتبتك➺ #stast 🌻 ٬
 • ﮼تعديلك ➺ #edit 🌻 ٬
-• ﮼ تعين ➺ »@eLmLoK0« ♔.
+• ﮼ تعين ➺«@eLmLoK0« ♔.
 ]],
 [[
 ‎⿻┊Yor iD 𖠄 #id ٫
@@ -15579,7 +15579,7 @@ local List = {
 ‌‎⿻┊MsGs 𖠄 #msgs ٫
 ‌‎⿻┊StAtS 𖠄 #stast ٫
 ‌‎⿻┊‌‎EdiT 𖠄 #edit ٫
-‌‎⿻┊‌‎𝗖𝗛 - »@eLmLoK0« ♔.
+‌‎⿻┊‌‎𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ♔ ♔ 𝐢𝐝  𓃠 #id .
@@ -15587,7 +15587,7 @@ local List = {
 ♔ ♔ 𝐦𝐬𝐠 𓃠 #msgs .
 ♔ ♔ 𝐬??𝐚 𓃠 #stast .
 ♔ ♔ 𝒆𝒅𝒊𝒕 𓃠 #edit .
-♔ ♔ 𝗖𝗛 - »@eLmLoK0« ♔.
+♔ ♔ 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ♡ : 𝐼𝐷 𖠀 #id .
@@ -15595,49 +15595,49 @@ local List = {
 ♡ : 𝑀𝑆𝐺𝑆 𖠀 #msgs .
 ♡ : 𝑆𝑇𝐴𝑇𝑆 ?? #stast .
 ♡ : 𝐸𝐷𝐼𝑇  𖠀 #edit .
-♡ : 𝗖𝗛 - »@eLmLoK0« ♔.
+♡ : 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 •ᑌᔕᗴᖇ- #username 
 •ᔕTᗩ- #stast 
 •ᗰᔕ- #msgs 
 •Iᗪ- #id
-•𝗖𝗛 - »@eLmLoK0« ♔.
+•𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 • USE ➤ #username  .
 • MSG ➤  #msgs  .
 • STA ➤  #stast  .
 • iD ➤ #id  .
-• 𝗖𝗛 - »@eLmLoK0« ♔.
+• 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 𝐘𝐨𝐮𝐫 𝐈𝐃 ☤🇪🇬- #id 
 𝐔𝐬𝐞𝐫𝐍𝐚☤🇪🇬- #username 
 𝐒𝐭𝐚𝐬𝐓 ☤🇪??- #stast 
 ??𝐬𝐠𝐒☤🇪🇬 - #msgs
-𝗖𝗛☤🇪🇬 - »@eLmLoK0« ♔.
+𝗖𝗛☤🇪🇬 -«@eLmLoK0« ♔.
 ]],
 [[
 ⭐️𝖘𝖙𝖆 : #stast ـ🍭
 ⭐️𝖚𝖘𝖊𝖗𝖓𝖆𝖒𝖊 : #username ـ🍭
 ⭐️𝖒𝖘𝖌𝖘 : #msgs ـ🍭
 ⭐️𝖎𝖉 : #id ـ 🍭
-⭐️𝗖𝗛 - »@eLmLoK0« ♔.
+⭐️𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
-• 🇪🇬 - 𝚄𝚂𝙴𝚁 « #username  🍭
-• 🇪🇬 - 𝙸𝙳 « #id  🍭
-• 🇪🇬 - 𝙼𝚂𝙶𝚂 « #msgs  🍭
-• 🇪🇬 - 𝚂𝚃𝙰𝚂𝚃 « #stast  🍭
-• 🇪🇬 - 𝗖𝗛 - »@eLmLoK0« ♔.
+• 🇪🇬 - 𝚄𝚂𝙴𝚁» #username  🍭
+• 🇪🇬 - 𝙸𝙳» #id  🍭
+• 🇪🇬 - 𝙼𝚂𝙶𝚂» #msgs  🍭
+• 🇪🇬 - 𝚂𝚃𝙰𝚂𝚃» #stast  🍭
+• 🇪🇬 - 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 • USE ➤  #username .
 • MSG ➤  #msgs .
 • STA ➤  #stast .
 • iD ➤ #id .
-• 𝗖𝗛 - »@eLmLoK0« ♔.
+• 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 🇪🇬 - 𝄬 𝐔ˢᴱᴿᴺᴬᴹᴱ . #username  𓃠
@@ -15645,7 +15645,7 @@ local List = {
 🇪?? - 𝄬 ᴵᴰ . #id 𓃠
 🇪🇬 - 𝄬 ᴳᴹᴬˢ . #gmas 𓃠
 🇪🇬 - 𝄬 ᴹˢᴳˢ . #msgs  𓃠
-🇪🇬 - 𝄬 𝗖𝗛 - »@eLmLoK0« ♔.
+🇪🇬 - 𝄬 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 𓄼🇪🇬 𝑼??𝒆𝒓𝑵𝒂𝒎𝒆 : #username ♕
@@ -15653,14 +15653,14 @@ local List = {
 ??🇪🇬 𝐢𝐝 : #id ‌‌‏⚚
 𓄼🇪🇬 ??𝒂𝒎𝒆𝑺 : #edit ⚚
 𓄼🇪🇬 𝑴??𝒈𝒔 : #msgs 𓆊
-𓄼🇪🇬 𝗖𝗛 - »@eLmLoK0« ♔.
+𓄼🇪🇬 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 Usᴇʀ Nᴀᴍᴇ ~ #username 
 Yᴏᴜʀ ɪᴅ ~ #id 
 Sᴛᴀsᴛ ~ #stast 
 Msᴀɢ ~ #msgs
-𝗖𝗛 - »@eLmLoK0« ♔.
+𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 - 🇪🇬 UsErNaMe . #username 𖠲
@@ -15668,7 +15668,7 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 Id . #id 𖠲
 - 🇪🇬 GaMeS . #game 𖠲
 - 🇪🇬 MsGs . #msgs 𖠲
-- 🇪🇬 𝗖𝗛 - »@eLmLoK0« ♔.
+- 🇪🇬 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 🇪🇬 - 𝄬 username . #username  𓃠
@@ -15676,7 +15676,7 @@ Msᴀɢ ~ #msgs
 🇪🇬 - ?? id . #id 𓃠
 🇪🇬 - 𝄬 gmas . #gmas 𓃠
 🇪🇬 - 𝄬 msgs . #msgs  𓃠
-🇪?? - 𝄬 𝗖𝗛 - »@eLmLoK0« ♔.
+🇪?? - 𝄬 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 金 - 𝓾𝓼𝓮𝓻𝓷𝓪𝓶𝓮 . #username ⸙ 
@@ -15684,28 +15684,28 @@ Msᴀɢ ~ #msgs
 金 - 𝓲𝓭 . #id ⸙ 
 金 - 𝓰𝓶𝓪𝓼 . #gmas ⸙ 
 金 - 𝓶𝓼𝓰𝓼 . #msgs ⸙
-金 - 𝗖𝗛 - »@eLmLoK0« ♔.
+金 - 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ➜𝗨𝗦??𝗥𝗡𝗔𝗠𝗘 : #username
 ➜𝗠𝗘𝗦𝗦𝗔𝗚𝗘𝗦 : #msgs
 ➜𝗦𝗧𝗔𝗧𝗦 : #stast
 ➜𝗜𝗗 : #id
-➜𝗖𝗛 - »@eLmLoK0« ♔.
+➜𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ⌔┇Msgs : #msgs.
 ⌔┇ID : #id.
 ⌔┇Stast : #stast.
 ⌔┇UserName : #username.
-⌔┇𝗖𝗛 - »@eLmLoK0« ♔.
+⌔┇𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 𝒔𝒕𝒂𓂅 #stast 𓍯
 𝐮𝐬𝐞𝐫𓂅 #username 𓍯
 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯
 𝐢𝐝 𓂅 #id 𓍯
-𓂅 𝗖𝗛 - »@eLmLoK0« ♔.
+𓂅 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 - 🇪🇬 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 . #username 𖣂.
@@ -15713,7 +15713,7 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 𝐢𝐝 . #id 𖣂.
 - 🇪🇬 𝒈𝒂𝒎𝒆𝒔 . #game 𖣂.
 - 🇪🇬 𝐦𝐬𝐠 . #msgs 𖣂.
-- 🇪🇬 𝗖𝗛 - »@eLmLoK0« ♔.
+- 🇪🇬 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘 . #username 🇪🇬 ꙰
@@ -15721,7 +15721,7 @@ Msᴀɢ ~ #msgs
 ᯓ 𝗜𝗗 . #id 🇪🇬 ꙰
 ᯓ 𝗚𝗮𝗺𝗘𝗦 . #game 🇪🇬 ꙰
 ᯓ 𝗺𝗦??𝗦 . #msgs 🇪🇬 ꙰
-ᯓ 𝗖𝗛 - »@eLmLoK0« ♔.
+ᯓ 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 .𖣂 𝙪𝙨𝙚𝙧𝙣𝙖𝙢𝙚 , #username  🖤 ↴
@@ -15729,14 +15729,14 @@ Msᴀɢ ~ #msgs
 .𖣂 𝙡𝘿 , #id  🖤 ↴
 .𖣂 𝘼𝙪𝙩𝙤 , #auto  🖤 ↴
 .𖣂 𝙢𝙨𝙂𝙨 , #msgs  🖤 ↴
-.𖣂 𝗖𝗛 - »@eLmLoK0« ??.
+.𖣂 𝗖𝗛 -«@eLmLoK0« ??.
 ]],
 [[
 ➥• USE 𖦹 #username - 🇪🇬.
 ➥• MSG 𖥳 #msgs  - 🇪🇬.
 ➥• STA 𖦹 #stast - 🇪🇬.
 ➥• iD 𖥳 #id - 🇪🇬.
-➥• 𝗖𝗛 - »@eLmLoK0« ♔.
+➥• 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 👳🏼‍♂ - 𝄬 username . #username . 🇪🇬
@@ -15744,14 +15744,14 @@ Msᴀɢ ~ #msgs
 👳🏼‍♂ - 𝄬 id . #id . 🇪🇬
 👳🏼‍♂ - 𝄬 auto . #auto . 🇪🇬
 👳🏼‍♂ - 𝄬 msgs . #msgs . 🇪🇬
-👳🏼‍♂ - 𝄬 𝗖𝗛 - »@eLmLoK0« ♔.
+👳🏼‍♂ - 𝄬 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ➭- 𝒔𝒕𝒂𓂅 #stast 𓍯. 💕
 ➮- 𝐮𝐬𝐞𝐫𓂅 #username 𓍯. 💕
 ➭- 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯. 💕
 ➭- 𝐢𝐝 𓂅 #id 𓍯. 💕
-➭- 𝗖𝗛 - »@eLmLoK0« ♔.
+➭- 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 𓄼 ᴜѕᴇ : #username ♕
@@ -15759,7 +15759,7 @@ Msᴀɢ ~ #msgs
 𓄼 ɪᴅ : #id ‌‌‏⚚
 𓄼 ᴍѕɢ : #msgs 𓆊 
 𓐀 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𓀃.
-𓄼 𝗖𝗛 - »@eLmLoK0« ♔.
+𓄼 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 𝐓𝐓• 𝐘𝐎𝐔𝐑 𝐈𝐃 𖠰 #id .
@@ -15768,7 +15768,7 @@ Msᴀɢ ~ #msgs
 𝐓𝐓• 𝐒𝐓𝐀𝐒𝐓 𖠰 #stast .
 𝐓𝐓• 𝐀𝐔𝐓𝐎 𖠰 #auto .
 𝐓𝐓• 𝗘𝗗𝗜𝗧 𖠰 #edit .
-𝐓𝐓• 𝗖𝗛 - »@eLmLoK0« ♔.
+𝐓𝐓• 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 𝟓 𝟔 𖡻 #username  ࿇🦄
@@ -15776,7 +15776,7 @@ Msᴀɢ ~ #msgs
 𝟓 𝟔 𖡻 #auto  ࿇🦄
 𝟓 𝟔 𖡻 #stast  ࿇🦄
 𝟓 𝟔 𖡻 #id  ࿇🦄
-𝟓 𝟔 𖡻 𝗖𝗛 - »@eLmLoK0« ♔.
+𝟓 𝟔 𖡻 𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ༻┉𖦹┉┉𖦹┉┉𖦹┉┉??┉༺
@@ -15786,7 +15786,7 @@ Msᴀɢ ~ #msgs
 • ♔𝗠𝗦𝗚  ⁞ #edit
 • ♔𝗔𝗨𝗧𝗢 ⁞ #auto
 —————————————
-𝗖𝗛 - »@eLmLoK0« ♔.
+𝗖𝗛 -«@eLmLoK0« ♔.
 ]],
 [[
 ┄─━━𖦹━━─┄
@@ -15797,23 +15797,23 @@ Msᴀɢ ~ #msgs
 𖣰𖡻 𖡋𝗔𝗨𝗧𝗢• #auto •𓀎
 𖣰𖡻 𖡋𝗘𝗗𝗜𝗧• #edit • 𓀎
 ┄─━━𖦹━━─┄
-𝗖𝗛 - »@eLmLoK0«  𖦹 .
+𝗖𝗛 -«@eLmLoK0«  𖦹 .
 ]],
 [[
 𖤍 ♔↶ #id    ꙰🇪🇬.
 𖤍 ♔↶ #username    ꙰🇪🇬.
 𖤍 ♔↶ #msgs    ꙰🇪🇬.
 𖤍 ♔↶ #stast    ꙰🇪🇬.
-𖤍 ♔↶ 𝗖𝗛 - »@eLmLoK0« ♔
+𖤍 ♔↶ 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
- 𝗨𝗦𝗘𝗥 ⟿ #username  « 
- 𝗠𝗦??𝗦 ⟿  #msgs  « 
- 𝗦𝗧𝗔 ⟿ #stast  « 
- 𝗜𝗗  ⟿ #id  « 
+ 𝗨𝗦𝗘𝗥 ⟿ #username » 
+ 𝗠𝗦??𝗦 ⟿  #msgs » 
+ 𝗦𝗧𝗔 ⟿ #stast » 
+ 𝗜𝗗  ⟿ #id » 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-𝗖𝗛 - »@eLmLoK0« ♔
+𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 🇪🇬≪💎≫ #username • メ
@@ -15821,21 +15821,21 @@ Msᴀɢ ~ #msgs
 🇪🇬≪💎≫ #id  • メ
 🇪🇬≪💎≫ #msgs  •メ
 🇪🇬≪💎≫ #game •メ
-🇪🇬𝗖𝗛 - »@eLmLoK0« ♔
+🇪🇬𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
  𝚄𝚂𝙴?? 𓄹𓄼 #username
  𝙸𝙳  𓄹𓄼 #id 
  𝚂𝚃𝙰 𓄹𓄼 #stast 
  𝙼𝚂𝙶𝚂𓄹𓄼 #msgs
- 𝗖𝗛 - »@eLmLoK0« ♔
+ 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 𓅓»:ᗰᔕᘜᔕ : #msgs - ❦ .
 𓅓» : Iᗪ : #id - ❦ . 
 𓅓» : ᔕTᗩᔕT : #stast - ❦ . 
 𓅓» : ᑌᔕᖇᗴᑎᗩᗰᗴ : #username _ ❦ .
-𓅓» : 𝗖𝗛 - »@eLmLoK0« ♔
+𓅓» : 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 - ايديڪ  ⁞ #id 💘 ٬
@@ -15843,14 +15843,14 @@ Msᴀɢ ~ #msgs
 - رسائلڪ  الطيفهہَ ⁞ #msgs 💘 ٬
 - رتبتڪ الحلوه ⁞ #stast  💘٬
 - سحڪاتڪ الفول ⁞ #edit 💘 ٬
-- 𝗖𝗛 - »@eLmLoK0« ♔
+- 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 𓁷⁦⁦ - 𝙪𝙚𝙨 †: #username 𓀀 .
 𓁷 - 𝙢𝙨𝙜 † : #msgs 𓀀 .
 𓁷 - 𝙨𝙩𝙖 †: #stast 𓀀  .
 𓁷 - 𝙞𝙙 †: #id 𓀀 .
-𓁷 - 𝗖𝗛 - »@eLmLoK0« ♔
+𓁷 - 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 𖡋 𝐔𝐒𝐄 #username 
@@ -15858,7 +15858,7 @@ Msᴀɢ ~ #msgs
 𖡋 𝐒𝐓𝐀 #stast 
 𖡋 𝐈𝐃 #id 
 𖡋 𝐄𝐃𝐈𝐓 #edit
-𖡋 𝗖𝗛 - »@eLmLoK0« ♔
+𖡋 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 𖤂 ~ 𝑢𝑠𝑒 #username  𖤐
@@ -15866,7 +15866,7 @@ Msᴀɢ ~ #msgs
 𖤂 ~ 𝑠𝑡𝑎 #stast  
 𖤂 ~ 𝑖𝑑 #id 𖤐
 𖤂 ~ 𝑒𝑑𝑖𝑡 #edit 𖤐
-𖤂 ~ 𝗖𝗛 - »@eLmLoK0« ♔
+𖤂 ~ 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 -♔   𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 . #username 🇪🇬 ꙰ 
@@ -15874,7 +15874,7 @@ Msᴀɢ ~ #msgs
 -♔   𝙸𝙳 . #id 🇪🇬 ꙰ 
 -♔   𝙶𝙼𝙰𝚂 . #stast 🇪🇬 ꙰ 
 -♔   𝙼??𝙶𝚂 . #msgs 🇪🇬 ꙰
--♔   𝗖𝗛 - »@eLmLoK0« 🇪?? ꙰.
+-♔   𝗖𝗛 -«@eLmLoK0« 🇪?? ꙰.
 ]],
 [[
 ••• ••• ••• ••• ••• ••• ••• 
@@ -15883,21 +15883,21 @@ Msᴀɢ ~ #msgs
  ࿕ ✵♔ 𝙂𝙈𝘼𝙎  ⟿ #stast ༆
  ࿕ ✵♔ 𝙏𝘿 𝙎𝙏𝘼  ⟿ #id ༆
 ••• ••• ••• ••• ••• ••• •••
- ࿕ ✵♔ 𝗖𝗛 - »@eLmLoK0« ♔
+ ࿕ ✵♔ 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ► 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 #username 𓃚  ꙰
 ► 𝗜?? #id 𓃚 ꙰
 ► 𝗦𝗧𝗔𝗦 #stast 𓃚 ꙰
 ► 𝗠𝗦𝗔𝗚 #msgs 𓃚 ꙰
-► 𝗖𝗛 - »@eLmLoK0« ♔
+► 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 - UsEr🇪🇬 ꙰ #username
 - StA🇪🇬 ꙰   #msgs
 - MsGs🇪🇬 ꙰ #stast
 - ID🇪🇬 ꙰  #id
-- 𝗖𝗛 🇪🇬 ꙰  »@eLmLoK0« ♔
+- 𝗖𝗛 🇪🇬 ꙰»@eLmLoK0« ♔
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -15906,14 +15906,14 @@ Msᴀɢ ~ #msgs
 🇪🇬 - 𝙶𝙼𝙰𝚂 ⟿ #stast 💘.
 🇪🇬 - 𝙸𝙳 𝚂𝚃𝙰 ⟿ #id 💘.  
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🇪🇬 - 𝗖𝗛 - »@eLmLoK0« ♔
+🇪🇬 - 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 - 𓏬 𝐔𝐬𝐄𝐫 : #username 𓂅 .
 - 𓏬 𝐌𝐬𝐆  : #msgs 𓂅 .
 - 𓏬 𝐒𝐭𝐀 : #stast 𓂅 .
 - 𓏬 𝐈𝐃 : #id 𓂅 .
-- 𓏬 𝗖𝗛 - »@eLmLoK0« ♔
+- 𓏬 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ᯓ 𝟔𝟔𝟔 𖡋 #username •✟
@@ -15921,28 +15921,28 @@ Msᴀɢ ~ #msgs
 ᯓ 𝟔𝟔𝟔𖡋 #id  • ✟
 ᯓ 𝟔𝟔𝟔?? #msgs  •✟ 
 ᯓ 𝟔𝟔𝟔𖡋 #game •✟
-ᯓ 𝟔𝟔𝟔𖡋 𝗖𝗛 - »@eLmLoK0« ♔
+ᯓ 𝟔𝟔𝟔𖡋 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
  ♔•𝐮𝐬𝐞𝐫 : #username 𖣬  
  ♔•𝐦𝐬𝐠  : #msgs 𖣬 
  ♔•𝐬𝐭𝐚 : #stast 𖣬 
  ♔•𝐢𝐝  : #id 𖣬
- ♔•𝗖𝗛 - »@eLmLoK0« ♔
+ ♔•𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 - ᴜѕᴇʀɴᴀᴍᴇ ➣ #username .
 - ᴍѕɢѕ ➣ #msgs .
 - ѕᴛᴀᴛѕ ➣ #stast .
 - ʏᴏᴜʀ ɪᴅ ➣ #id  .
-- 𝗖𝗛 - »@eLmLoK0« ♔
+- 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 - ᴜѕʀ: #username ঌ.
 - ᴍѕɢ: #msgs  ঌ.
 - ѕᴛᴀ: #stast  ঌ.
 - ɪᴅ: #id ঌ.
-- 𝗖𝗛 - »@eLmLoK0« ♔
+- 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 - 𝑢𝑠𝑒𝑟𝑛𝑎𝑚𝑒 ⟿ #username
@@ -15950,14 +15950,14 @@ Msᴀɢ ~ #msgs
 - 𝑖𝑑 ⟿ #id
 - 𝑒𝑑𝑖𝑡 ⟿ #edit
 - 𝑔𝑎𝑚𝑒 ⟿ #game
-- 𝗖𝗛 - »@eLmLoK0« ♔
+- 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
-🌯 ¦✙• 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 » ⁞  #username 🇪🇬
-🌯 ¦✙• 𝐦𝐬𝐠 » ⁞  #msgs  📝
-🌯 ¦✙• 𝒓𝒂𝒏𝒌 » ⁞ #stast  
-🌯 ¦✙• 𝐢𝐝 𝒔𝒕𝒂 » ⁞ #id  🆔
-🌯 ¦ 𝗖𝗛 - »@eLmLoK0« ♔
+🌯 ¦✙• 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆« ⁞  #username 🇪🇬
+🌯 ¦✙• 𝐦𝐬𝐠« ⁞  #msgs  📝
+🌯 ¦✙• 𝒓𝒂𝒏𝒌« ⁞ #stast  
+🌯 ¦✙• 𝐢𝐝 𝒔𝒕𝒂« ⁞ #id  🆔
+🌯 ¦ 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
@@ -15966,28 +15966,28 @@ Msᴀɢ ~ #msgs
 🇪🇬 ꙰  - 𝚐 𝚖 𝚊𝚜  ➟ #stast ❃.
 🇪🇬 ꙰  - 𝙸𝙳 𝚜𝚝𝚊   ➟ #id ❃.
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
-🇪🇬 ꙰  - 𝗖𝗛 - »@eLmLoK0« ♔
+🇪🇬 ꙰  - 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ⌔➺: Msgs : #msgs - 🔹.
 ⌔➺: ID : #id - 🔹.
 ⌔➺: Stast : #stast -🔹.
 ⌔➺: UserName : #username -🔹.
-⌔➺: 𝗖𝗛 - »@eLmLoK0« ♔
+⌔➺: 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
-✵♔ 𝚄𝚂𝙴𝚁  ⇉⁞ #username »🇪🇬.
-✵♔ 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs  » 🇪🇬.
-✵♔ 𝚁𝙰𝙽??  ⇉⁞ #stast  »🇪🇬.
-✵♔ 𝙸?? 𝚂𝚃𝙰 ⇉ #id  »🇪🇬.
-✵♔ 𝗖𝗛 - »@eLmLoK0« ♔
+✵♔ 𝚄𝚂𝙴𝚁  ⇉⁞ #username«🇪🇬.
+✵♔ 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs» 🇪🇬.
+✵♔ 𝚁𝙰𝙽??  ⇉⁞ #stast»🇪🇬.
+✵♔ 𝙸?? 𝚂𝚃𝙰 ⇉ #id»🇪🇬.
+✵♔ 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ➞: 𝒔𝒕𝒂𓂅 #stast 𓍯➸♔.
 ➞: 𝐮𝐬𝐞𝐫𓂅 #username 𓍯➸♔.
 ➞: 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯➸♔.
 ➞: ??𝒅 𓂅 #id 𓍯➸♔.
-➞: 𝗖𝗛 - »@eLmLoK0« ♔
+➞: 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ➼ : 𝐼𝐷 𖠀 #id . ♡
@@ -15995,14 +15995,14 @@ Msᴀɢ ~ #msgs
 ➼ : 𝑀𝑆𝐺𝑆 𖠀 #msgs .♡
 ➼ : 𝑆𝑇𝐴S𝑇 𖠀 #stast .♡ 
 ➼ : 𝐸𝐷𝐼𝑇  𖠀 #edit .♡
-➼ : 𝗖𝗛 - »@eLmLoK0« ♔
+➼ : 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ▽ ¦❀• USER ➭ ⁞ #username .
 ▽ ¦❀• 𝙼𝚂𝙶𝚂 ➬ ⁞  #msgs  .
 ▽ ¦❀• STAT ➬ ⁞ #stast  .
 ▽ ¦❀• 𝙸𝙳  ➬ ⁞ #id  .
-▽ ¦❀• 𝗖𝗛 - »@eLmLoK0« ♔
+▽ ¦❀• 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 • ❉ 𝑼𝑬𝑺 : #username ‌‌‏.
@@ -16010,14 +16010,14 @@ Msᴀɢ ~ #msgs
 • ❉ 𝑰𝑫 : #id  ‌‌‏.
 • ❉  𝑴𝑺𝑮 : #msgs 𓆊.
 • ❉ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆  ⁞ .
-• ❉ 𝗖𝗛 - »@eLmLoK0« ♔
+• ❉ 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ♔USERNAME #username 𓃚
 ♔ YOUR -ID - #id 𓃚
 ♔ STAS-#stast 𓃚
  ♔ MSAG - #msgs 𓃚
- ♔ 𝗖𝗛 - »@eLmLoK0« ♔
+ ♔ 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 𝟔𝟔𝟔 𖡋 #username • 𖣰♔
@@ -16025,57 +16025,57 @@ Msᴀɢ ~ #msgs
 𝟔??𝟔 𖡋 #id • 𖣰♔
 𝟔𝟔𝟔 𖡋 #game • 𖣰♔
 𝟔𝟔𝟔 𖡋 #msgs • 𖣰♔
-𝟔𝟔𝟔 𖡋 𝗖𝗛 - »@eLmLoK0« ♔
+𝟔𝟔𝟔 𖡋 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ⌔➺: Msgs : #msgs - 🔹.
 ⌔➺: ID : #id - 🔹.
 ⌔➺: Stast : #stast -🔹.
 ⌔➺: UserName : #username -🔹.
-⌔➺: 𝗖𝗛 - »@eLmLoK0« ♔
+⌔➺: 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
- ♔ - 𝓾𝓼𝓮𝓻 » #username ♔.
- ♔ - 𝓼𝓽𝓪𝓼𝓽  » #stast ♔.
- ♔ - 𝓲𝓭 » #id ⸙ ♔.
- ♔ - 𝓰𝓶𝓪𝓼 » #gmas ⸙ ♔.
- ♔ - 𝓶𝓼𝓰𝓼 » #msgs ♔.
- ♔ - 𝗖𝗛 - »@eLmLoK0« ♔
+ ♔ - 𝓾𝓼𝓮𝓻« #username ♔.
+ ♔ - 𝓼𝓽𝓪𝓼𝓽» #stast ♔.
+ ♔ - 𝓲𝓭« #id ⸙ ♔.
+ ♔ - 𝓰𝓶𝓪𝓼« #gmas ⸙ ♔.
+ ♔ - 𝓶𝓼𝓰𝓼« #msgs ♔.
+ ♔ - 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ◣: 𝒔𝒕𝒂𓂅 #stast 𓍯➥♡.
 ◣: 𝐮𝐬𝐞𝐫𓂅 #username 𓍯➥♡.
 ◣: ??𝒔𝒈𝒆𓂅 #msgs 𓍯➥♡.
 ◣: 𝐢?? 𓂅 #id 𓍯➥♡.
-◣: 𝗖𝗛 - »@eLmLoK0« ♔
+◣: 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
-- 𝄬 username . #username »🇪🇬
- - 𝄬 stast . #stast »🇪🇬
- - 𝄬 id . #id »🇪🇬
- - 𝄬 msgs . #msgs »🇪🇬
- - 𝄬 𝗖𝗛 - »@eLmLoK0« ♔
+- 𝄬 username . #username«🇪🇬
+ - 𝄬 stast . #stast«🇪🇬
+ - 𝄬 id . #id«🇪🇬
+ - 𝄬 msgs . #msgs«🇪🇬
+ - 𝄬 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
-↣• USE ➤ #username  »🍬.
-↣• MSG ➤  #msgs  »🍬.
-↣• STA ➤  #stast  »🍬.
-↣• iD ➤ #id  »🍬.
-↣• 𝗖𝗛 - »@eLmLoK0« 🍬
+↣• USE ➤ #username»🍬.
+↣• MSG ➤  #msgs»🍬.
+↣• STA ➤  #stast»🍬.
+↣• iD ➤ #id»🍬.
+↣• 𝗖𝗛 -«@eLmLoK0« 🍬
 ]],
 [[
 ➫✿: S #stast 𓍯➟♡.
 ➫✿: U𓂅 #username 𓍯➟♡.
 ➫✿: M𓂅 #msgs 𓍯➟♡.
 ➫✿:  I  #id ➟♡.
-➫✿: 𝗖?? - »@eLmLoK0« ♡.
+➫✿: 𝗖?? -«@eLmLoK0« ♡.
 ]],
 [[
 ✶- 𝒔𝒕𝒂𓂅 #stast 𓍯»❃ .
 ✶- 𝐮𝐬𝐞𝐫𓂅 #username 𓍯»❃.
 ✶- 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯»❃.
 ✶- 𝐢𝐝 𓂅 #id 𓍯»❃.
-✶- 𝗖𝗛 - »@eLmLoK0« »❃.
+✶- 𝗖𝗛 -«@eLmLoK0««❃.
 ]],
 [[
 • 🖤 ♔ 𝑼𝑬𝑺 :  #username
@@ -16086,14 +16086,14 @@ Msᴀɢ ~ #msgs
 
 • 🖤 ♔ 𝑴??𝑮 : #msgs
 
-• 🖤 ♔ 𝗖𝗛 - »@eLmLoK0« ♔
+• 🖤 ♔ 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 • USE 𖦹 #username 
 • MSG 𖥳 #msgs  
 • STA 𖦹 #stast 
 • iD 𖥳 #id
-• 𝗖𝗛 - »@eLmLoK0« ♔
+• 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 🌨♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ Use ⇨ #username 🌨
@@ -16110,7 +16110,7 @@ Msᴀɢ ~ #msgs
 - ᴇᴅɪᴛ ᴍsɢ ➣ #edit .
 - ᴅᴇᴛᴀɪʟs ➣ #auto . 
 -  ɢᴀᴍᴇ ➣ #game .
-- 𝗖𝗛 - »@eLmLoK0« ♔
+- 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ⚕𝙐𝙎𝙀𝙍??𝘼𝙈𝙀 : #username
@@ -16119,7 +16119,7 @@ Msᴀɢ ~ #msgs
 ⚕𝙄𝘿 : #id
 ⚕??𝙀𝙒𝙀𝙇𝙎 : #game
 ⚕𝘿𝙀𝙑 : #ridha
-⚕𝗖𝗛 - »@eLmLoK0« ♔
+⚕𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 • 🦄 ♔ 𝑼𝑬𝑺 : #username ‌‌‏⚚
@@ -16127,7 +16127,7 @@ Msᴀɢ ~ #msgs
 • 🦄 ♔ 𝑰𝑫 : #id ‌‌‏♕
 • 🦄 ♔ 𝑴𝑺𝑮 : #msgs 𓆊
 • 🦄 ♔ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 : ⁞
-• 🦄 ♔ 𝗖𝗛 - »@eLmLoK0« ♔
+• 🦄 ♔ 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 • △ ♔ 𝑼𝑬𝑺 : #username ‌‌‏⚚
@@ -16135,7 +16135,7 @@ Msᴀɢ ~ #msgs
 • ⊠ ♔ 𝑰𝑫 : #id ‌‌‏♕
 • ❏ ♔ 𝑴𝑺𝑮 : #msgs 𓆊
 • ❏ ♔ 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 :
-• ❏ ♔ 𝗖𝗛 - »@eLmLoK0« ♔
+• ❏ ♔ 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ┇iD ➺ #id 💘
@@ -16143,21 +16143,21 @@ Msᴀɢ ~ #msgs
 ┇MsG ➺ #msgs 🧸 
 ┇StAtE ➺ #stast 🎀
 ┇EdIT ➺ #edit  💒
-┇𝗖𝗛 - »@eLmLoK0« ♔
+┇𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 • 🖤 ♔ 𝑼𝑬𝑺 : #username ‌‌‏⚚
 • 🖤 ♔ 𝑺𝑻𝑨 : #stast 🧙🏻‍♂ ☥
 • 🖤 ♔ 𝑰𝑫 : #id ‌‌‏♕
 • 🖤 ♔ 𝑴𝑺𝑮 : #msgs 𓆊
-• 🖤 ♔ 𝗖𝗛 - »@eLmLoK0« ♔
+• 🖤 ♔ 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 𓄼 ᴜѕᴇ : #username ♕
 𓄼 ѕᴛᴀ : #stast ☥
 𓄼 ɪᴅ : #id ‌‌‏⚚
 𓄼 ᴍѕɢ : #msgs 𓆊
-𓄼 𝗖𝗛 - »@eLmLoK0« ♔
+𓄼 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ‎⿻┊Yor iD 𖠄 #id ٫
@@ -16165,7 +16165,7 @@ Msᴀɢ ~ #msgs
 ‌‎⿻┊MsGs 𖠄 #msgs ٫
 ‌‎⿻┊StAtS 𖠄 #stast ٫
 ‌‎⿻┊‌‎EdiT 𖠄 #edit ٫
-‌‎⿻┊‌‎𝗖𝗛 - »@eLmLoK0« ♔
+‌‎⿻┊‌‎𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 • ﮼ايديك  #id 🌻 ٬
@@ -16173,7 +16173,7 @@ Msᴀɢ ~ #msgs
 • ﮼مسجاتك ➺ #msgs 🌻 ٬
 •  ﮼رتبتك➺ #stast 🌻 ٬
 • ﮼تعديلك ➺ #edit 🌻 ٬
-•  تعين ➺ »@eLmLoK0« ♔
+•  تعين ➺«@eLmLoK0« ♔
 ]],
 [[
 ┄─━━ ♔━━─┄
@@ -16184,7 +16184,7 @@ Msᴀɢ ~ #msgs
 𖥣 ᴇᴅɪᴛ 𓄹𓄼 #game🙇🏿‍♀💕
 ✰ ᴄʜ ᴇʟɪɴ ➣ #edit
 ┄─━━ ♔━━─┄
-✰ 𝗖?? - »@eLmLoK0« ♔
+✰ 𝗖?? -«@eLmLoK0« ♔
 ]],
 [[
 ♔ ♔ 𝐢𝐝  𓃠 #id .
@@ -16192,7 +16192,7 @@ Msᴀɢ ~ #msgs
 ♔ ♔ 𝐦𝐬𝐠 𓃠 #msgs .
 ♔ ♔ 𝐬𝐭𝐚 𓃠 #stast .
 ♔ ♔ 𝒆𝒅𝒊𝒕 𓃠 #edit .
-♔ ♔ 𝗖𝗛 - »@eLmLoK0« ♔
+♔ ♔ 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ♡ : 𝐼𝐷 𖠀 #id .
@@ -16200,49 +16200,49 @@ Msᴀɢ ~ #msgs
 ♡ : 𝑀𝑆𝐺𝑆 𖠀 #msgs .
 ♡ : 𝑆𝑇𝐴𝑇𝑆 𖠀 #stast .
 ♡ : 𝐸𝐷𝐼𝑇  𖠀 #edit .
-♡ : 𝗖𝗛 - »@eLmLoK0« ♔
+♡ : 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 •ᑌᔕᗴᖇ- #username 
 •ᔕTᗩ- #stast 
 •ᗰᔕ- #msgs 
 •Iᗪ- #id
-•𝗖𝗛 - »@eLmLoK0« ♔
+•𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 • USE ➤ #username  .
 • MSG ➤  #msgs  .
 • STA ➤  #stast  .
 • iD ➤ #id  .
-• 𝗖𝗛 - »@eLmLoK0« ♔
+• 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 𝐘??𝐮𝐫 𝐈𝐃 ☤🇪🇬- #id 
 𝐔𝐬𝐞𝐫𝐍𝐚☤🇪🇬- #username 
 𝐒𝐭𝐚𝐬𝐓 ☤🇪🇬- #stast 
 𝐌𝐬𝐠𝐒☤🇪🇬 - #msgs
-𝗖𝗛☤🇪🇬 - »@eLmLoK0« ♔
+𝗖𝗛☤🇪🇬 -«@eLmLoK0« ♔
 ]],
 [[
 ⭐️𝖘𝖙𝖆 : #stast ـ🍭
 ⭐️𝖚𝖘𝖊𝖗𝖓𝖆𝖒𝖊 : #username ـ🍭
 ⭐️𝖒𝖘𝖌𝖘 : #msgs ـ🍭
 ⭐️𝖎𝖉 : #id ـ 🍭
-⭐️𝗖𝗛 - »@eLmLoK0« ♔
+⭐️𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
-• 🇪🇬 - 𝚄𝚂𝙴𝚁 « #username  🍭
-• 🇪🇬 - 𝙸𝙳 « #id  🍭
-• 🇪🇬 - 𝙼𝚂𝙶𝚂 « #msgs  🍭
-• 🇪🇬 - 𝚂𝚃𝙰𝚂𝚃 « #stast  🍭
-• 🇪🇬 - 𝗖𝗛 - »@eLmLoK0« ♔
+• 🇪🇬 - 𝚄𝚂𝙴𝚁» #username  🍭
+• 🇪🇬 - 𝙸𝙳» #id  🍭
+• 🇪🇬 - 𝙼𝚂𝙶𝚂» #msgs  🍭
+• 🇪🇬 - 𝚂𝚃𝙰𝚂𝚃» #stast  🍭
+• 🇪🇬 - 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 • USE ➤  #username .
 • MSG ➤  #msgs .
 • STA ➤  #stast .
 • iD ➤ #id .
-• 𝗖𝗛 - »@eLmLoK0« ♔
+• 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 🇪🇬 - 𝄬 𝐔ˢᴱᴿᴺᴬᴹᴱ . #username  𓃠
@@ -16250,14 +16250,14 @@ Msᴀɢ ~ #msgs
 🇪🇬 - 𝄬 ᴵᴰ . #id 𓃠
 🇪🇬 - 𝄬 ᴳᴹᴬˢ . #gmas 𓃠
 🇪🇬 - 𝄬 ᴹˢᴳˢ . #msgs  𓃠
-🇪🇬 - 𝄬 𝗖𝗛 - »@eLmLoK0« ♔
+🇪🇬 - 𝄬 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ➜𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 : #username
 ➜𝗠𝗘𝗦𝗦??𝗚𝗘𝗦 : #msgs
 ➜𝗦𝗧𝗔𝗧𝗦 : #stast
 ➜𝗜𝗗 : #id
-➜𝗖𝗛 - »@eLmLoK0« ♔
+➜𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 - 🇪🇬 UsErNaMe . #username 𖠲
@@ -16265,21 +16265,21 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 Id . #id 𖠲
 - 🇪🇬 GaMeS . #game 𖠲
 - 🇪🇬 MsGs . #msgs 𖠲
-- 🇪🇬 𝗖𝗛 - »@eLmLoK0« ♔
+- 🇪🇬 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ⌔┇Msgs : #msgs.
 ⌔┇ID : #id.
 ⌔┇Stast : #stast.
 ⌔┇UserName : #username.
-⌔┇𝗖𝗛 - »@eLmLoK0« ♔
+⌔┇𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 𝒔𝒕𝒂𓂅 #stast 𓍯
 𝐮𝐬𝐞𝐫𓂅 #username 𓍯
 𝒎????𝒆𓂅 #msgs 𓍯
 𝐢𝐝 𓂅 #id 𓍯
-𓂅 𝗖𝗛 - »@eLmLoK0« ♔
+𓂅 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 𓄼🇪🇬 𝑼𝒔𝒆𝒓𝑵𝒂𝒎𝒆 : #username ♕
@@ -16287,21 +16287,21 @@ Msᴀɢ ~ #msgs
 𓄼🇪🇬 𝐢𝐝 : #id ‌‌‏⚚
 𓄼🇪🇬 𝑮𝒂𝒎𝒆𝑺 : #edit ⚚
 𓄼🇪🇬 𝑴𝒔𝒈𝒔 : #msgs 𓆊
-𓄼🇪🇬 𝗖𝗛 - »@eLmLoK0« ♔
+𓄼🇪🇬 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 Usᴇʀ Nᴀᴍᴇ ~ #username 
 Yᴏᴜʀ ɪᴅ ~ #id 
 Sᴛᴀsᴛ ~ #stast 
 Msᴀɢ ~ #msgs
-𝗖?? - »@eLmLoK0« ♔
+𝗖?? -«@eLmLoK0« ♔
 ]],
 [[
 ➥• USE 𖦹 #username - 🇪??.
 ➥• MSG 𖥳 #msgs  - 🇪🇬.
 ➥• STA 𖦹 #stast - 🇪??.
 ➥• iD 𖥳 #id - 🇪🇬.
-➥• 𝗖?? - »@eLmLoK0« ♔
+➥• 𝗖?? -«@eLmLoK0« ♔
 ]],
 [[
 🇪🇬 - 𝄬 username . #username  ??
@@ -16309,7 +16309,7 @@ Msᴀɢ ~ #msgs
 🇪🇬 - 𝄬 id . #id 𓃠
 🇪🇬 - 𝄬 gmas . #gmas 𓃠
 🇪🇬 - 𝄬 msgs . #msgs  𓃠
-🇪🇬 - 𝄬 𝗖𝗛 - »@eLmLoK0« ♔
+🇪🇬 - 𝄬 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 .𖣂 𝙪𝙨𝙚𝙧𝙣𝙖𝙢𝙚 , #username  🖤 ↴
@@ -16317,7 +16317,7 @@ Msᴀɢ ~ #msgs
 .𖣂 𝙡𝘿 , #id  🖤 ↴
 .𖣂 𝘼𝙪𝙩𝙤 , #auto  🖤 ↴
 .𖣂 𝙢𝙨𝙂𝙨 , #msgs  🖤 ↴
-.𖣂 𝗖𝗛 - »@eLmLoK0« ♔
+.𖣂 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 金 - 𝓾𝓼𝓮𝓻??𝓪𝓶𝓮 . #username ⸙ 
@@ -16325,7 +16325,7 @@ Msᴀɢ ~ #msgs
 金 - 𝓲𝓭 . #id ⸙ 
 金 - 𝓰𝓶𝓪𝓼 . #gmas ⸙ 
 金 - 𝓶𝓼𝓰𝓼 . #msgs ⸙
-金 - 𝗖𝗛 - »@eLmLoK0« ♔
+金 - 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 - 🇪🇬 𝐮𝐬𝐞𝐫𝒏𝒂𝒎𝒆 . #username 𖣂.
@@ -16333,7 +16333,7 @@ Msᴀɢ ~ #msgs
 - 🇪🇬 𝐢𝐝 . #id 𖣂.
 - 🇪🇬 𝒈𝒂𝒎𝒆𝒔 . #game 𖣂.
 - 🇪🇬 𝐦𝐬𝐠 . #msgs 𖣂.
-- 🇪🇬 𝗖𝗛 - »@eLmLoK0« ♔
+- 🇪🇬 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ᯓ 𝗨𝗦𝗘𝗥𝗡𝗮𝗺𝗘 . #username 🇪🇬 ꙰
@@ -16341,7 +16341,7 @@ Msᴀɢ ~ #msgs
 ᯓ 𝗜𝗗 . #id 🇪🇬 ꙰
 ᯓ 𝗚𝗮𝗺𝗘𝗦 . #game 🇪🇬 ꙰
 ᯓ 𝗺𝗦𝗚?? . #msgs ??🇬 ꙰
-ᯓ 𝗖𝗛 - »@eLmLoK0« ♔
+ᯓ 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 👳🏼‍♂ - 𝄬 username . #username . 🇪🇬
@@ -16349,14 +16349,14 @@ Msᴀɢ ~ #msgs
 👳🏼‍♂ - 𝄬 id . #id . 🇪🇬
 👳🏼‍♂ - 𝄬 auto . #auto . 🇪🇬
 👳🏼‍♂ - 𝄬 msgs . #msgs . 🇪🇬
-👳🏼‍♂ - 𝄬 𝗖𝗛 - »@eLmLoK0« ♔
+👳🏼‍♂ - 𝄬 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ➭- 𝒔𝒕𝒂𓂅 #stast 𓍯. 💕
 ➮- 𝐮𝐬𝐞𝐫𓂅 #username 𓍯. 💕
 ➭- 𝒎𝒔𝒈𝒆𓂅 #msgs 𓍯. 💕
 ➭- 𝐢𝐝 𓂅 #id 𓍯. 💕
-➭- 𝗖𝗛 - »@eLmLoK0« ♔
+➭- 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 𓄼 ᴜѕᴇ : #username ♕
@@ -16364,7 +16364,7 @@ Msᴀɢ ~ #msgs
 𓄼 ɪᴅ : #id ‌‌‏⚚
 𓄼 ᴍѕɢ : #msgs 𓆊 
 𓐀 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𓀃.
-𓄼 𝗖𝗛 - »@eLmLoK0« ♔
+𓄼 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 𝐓𝐓• 𝐘𝐎𝐔𝐑 𝐈𝐃 𖠰 #id .
@@ -16373,14 +16373,14 @@ Msᴀɢ ~ #msgs
 𝐓𝐓• 𝐒𝐓𝐀𝐒𝐓 𖠰 #stast .
 𝐓𝐓• 𝐀𝐔𝐓𝐎 𖠰 #auto .
 𝐓𝐓• 𝗘𝗗𝗜𝗧 𖠰 #edit .
-𝐓𝐓• 𝗖𝗛 - »@eLmLoK0« ♔
+𝐓𝐓• 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ↑♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 𝙐𝙎𝙀𝙍𝙉𝘼𝙈𝙀 ➱ #username ♔  
 ↑♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 𝙄𝘿 ➱ #id
 ↑♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 𝙍𝘼𝙉𝙆 ➱  #stast ♔  
 ↑♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 𝙈𝘼𝙎𝙂 ➱ #msgs ♔  
-↑♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 𝗖𝗛 ➯  »@eLmLoK0« ♔  
+↑♽^━━━━❆𝗘𝗟𝗠𝗟𝗢𝗞❆━━━━^♽ 𝗖𝗛 ➯»@eLmLoK0« ♔  
 ]],
 [[
 𝟓 𝟔 𖡻 #username  ࿇🦄
@@ -16388,28 +16388,28 @@ Msᴀɢ ~ #msgs
 𝟓 𝟔 𖡻 #auto  ࿇🦄
 𝟓 𝟔 𖡻 #stast  ࿇🦄
 𝟓 𝟔 𖡻 #id  ࿇🦄
-𝟓 𝟔 𖡻 𝗖𝗛 - »@eLmLoK0« ♔
+𝟓 𝟔 𖡻 𝗖𝗛 -«@eLmLoK0« ♔
 ]],
 [[
 ► 𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 #username 𓃚  ꙰
 ► 𝗜𝗗 #id ?? ꙰
 ► 𝗦𝗧𝗔𝗦 #stast 𓃚 ꙰
 ► 𝗠𝗦𝗔𝗚 #msgs 𓃚 ꙰
-► 𝗶𝗗 - »@eLmLoK0« ♔
+► 𝗶𝗗 -«@eLmLoK0« ♔
 ]],
 [[
 - UsEr🇺🇸 ꙰ #username
 - StA🇺🇸 ꙰   #msgs
 - MsGs🇺🇸 ꙰ #stast
 - ID🇺🇸 ꙰  #id
-- 𝗶𝗗 🇺🇸 ꙰  »@eLmLoK0« ♔
+- 𝗶𝗗 🇺🇸 ꙰»@eLmLoK0« ♔
 ]],
 [[
-✵♔ 𝚄𝚂𝙴𝚁  ⇉⁞ #username »🇵🇷.
-✵♔ 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs  » 🇵🇷.
-✵♔ 𝚁𝙰𝙽𝙺  ⇉⁞ #stast  »🇵🇷.
-✵♔ 𝙸𝙳 ??𝚃𝙰 ⇉ #id  »🇵🇷.
-✵♔ 𝗶𝗗 - »@eLmLoK0« ♔
+✵♔ 𝚄𝚂𝙴𝚁  ⇉⁞ #username«🇵🇷.
+✵♔ 𝙼𝚂𝙶𝚂 ⇉ ⁞  #msgs» 🇵🇷.
+✵♔ 𝚁𝙰𝙽𝙺  ⇉⁞ #stast»🇵🇷.
+✵♔ 𝙸𝙳 ??𝚃𝙰 ⇉ #id»🇵🇷.
+✵♔ 𝗶𝗗 -«@eLmLoK0« ♔
 ]],
 [[
 - ?? UsErNaMe . #username ??
@@ -16417,7 +16417,7 @@ Msᴀɢ ~ #msgs
 - 🦋 Id . #id 𖠲
 - 🦋 GaMeS . #game 𖠲
 - 🦋 MsGs . #msgs 𖠲
-- 🦋 𝗖𝗛 - »@eLmLoK0« ♔
+- 🦋 𝗖𝗛 -«@eLmLoK0« ♔
 ]]}
 local Text_Rand = List[math.random(#List)]
 database:set(bot_id.."KLISH:ID"..msg.chat_id_,Text_Rand)
@@ -16429,7 +16429,7 @@ local Num = tonumber(database:get(bot_id..'edits'..msg.chat_id_..msg.sender_user
 if Num == 0 then 
 Text = ' ♔  ليس لديك سحكات'
 else
-Text = ' ♔ عدد سحكاتك * ⇦♔» '..Num..' « *'
+Text = ' ♔ عدد سحكاتك * ⇦♔» '..Num..'» *'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
@@ -16455,7 +16455,7 @@ local Num = tonumber(database:get(bot_id..'Add:Contact'..msg.chat_id_..':'..msg.
 if Num == 0 then 
 Text = ' ♔ لم تقم بأضافه احد'
 else
-Text = ' ♔ عدد جهاتك * ⇦♔» '..Num..' « *'
+Text = ' ♔ عدد جهاتك * ⇦♔» '..Num..'» *'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
@@ -16537,14 +16537,14 @@ local sendok = #group - DRAGON
 if q == 0 then
 DRAGON = ''
 else
-DRAGON = '\n- تم ازالة  ⇦♔» '..q..' « جروبات من البوت'
+DRAGON = '\n- تم ازالة  ⇦♔» '..q..'» جروبات من البوت'
 end
 if w == 0 then
 DRAGONk = ''
 else
-DRAGONk = '\n- تم ازالة  ⇦♔» '..w..' « كروب لان البوت عضو'
+DRAGONk = '\n- تم ازالة  ⇦♔» '..w..'» كروب لان البوت عضو'
 end
-send(msg.chat_id_, msg.id_,' ♔ عدد الجروبات الان  ⇦♔» '..#group..' «'..DRAGONk..''..DRAGON..'\n*- الان عدد الجروبات الحقيقي  ⇦♔» '..sendok..' « جروبات\n')   
+send(msg.chat_id_, msg.id_,' ♔ عدد الجروبات الان  ⇦♔» '..#group..'»'..DRAGONk..''..DRAGON..'\n*- الان عدد الجروبات الحقيقي  ⇦♔» '..sendok..'» جروبات\n')   
 end
 end
 end,nil)
@@ -16555,7 +16555,7 @@ end
 if text and text:match("^(gpinfo)$") or text and text:match("^معلومات الجروب$") then
 function gpinfo(arg,data)
 -- vardump(data) 
-DRAGONdx(msg.chat_id_, msg.id_, ' ♔ ايدي المجموعة  ⇦♔» '..msg.chat_id_..' «\n ♔ عدد الادمنيه  ⇦♔» *'..data.administrator_count_..' «*\n ♔ عدد المحظورين  ⇦♔» *'..data.kicked_count_..' «*\n ♔ عدد الاعضاء  ⇦♔» *'..data.member_count_..' «*\n', 'md') 
+DRAGONdx(msg.chat_id_, msg.id_, ' ♔ ايدي المجموعة  ⇦♔» '..msg.chat_id_..'»\n ♔ عدد الادمنيه  ⇦♔» *'..data.administrator_count_..'»*\n ♔ عدد المحظورين  ⇦♔» *'..data.kicked_count_..'»*\n ♔ عدد الاعضاء  ⇦♔» *'..data.member_count_..'»*\n', 'md') 
 end 
 getChannelFull(msg.chat_id_, gpinfo, nil) 
 end
@@ -16642,7 +16642,7 @@ local Num = database:get(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_)
 if Num == 0 then 
 Text = ' ♔ لم تلعب اي لعبه للحصول على نقاط'
 else
-Text = ' ♔ عدد نقاطك التي ربحتها هيه * ⇦♔» '..Num..' « نقاط *'
+Text = ' ♔ عدد نقاطك التي ربحتها هيه * ⇦♔» '..Num..'» نقاط *'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
@@ -18180,7 +18180,7 @@ https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callb
 return false
 end
 local Teext =[[
-🎖┇ 𝙱𝙰??𝙸𝙲 𝙳𝙴𝚅????𝙾𝙿???? 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .
+🎖┇ 𝙱𝙰??𝙸𝙲 𝙳𝙴𝚅????𝙾𝙿𝙴?? 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂 .
 ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ ━ 
  ♔ اهلا بك عزيزي 🔊
  ♔ اوامر مطور الاساسي 👨🏼‍✈️
